@@ -9,3 +9,15 @@ C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz
 C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.exe
 C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.pdb
 C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormInicioSesion.resources
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\Desktop_Quiz.exe.config
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\Desktop_Quiz.exe
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\Desktop_Quiz.pdb
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.csproj.AssemblyReference.cache
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.csproj.SuggestedBindingRedirects.cache
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormInicioSesion.resources
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormUsuaris.resources
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.Properties.Resources.resources
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.csproj.GenerateResource.cache
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.csproj.CoreCompileInputs.cache
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.exe
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.pdb
