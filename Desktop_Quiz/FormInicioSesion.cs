@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Desktop_Quiz
 {
-    public partial class Form2 : Form
+    public partial class FormInicioSesion : Form
     {
-        public Form2()
+        public FormInicioSesion()
         {
             InitializeComponent();
         }

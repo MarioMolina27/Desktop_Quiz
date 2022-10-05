@@ -1,6 +1,6 @@
 ﻿namespace Desktop_Quiz
 {
-    partial class Form2
+    partial class FormInicioSesion
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // FormInicioSesion
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form2";
+            this.Name = "FormInicioSesion";
+            this.Text = "FormInicioSesion";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
