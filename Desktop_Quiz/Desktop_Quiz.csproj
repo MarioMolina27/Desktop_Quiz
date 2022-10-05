@@ -46,11 +46,59 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FormAdminOpciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAdminOpciones.Designer.cs">
+      <DependentUpon>FormAdminOpciones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditPersonatges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditPersonatges.Designer.cs">
+      <DependentUpon>FormEditPersonatges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditPreguntes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditPreguntes.Designer.cs">
+      <DependentUpon>FormEditPreguntes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEditUsuaris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEditUsuaris.Designer.cs">
+      <DependentUpon>FormEditUsuaris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPersonatges.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPersonatges.Designer.cs">
+      <DependentUpon>FormPersonatges.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPreguntas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPreguntas.Designer.cs">
+      <DependentUpon>FormPreguntas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSAdimOpciones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSAdimOpciones.Designer.cs">
+      <DependentUpon>FormSAdimOpciones.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormInicioSesion.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormInicioSesion.Designer.cs">
       <DependentUpon>FormInicioSesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUsuaris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormUsuaris.Designer.cs">
+      <DependentUpon>FormUsuaris.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
