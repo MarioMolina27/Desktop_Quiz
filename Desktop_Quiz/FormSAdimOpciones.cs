@@ -16,5 +16,35 @@ namespace Desktop_Quiz
         {
             InitializeComponent();
         }
+
+        private void FormSAdimOpciones_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonUsuari_Click(object sender, EventArgs e)
+        {
+            FormUsuaris formUsuari = new FormUsuaris();
+            formUsuari.ShowDialog();
+        }
+
+        private void buttonPersonatges_Click(object sender, EventArgs e)
+        {
+            FormPersonatges formPersonatges= new FormPersonatges();
+            formPersonatges.ShowDialog();
+        }
+
+        private void buttonPreguntes_Click(object sender, EventArgs e)
+        {
+            FormPreguntas formPreguntas = new FormPreguntas();
+            formPreguntas.ShowDialog();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            FormInicioSesion formInici = new FormInicioSesion();
+            formInici.ShowDialog();
+        }
     }
 }
