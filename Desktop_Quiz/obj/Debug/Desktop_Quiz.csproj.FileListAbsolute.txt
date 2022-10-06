@@ -32,3 +32,9 @@ D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz
 D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.csproj.CoreCompileInputs.cache
 D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.exe
 D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.pdb
+C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormEditPersonatges.resources
+C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormPersonatges.resources
+C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormPreguntas.resources
+C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\Newtonsoft.Json.dll
+C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\Newtonsoft.Json.xml
+C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.csproj.CopyComplete
