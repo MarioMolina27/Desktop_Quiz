@@ -106,11 +106,17 @@
     <Compile Include="Pelicula.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormAdminOpciones.resx">
+      <DependentUpon>FormAdminOpciones.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormEditPersonatges.resx">
       <DependentUpon>FormEditPersonatges.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormInicioSesion.resx">
       <DependentUpon>FormInicioSesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSAdimOpciones.resx">
+      <DependentUpon>FormSAdimOpciones.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormPersonatges.resx">
       <DependentUpon>FormPersonatges.cs</DependentUpon>

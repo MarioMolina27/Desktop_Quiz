@@ -28,25 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
             this.labelNom = new System.Windows.Forms.Label();
             this.labelContrasenya = new System.Windows.Forms.Label();
             this.textBoxNom = new System.Windows.Forms.TextBox();
             this.textBoxContrasenya = new System.Windows.Forms.TextBox();
             this.groupBoxDades = new System.Windows.Forms.GroupBox();
             this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
+            this.buttonIniciSesio = new System.Windows.Forms.Button();
             this.groupBoxDades.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(829, 727);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(195, 86);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "INICIA SESSIÓ";
-            this.button1.UseVisualStyleBackColor = true;
             // 
             // labelNom
             // 
@@ -74,6 +65,7 @@
             this.textBoxNom.Name = "textBoxNom";
             this.textBoxNom.Size = new System.Drawing.Size(333, 20);
             this.textBoxNom.TabIndex = 2;
+            this.textBoxNom.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxNom_KeyDown);
             // 
             // textBoxContrasenya
             // 
@@ -81,6 +73,7 @@
             this.textBoxContrasenya.Name = "textBoxContrasenya";
             this.textBoxContrasenya.Size = new System.Drawing.Size(333, 20);
             this.textBoxContrasenya.TabIndex = 3;
+            this.textBoxContrasenya.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxContrasenya_KeyDown);
             // 
             // groupBoxDades
             // 
@@ -105,12 +98,26 @@
             this.pictureBoxIcon.TabIndex = 1;
             this.pictureBoxIcon.TabStop = false;
             // 
+            // buttonIniciSesio
+            // 
+            this.buttonIniciSesio.BackColor = System.Drawing.Color.Black;
+            this.buttonIniciSesio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.buttonIniciSesio.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonIniciSesio.ForeColor = System.Drawing.Color.White;
+            this.buttonIniciSesio.Location = new System.Drawing.Point(839, 736);
+            this.buttonIniciSesio.Name = "buttonIniciSesio";
+            this.buttonIniciSesio.Size = new System.Drawing.Size(193, 69);
+            this.buttonIniciSesio.TabIndex = 5;
+            this.buttonIniciSesio.Text = "INICIA SESSIÓ\r\n";
+            this.buttonIniciSesio.UseVisualStyleBackColor = false;
+            this.buttonIniciSesio.Click += new System.EventHandler(this.buttonIniciSessio_Click);
+            // 
             // FormInicioSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.buttonIniciSesio);
             this.Controls.Add(this.pictureBoxIcon);
             this.Controls.Add(this.groupBoxDades);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -125,11 +132,11 @@
 
         #endregion
         private System.Windows.Forms.PictureBox pictureBoxIcon;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelNom;
         private System.Windows.Forms.Label labelContrasenya;
         private System.Windows.Forms.TextBox textBoxNom;
         private System.Windows.Forms.TextBox textBoxContrasenya;
         private System.Windows.Forms.GroupBox groupBoxDades;
+        private System.Windows.Forms.Button buttonIniciSesio;
     }
 }
