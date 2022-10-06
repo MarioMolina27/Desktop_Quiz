@@ -17,22 +17,18 @@ namespace Desktop_Quiz
             InitializeComponent();
         }
 
-        private void textBoxBuscadorEditPersonatge_Enter(object sender, EventArgs e)
+        private void buttonBuscarRutaImatgePersonatge_Click(object sender, EventArgs e)
         {
-            if (textBoxBuscadorEditPersonatge.Text.Equals("  Buscar..."))
-            {
-                textBoxBuscadorEditPersonatge.Text = "";
-                textBoxBuscadorEditPersonatge.ForeColor = Color.Black;
-            }
-        }
+            OpenFileDialog abrirImagen = new OpenFileDialog();
 
-        private void textBoxBuscadorEditPersonatge_Leave(object sender, EventArgs e)
-        {
-            if (textBoxBuscadorEditPersonatge.Text.Equals(""))
+            abrirImagen.InitialDirectory = Application.StartupPath; 
+            abrirImagen.Filter = "Imagenes PNG (*.png)|*.png";
+
+            if (abrirImagen.ShowDialog().Equals(DialogResult.OK))
             {
-                textBoxBuscadorEditPersonatge.Text = "  Buscar...";
-                textBoxBuscadorEditPersonatge.ForeColor= Color.Gray;
+                textBoxRutaImatgeEditPersonatge.Text = abrirImagen.FileName;
             }
+
         }
     }
 }

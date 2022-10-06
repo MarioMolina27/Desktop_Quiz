@@ -108,6 +108,9 @@
     <EmbeddedResource Include="FormInicioSesion.resx">
       <DependentUpon>FormInicioSesion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormPersonatges.resx">
+      <DependentUpon>FormPersonatges.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

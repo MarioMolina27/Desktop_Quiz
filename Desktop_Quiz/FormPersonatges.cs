@@ -16,5 +16,39 @@ namespace Desktop_Quiz
         {
             InitializeComponent();
         }
+
+        private void textBoxBuscadorPersonatge_Enter(object sender, EventArgs e)
+        {
+        
+                if (textBoxBuscadorPersonatge.Text.Equals("  Buscar..."))
+                {
+                    textBoxBuscadorPersonatge.Text = "";
+                    textBoxBuscadorPersonatge.ForeColor = Color.Black;
+                }
+            
+        }
+
+        private void textBoxBuscadorPersonatge_Leave(object sender, EventArgs e)
+        {
+
+                if (textBoxBuscadorPersonatge.Text.Equals(""))
+                {
+                    textBoxBuscadorPersonatge.Text = "  Buscar...";
+                    textBoxBuscadorPersonatge.ForeColor = Color.Gray;
+                }
+        }
+
+        private void buttonAfegirPersonatge_Click(object sender, EventArgs e)
+        {
+            FormEditPersonatges afegirPersonatges = new FormEditPersonatges();
+            afegirPersonatges.ShowDialog();
+        }
+
+        private void toolStripButtonTornar_Click(object sender, EventArgs e)
+        {
+            FormSAdimOpciones supAdOpcions = new FormSAdimOpciones();
+            supAdOpcions.ShowDialog();
+            this.Close();
+        }
     }
 }
