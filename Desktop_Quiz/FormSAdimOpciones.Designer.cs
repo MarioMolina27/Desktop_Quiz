@@ -28,12 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // pictureBoxIcon
+            // 
+            this.pictureBoxIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxIcon.Image = global::Desktop_Quiz.Properties.Resources.loginImage;
+            this.pictureBoxIcon.Location = new System.Drawing.Point(838, 141);
+            this.pictureBoxIcon.Name = "pictureBoxIcon";
+            this.pictureBoxIcon.Size = new System.Drawing.Size(235, 183);
+            this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxIcon.TabIndex = 2;
+            this.pictureBoxIcon.TabStop = false;
+            // 
+            // FormSAdimOpciones
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.pictureBoxIcon);
+            this.Name = "FormSAdimOpciones";
             this.Text = "Form1";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.PictureBox pictureBoxIcon;
     }
 }

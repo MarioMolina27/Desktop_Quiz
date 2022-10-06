@@ -28,27 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             this.labelNom = new System.Windows.Forms.Label();
             this.labelContrasenya = new System.Windows.Forms.Label();
             this.textBoxNom = new System.Windows.Forms.TextBox();
             this.textBoxContrasenya = new System.Windows.Forms.TextBox();
             this.groupBoxDades = new System.Windows.Forms.GroupBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
             this.groupBoxDades.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBox1.Image = global::Desktop_Quiz.Properties.Resources.loginImage;
-            this.pictureBox1.Location = new System.Drawing.Point(815, 128);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(235, 183);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // button1
             // 
@@ -105,26 +94,37 @@
             this.groupBoxDades.TabIndex = 0;
             this.groupBoxDades.TabStop = false;
             // 
+            // pictureBoxIcon
+            // 
+            this.pictureBoxIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxIcon.Image = global::Desktop_Quiz.Properties.Resources.loginImage;
+            this.pictureBoxIcon.Location = new System.Drawing.Point(815, 128);
+            this.pictureBoxIcon.Name = "pictureBoxIcon";
+            this.pictureBoxIcon.Size = new System.Drawing.Size(235, 183);
+            this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxIcon.TabIndex = 1;
+            this.pictureBoxIcon.TabStop = false;
+            // 
             // FormInicioSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxIcon);
             this.Controls.Add(this.groupBoxDades);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormInicioSesion";
             this.Text = "FormInicioSesion";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBoxDades.ResumeLayout(false);
             this.groupBoxDades.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBoxIcon;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label labelNom;
         private System.Windows.Forms.Label labelContrasenya;
