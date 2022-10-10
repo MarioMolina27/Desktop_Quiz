@@ -50,5 +50,15 @@ namespace Desktop_Quiz
             }
             
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormUsuaris_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
