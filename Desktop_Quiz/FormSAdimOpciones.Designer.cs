@@ -53,20 +53,17 @@
             // 
             // pictureBoxIcon
             // 
-            this.pictureBoxIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBoxIcon.Image = global::Desktop_Quiz.Properties.Resources.loginImage;
-            this.pictureBoxIcon.Location = new System.Drawing.Point(838, 141);
+            this.pictureBoxIcon.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxIcon.Name = "pictureBoxIcon";
-            this.pictureBoxIcon.Size = new System.Drawing.Size(235, 183);
-            this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxIcon.TabIndex = 2;
+            this.pictureBoxIcon.Size = new System.Drawing.Size(100, 50);
+            this.pictureBoxIcon.TabIndex = 11;
             this.pictureBoxIcon.TabStop = false;
             // 
             // buttonUsuari
             // 
             this.buttonUsuari.BackColor = System.Drawing.Color.Black;
             this.buttonUsuari.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonUsuari.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUsuari.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUsuari.ForeColor = System.Drawing.Color.White;
             this.buttonUsuari.Location = new System.Drawing.Point(459, 537);
             this.buttonUsuari.Name = "buttonUsuari";
@@ -90,7 +87,7 @@
             // 
             this.buttonPersonatges.BackColor = System.Drawing.Color.Black;
             this.buttonPersonatges.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonPersonatges.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPersonatges.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPersonatges.ForeColor = System.Drawing.Color.White;
             this.buttonPersonatges.Location = new System.Drawing.Point(861, 537);
             this.buttonPersonatges.Name = "buttonPersonatges";
@@ -104,7 +101,7 @@
             // 
             this.buttonPreguntes.BackColor = System.Drawing.Color.Black;
             this.buttonPreguntes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonPreguntes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPreguntes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPreguntes.ForeColor = System.Drawing.Color.White;
             this.buttonPreguntes.Location = new System.Drawing.Point(1233, 537);
             this.buttonPreguntes.Name = "buttonPreguntes";

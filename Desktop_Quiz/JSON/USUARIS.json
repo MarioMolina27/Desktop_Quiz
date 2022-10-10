@@ -1,0 +1,20 @@
+[
+  {
+    "nom": "Super Admin",
+    "contrasenya": "1234",
+    "tipus": "SA",
+    "privilegis": "SuperAdmin",
+  },
+  {
+    "nom": "Pol",
+    "contrasenya": "Socelpol",
+    "tipus": "A",
+    "privilegis": "Add/Modify/Delete"
+  },
+  {
+    "nom": "Albert",
+    "contrasenya": "Soclalbert",
+    "tipus": "A",
+    "privilegis": "Add/Modify"
+  }
+]

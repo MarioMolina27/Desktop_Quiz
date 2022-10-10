@@ -44,7 +44,7 @@
             // 
             this.buttonPreguntes.BackColor = System.Drawing.Color.Black;
             this.buttonPreguntes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonPreguntes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPreguntes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPreguntes.ForeColor = System.Drawing.Color.White;
             this.buttonPreguntes.Location = new System.Drawing.Point(1096, 667);
             this.buttonPreguntes.Name = "buttonPreguntes";
@@ -58,7 +58,7 @@
             // 
             this.buttonPersonatges.BackColor = System.Drawing.Color.Black;
             this.buttonPersonatges.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonPersonatges.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPersonatges.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPersonatges.ForeColor = System.Drawing.Color.White;
             this.buttonPersonatges.Location = new System.Drawing.Point(618, 667);
             this.buttonPersonatges.Name = "buttonPersonatges";
@@ -77,6 +77,7 @@
             this.labelNomSAdmin.Size = new System.Drawing.Size(91, 30);
             this.labelNomSAdmin.TabIndex = 13;
             this.labelNomSAdmin.Text = "ADMIN";
+            this.labelNomSAdmin.TextChanged += new System.EventHandler(this.labelNomSAdmin_TextChanged);
             // 
             // labelBenvinguda
             // 
@@ -87,17 +88,6 @@
             this.labelBenvinguda.Size = new System.Drawing.Size(127, 24);
             this.labelBenvinguda.TabIndex = 11;
             this.labelBenvinguda.Text = "BENVINGUT";
-            // 
-            // pictureBoxIcon
-            // 
-            this.pictureBoxIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBoxIcon.Image = global::Desktop_Quiz.Properties.Resources.loginImage;
-            this.pictureBoxIcon.Location = new System.Drawing.Point(848, 288);
-            this.pictureBoxIcon.Name = "pictureBoxIcon";
-            this.pictureBoxIcon.Size = new System.Drawing.Size(235, 183);
-            this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxIcon.TabIndex = 10;
-            this.pictureBoxIcon.TabStop = false;
             // 
             // toolStripBackOption
             // 

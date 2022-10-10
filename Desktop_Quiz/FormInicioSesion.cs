@@ -1,17 +1,22 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Desktop_Quiz
 {
     public partial class FormInicioSesion : Form
     {
+        List<Usuari> usuaris;
         public FormInicioSesion()
         {
             InitializeComponent();
@@ -21,18 +26,30 @@ namespace Desktop_Quiz
         {
             String nom = textBoxNom.Text;
             String contrasenya = textBoxContrasenya.Text;
+            Boolean logInCorrect = false;
 
-            if(nom.Equals("Super Admin") && contrasenya.Equals("1234"))
+            JArray jarrayUsuaris = JArray.Parse(File.ReadAllText(@"../../JSON/USUARIS.json", Encoding.UTF8));
+            usuaris = jarrayUsuaris.ToObject<List<Usuari>>();
+
+            foreach (Usuari user in usuaris)
             {
-                FormSAdimOpciones formSuperAdmin = new FormSAdimOpciones();
-                formSuperAdmin.ShowDialog();
-                this.Close();
-            } else if (nom.Equals("Admin") && contrasenya.Equals("1234"))
-            {
-                FormAdminOpciones formAdmin = new FormAdminOpciones();
-                formAdmin.ShowDialog();
-                this.Close();
-            } else
+                if (nom.Equals(user.nom) && contrasenya.Equals(user.contrasenya))
+                {
+                    if(user.tipus.Equals("SA"))
+                    {
+                        FormSAdimOpciones formSuperAdmin = new FormSAdimOpciones();
+                        formSuperAdmin.ShowDialog();
+                    } else
+                    {
+                        FormAdminOpciones formAdmin = new FormAdminOpciones();
+                        formAdmin.ShowDialog();
+                    }
+                    this.Close();
+                    logInCorrect = true;
+                }
+                
+            }
+            if (logInCorrect == false)
             {
                 MessageBox.Show("Usuari/Contrasenya incorrecte.");
             }
@@ -51,6 +68,17 @@ namespace Desktop_Quiz
             if(e.KeyCode == Keys.Enter)
             {
                 buttonIniciSessio_Click(sender, e);
+            }
+        }
+
+        private void checkBoxMostraPass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBoxMostraPass.Checked == true)
+            {
+                textBoxContrasenya.UseSystemPasswordChar = false;
+            } else
+            {
+                textBoxContrasenya.UseSystemPasswordChar = true;
             }
         }
     }

@@ -35,5 +35,9 @@ namespace Desktop_Quiz
             FormInicioSesion formInici = new FormInicioSesion();
             formInici.ShowDialog();
         }
+
+        private void labelNomSAdmin_TextChanged(object sender, EventArgs e)
+        {
+        }
     }
 }
