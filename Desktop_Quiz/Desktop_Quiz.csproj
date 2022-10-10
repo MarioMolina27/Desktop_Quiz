@@ -121,6 +121,9 @@
     <EmbeddedResource Include="FormInicioSesion.resx">
       <DependentUpon>FormInicioSesion.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormUsuaris.resx">
+      <DependentUpon>FormUsuaris.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormSAdimOpciones.resx">
       <DependentUpon>FormSAdimOpciones.cs</DependentUpon>
     </EmbeddedResource>
