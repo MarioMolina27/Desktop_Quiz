@@ -31,14 +31,14 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUsuaris));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dataGridUsuaris1 = new System.Windows.Forms.DataGridView();
             this.labelSearchNickname = new System.Windows.Forms.Label();
             this.textBoxNickSearch = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuaris1)).BeginInit();
             this.SuspendLayout();
             // 
             // imageList1
@@ -47,14 +47,15 @@
             this.imageList1.ImageSize = new System.Drawing.Size(16, 16);
             this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
             // 
-            // dataGridView1
+            // dataGridUsuaris1
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(246, 153);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1614, 827);
-            this.dataGridView1.TabIndex = 2;
+            this.dataGridUsuaris1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dataGridUsuaris1.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dataGridUsuaris1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridUsuaris1.Location = new System.Drawing.Point(246, 153);
+            this.dataGridUsuaris1.Name = "dataGridUsuaris1";
+            this.dataGridUsuaris1.Size = new System.Drawing.Size(1614, 827);
+            this.dataGridUsuaris1.TabIndex = 2;
             // 
             // labelSearchNickname
             // 
@@ -91,6 +92,7 @@
             this.button1.Size = new System.Drawing.Size(144, 105);
             this.button1.TabIndex = 3;
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -136,13 +138,13 @@
             this.Controls.Add(this.labelSearchNickname);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxNickSearch);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridUsuaris1);
             this.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormUsuaris";
             this.Text = "FormUsuaris";
             this.Load += new System.EventHandler(this.FormUsuaris_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuaris1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -151,7 +153,7 @@
         #endregion
 
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridUsuaris1;
         private System.Windows.Forms.Label labelSearchNickname;
         private System.Windows.Forms.TextBox textBoxNickSearch;
         private System.Windows.Forms.Button button1;

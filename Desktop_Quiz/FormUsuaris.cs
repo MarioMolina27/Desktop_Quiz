@@ -15,7 +15,9 @@ namespace Desktop_Quiz
     public partial class FormUsuaris : Form
     {
 
-        List<Usuaris>
+        List<Usuari> usuaris;
+
+
         public FormUsuaris()
         {
             InitializeComponent();
@@ -58,20 +60,24 @@ namespace Desktop_Quiz
         private void button2_Click(object sender, EventArgs e)
         {
 
+            FormEditUsuaris editUsuaris1 = new FormEditUsuaris();
+            editUsuaris1.ShowDialog();
         }
 
         private void FormUsuaris_Load(object sender, EventArgs e)
         {
             JArray arrayUsers = JArray.Parse(File.ReadAllText(@"..\..\JSON\USUARIS.json"));
-            dataGridView1.DataSource = arrayUsers;
+            usuaris = arrayUsers.ToObject<List<Usuari>>();
+            dataGridUsuaris1.DataSource = null;
+            dataGridUsuaris1.DataSource = usuaris;   
 
 
         }
 
-
-   
-
-
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FormEditUsuaris editUsuaris1 = new FormEditUsuaris();
+            editUsuaris1.ShowDialog();
+        }
     }
 }
