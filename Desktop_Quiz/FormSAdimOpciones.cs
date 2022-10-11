@@ -12,14 +12,20 @@ namespace Desktop_Quiz
 {
     public partial class FormSAdimOpciones : Form
     {
+        String nomSuperAdmin;
         public FormSAdimOpciones()
         {
             InitializeComponent();
         }
+        public FormSAdimOpciones(String nomUser)
+        {
+            InitializeComponent();
+            this.nomSuperAdmin = nomUser;
+        }
 
         private void FormSAdimOpciones_Load(object sender, EventArgs e)
         {
-
+            labelBenvinguda.Text = "Benvingut " + nomSuperAdmin;
         }
 
         private void buttonUsuari_Click(object sender, EventArgs e)

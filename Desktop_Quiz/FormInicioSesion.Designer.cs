@@ -33,9 +33,11 @@
             this.textBoxNom = new System.Windows.Forms.TextBox();
             this.textBoxContrasenya = new System.Windows.Forms.TextBox();
             this.groupBoxDades = new System.Windows.Forms.GroupBox();
-            this.buttonIniciSesio = new System.Windows.Forms.Button();
             this.checkBoxMostraPass = new System.Windows.Forms.CheckBox();
+            this.buttonIniciSesio = new System.Windows.Forms.Button();
+            this.pictureBoxIconUser = new System.Windows.Forms.PictureBox();
             this.groupBoxDades.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconUser)).BeginInit();
             this.SuspendLayout();
             // 
             // labelNom
@@ -44,9 +46,9 @@
             this.labelNom.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNom.Location = new System.Drawing.Point(174, 112);
             this.labelNom.Name = "labelNom";
-            this.labelNom.Size = new System.Drawing.Size(39, 17);
+            this.labelNom.Size = new System.Drawing.Size(75, 17);
             this.labelNom.TabIndex = 0;
-            this.labelNom.Text = "Nom";
+            this.labelNom.Text = "NickName";
             // 
             // labelContrasenya
             // 
@@ -88,6 +90,17 @@
             this.groupBoxDades.TabIndex = 0;
             this.groupBoxDades.TabStop = false;
             // 
+            // checkBoxMostraPass
+            // 
+            this.checkBoxMostraPass.AutoSize = true;
+            this.checkBoxMostraPass.Location = new System.Drawing.Point(682, 182);
+            this.checkBoxMostraPass.Name = "checkBoxMostraPass";
+            this.checkBoxMostraPass.Size = new System.Drawing.Size(123, 17);
+            this.checkBoxMostraPass.TabIndex = 4;
+            this.checkBoxMostraPass.Text = "Mostrar Contrasenya";
+            this.checkBoxMostraPass.UseVisualStyleBackColor = true;
+            this.checkBoxMostraPass.CheckedChanged += new System.EventHandler(this.checkBoxMostraPass_CheckedChanged);
+            // 
             // buttonIniciSesio
             // 
             this.buttonIniciSesio.BackColor = System.Drawing.Color.Black;
@@ -102,22 +115,23 @@
             this.buttonIniciSesio.UseVisualStyleBackColor = false;
             this.buttonIniciSesio.Click += new System.EventHandler(this.buttonIniciSessio_Click);
             // 
-            // checkBoxMostraPass
+            // pictureBoxIconUser
             // 
-            this.checkBoxMostraPass.AutoSize = true;
-            this.checkBoxMostraPass.Location = new System.Drawing.Point(682, 182);
-            this.checkBoxMostraPass.Name = "checkBoxMostraPass";
-            this.checkBoxMostraPass.Size = new System.Drawing.Size(123, 17);
-            this.checkBoxMostraPass.TabIndex = 4;
-            this.checkBoxMostraPass.Text = "Mostrar Contrasenya";
-            this.checkBoxMostraPass.UseVisualStyleBackColor = true;
-            this.checkBoxMostraPass.CheckedChanged += new System.EventHandler(this.checkBoxMostraPass_CheckedChanged);
+            this.pictureBoxIconUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBoxIconUser.Image = global::Desktop_Quiz.Properties.Resources.loginImage;
+            this.pictureBoxIconUser.Location = new System.Drawing.Point(821, 92);
+            this.pictureBoxIconUser.Name = "pictureBoxIconUser";
+            this.pictureBoxIconUser.Size = new System.Drawing.Size(239, 191);
+            this.pictureBoxIconUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxIconUser.TabIndex = 6;
+            this.pictureBoxIconUser.TabStop = false;
             // 
             // FormInicioSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.pictureBoxIconUser);
             this.Controls.Add(this.buttonIniciSesio);
             this.Controls.Add(this.groupBoxDades);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -125,6 +139,7 @@
             this.Text = "FormInicioSesion";
             this.groupBoxDades.ResumeLayout(false);
             this.groupBoxDades.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconUser)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -137,5 +152,6 @@
         private System.Windows.Forms.GroupBox groupBoxDades;
         private System.Windows.Forms.Button buttonIniciSesio;
         private System.Windows.Forms.CheckBox checkBoxMostraPass;
+        private System.Windows.Forms.PictureBox pictureBoxIconUser;
     }
 }

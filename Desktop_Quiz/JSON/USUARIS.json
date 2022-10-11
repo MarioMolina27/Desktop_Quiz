@@ -1,20 +1,20 @@
 [
   {
-    "nickname": "Super1",
+    "nickname": "SuperAdmin",
     "nom": "Super Admin",
     "contrasenya": "1234",
     "tipus": "SA",
     "privilegis": "SuperAdmin",
   },
   {
-    "nickname": "Admin1",
+    "nickname": "Crespo",
     "nom": "Pol",
     "contrasenya": "Socelpol",
     "tipus": "A",
     "privilegis": "Add/Modify/Delete"
   },
   {
-    "nickname": "Admin2",
+    "nickname": "Albertote",
     "nom": "Albert",
     "contrasenya": "Soclalbert",
     "tipus": "A",
