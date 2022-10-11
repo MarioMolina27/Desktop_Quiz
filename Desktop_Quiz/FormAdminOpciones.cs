@@ -12,9 +12,20 @@ namespace Desktop_Quiz
 {
     public partial class FormAdminOpciones : Form
     {
+        String nomAdmin;
         public FormAdminOpciones()
         {
             InitializeComponent();
+        }
+        public FormAdminOpciones(String nomUser)
+        {
+            InitializeComponent();
+            this.nomAdmin = nomUser;
+        }
+
+        private void FormAdminOpciones_Load(object sender, EventArgs e)
+        {
+            labelBenvinguda.Text = "Benvingut " + nomAdmin;
         }
 
         private void buttonPersonatges_Click(object sender, EventArgs e)
@@ -34,10 +45,6 @@ namespace Desktop_Quiz
             this.Close();
             FormInicioSesion formInici = new FormInicioSesion();
             formInici.ShowDialog();
-        }
-
-        private void labelNomSAdmin_TextChanged(object sender, EventArgs e)
-        {
         }
     }
 }

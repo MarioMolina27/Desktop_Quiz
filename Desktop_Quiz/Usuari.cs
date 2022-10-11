@@ -8,6 +8,7 @@ namespace Desktop_Quiz
 {
     public class Usuari
     {
+        public String nickname { get; set; }
         public String nom { get; set; }
         public String contrasenya { get; set; }
         public String tipus { get; set; }
@@ -15,8 +16,9 @@ namespace Desktop_Quiz
 
         public Usuari() { }
 
-        public Usuari(string nom, string contrasenya, string tipus, string privilegis)
+        public Usuari(string nickname, string nom, string contrasenya, string tipus, string privilegis)
         {
+            this.nickname = nickname;
             this.nom = nom;
             this.contrasenya = contrasenya;
             this.tipus = tipus;
