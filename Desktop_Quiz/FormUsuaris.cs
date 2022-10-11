@@ -6,6 +6,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -59,7 +60,6 @@ namespace Desktop_Quiz
 
         private void button2_Click(object sender, EventArgs e)
         {
-
             FormEditUsuaris editUsuaris1 = new FormEditUsuaris();
             editUsuaris1.ShowDialog();
         }
@@ -68,6 +68,7 @@ namespace Desktop_Quiz
         {
             JArray arrayUsers = JArray.Parse(File.ReadAllText(@"..\..\JSON\USUARIS.json"));
             usuaris = arrayUsers.ToObject<List<Usuari>>();
+            
             dataGridUsuaris1.DataSource = null;
             dataGridUsuaris1.DataSource = usuaris;   
 
@@ -78,6 +79,11 @@ namespace Desktop_Quiz
         {
             FormEditUsuaris editUsuaris1 = new FormEditUsuaris();
             editUsuaris1.ShowDialog();
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
