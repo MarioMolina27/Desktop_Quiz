@@ -48,3 +48,5 @@ D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\bin\Debug\Newtonsoft.Json.xml
 D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormPersonatges.resources
 D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormPreguntas.resources
 D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.csproj.CopyComplete
+D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormUsuaris.resources
+D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormEditUsuaris.resources

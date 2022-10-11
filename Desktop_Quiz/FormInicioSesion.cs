@@ -33,15 +33,15 @@ namespace Desktop_Quiz
 
             foreach (Usuari user in usuaris)
             {
-                if (nom.Equals(user.nom) && contrasenya.Equals(user.contrasenya))
+                if (nom.Equals(user.nickname) && contrasenya.Equals(user.contrasenya))
                 {
-                    if(user.tipus.Equals("SA"))
+                    if (user.tipus.Equals("SA"))
                     {
-                        FormSAdimOpciones formSuperAdmin = new FormSAdimOpciones();
+                        FormSAdimOpciones formSuperAdmin = new FormSAdimOpciones(user.nom);
                         formSuperAdmin.ShowDialog();
                     } else
                     {
-                        FormAdminOpciones formAdmin = new FormAdminOpciones();
+                        FormAdminOpciones formAdmin = new FormAdminOpciones(user.nom);
                         formAdmin.ShowDialog();
                     }
                     this.Close();
@@ -81,5 +81,7 @@ namespace Desktop_Quiz
                 textBoxContrasenya.UseSystemPasswordChar = true;
             }
         }
+
+       
     }
 }
