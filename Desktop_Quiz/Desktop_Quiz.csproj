@@ -118,6 +118,12 @@
     <EmbeddedResource Include="FormEditPersonatges.resx">
       <DependentUpon>FormEditPersonatges.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FormEditPreguntes.resx">
+      <DependentUpon>FormEditPreguntes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEditUsuaris.resx">
+      <DependentUpon>FormEditUsuaris.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormInicioSesion.resx">
       <DependentUpon>FormInicioSesion.cs</DependentUpon>
     </EmbeddedResource>

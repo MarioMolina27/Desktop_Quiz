@@ -20,17 +20,18 @@ namespace Desktop_Quiz
         public int dificultad { get; set; }
 
         public Pelicula() { }
-        public Pelicula(string id, string película, string resposta1, string resposta2, string resposta3, int resposta_correcte, string categoria, string imgaudio, int dificultat)
+        public Pelicula(string id, string película,string pregunta, string resposta1, string resposta2, string resposta3, int resposta_correcte, string categoria, string imgaudio, int dificultat)
         {
             this.id = id;
             this.película = película;
+            this.pregunta = pregunta;
             this.resposta1 = resposta1;
             this.resposta2 = resposta2;
             this.resposta3 = resposta3;
             this.resposta_correcte = resposta_correcte;
             this.categoria = categoria;
             this.imgaudio = imgaudio;
-            dificultat = dificultat;
+            this.dificultad = dificultat;
         }
     }
 }

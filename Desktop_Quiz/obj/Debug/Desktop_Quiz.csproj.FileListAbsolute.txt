@@ -49,3 +49,5 @@ D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormPersonatge
 D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormPreguntas.resources
 D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.csproj.CopyComplete
 C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormUsuaris.resources
+C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormEditPreguntes.resources
+C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormEditUsuaris.resources
