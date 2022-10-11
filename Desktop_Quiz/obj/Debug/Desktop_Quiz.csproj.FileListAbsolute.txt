@@ -48,3 +48,11 @@ D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\bin\Debug\Newtonsoft.Json.xml
 D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormPersonatges.resources
 D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormPreguntas.resources
 D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.csproj.CopyComplete
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\bin\Debug\Newtonsoft.Json.dll
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\bin\Debug\Newtonsoft.Json.xml
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormAdminOpciones.resources
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormUsuaris.resources
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormSAdimOpciones.resources
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormPersonatges.resources
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormPreguntas.resources
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.csproj.CopyComplete
