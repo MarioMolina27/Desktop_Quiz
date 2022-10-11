@@ -1,8 +1,10 @@
-﻿using System;
+﻿using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +14,8 @@ namespace Desktop_Quiz
 {
     public partial class FormUsuaris : Form
     {
+
+        List<Usuaris>
         public FormUsuaris()
         {
             InitializeComponent();
@@ -58,7 +62,16 @@ namespace Desktop_Quiz
 
         private void FormUsuaris_Load(object sender, EventArgs e)
         {
+            JArray arrayUsers = JArray.Parse(File.ReadAllText(@"..\..\JSON\USUARIS.json"));
+            dataGridView1.DataSource = arrayUsers;
+
 
         }
+
+
+   
+
+
+
     }
 }
