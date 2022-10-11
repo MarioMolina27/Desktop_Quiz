@@ -60,6 +60,7 @@
             this.buttonNouPersonatge.Size = new System.Drawing.Size(144, 105);
             this.buttonNouPersonatge.TabIndex = 1;
             this.buttonNouPersonatge.UseVisualStyleBackColor = false;
+            this.buttonNouPersonatge.Click += new System.EventHandler(this.buttonNouPersonatge_Click);
             // 
             // buttonEditarPersonatge
             // 

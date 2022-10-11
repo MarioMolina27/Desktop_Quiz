@@ -16,5 +16,10 @@ namespace Desktop_Quiz
         {
             InitializeComponent();
         }
+
+        private void buttonBuscarRutaImg_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

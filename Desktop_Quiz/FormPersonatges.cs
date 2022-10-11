@@ -44,5 +44,10 @@ namespace Desktop_Quiz
         {
 
         }
+
+        private void buttonNouPersonatge_Click(object sender, EventArgs e)
+        {
+            new FormEditPersonatges().ShowDialog();
+        }
     }
 }
