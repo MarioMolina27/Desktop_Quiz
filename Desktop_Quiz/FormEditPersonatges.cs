@@ -17,17 +17,8 @@ namespace Desktop_Quiz
             InitializeComponent();
         }
 
-        private void buttonBuscarRutaImatgePersonatge_Click(object sender, EventArgs e)
+        private void buttonBuscarRutaImg_Click(object sender, EventArgs e)
         {
-            OpenFileDialog abrirImagen = new OpenFileDialog();
-
-            abrirImagen.InitialDirectory = Application.StartupPath; 
-            abrirImagen.Filter = "Imagenes PNG (*.png)|*.png";
-
-            if (abrirImagen.ShowDialog().Equals(DialogResult.OK))
-            {
-                textBoxRutaImatgeEditPersonatge.Text = abrirImagen.FileName;
-            }
 
         }
     }

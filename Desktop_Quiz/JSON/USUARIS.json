@@ -1,0 +1,23 @@
+[
+  {
+    "nickname": "SuperAdmin",
+    "nom": "Super Admin",
+    "contrasenya": "1234",
+    "tipus": "SA",
+    "privilegis": "SuperAdmin",
+  },
+  {
+    "nickname": "Crespo",
+    "nom": "Pol",
+    "contrasenya": "Socelpol",
+    "tipus": "A",
+    "privilegis": "Add/Modify/Delete"
+  },
+  {
+    "nickname": "Albertote",
+    "nom": "Albert",
+    "contrasenya": "Soclalbert",
+    "tipus": "A",
+    "privilegis": "Add/Modify"
+  }
+]

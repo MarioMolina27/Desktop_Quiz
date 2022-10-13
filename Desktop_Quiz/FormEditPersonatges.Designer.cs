@@ -29,130 +29,128 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditPersonatges));
-            this.groupBoxDadesEditPersonatge = new System.Windows.Forms.GroupBox();
-            this.labelNomEditPersonatge = new System.Windows.Forms.Label();
-            this.labelDescripcioPersonatge = new System.Windows.Forms.Label();
-            this.labelRutaImatgeEditPersonatge = new System.Windows.Forms.Label();
-            this.textBoxNomEditPersonatge = new System.Windows.Forms.TextBox();
-            this.textBoxDescripcioImatge = new System.Windows.Forms.TextBox();
-            this.textBoxRutaImatgeEditPersonatge = new System.Windows.Forms.TextBox();
-            this.pictureBoxPersonatge = new System.Windows.Forms.PictureBox();
+            this.groupBoxDadesPersonatge = new System.Windows.Forms.GroupBox();
+            this.labelNom = new System.Windows.Forms.Label();
+            this.labelDescripcio = new System.Windows.Forms.Label();
+            this.labelRutaImg = new System.Windows.Forms.Label();
+            this.textBoxRutaImg = new System.Windows.Forms.TextBox();
+            this.buttonBuscarRutaImg = new System.Windows.Forms.Button();
+            this.textBoxDescripcioPers = new System.Windows.Forms.TextBox();
+            this.textBoxNomPers = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.buttonBuscarRutaImatgePersonatge = new System.Windows.Forms.Button();
-            this.groupBoxDadesEditPersonatge.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPersonatge)).BeginInit();
+            this.button1 = new System.Windows.Forms.Button();
+            this.groupBoxDadesPersonatge.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // groupBoxDadesEditPersonatge
+            // groupBoxDadesPersonatge
             // 
-            this.groupBoxDadesEditPersonatge.Controls.Add(this.buttonBuscarRutaImatgePersonatge);
-            this.groupBoxDadesEditPersonatge.Controls.Add(this.pictureBox1);
-            this.groupBoxDadesEditPersonatge.Controls.Add(this.pictureBoxPersonatge);
-            this.groupBoxDadesEditPersonatge.Controls.Add(this.textBoxRutaImatgeEditPersonatge);
-            this.groupBoxDadesEditPersonatge.Controls.Add(this.textBoxDescripcioImatge);
-            this.groupBoxDadesEditPersonatge.Controls.Add(this.textBoxNomEditPersonatge);
-            this.groupBoxDadesEditPersonatge.Controls.Add(this.labelRutaImatgeEditPersonatge);
-            this.groupBoxDadesEditPersonatge.Controls.Add(this.labelDescripcioPersonatge);
-            this.groupBoxDadesEditPersonatge.Controls.Add(this.labelNomEditPersonatge);
-            this.groupBoxDadesEditPersonatge.Location = new System.Drawing.Point(13, 13);
-            this.groupBoxDadesEditPersonatge.Name = "groupBoxDadesEditPersonatge";
-            this.groupBoxDadesEditPersonatge.Size = new System.Drawing.Size(545, 546);
-            this.groupBoxDadesEditPersonatge.TabIndex = 0;
-            this.groupBoxDadesEditPersonatge.TabStop = false;
-            this.groupBoxDadesEditPersonatge.Text = "Dades Personatge";
+            this.groupBoxDadesPersonatge.Controls.Add(this.button1);
+            this.groupBoxDadesPersonatge.Controls.Add(this.pictureBox1);
+            this.groupBoxDadesPersonatge.Controls.Add(this.textBoxNomPers);
+            this.groupBoxDadesPersonatge.Controls.Add(this.textBoxDescripcioPers);
+            this.groupBoxDadesPersonatge.Controls.Add(this.buttonBuscarRutaImg);
+            this.groupBoxDadesPersonatge.Controls.Add(this.textBoxRutaImg);
+            this.groupBoxDadesPersonatge.Controls.Add(this.labelRutaImg);
+            this.groupBoxDadesPersonatge.Controls.Add(this.labelDescripcio);
+            this.groupBoxDadesPersonatge.Controls.Add(this.labelNom);
+            this.groupBoxDadesPersonatge.Location = new System.Drawing.Point(12, 12);
+            this.groupBoxDadesPersonatge.Name = "groupBoxDadesPersonatge";
+            this.groupBoxDadesPersonatge.Size = new System.Drawing.Size(454, 436);
+            this.groupBoxDadesPersonatge.TabIndex = 0;
+            this.groupBoxDadesPersonatge.TabStop = false;
+            this.groupBoxDadesPersonatge.Text = "Dades personatge";
             // 
-            // labelNomEditPersonatge
+            // labelNom
             // 
-            this.labelNomEditPersonatge.AutoSize = true;
-            this.labelNomEditPersonatge.Location = new System.Drawing.Point(6, 48);
-            this.labelNomEditPersonatge.Name = "labelNomEditPersonatge";
-            this.labelNomEditPersonatge.Size = new System.Drawing.Size(39, 17);
-            this.labelNomEditPersonatge.TabIndex = 0;
-            this.labelNomEditPersonatge.Text = "Nom";
+            this.labelNom.AutoSize = true;
+            this.labelNom.Location = new System.Drawing.Point(6, 36);
+            this.labelNom.Name = "labelNom";
+            this.labelNom.Size = new System.Drawing.Size(39, 17);
+            this.labelNom.TabIndex = 0;
+            this.labelNom.Text = "Nom";
             // 
-            // labelDescripcioPersonatge
+            // labelDescripcio
             // 
-            this.labelDescripcioPersonatge.AutoSize = true;
-            this.labelDescripcioPersonatge.Location = new System.Drawing.Point(6, 87);
-            this.labelDescripcioPersonatge.Name = "labelDescripcioPersonatge";
-            this.labelDescripcioPersonatge.Size = new System.Drawing.Size(78, 17);
-            this.labelDescripcioPersonatge.TabIndex = 1;
-            this.labelDescripcioPersonatge.Text = "Descripció";
+            this.labelDescripcio.AutoSize = true;
+            this.labelDescripcio.Location = new System.Drawing.Point(6, 67);
+            this.labelDescripcio.Name = "labelDescripcio";
+            this.labelDescripcio.Size = new System.Drawing.Size(78, 17);
+            this.labelDescripcio.TabIndex = 1;
+            this.labelDescripcio.Text = "Descripció";
             // 
-            // labelRutaImatgeEditPersonatge
+            // labelRutaImg
             // 
-            this.labelRutaImatgeEditPersonatge.AutoSize = true;
-            this.labelRutaImatgeEditPersonatge.Location = new System.Drawing.Point(6, 248);
-            this.labelRutaImatgeEditPersonatge.Name = "labelRutaImatgeEditPersonatge";
-            this.labelRutaImatgeEditPersonatge.Size = new System.Drawing.Size(87, 17);
-            this.labelRutaImatgeEditPersonatge.TabIndex = 2;
-            this.labelRutaImatgeEditPersonatge.Text = "Ruta Imatge";
+            this.labelRutaImg.AutoSize = true;
+            this.labelRutaImg.Location = new System.Drawing.Point(6, 178);
+            this.labelRutaImg.Name = "labelRutaImg";
+            this.labelRutaImg.Size = new System.Drawing.Size(87, 17);
+            this.labelRutaImg.TabIndex = 2;
+            this.labelRutaImg.Text = "Ruta Imatge";
             // 
-            // textBoxNomEditPersonatge
+            // textBoxRutaImg
             // 
-            this.textBoxNomEditPersonatge.Location = new System.Drawing.Point(106, 48);
-            this.textBoxNomEditPersonatge.Name = "textBoxNomEditPersonatge";
-            this.textBoxNomEditPersonatge.Size = new System.Drawing.Size(322, 25);
-            this.textBoxNomEditPersonatge.TabIndex = 3;
+            this.textBoxRutaImg.Location = new System.Drawing.Point(99, 175);
+            this.textBoxRutaImg.Name = "textBoxRutaImg";
+            this.textBoxRutaImg.Size = new System.Drawing.Size(257, 25);
+            this.textBoxRutaImg.TabIndex = 3;
             // 
-            // textBoxDescripcioImatge
+            // buttonBuscarRutaImg
             // 
-            this.textBoxDescripcioImatge.Location = new System.Drawing.Point(106, 84);
-            this.textBoxDescripcioImatge.Multiline = true;
-            this.textBoxDescripcioImatge.Name = "textBoxDescripcioImatge";
-            this.textBoxDescripcioImatge.Size = new System.Drawing.Size(322, 138);
-            this.textBoxDescripcioImatge.TabIndex = 4;
+            this.buttonBuscarRutaImg.Location = new System.Drawing.Point(362, 175);
+            this.buttonBuscarRutaImg.Name = "buttonBuscarRutaImg";
+            this.buttonBuscarRutaImg.Size = new System.Drawing.Size(86, 23);
+            this.buttonBuscarRutaImg.TabIndex = 4;
+            this.buttonBuscarRutaImg.Text = " · · ·";
+            this.buttonBuscarRutaImg.UseVisualStyleBackColor = true;
+            this.buttonBuscarRutaImg.Click += new System.EventHandler(this.buttonBuscarRutaImg_Click);
             // 
-            // textBoxRutaImatgeEditPersonatge
+            // textBoxDescripcioPers
             // 
-            this.textBoxRutaImatgeEditPersonatge.Location = new System.Drawing.Point(106, 240);
-            this.textBoxRutaImatgeEditPersonatge.Name = "textBoxRutaImatgeEditPersonatge";
-            this.textBoxRutaImatgeEditPersonatge.Size = new System.Drawing.Size(322, 25);
-            this.textBoxRutaImatgeEditPersonatge.TabIndex = 5;
+            this.textBoxDescripcioPers.Location = new System.Drawing.Point(99, 64);
+            this.textBoxDescripcioPers.Multiline = true;
+            this.textBoxDescripcioPers.Name = "textBoxDescripcioPers";
+            this.textBoxDescripcioPers.Size = new System.Drawing.Size(257, 100);
+            this.textBoxDescripcioPers.TabIndex = 5;
             // 
-            // pictureBoxPersonatge
+            // textBoxNomPers
             // 
-            this.pictureBoxPersonatge.Location = new System.Drawing.Point(158, 296);
-            this.pictureBoxPersonatge.Name = "pictureBoxPersonatge";
-            this.pictureBoxPersonatge.Size = new System.Drawing.Size(225, 196);
-            this.pictureBoxPersonatge.TabIndex = 17;
-            this.pictureBoxPersonatge.TabStop = false;
+            this.textBoxNomPers.Location = new System.Drawing.Point(99, 33);
+            this.textBoxNomPers.Name = "textBoxNomPers";
+            this.textBoxNomPers.Size = new System.Drawing.Size(257, 25);
+            this.textBoxNomPers.TabIndex = 7;
             // 
             // pictureBox1
             // 
-            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
-            this.pictureBox1.ImageLocation = "";
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(454, 457);
+            this.pictureBox1.Location = new System.Drawing.Point(144, 220);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(85, 83);
-            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.Size = new System.Drawing.Size(168, 157);
+            this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // buttonBuscarRutaImatgePersonatge
+            // button1
             // 
-            this.buttonBuscarRutaImatgePersonatge.Location = new System.Drawing.Point(435, 240);
-            this.buttonBuscarRutaImatgePersonatge.Name = "buttonBuscarRutaImatgePersonatge";
-            this.buttonBuscarRutaImatgePersonatge.Size = new System.Drawing.Size(75, 23);
-            this.buttonBuscarRutaImatgePersonatge.TabIndex = 19;
-            this.buttonBuscarRutaImatgePersonatge.Text = "···";
-            this.buttonBuscarRutaImatgePersonatge.UseVisualStyleBackColor = true;
-            this.buttonBuscarRutaImatgePersonatge.Click += new System.EventHandler(this.buttonBuscarRutaImatgePersonatge_Click);
+            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(355, 343);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 87);
+            this.button1.TabIndex = 9;
+            this.button1.UseVisualStyleBackColor = false;
             // 
             // FormEditPersonatges
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(570, 567);
-            this.Controls.Add(this.groupBoxDadesEditPersonatge);
+            this.BackColor = System.Drawing.Color.Gold;
+            this.ClientSize = new System.Drawing.Size(478, 460);
+            this.Controls.Add(this.groupBoxDadesPersonatge);
             this.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormEditPersonatges";
             this.Text = "FormEditPersonatges";
-            this.groupBoxDadesEditPersonatge.ResumeLayout(false);
-            this.groupBoxDadesEditPersonatge.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPersonatge)).EndInit();
+            this.groupBoxDadesPersonatge.ResumeLayout(false);
+            this.groupBoxDadesPersonatge.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -160,15 +158,15 @@
 
         #endregion
 
-        private System.Windows.Forms.GroupBox groupBoxDadesEditPersonatge;
-        private System.Windows.Forms.TextBox textBoxRutaImatgeEditPersonatge;
-        private System.Windows.Forms.TextBox textBoxDescripcioImatge;
-        private System.Windows.Forms.TextBox textBoxNomEditPersonatge;
-        private System.Windows.Forms.Label labelRutaImatgeEditPersonatge;
-        private System.Windows.Forms.Label labelDescripcioPersonatge;
-        private System.Windows.Forms.Label labelNomEditPersonatge;
+        private System.Windows.Forms.GroupBox groupBoxDadesPersonatge;
+        private System.Windows.Forms.TextBox textBoxDescripcioPers;
+        private System.Windows.Forms.Button buttonBuscarRutaImg;
+        private System.Windows.Forms.TextBox textBoxRutaImg;
+        private System.Windows.Forms.Label labelRutaImg;
+        private System.Windows.Forms.Label labelDescripcio;
+        private System.Windows.Forms.Label labelNom;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBoxPersonatge;
-        private System.Windows.Forms.Button buttonBuscarRutaImatgePersonatge;
+        private System.Windows.Forms.TextBox textBoxNomPers;
     }
 }

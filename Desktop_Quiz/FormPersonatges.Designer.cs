@@ -29,127 +29,132 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPersonatges));
-            this.buttonGuardarPersonatge = new System.Windows.Forms.Button();
-            this.buttonEliminarPersonatge = new System.Windows.Forms.Button();
+            this.dataGridViewPersonatges = new System.Windows.Forms.DataGridView();
+            this.buttonNouPersonatge = new System.Windows.Forms.Button();
             this.buttonEditarPersonatge = new System.Windows.Forms.Button();
-            this.buttonAfegirPersonatge = new System.Windows.Forms.Button();
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButtonTornar = new System.Windows.Forms.ToolStripButton();
-            this.dataGridViewPesonatge = new System.Windows.Forms.DataGridView();
-            this.textBoxBuscadorPersonatge = new System.Windows.Forms.TextBox();
+            this.buttonEliminarPersonatge = new System.Windows.Forms.Button();
             this.labelBuscadorPersonatge = new System.Windows.Forms.Label();
+            this.buttonGuardar = new System.Windows.Forms.Button();
+            this.textBoxBuscadorPersonatges = new System.Windows.Forms.TextBox();
+            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.toolStripButtonTornarEnrere = new System.Windows.Forms.ToolStripButton();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPersonatges)).BeginInit();
             this.toolStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesonatge)).BeginInit();
             this.SuspendLayout();
             // 
-            // buttonGuardarPersonatge
+            // dataGridViewPersonatges
             // 
-            this.buttonGuardarPersonatge.Location = new System.Drawing.Point(1812, 27);
-            this.buttonGuardarPersonatge.Name = "buttonGuardarPersonatge";
-            this.buttonGuardarPersonatge.Size = new System.Drawing.Size(80, 80);
-            this.buttonGuardarPersonatge.TabIndex = 15;
-            this.buttonGuardarPersonatge.Text = "button4";
-            this.buttonGuardarPersonatge.UseVisualStyleBackColor = true;
+            this.dataGridViewPersonatges.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.dataGridViewPersonatges.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewPersonatges.Location = new System.Drawing.Point(246, 151);
+            this.dataGridViewPersonatges.Name = "dataGridViewPersonatges";
+            this.dataGridViewPersonatges.Size = new System.Drawing.Size(1646, 821);
+            this.dataGridViewPersonatges.TabIndex = 0;
             // 
-            // buttonEliminarPersonatge
+            // buttonNouPersonatge
             // 
-            this.buttonEliminarPersonatge.Location = new System.Drawing.Point(114, 380);
-            this.buttonEliminarPersonatge.Name = "buttonEliminarPersonatge";
-            this.buttonEliminarPersonatge.Size = new System.Drawing.Size(69, 79);
-            this.buttonEliminarPersonatge.TabIndex = 14;
-            this.buttonEliminarPersonatge.Text = "button3";
-            this.buttonEliminarPersonatge.UseVisualStyleBackColor = true;
+            this.buttonNouPersonatge.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonNouPersonatge.Image = ((System.Drawing.Image)(resources.GetObject("buttonNouPersonatge.Image")));
+            this.buttonNouPersonatge.Location = new System.Drawing.Point(34, 282);
+            this.buttonNouPersonatge.Name = "buttonNouPersonatge";
+            this.buttonNouPersonatge.Size = new System.Drawing.Size(144, 105);
+            this.buttonNouPersonatge.TabIndex = 1;
+            this.buttonNouPersonatge.UseVisualStyleBackColor = false;
+            this.buttonNouPersonatge.Click += new System.EventHandler(this.buttonNouPersonatge_Click);
             // 
             // buttonEditarPersonatge
             // 
-            this.buttonEditarPersonatge.Location = new System.Drawing.Point(39, 380);
+            this.buttonEditarPersonatge.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonEditarPersonatge.Image = ((System.Drawing.Image)(resources.GetObject("buttonEditarPersonatge.Image")));
+            this.buttonEditarPersonatge.Location = new System.Drawing.Point(34, 393);
             this.buttonEditarPersonatge.Name = "buttonEditarPersonatge";
             this.buttonEditarPersonatge.Size = new System.Drawing.Size(69, 79);
-            this.buttonEditarPersonatge.TabIndex = 13;
-            this.buttonEditarPersonatge.Text = "button2";
-            this.buttonEditarPersonatge.UseVisualStyleBackColor = true;
+            this.buttonEditarPersonatge.TabIndex = 2;
+            this.buttonEditarPersonatge.UseVisualStyleBackColor = false;
             // 
-            // buttonAfegirPersonatge
+            // buttonEliminarPersonatge
             // 
-            this.buttonAfegirPersonatge.Location = new System.Drawing.Point(39, 269);
-            this.buttonAfegirPersonatge.Name = "buttonAfegirPersonatge";
-            this.buttonAfegirPersonatge.Size = new System.Drawing.Size(144, 105);
-            this.buttonAfegirPersonatge.TabIndex = 12;
-            this.buttonAfegirPersonatge.Text = "button1";
-            this.buttonAfegirPersonatge.UseVisualStyleBackColor = true;
-            this.buttonAfegirPersonatge.Click += new System.EventHandler(this.buttonAfegirPersonatge_Click);
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButtonTornar});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1904, 25);
-            this.toolStrip1.TabIndex = 11;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripButtonTornar
-            // 
-            this.toolStripButtonTornar.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButtonTornar.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonTornar.Image")));
-            this.toolStripButtonTornar.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonTornar.Name = "toolStripButtonTornar";
-            this.toolStripButtonTornar.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButtonTornar.Text = "toolStripButton1";
-            this.toolStripButtonTornar.Click += new System.EventHandler(this.toolStripButtonTornar_Click);
-            // 
-            // dataGridViewPesonatge
-            // 
-            this.dataGridViewPesonatge.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPesonatge.Location = new System.Drawing.Point(248, 143);
-            this.dataGridViewPesonatge.Margin = new System.Windows.Forms.Padding(4);
-            this.dataGridViewPesonatge.Name = "dataGridViewPesonatge";
-            this.dataGridViewPesonatge.Size = new System.Drawing.Size(1643, 883);
-            this.dataGridViewPesonatge.TabIndex = 10;
-            // 
-            // textBoxBuscadorPersonatge
-            // 
-            this.textBoxBuscadorPersonatge.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBoxBuscadorPersonatge.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxBuscadorPersonatge.Location = new System.Drawing.Point(390, 101);
-            this.textBoxBuscadorPersonatge.Margin = new System.Windows.Forms.Padding(4);
-            this.textBoxBuscadorPersonatge.Name = "textBoxBuscadorPersonatge";
-            this.textBoxBuscadorPersonatge.Size = new System.Drawing.Size(838, 25);
-            this.textBoxBuscadorPersonatge.TabIndex = 9;
-            this.textBoxBuscadorPersonatge.Text = "  Buscar...";
-            this.textBoxBuscadorPersonatge.Enter += new System.EventHandler(this.textBoxBuscadorPersonatge_Enter);
-            this.textBoxBuscadorPersonatge.Leave += new System.EventHandler(this.textBoxBuscadorPersonatge_Leave);
+            this.buttonEliminarPersonatge.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonEliminarPersonatge.Image = ((System.Drawing.Image)(resources.GetObject("buttonEliminarPersonatge.Image")));
+            this.buttonEliminarPersonatge.Location = new System.Drawing.Point(109, 393);
+            this.buttonEliminarPersonatge.Name = "buttonEliminarPersonatge";
+            this.buttonEliminarPersonatge.Size = new System.Drawing.Size(69, 79);
+            this.buttonEliminarPersonatge.TabIndex = 3;
+            this.buttonEliminarPersonatge.UseVisualStyleBackColor = false;
             // 
             // labelBuscadorPersonatge
             // 
             this.labelBuscadorPersonatge.AutoSize = true;
             this.labelBuscadorPersonatge.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBuscadorPersonatge.Location = new System.Drawing.Point(245, 104);
-            this.labelBuscadorPersonatge.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelBuscadorPersonatge.Location = new System.Drawing.Point(243, 115);
             this.labelBuscadorPersonatge.Name = "labelBuscadorPersonatge";
             this.labelBuscadorPersonatge.Size = new System.Drawing.Size(83, 17);
-            this.labelBuscadorPersonatge.TabIndex = 8;
+            this.labelBuscadorPersonatge.TabIndex = 4;
             this.labelBuscadorPersonatge.Text = "Personatge";
+            // 
+            // buttonGuardar
+            // 
+            this.buttonGuardar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonGuardar.Image = ((System.Drawing.Image)(resources.GetObject("buttonGuardar.Image")));
+            this.buttonGuardar.Location = new System.Drawing.Point(1785, 45);
+            this.buttonGuardar.Name = "buttonGuardar";
+            this.buttonGuardar.Size = new System.Drawing.Size(93, 87);
+            this.buttonGuardar.TabIndex = 5;
+            this.buttonGuardar.UseVisualStyleBackColor = false;
+            // 
+            // textBoxBuscadorPersonatges
+            // 
+            this.textBoxBuscadorPersonatges.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBoxBuscadorPersonatges.ForeColor = System.Drawing.Color.Gray;
+            this.textBoxBuscadorPersonatges.Location = new System.Drawing.Point(377, 112);
+            this.textBoxBuscadorPersonatges.Name = "textBoxBuscadorPersonatges";
+            this.textBoxBuscadorPersonatges.Size = new System.Drawing.Size(463, 25);
+            this.textBoxBuscadorPersonatges.TabIndex = 6;
+            this.textBoxBuscadorPersonatges.Text = "  Buscar...";
+            this.textBoxBuscadorPersonatges.Enter += new System.EventHandler(this.textBoxBuscadorPersonatges_Enter);
+            this.textBoxBuscadorPersonatges.Leave += new System.EventHandler(this.textBoxBuscadorPersonatges_Leave);
+            // 
+            // toolStrip1
+            // 
+            this.toolStrip1.BackColor = System.Drawing.Color.White;
+            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButtonTornarEnrere});
+            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
+            this.toolStrip1.Name = "toolStrip1";
+            this.toolStrip1.Size = new System.Drawing.Size(1904, 25);
+            this.toolStrip1.TabIndex = 7;
+            this.toolStrip1.Text = "toolStrip1";
+            // 
+            // toolStripButtonTornarEnrere
+            // 
+            this.toolStripButtonTornarEnrere.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonTornarEnrere.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonTornarEnrere.Image")));
+            this.toolStripButtonTornarEnrere.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonTornarEnrere.Name = "toolStripButtonTornarEnrere";
+            this.toolStripButtonTornarEnrere.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButtonTornarEnrere.Text = "Tornar";
+            this.toolStripButtonTornarEnrere.ToolTipText = "Tornar";
+            this.toolStripButtonTornarEnrere.Click += new System.EventHandler(this.toolStripButtonTornarEnrere_Click);
             // 
             // FormPersonatges
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
-            this.Controls.Add(this.buttonGuardarPersonatge);
+            this.Controls.Add(this.toolStrip1);
+            this.Controls.Add(this.textBoxBuscadorPersonatges);
+            this.Controls.Add(this.buttonGuardar);
+            this.Controls.Add(this.labelBuscadorPersonatge);
             this.Controls.Add(this.buttonEliminarPersonatge);
             this.Controls.Add(this.buttonEditarPersonatge);
-            this.Controls.Add(this.buttonAfegirPersonatge);
-            this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.dataGridViewPesonatge);
-            this.Controls.Add(this.textBoxBuscadorPersonatge);
-            this.Controls.Add(this.labelBuscadorPersonatge);
+            this.Controls.Add(this.buttonNouPersonatge);
+            this.Controls.Add(this.dataGridViewPersonatges);
             this.Name = "FormPersonatges";
             this.Text = "FormPersonatges";
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPersonatges)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPesonatge)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -157,14 +162,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button buttonGuardarPersonatge;
-        private System.Windows.Forms.Button buttonEliminarPersonatge;
+        private System.Windows.Forms.DataGridView dataGridViewPersonatges;
+        private System.Windows.Forms.Button buttonNouPersonatge;
         private System.Windows.Forms.Button buttonEditarPersonatge;
-        private System.Windows.Forms.Button buttonAfegirPersonatge;
-        private System.Windows.Forms.ToolStrip toolStrip1;
-        private System.Windows.Forms.ToolStripButton toolStripButtonTornar;
-        private System.Windows.Forms.DataGridView dataGridViewPesonatge;
-        private System.Windows.Forms.TextBox textBoxBuscadorPersonatge;
+        private System.Windows.Forms.Button buttonEliminarPersonatge;
         private System.Windows.Forms.Label labelBuscadorPersonatge;
+        private System.Windows.Forms.Button buttonGuardar;
+        private System.Windows.Forms.TextBox textBoxBuscadorPersonatges;
+        private System.Windows.Forms.ToolStrip toolStrip1;
+        private System.Windows.Forms.ToolStripButton toolStripButtonTornarEnrere;
     }
 }

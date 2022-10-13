@@ -17,38 +17,37 @@ namespace Desktop_Quiz
             InitializeComponent();
         }
 
-        private void textBoxBuscadorPersonatge_Enter(object sender, EventArgs e)
+        private void toolStripButtonTornarEnrere_Click(object sender, EventArgs e)
         {
-        
-                if (textBoxBuscadorPersonatge.Text.Equals("  Buscar..."))
-                {
-                    textBoxBuscadorPersonatge.Text = "";
-                    textBoxBuscadorPersonatge.ForeColor = Color.Black;
-                }
-            
-        }
-
-        private void textBoxBuscadorPersonatge_Leave(object sender, EventArgs e)
-        {
-
-                if (textBoxBuscadorPersonatge.Text.Equals(""))
-                {
-                    textBoxBuscadorPersonatge.Text = "  Buscar...";
-                    textBoxBuscadorPersonatge.ForeColor = Color.Gray;
-                }
-        }
-
-        private void buttonAfegirPersonatge_Click(object sender, EventArgs e)
-        {
-            FormEditPersonatges afegirPersonatges = new FormEditPersonatges();
-            afegirPersonatges.ShowDialog();
-        }
-
-        private void toolStripButtonTornar_Click(object sender, EventArgs e)
-        {
-            FormSAdimOpciones supAdOpcions = new FormSAdimOpciones();
-            supAdOpcions.ShowDialog();
             this.Close();
+        }
+
+        private void textBoxBuscadorPersonatges_Enter(object sender, EventArgs e)
+        {
+            if (textBoxBuscadorPersonatges.Text.Equals("  Buscar..."))
+            {
+                textBoxBuscadorPersonatges.Text = "";
+                textBoxBuscadorPersonatges.ForeColor = Color.Black;
+            }
+        }
+
+        private void textBoxBuscadorPersonatges_Leave(object sender, EventArgs e)
+        {
+            if (textBoxBuscadorPersonatges.Text.Equals(""))
+            {
+                textBoxBuscadorPersonatges.Text = "  Buscar...";
+                textBoxBuscadorPersonatges.ForeColor = Color.Gray;
+            }
+        }
+
+        private void buttonEliminarPersonatge_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonNouPersonatge_Click(object sender, EventArgs e)
+        {
+            new FormEditPersonatges().ShowDialog();
         }
     }
 }
