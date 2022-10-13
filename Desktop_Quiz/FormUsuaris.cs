@@ -15,15 +15,21 @@ namespace Desktop_Quiz
     public partial class FormUsuaris : Form
     {
 
-         List<Usuari> users;
-        
-
 
         public FormUsuaris()
         {
             InitializeComponent();
         }
 
+        private void FormUsuaris_Load(object sender, EventArgs e)
+        {
+            //cargamos la lista con el contenido del Json
+            UsuarisRepositori.LoadUsersList();
+
+            dataGridUsuaris1.DataSource = null;
+            dataGridUsuaris1.DataSource = UsuarisRepositori.users; 
+
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -61,22 +67,17 @@ namespace Desktop_Quiz
         //button edit
         private void button2_Click(object sender, EventArgs e)
         {
-            FormEditUsuaris userEdit1 = new FormEditUsuaris(users[conseguirRowIndex()]);
+            if (conseguirRowIndex() != -1)
+            {
+                FormEditUsuaris userEdit1 = new FormEditUsuaris(conseguirRowIndex());
+                userEdit1.ShowDialog();
+            }
 
-            new
-            userEdit1.ShowDialog();
         }
 
        
 
-        private void FormUsuaris_Load(object sender, EventArgs e)
-        {
-            JArray arrayUsers = JArray.Parse(File.ReadAllText(@"..\..\JSON\USUARIS.json"));
-            users = arrayUsers.ToObject<List<Usuari>>();
-            dataGridUsuaris1.DataSource = null;
-            dataGridUsuaris1.DataSource = users; 
-
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -87,7 +88,14 @@ namespace Desktop_Quiz
         //funcio per saver quina fila esta seleccionada 
         private int conseguirRowIndex()
         {
-            int rowIndex = dataGridUsuaris1.CurrentCell.RowIndex;
+            int rowIndex = -1;
+            if (dataGridUsuaris1.CurrentCell.RowIndex == -1)
+            {
+                MessageBox.Show("Has de seleccionar una filera");
+            }else
+            {
+                rowIndex = dataGridUsuaris1.CurrentCell.RowIndex;
+            }
             return rowIndex;
         }
     }

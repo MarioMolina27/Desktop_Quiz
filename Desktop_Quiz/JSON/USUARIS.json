@@ -2,7 +2,7 @@
   {
     "nickname": "SuperAdmin",
     "nom": "Super Admin",
-    "contrasenya": "1234",
+    "contrasenya": "12345",
     "tipus": "S",
     "add": true,
     "modify": true,

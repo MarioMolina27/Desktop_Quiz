@@ -15,7 +15,7 @@ namespace Desktop_Quiz
     {
 
 
-        public Usuari user;
+        private int IndexPosition;
 
 
         public FormEditUsuaris()
@@ -24,10 +24,10 @@ namespace Desktop_Quiz
         }
 
 
-        public FormEditUsuaris(Usuari user)
+        public FormEditUsuaris(int IndexPosition)
         {
            InitializeComponent();
-           this.user = user;
+           this.IndexPosition = IndexPosition;
         }
 
         private void checkBoxMostrar_CheckedChanged(object sender, EventArgs e)
@@ -80,13 +80,7 @@ namespace Desktop_Quiz
         private void buttonSave1_Click(object sender, EventArgs e)
         {
             //https://www.youtube.com/watch?v=pyw-2Z95RE8&ab_channel=Inform%C3%A1ticayProgramaci%C3%B3n
-            if (ValidarUser())
-            {
-
-            } else
-            {
-
-            }
+            
            
         }
 
@@ -97,15 +91,29 @@ namespace Desktop_Quiz
 
         private void FormEditUsuaris_Load(object sender, EventArgs e)
         {
-            textBoxNickName.Text = user.nickname;
-            textBoxNomEdit.Text = user.nom;
-            textBoxContrasenya.Text = user.contrasenya;
-            textBoxRepeatContrasenya.Text = user.contrasenya;
+            textBoxNickName.Text = UsuarisRepositori.users[IndexPosition].nickname;
+            textBoxNomEdit.Text = UsuarisRepositori.users[IndexPosition].nom;
+            textBoxContrasenya.Text = UsuarisRepositori.users[IndexPosition].contrasenya;
+            textBoxRepeatContrasenya.Text = UsuarisRepositori.users[IndexPosition].contrasenya;
         }
 
         private void textBoxRepeatContrasenya_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void buttonAceptarEditUsers_Click(object sender, EventArgs e)
+        {
+            if (ValidarUser())
+            {
+                UsuarisRepositori.users[IndexPosition].nickname = textBoxNickName.Text;
+                UsuarisRepositori.users[IndexPosition].nom = textBoxNomEdit.Text;
+                UsuarisRepositori.users[IndexPosition].contrasenya = textBoxContrasenya.Text;
+                
+                //Cridem a la funció que guarda el Json
+                UsuarisRepositori.SaveUsers();
+            }
+            
         }
     }
 }

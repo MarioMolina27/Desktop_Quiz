@@ -78,6 +78,7 @@
             this.buttonAceptarEditUsers.TabIndex = 11;
             this.buttonAceptarEditUsers.Text = "Aceptar";
             this.buttonAceptarEditUsers.UseVisualStyleBackColor = true;
+            this.buttonAceptarEditUsers.Click += new System.EventHandler(this.buttonAceptarEditUsers_Click);
             // 
             // checkBoxMostrarRepeat
             // 
