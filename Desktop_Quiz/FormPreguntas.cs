@@ -116,6 +116,34 @@ namespace Desktop_Quiz
             dataGridViewPelicules.DataSource = null;
             dataGridViewPelicules.DataSource = peliculaList;
         }
+
+        private void buttonModificar_Click(object sender, EventArgs e)
+        {
+            int rowIndex = conseguirRowIndex();
+            if (rowIndex != -1)
+            {
+                DataGridViewRow filaSeleccionada = dataGridViewPelicules.Rows[rowIndex];
+                String id = filaSeleccionada.Cells[0].Value.ToString();
+                String pelicula = filaSeleccionada.Cells[1].Value.ToString();
+                String pregunta = filaSeleccionada.Cells[2].Value.ToString();
+                String resposta1 = filaSeleccionada.Cells[3].Value.ToString();
+                String resposta2 = filaSeleccionada.Cells[4].Value.ToString();
+                String resposta3 = filaSeleccionada.Cells[5].Value.ToString();
+                int resposta_correcte = Int32.Parse(filaSeleccionada.Cells[6].Value.ToString());
+                String categoria = filaSeleccionada.Cells[7].Value.ToString();
+                String imgaudio = filaSeleccionada.Cells[8].Value.ToString();
+                int dificultat = Int32.Parse(filaSeleccionada.Cells[9].Value.ToString());
+
+                FormEditPreguntes p2 = new FormEditPreguntes(id,pelicula,pregunta,resposta1,resposta2,resposta3,resposta_correcte,categoria,imgaudio,dificultat);
+                p2.ShowDialog();
+
+            }
+        }
+        private int conseguirRowIndex()
+        {
+            int rowIndex = dataGridViewPelicules.CurrentCell.RowIndex;
+            return rowIndex;
+        }
     }
     }
 

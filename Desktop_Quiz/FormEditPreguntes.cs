@@ -13,8 +13,28 @@ namespace Desktop_Quiz
 {
     public partial class FormEditPreguntes : Form
     {
+        String id, pelicula, pregunta, resposta1, resposta2, resposta3, categoria, imgaudio;
+        int resposta_correcte, dificultat;
+
         public FormEditPreguntes()
         {
+            InitializeComponent();
+        }
+        public FormEditPreguntes(String id, String pelicula, String pregunta, String resposta1, String resposta2, String resposta3, int resposta_correcte,String categoria, String imgaudio, int dificultat)
+        {
+            this.id = id;
+            this.pelicula = pelicula;   
+            this.pregunta = pregunta;   
+            this.resposta1 = resposta1; 
+            this.resposta2 = resposta2;
+            this.resposta3 = resposta3;
+            this.resposta_correcte = resposta_correcte; 
+            this.categoria = categoria;
+            this.imgaudio = imgaudio;
+            this.dificultat = dificultat;
+
+            
+            
             InitializeComponent();
         }
 

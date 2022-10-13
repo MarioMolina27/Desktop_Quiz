@@ -32,8 +32,12 @@
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.groupBoxPreguntes = new System.Windows.Forms.GroupBox();
+            this.buttonAceptar = new System.Windows.Forms.Button();
             this.groupBoxOpcionsFilOr = new System.Windows.Forms.GroupBox();
             this.groupBoxModificacions = new System.Windows.Forms.GroupBox();
+            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.buttonAfegir = new System.Windows.Forms.Button();
+            this.buttonModificar = new System.Windows.Forms.Button();
             this.groupBoxOrdenacio = new System.Windows.Forms.GroupBox();
             this.radioButtonDificultat = new System.Windows.Forms.RadioButton();
             this.radioButtonCategoria = new System.Windows.Forms.RadioButton();
@@ -41,10 +45,6 @@
             this.dataGridViewPelicules = new System.Windows.Forms.DataGridView();
             this.textBoxTitulo = new System.Windows.Forms.TextBox();
             this.labelTitul = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.buttonAfegir = new System.Windows.Forms.Button();
-            this.buttonAceptar = new System.Windows.Forms.Button();
             this.toolStrip1.SuspendLayout();
             this.groupBoxPreguntes.SuspendLayout();
             this.groupBoxOpcionsFilOr.SuspendLayout();
@@ -91,6 +91,17 @@
             this.groupBoxPreguntes.TabStop = false;
             this.groupBoxPreguntes.Text = "Preguntes";
             // 
+            // buttonAceptar
+            // 
+            this.buttonAceptar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonAceptar.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.buttonAceptar.Location = new System.Drawing.Point(744, 88);
+            this.buttonAceptar.Name = "buttonAceptar";
+            this.buttonAceptar.Size = new System.Drawing.Size(111, 32);
+            this.buttonAceptar.TabIndex = 9;
+            this.buttonAceptar.Text = "Aceptar";
+            this.buttonAceptar.UseVisualStyleBackColor = false;
+            // 
             // groupBoxOpcionsFilOr
             // 
             this.groupBoxOpcionsFilOr.Controls.Add(this.groupBoxModificacions);
@@ -106,14 +117,46 @@
             // 
             // groupBoxModificacions
             // 
-            this.groupBoxModificacions.Controls.Add(this.button3);
+            this.groupBoxModificacions.Controls.Add(this.buttonEliminar);
             this.groupBoxModificacions.Controls.Add(this.buttonAfegir);
-            this.groupBoxModificacions.Controls.Add(this.button2);
+            this.groupBoxModificacions.Controls.Add(this.buttonModificar);
             this.groupBoxModificacions.Location = new System.Drawing.Point(21, 319);
             this.groupBoxModificacions.Name = "groupBoxModificacions";
             this.groupBoxModificacions.Size = new System.Drawing.Size(200, 243);
             this.groupBoxModificacions.TabIndex = 2;
             this.groupBoxModificacions.TabStop = false;
+            // 
+            // buttonEliminar
+            // 
+            this.buttonEliminar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonEliminar.Image = ((System.Drawing.Image)(resources.GetObject("buttonEliminar.Image")));
+            this.buttonEliminar.Location = new System.Drawing.Point(100, 139);
+            this.buttonEliminar.Name = "buttonEliminar";
+            this.buttonEliminar.Size = new System.Drawing.Size(69, 79);
+            this.buttonEliminar.TabIndex = 8;
+            this.buttonEliminar.UseVisualStyleBackColor = false;
+            // 
+            // buttonAfegir
+            // 
+            this.buttonAfegir.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonAfegir.Image = ((System.Drawing.Image)(resources.GetObject("buttonAfegir.Image")));
+            this.buttonAfegir.Location = new System.Drawing.Point(25, 28);
+            this.buttonAfegir.Name = "buttonAfegir";
+            this.buttonAfegir.Size = new System.Drawing.Size(144, 105);
+            this.buttonAfegir.TabIndex = 6;
+            this.buttonAfegir.UseVisualStyleBackColor = false;
+            this.buttonAfegir.Click += new System.EventHandler(this.buttonAfegir_Click);
+            // 
+            // buttonModificar
+            // 
+            this.buttonModificar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonModificar.Image = ((System.Drawing.Image)(resources.GetObject("buttonModificar.Image")));
+            this.buttonModificar.Location = new System.Drawing.Point(25, 139);
+            this.buttonModificar.Name = "buttonModificar";
+            this.buttonModificar.Size = new System.Drawing.Size(69, 79);
+            this.buttonModificar.TabIndex = 7;
+            this.buttonModificar.UseVisualStyleBackColor = false;
+            this.buttonModificar.Click += new System.EventHandler(this.buttonModificar_Click);
             // 
             // groupBoxOrdenacio
             // 
@@ -186,48 +229,6 @@
             this.labelTitul.TabIndex = 0;
             this.labelTitul.Text = "Títul";
             // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(100, 139);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(69, 79);
-            this.button3.TabIndex = 8;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(25, 139);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(69, 79);
-            this.button2.TabIndex = 7;
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // buttonAfegir
-            // 
-            this.buttonAfegir.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonAfegir.Image = ((System.Drawing.Image)(resources.GetObject("buttonAfegir.Image")));
-            this.buttonAfegir.Location = new System.Drawing.Point(25, 28);
-            this.buttonAfegir.Name = "buttonAfegir";
-            this.buttonAfegir.Size = new System.Drawing.Size(144, 105);
-            this.buttonAfegir.TabIndex = 6;
-            this.buttonAfegir.UseVisualStyleBackColor = false;
-            this.buttonAfegir.Click += new System.EventHandler(this.buttonAfegir_Click);
-            // 
-            // buttonAceptar
-            // 
-            this.buttonAceptar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonAceptar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonAceptar.Location = new System.Drawing.Point(744, 88);
-            this.buttonAceptar.Name = "buttonAceptar";
-            this.buttonAceptar.Size = new System.Drawing.Size(111, 32);
-            this.buttonAceptar.TabIndex = 9;
-            this.buttonAceptar.Text = "Aceptar";
-            this.buttonAceptar.UseVisualStyleBackColor = false;
-            // 
             // FormPreguntas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -269,8 +270,8 @@
         private System.Windows.Forms.Label labelOrdenacio;
         private System.Windows.Forms.GroupBox groupBoxModificacions;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonEliminar;
+        private System.Windows.Forms.Button buttonModificar;
         private System.Windows.Forms.Button buttonAfegir;
         private System.Windows.Forms.Button buttonAceptar;
     }
