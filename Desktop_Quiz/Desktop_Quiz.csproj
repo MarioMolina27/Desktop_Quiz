@@ -112,6 +112,7 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Usuari.cs" />
+    <Compile Include="UsuarisRepositori.cs" />
     <EmbeddedResource Include="FormAdminOpciones.resx">
       <DependentUpon>FormAdminOpciones.cs</DependentUpon>
     </EmbeddedResource>

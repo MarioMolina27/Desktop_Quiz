@@ -3,21 +3,27 @@
     "nickname": "SuperAdmin",
     "nom": "Super Admin",
     "contrasenya": "1234",
-    "tipus": "SA",
-    "privilegis": "SuperAdmin",
+    "tipus": "S",
+    "add": true,
+    "modify": true,
+    "delete": true
   },
   {
     "nickname": "Crespo",
     "nom": "Pol",
     "contrasenya": "Socelpol",
     "tipus": "A",
-    "privilegis": "Add/Modify/Delete"
+    "add": true,
+    "modify": true,
+    "delete": true
   },
   {
     "nickname": "Albertote",
     "nom": "Albert",
     "contrasenya": "Soclalbert",
     "tipus": "A",
-    "privilegis": "Add/Modify"
+    "add": true,
+    "modify": true,
+    "delete": true
   }
 ]

@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.groupBoxDadesUsuari = new System.Windows.Forms.GroupBox();
-            this.buttonSave1 = new System.Windows.Forms.Button();
+            this.buttonAceptarEditUsers = new System.Windows.Forms.Button();
             this.checkBoxMostrarRepeat = new System.Windows.Forms.CheckBox();
             this.checkBoxMostrar = new System.Windows.Forms.CheckBox();
             this.textBoxRepeatContrasenya = new System.Windows.Forms.TextBox();
             this.textBoxContrasenya = new System.Windows.Forms.TextBox();
-            this.textBoxNom = new System.Windows.Forms.TextBox();
+            this.textBoxNomEdit = new System.Windows.Forms.TextBox();
             this.textBoxNickName = new System.Windows.Forms.TextBox();
             this.groupBoxPriveligis = new System.Windows.Forms.GroupBox();
             this.checkBoxEliminar = new System.Windows.Forms.CheckBox();
@@ -50,12 +50,12 @@
             // 
             // groupBoxDadesUsuari
             // 
-            this.groupBoxDadesUsuari.Controls.Add(this.buttonSave1);
+            this.groupBoxDadesUsuari.Controls.Add(this.buttonAceptarEditUsers);
             this.groupBoxDadesUsuari.Controls.Add(this.checkBoxMostrarRepeat);
             this.groupBoxDadesUsuari.Controls.Add(this.checkBoxMostrar);
             this.groupBoxDadesUsuari.Controls.Add(this.textBoxRepeatContrasenya);
             this.groupBoxDadesUsuari.Controls.Add(this.textBoxContrasenya);
-            this.groupBoxDadesUsuari.Controls.Add(this.textBoxNom);
+            this.groupBoxDadesUsuari.Controls.Add(this.textBoxNomEdit);
             this.groupBoxDadesUsuari.Controls.Add(this.textBoxNickName);
             this.groupBoxDadesUsuari.Controls.Add(this.groupBoxPriveligis);
             this.groupBoxDadesUsuari.Controls.Add(this.labelRepeatContrasenya);
@@ -68,17 +68,16 @@
             this.groupBoxDadesUsuari.TabIndex = 0;
             this.groupBoxDadesUsuari.TabStop = false;
             this.groupBoxDadesUsuari.Text = "Dades Usuari";
+            this.groupBoxDadesUsuari.Enter += new System.EventHandler(this.groupBoxDadesUsuari_Enter);
             // 
-            // buttonSave1
+            // buttonAceptarEditUsers
             // 
-            this.buttonSave1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonSave1.ForeColor = System.Drawing.Color.Cyan;
-            this.buttonSave1.Location = new System.Drawing.Point(372, 278);
-            this.buttonSave1.Name = "buttonSave1";
-            this.buttonSave1.Size = new System.Drawing.Size(41, 47);
-            this.buttonSave1.TabIndex = 7;
-            this.buttonSave1.UseVisualStyleBackColor = false;
-            this.buttonSave1.Click += new System.EventHandler(this.buttonSave1_Click);
+            this.buttonAceptarEditUsers.Location = new System.Drawing.Point(335, 285);
+            this.buttonAceptarEditUsers.Name = "buttonAceptarEditUsers";
+            this.buttonAceptarEditUsers.Size = new System.Drawing.Size(87, 36);
+            this.buttonAceptarEditUsers.TabIndex = 11;
+            this.buttonAceptarEditUsers.Text = "Aceptar";
+            this.buttonAceptarEditUsers.UseVisualStyleBackColor = true;
             // 
             // checkBoxMostrarRepeat
             // 
@@ -109,6 +108,7 @@
             this.textBoxRepeatContrasenya.Size = new System.Drawing.Size(219, 20);
             this.textBoxRepeatContrasenya.TabIndex = 8;
             this.textBoxRepeatContrasenya.UseSystemPasswordChar = true;
+            this.textBoxRepeatContrasenya.TextChanged += new System.EventHandler(this.textBoxRepeatContrasenya_TextChanged);
             // 
             // textBoxContrasenya
             // 
@@ -118,12 +118,12 @@
             this.textBoxContrasenya.TabIndex = 7;
             this.textBoxContrasenya.UseSystemPasswordChar = true;
             // 
-            // textBoxNom
+            // textBoxNomEdit
             // 
-            this.textBoxNom.Location = new System.Drawing.Point(137, 72);
-            this.textBoxNom.Name = "textBoxNom";
-            this.textBoxNom.Size = new System.Drawing.Size(219, 20);
-            this.textBoxNom.TabIndex = 6;
+            this.textBoxNomEdit.Location = new System.Drawing.Point(137, 72);
+            this.textBoxNomEdit.Name = "textBoxNomEdit";
+            this.textBoxNomEdit.Size = new System.Drawing.Size(219, 20);
+            this.textBoxNomEdit.TabIndex = 6;
             // 
             // textBoxNickName
             // 
@@ -220,6 +220,7 @@
             this.Controls.Add(this.groupBoxDadesUsuari);
             this.Name = "FormEditUsuaris";
             this.Text = "FormEditUsuaris";
+            this.Load += new System.EventHandler(this.FormEditUsuaris_Load);
             this.groupBoxDadesUsuari.ResumeLayout(false);
             this.groupBoxDadesUsuari.PerformLayout();
             this.groupBoxPriveligis.ResumeLayout(false);
@@ -233,7 +234,7 @@
         private System.Windows.Forms.GroupBox groupBoxDadesUsuari;
         private System.Windows.Forms.TextBox textBoxRepeatContrasenya;
         private System.Windows.Forms.TextBox textBoxContrasenya;
-        private System.Windows.Forms.TextBox textBoxNom;
+        private System.Windows.Forms.TextBox textBoxNomEdit;
         private System.Windows.Forms.TextBox textBoxNickName;
         private System.Windows.Forms.GroupBox groupBoxPriveligis;
         private System.Windows.Forms.Label labelRepeatContrasenya;
@@ -245,6 +246,6 @@
         private System.Windows.Forms.CheckBox checkBoxAfegir;
         private System.Windows.Forms.CheckBox checkBoxMostrarRepeat;
         private System.Windows.Forms.CheckBox checkBoxMostrar;
-        private System.Windows.Forms.Button buttonSave1;
+        private System.Windows.Forms.Button buttonAceptarEditUsers;
     }
 }

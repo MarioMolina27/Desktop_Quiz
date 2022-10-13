@@ -13,9 +13,21 @@ namespace Desktop_Quiz
 {
     public partial class FormEditUsuaris : Form
     {
+
+
+        public Usuari user;
+
+
         public FormEditUsuaris()
         {
             InitializeComponent();
+        }
+
+
+        public FormEditUsuaris(Usuari user)
+        {
+           InitializeComponent();
+           this.user = user;
         }
 
         private void checkBoxMostrar_CheckedChanged(object sender, EventArgs e)
@@ -44,7 +56,7 @@ namespace Desktop_Quiz
         
         public bool  ValidarUser()
         {
-            if (textBoxNickName.Equals(null) || textBoxNom.Equals(null) || textBoxContrasenya.Equals(null) || textBoxRepeatContrasenya.Equals(null))
+            if (textBoxNickName.Equals(null) || textBoxNomEdit.Equals(null) || textBoxContrasenya.Equals(null) || textBoxRepeatContrasenya.Equals(null))
             {
                 MessageBox.Show("No puedes dejar ningún campo en blanco");
                 return false;
@@ -76,6 +88,24 @@ namespace Desktop_Quiz
 
             }
            
+        }
+
+        private void groupBoxDadesUsuari_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormEditUsuaris_Load(object sender, EventArgs e)
+        {
+            textBoxNickName.Text = user.nickname;
+            textBoxNomEdit.Text = user.nom;
+            textBoxContrasenya.Text = user.contrasenya;
+            textBoxRepeatContrasenya.Text = user.contrasenya;
+        }
+
+        private void textBoxRepeatContrasenya_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

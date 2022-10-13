@@ -15,7 +15,8 @@ namespace Desktop_Quiz
     public partial class FormUsuaris : Form
     {
 
-        List<Usuari> usuaris;
+         List<Usuari> users;
+        
 
 
         public FormUsuaris()
@@ -57,20 +58,23 @@ namespace Desktop_Quiz
             
         }
 
+        //button edit
         private void button2_Click(object sender, EventArgs e)
         {
+            FormEditUsuaris userEdit1 = new FormEditUsuaris(users[conseguirRowIndex()]);
 
-            FormEditUsuaris editUsuaris1 = new FormEditUsuaris();
-            editUsuaris1.ShowDialog();
+            new
+            userEdit1.ShowDialog();
         }
+
+       
 
         private void FormUsuaris_Load(object sender, EventArgs e)
         {
             JArray arrayUsers = JArray.Parse(File.ReadAllText(@"..\..\JSON\USUARIS.json"));
-            usuaris = arrayUsers.ToObject<List<Usuari>>();
+            users = arrayUsers.ToObject<List<Usuari>>();
             dataGridUsuaris1.DataSource = null;
-            dataGridUsuaris1.DataSource = usuaris;   
-
+            dataGridUsuaris1.DataSource = users; 
 
         }
 
@@ -78,6 +82,13 @@ namespace Desktop_Quiz
         {
             FormEditUsuaris editUsuaris1 = new FormEditUsuaris();
             editUsuaris1.ShowDialog();
+        }
+
+        //funcio per saver quina fila esta seleccionada 
+        private int conseguirRowIndex()
+        {
+            int rowIndex = dataGridUsuaris1.CurrentCell.RowIndex;
+            return rowIndex;
         }
     }
 }
