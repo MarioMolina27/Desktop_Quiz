@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Desktop_Quiz"
+    "\\Desktop_Quiz",
+    "\\packages",
+    "\\packages\\Newtonsoft.Json.13.0.1"
   ],
   "SelectedNode": "\\Desktop_Quiz.sln",
   "PreviewInSolutionExplorer": false

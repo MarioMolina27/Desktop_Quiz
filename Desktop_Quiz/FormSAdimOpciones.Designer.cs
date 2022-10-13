@@ -32,20 +32,21 @@
             this.labelBenvinguda = new System.Windows.Forms.Label();
             this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
             this.buttonUsuari = new System.Windows.Forms.Button();
-            this.labelNomSAdmin = new System.Windows.Forms.Label();
             this.buttonPersonatges = new System.Windows.Forms.Button();
             this.buttonPreguntes = new System.Windows.Forms.Button();
             this.toolStripBackOption = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonBack = new System.Windows.Forms.ToolStripButton();
+            this.pictureBoxIconUser = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.toolStripBackOption.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconUser)).BeginInit();
             this.SuspendLayout();
             // 
             // labelBenvinguda
             // 
             this.labelBenvinguda.AutoSize = true;
             this.labelBenvinguda.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBenvinguda.Location = new System.Drawing.Point(892, 378);
+            this.labelBenvinguda.Location = new System.Drawing.Point(828, 400);
             this.labelBenvinguda.Name = "labelBenvinguda";
             this.labelBenvinguda.Size = new System.Drawing.Size(127, 24);
             this.labelBenvinguda.TabIndex = 3;
@@ -53,22 +54,19 @@
             // 
             // pictureBoxIcon
             // 
-            this.pictureBoxIcon.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.pictureBoxIcon.Image = global::Desktop_Quiz.Properties.Resources.loginImage;
-            this.pictureBoxIcon.Location = new System.Drawing.Point(838, 141);
+            this.pictureBoxIcon.Location = new System.Drawing.Point(0, 0);
             this.pictureBoxIcon.Name = "pictureBoxIcon";
-            this.pictureBoxIcon.Size = new System.Drawing.Size(235, 183);
-            this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBoxIcon.TabIndex = 2;
+            this.pictureBoxIcon.Size = new System.Drawing.Size(100, 50);
+            this.pictureBoxIcon.TabIndex = 11;
             this.pictureBoxIcon.TabStop = false;
             // 
             // buttonUsuari
             // 
             this.buttonUsuari.BackColor = System.Drawing.Color.Black;
             this.buttonUsuari.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonUsuari.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonUsuari.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUsuari.ForeColor = System.Drawing.Color.White;
-            this.buttonUsuari.Location = new System.Drawing.Point(459, 537);
+            this.buttonUsuari.Location = new System.Drawing.Point(459, 550);
             this.buttonUsuari.Name = "buttonUsuari";
             this.buttonUsuari.Size = new System.Drawing.Size(193, 69);
             this.buttonUsuari.TabIndex = 4;
@@ -76,23 +74,13 @@
             this.buttonUsuari.UseVisualStyleBackColor = false;
             this.buttonUsuari.Click += new System.EventHandler(this.buttonUsuari_Click);
             // 
-            // labelNomSAdmin
-            // 
-            this.labelNomSAdmin.AutoSize = true;
-            this.labelNomSAdmin.Font = new System.Drawing.Font("Arial Black", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNomSAdmin.Location = new System.Drawing.Point(866, 415);
-            this.labelNomSAdmin.Name = "labelNomSAdmin";
-            this.labelNomSAdmin.Size = new System.Drawing.Size(177, 30);
-            this.labelNomSAdmin.TabIndex = 7;
-            this.labelNomSAdmin.Text = "SUPER ADMIN";
-            // 
             // buttonPersonatges
             // 
             this.buttonPersonatges.BackColor = System.Drawing.Color.Black;
             this.buttonPersonatges.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonPersonatges.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPersonatges.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPersonatges.ForeColor = System.Drawing.Color.White;
-            this.buttonPersonatges.Location = new System.Drawing.Point(861, 537);
+            this.buttonPersonatges.Location = new System.Drawing.Point(861, 550);
             this.buttonPersonatges.Name = "buttonPersonatges";
             this.buttonPersonatges.Size = new System.Drawing.Size(193, 69);
             this.buttonPersonatges.TabIndex = 8;
@@ -104,9 +92,9 @@
             // 
             this.buttonPreguntes.BackColor = System.Drawing.Color.Black;
             this.buttonPreguntes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.buttonPreguntes.Font = new System.Drawing.Font("Arial Rounded MT Bold", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPreguntes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPreguntes.ForeColor = System.Drawing.Color.White;
-            this.buttonPreguntes.Location = new System.Drawing.Point(1233, 537);
+            this.buttonPreguntes.Location = new System.Drawing.Point(1233, 550);
             this.buttonPreguntes.Name = "buttonPreguntes";
             this.buttonPreguntes.Size = new System.Drawing.Size(193, 69);
             this.buttonPreguntes.TabIndex = 9;
@@ -133,15 +121,26 @@
             this.toolStripButtonBack.Text = "BACK";
             this.toolStripButtonBack.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
+            // pictureBoxIconUser
+            // 
+            this.pictureBoxIconUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxIconUser.Image = global::Desktop_Quiz.Properties.Resources.loginImage;
+            this.pictureBoxIconUser.Location = new System.Drawing.Point(821, 150);
+            this.pictureBoxIconUser.Name = "pictureBoxIconUser";
+            this.pictureBoxIconUser.Size = new System.Drawing.Size(239, 191);
+            this.pictureBoxIconUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxIconUser.TabIndex = 12;
+            this.pictureBoxIconUser.TabStop = false;
+            // 
             // FormSAdimOpciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.pictureBoxIconUser);
             this.Controls.Add(this.toolStripBackOption);
             this.Controls.Add(this.buttonPreguntes);
             this.Controls.Add(this.buttonPersonatges);
-            this.Controls.Add(this.labelNomSAdmin);
             this.Controls.Add(this.buttonUsuari);
             this.Controls.Add(this.labelBenvinguda);
             this.Controls.Add(this.pictureBoxIcon);
@@ -152,6 +151,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.toolStripBackOption.ResumeLayout(false);
             this.toolStripBackOption.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,10 +162,10 @@
         private System.Windows.Forms.PictureBox pictureBoxIcon;
         private System.Windows.Forms.Label labelBenvinguda;
         private System.Windows.Forms.Button buttonUsuari;
-        private System.Windows.Forms.Label labelNomSAdmin;
         private System.Windows.Forms.Button buttonPersonatges;
         private System.Windows.Forms.Button buttonPreguntes;
         private System.Windows.Forms.ToolStrip toolStripBackOption;
         private System.Windows.Forms.ToolStripButton toolStripButtonBack;
+        private System.Windows.Forms.PictureBox pictureBoxIconUser;
     }
 }

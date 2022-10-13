@@ -29,18 +29,14 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-<<<<<<< Updated upstream
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-=======
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUsuaris));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.dataGridUsuaris1 = new System.Windows.Forms.DataGridView();
             this.labelSearchNickname = new System.Windows.Forms.Label();
             this.textBoxNickSearch = new System.Windows.Forms.TextBox();
-            this.buttonAfegir = new System.Windows.Forms.Button();
-            this.buttonModificar = new System.Windows.Forms.Button();
-            this.buttonEliminar = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -74,6 +70,7 @@
             this.labelSearchNickname.Size = new System.Drawing.Size(91, 19);
             this.labelSearchNickname.TabIndex = 0;
             this.labelSearchNickname.Text = "Nickname:";
+            this.labelSearchNickname.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBoxNickSearch
             // 
@@ -85,41 +82,41 @@
             this.textBoxNickSearch.Size = new System.Drawing.Size(358, 25);
             this.textBoxNickSearch.TabIndex = 1;
             this.textBoxNickSearch.Text = "  Buscar...";
+            this.textBoxNickSearch.TextChanged += new System.EventHandler(this.textBoxNickSearch_TextChanged);
             this.textBoxNickSearch.Enter += new System.EventHandler(this.textBoxNickSearch_Enter);
             this.textBoxNickSearch.Leave += new System.EventHandler(this.textBoxNickSearch_Leave);
             // 
-            // buttonAfegir
+            // button1
             // 
-            this.buttonAfegir.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonAfegir.Image = ((System.Drawing.Image)(resources.GetObject("buttonAfegir.Image")));
-            this.buttonAfegir.Location = new System.Drawing.Point(44, 173);
-            this.buttonAfegir.Name = "buttonAfegir";
-            this.buttonAfegir.Size = new System.Drawing.Size(144, 105);
-            this.buttonAfegir.TabIndex = 3;
-            this.buttonAfegir.UseVisualStyleBackColor = false;
-            this.buttonAfegir.Click += new System.EventHandler(this.buttonAfegir_Click);
+            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(44, 173);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(144, 105);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // buttonModificar
+            // button2
             // 
-            this.buttonModificar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonModificar.Image = ((System.Drawing.Image)(resources.GetObject("buttonModificar.Image")));
-            this.buttonModificar.Location = new System.Drawing.Point(44, 284);
-            this.buttonModificar.Name = "buttonModificar";
-            this.buttonModificar.Size = new System.Drawing.Size(69, 79);
-            this.buttonModificar.TabIndex = 4;
-            this.buttonModificar.UseVisualStyleBackColor = false;
-            this.buttonModificar.Click += new System.EventHandler(this.buttonModificar_Click);
+            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(44, 284);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(69, 79);
+            this.button2.TabIndex = 4;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // buttonEliminar
+            // button3
             // 
-            this.buttonEliminar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonEliminar.Image = ((System.Drawing.Image)(resources.GetObject("buttonEliminar.Image")));
-            this.buttonEliminar.Location = new System.Drawing.Point(119, 284);
-            this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(69, 79);
-            this.buttonEliminar.TabIndex = 5;
-            this.buttonEliminar.UseVisualStyleBackColor = false;
-            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
+            this.button3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(119, 284);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(69, 79);
+            this.button3.TabIndex = 5;
+            this.button3.UseVisualStyleBackColor = false;
             // 
             // button4
             // 
@@ -160,33 +157,36 @@
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.buttonEliminar);
-            this.Controls.Add(this.buttonModificar);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.labelSearchNickname);
-            this.Controls.Add(this.buttonAfegir);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxNickSearch);
             this.Controls.Add(this.dataGridUsuaris1);
             this.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormUsuaris";
->>>>>>> Stashed changes
             this.Text = "FormUsuaris";
+            this.Load += new System.EventHandler(this.FormUsuaris_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuaris1)).EndInit();
+            this.toolStrip1.ResumeLayout(false);
+            this.toolStrip1.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
-<<<<<<< Updated upstream
-=======
 
         private System.Windows.Forms.ImageList imageList1;
         private System.Windows.Forms.DataGridView dataGridUsuaris1;
         private System.Windows.Forms.Label labelSearchNickname;
         private System.Windows.Forms.TextBox textBoxNickSearch;
-        private System.Windows.Forms.Button buttonAfegir;
-        private System.Windows.Forms.Button buttonModificar;
-        private System.Windows.Forms.Button buttonEliminar;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
->>>>>>> Stashed changes
     }
 }
