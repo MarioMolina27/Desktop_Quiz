@@ -132,9 +132,10 @@ namespace Desktop_Quiz
                 int resposta_correcte = Int32.Parse(filaSeleccionada.Cells[6].Value.ToString());
                 String categoria = filaSeleccionada.Cells[7].Value.ToString();
                 String imgaudio = "";
-                if (!string.IsNullOrEmpty(filaSeleccionada.Cells[8].Value.ToString())) {
-                    imgaudio = filaSeleccionada.Cells[8].Value.ToString();
-                }
+                //bool nullImg = string.IsNullOrEmpty(filaSeleccionada.Cells[8].Value?.ToString());
+               
+                    imgaudio = filaSeleccionada.Cells[8].Value?.ToString();
+                
                 int dificultat = Int32.Parse(filaSeleccionada.Cells[9].Value.ToString());
 
                 FormEditPreguntes p2 = new FormEditPreguntes(id,pelicula,pregunta,resposta1,resposta2,resposta3,resposta_correcte,categoria,imgaudio,dificultat);
