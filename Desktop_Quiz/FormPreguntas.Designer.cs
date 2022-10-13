@@ -190,6 +190,7 @@
             this.radioButtonCategoria.TabStop = true;
             this.radioButtonCategoria.Text = "Categoría";
             this.radioButtonCategoria.UseVisualStyleBackColor = true;
+            this.radioButtonCategoria.CheckedChanged += new System.EventHandler(this.radioButtonCategoria_CheckedChanged);
             // 
             // labelOrdenacio
             // 
@@ -204,6 +205,7 @@
             // dataGridViewPelicules
             // 
             this.dataGridViewPelicules.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
+            this.dataGridViewPelicules.AllowUserToOrderColumns = true;
             this.dataGridViewPelicules.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewPelicules.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPelicules.Location = new System.Drawing.Point(332, 136);

@@ -104,13 +104,13 @@
             // 
             this.buttonGuardar.ImageIndex = 0;
             this.buttonGuardar.ImageList = this.imageList1;
-            this.buttonGuardar.Location = new System.Drawing.Point(850, 493);
+            this.buttonGuardar.Location = new System.Drawing.Point(851, 502);
             this.buttonGuardar.Margin = new System.Windows.Forms.Padding(2);
             this.buttonGuardar.Name = "buttonGuardar";
             this.buttonGuardar.Size = new System.Drawing.Size(69, 67);
             this.buttonGuardar.TabIndex = 28;
             this.buttonGuardar.UseVisualStyleBackColor = true;
-            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
+            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click_1);
             // 
             // imageList1
             // 
@@ -342,6 +342,12 @@
             // 
             this.comboBoxCategoria.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCategoria.FormattingEnabled = true;
+            this.comboBoxCategoria.Items.AddRange(new object[] {
+            "Acción",
+            "Animación",
+            "Ciencia Ficción",
+            "Drama",
+            "Terror"});
             this.comboBoxCategoria.Location = new System.Drawing.Point(125, 283);
             this.comboBoxCategoria.Margin = new System.Windows.Forms.Padding(2);
             this.comboBoxCategoria.Name = "comboBoxCategoria";
@@ -417,6 +423,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormEditPreguntes";
             this.Text = "FormEditPreguntes";
+            this.Load += new System.EventHandler(this.FormEditPreguntes_Load);
             this.groupBoxPelicules.ResumeLayout(false);
             this.groupBoxPelicules.PerformLayout();
             this.groupBoxDificultat.ResumeLayout(false);

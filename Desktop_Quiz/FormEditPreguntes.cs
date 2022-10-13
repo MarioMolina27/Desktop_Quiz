@@ -5,6 +5,7 @@ using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -14,37 +15,14 @@ namespace Desktop_Quiz
     public partial class FormEditPreguntes : Form
     {
         String id, pelicula, pregunta, resposta1, resposta2, resposta3, categoria, imgaudio;
-        int resposta_correcte, dificultat;
 
-        public FormEditPreguntes()
-        {
-            InitializeComponent();
-        }
-        public FormEditPreguntes(String id, String pelicula, String pregunta, String resposta1, String resposta2, String resposta3, int resposta_correcte,String categoria, String imgaudio, int dificultat)
-        {
-            this.id = id;
-            this.pelicula = pelicula;   
-            this.pregunta = pregunta;   
-            this.resposta1 = resposta1; 
-            this.resposta2 = resposta2;
-            this.resposta3 = resposta3;
-            this.resposta_correcte = resposta_correcte; 
-            this.categoria = categoria;
-            this.imgaudio = imgaudio;
-            this.dificultat = dificultat;
-
-            
-            
-            InitializeComponent();
-        }
-
-        private void buttonGuardar_Click(object sender, EventArgs e)
+        private void buttonGuardar_Click_1(object sender, EventArgs e)
         {
             String nom = textBoxNom.Text;
-            String pregunta = textBoxPregunta.Text; 
+            String pregunta = textBoxPregunta.Text;
             String resposta1 = textBoxResposta1.Text;
-            String resposta2 = textBoxResposta2.Text;   
-            String resposta3 = textBoxResposta3.Text;   
+            String resposta2 = textBoxResposta2.Text;
+            String resposta3 = textBoxResposta3.Text;
             String categoria = comboBoxCategoria.Text;
             String idioma = comboBoxIdioma.Text;
             int dificultad;
@@ -57,15 +35,15 @@ namespace Desktop_Quiz
             bool dificultat3 = radioButtonDificultat3.Checked;
             String audio = textBoxAudio.Text;
             String imatge = textBoxImatge.Text;
-            String imgaudio="";
-            
-            if (string.IsNullOrEmpty(imatge)&& !string.IsNullOrEmpty(audio))
+            String imgaudio = "";
+
+            if (string.IsNullOrEmpty(imatge) && !string.IsNullOrEmpty(audio))
             {
                 imgaudio = audio;
             }
             else if (!string.IsNullOrEmpty(imatge) && string.IsNullOrEmpty(audio))
             {
-                    imgaudio = imatge;
+                imgaudio = imatge;
             }
             else
             {
@@ -98,9 +76,9 @@ namespace Desktop_Quiz
             }
 
             String id;
-            String txtId="";
+            String txtId = "";
 
-            if (idioma.Equals("Català") && dificultad==1)
+            if (idioma.Equals("Català") && dificultad == 1)
             {
                 txtId = "CAT_F_";
                 id = newID(txtId);
@@ -109,7 +87,7 @@ namespace Desktop_Quiz
             else if (idioma.Equals("Català") && dificultad == 2)
             {
                 txtId = "CAT_M_";
-                
+
                 id = newID(txtId);
                 FormPreguntas.CAT_MEDIANO.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
 
@@ -123,7 +101,7 @@ namespace Desktop_Quiz
             else if (idioma.Equals("Castellano") && dificultad == 1)
             {
                 txtId = "CAST_F_";
-                
+
                 id = newID(txtId);
                 FormPreguntas.CAST_FACIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
             }
@@ -157,11 +135,107 @@ namespace Desktop_Quiz
                 id = newID(txtId);
                 FormPreguntas.ENG_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
             }
-          
+
             this.Close();
         }
 
-        public static String newID(String txtID)
+        int resposta_correcte, dificultat;
+        private void FormEditPreguntes_Load(object sender, EventArgs e)
+        {
+
+            textBoxNom.Text = pelicula;
+            textBoxPregunta.Text = pregunta;
+            textBoxResposta1.Text = resposta1;
+            textBoxResposta2.Text = resposta2;
+            textBoxResposta3.Text = resposta3;
+            switch (categoria)
+            {
+                case "Acción":
+                    comboBoxCategoria.SelectedIndex = 0;
+                    break;
+                case "Animación":
+                    comboBoxCategoria.SelectedIndex = 1;
+                    break;
+                case "Ciencia Ficción":
+                    comboBoxCategoria.SelectedIndex = 2;
+                    break;
+                case "Drama":
+                    comboBoxCategoria.SelectedIndex = 3;
+                    break;
+                case "Terror":
+                    comboBoxCategoria.SelectedIndex = 4;
+                    break;
+            }
+
+            String txtID ;
+            if (!String.IsNullOrEmpty(id) ){
+                txtID = id.Substring(0,3);
+                switch (txtID)
+                {
+                    case "CAT":
+                        comboBoxIdioma.SelectedIndex = 0;
+                        break;
+                    case "CAS":
+                        comboBoxIdioma.SelectedIndex = 1;
+                        break;
+                    case "EN_":
+                        comboBoxIdioma.SelectedIndex = 2;
+                        break;
+                }
+            }
+
+            switch (resposta_correcte)
+            {
+                case 1:
+                    radioButtonResposta1.Checked = true;
+                    break;
+                case 2:
+                    radioButtonResposta2.Checked = true;
+                    break;
+                case 3:
+                    radioButtonResposta3.Checked = true;
+                    break;
+            }
+            switch (dificultat)
+            {
+                case 1:
+                    radioButtonDificultat1.Checked = true;
+                    break;
+                case 2:
+                    radioButtonDificultat2.Checked = true;
+                    break;
+                case 3:
+                    radioButtonDificultat3.Checked = true;
+                    break;
+            }
+        }
+
+       
+
+        public FormEditPreguntes()
+        {
+            InitializeComponent();
+        }
+        public FormEditPreguntes(String id, String pelicula, String pregunta, String resposta1, String resposta2, String resposta3, int resposta_correcte,String categoria, String imgaudio, int dificultat)
+        {
+            this.id = id;
+            this.pelicula = pelicula;   
+            this.pregunta = pregunta;   
+            this.resposta1 = resposta1; 
+            this.resposta2 = resposta2;
+            this.resposta3 = resposta3;
+            this.resposta_correcte = resposta_correcte; 
+            this.categoria = categoria;
+            this.imgaudio = imgaudio;
+            this.dificultat = dificultat;
+
+
+            InitializeComponent();
+        }
+
+       
+
+        private static String newID(String txtID)
         {
             int lastObject = FormPreguntas.peliculaList.Count - 1;
             String id = FormPreguntas.peliculaList[lastObject].id;
@@ -200,6 +274,7 @@ namespace Desktop_Quiz
 
            return newId;
         }
+       
 
         
     }
