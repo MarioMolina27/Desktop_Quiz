@@ -57,19 +57,19 @@ namespace Desktop_Quiz
                 JArray jarrayEngF = JArray.Parse(File.ReadAllText(@"..\..\JSON\ENGLISH_FACIL.json", Encoding.UTF8));
                 ENG_FACIL =  jarrayEngF.ToObject<List<Pelicula>>();
 
-                cargarList();
+                updateList();
         }
 
         private void buttonAfegir_Click(object sender, EventArgs e)
         {
             FormEditPreguntes p = new FormEditPreguntes();
             p.ShowDialog();
-            cargarList();
+            updateList();
         }
-        public void cargarList()
+        public void updateList()
         {
             List<Pelicula> carga = new List<Pelicula>();
-            dataGridViewPelicules.DataSource = null;
+            
             peliculaList.Clear();
             for (int json = 0; json < 8; json++)
             {
@@ -105,9 +105,16 @@ namespace Desktop_Quiz
                     peliculaList.Add(item);
                 }
             }
-            
-            dataGridViewPelicules.DataSource = peliculaList;
 
+            updateDataGrid();
+          
+
+        }
+
+        public void updateDataGrid()
+        {
+            dataGridViewPelicules.DataSource = null;
+            dataGridViewPelicules.DataSource = peliculaList;
         }
     }
     }
