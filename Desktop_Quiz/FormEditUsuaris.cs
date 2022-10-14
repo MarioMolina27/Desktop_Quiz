@@ -62,6 +62,11 @@ namespace Desktop_Quiz
                 MessageBox.Show("No puedes dejar ningún campo en blanco", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 validReturn = false; 
             }
+            if (!textBoxContrasenya.Text.Equals(textBoxRepeatContrasenya.Text))
+            {
+                MessageBox.Show("Las contraseñas no coinciden.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                validReturn = false;
+            }
             return validReturn;
         }
 
@@ -77,9 +82,7 @@ namespace Desktop_Quiz
         }
 
         private void buttonSave1_Click(object sender, EventArgs e)
-        {
-            //https://www.youtube.com/watch?v=pyw-2Z95RE8&ab_channel=Inform%C3%A1ticayProgramaci%C3%B3n
-            
+        {            
            
         }
 
@@ -94,8 +97,6 @@ namespace Desktop_Quiz
             {
                 textBoxNickName.Text = UsuarisRepositori.users[IndexPosition].nickname;
                 textBoxNomEdit.Text = UsuarisRepositori.users[IndexPosition].nom;
-                textBoxContrasenya.Text = UsuarisRepositori.users[IndexPosition].contrasenya;
-                textBoxRepeatContrasenya.Text = UsuarisRepositori.users[IndexPosition].contrasenya;
             }
             
         }
@@ -107,6 +108,7 @@ namespace Desktop_Quiz
 
         private void buttonAceptarEditUsers_Click(object sender, EventArgs e)
         {
+            //EncriptarContrasenyes ec = new EncriptarContrasenyes();
             if(IndexPosition == -1)
             {
 
@@ -116,7 +118,7 @@ namespace Desktop_Quiz
                 {
                     UsuarisRepositori.users[IndexPosition].nickname = textBoxNickName.Text;
                     UsuarisRepositori.users[IndexPosition].nom = textBoxNomEdit.Text;
-                    UsuarisRepositori.users[IndexPosition].contrasenya = textBoxContrasenya.Text;
+                    UsuarisRepositori.users[IndexPosition].contrasenya = EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text);
 
                     //Cridem a la funció que guarda el Json
                     UsuarisRepositori.SaveUsers();

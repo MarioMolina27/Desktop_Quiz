@@ -30,13 +30,12 @@ namespace Desktop_Quiz
 
             JArray jarrayUsuaris = JArray.Parse(File.ReadAllText(@"../../JSON/USUARIS.json", Encoding.UTF8));
             usuaris = jarrayUsuaris.ToObject<List<Usuari>>();
-            EncriptarContrasenyes ec = new EncriptarContrasenyes();
 
             foreach (Usuari user in usuaris)
             {
-                if (nom.Equals(user.nickname) && ec.verificarContra(contrasenya, user.contrasenya))
+                if (nom.Equals(user.nickname) && EncriptarContrasenyes.verificarContra(contrasenya, user.contrasenya))
                 {
-                    if (user.tipus.Equals("SA"))
+                    if (user.tipus == 'S')
                     {
                         FormSAdimOpciones formSuperAdmin = new FormSAdimOpciones(user.nom);
                         formSuperAdmin.ShowDialog();

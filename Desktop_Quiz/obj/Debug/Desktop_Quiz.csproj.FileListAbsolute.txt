@@ -163,3 +163,13 @@ C:\Users\joelm\OneDrive\Documentos\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\De
 C:\Users\joelm\OneDrive\Documentos\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.csproj.CopyComplete
 C:\Users\joelm\OneDrive\Documentos\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.exe
 C:\Users\joelm\OneDrive\Documentos\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.pdb
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Buffers.dll
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Memory.dll
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\BCrypt.Net-Next.xml
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Buffers.xml
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Memory.xml
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

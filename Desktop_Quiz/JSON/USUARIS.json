@@ -2,8 +2,8 @@
   {
     "nickname": "SuperAdmin",
     "nom": "Super Admin",
-    "contrasenya": "$2a$11$KwqbRPexNVvBbsbEgcfytOl5S9vsoVosY.Yy6ZYfhRKogG2c0860.",
-    "tipus": "SA", 
+    "contrasenya": "$2a$11$TLONULQ8bm2kQ.nFZksPz.K/srTCDGUloj9.F5l84O/xWd6VA4n/W",
+    "tipus": "S",
     "add": true,
     "modify": true,
     "delete": true
@@ -11,7 +11,7 @@
   {
     "nickname": "Crespo",
     "nom": "Pol",
-    "contrasenya": "$2a$11$rjZ324X4rxNt5KA0LK6uvuQqenI.67M/SYGjpCC5UAPfh16KPOTri",
+    "contrasenya": "$2a$11$Sv7904m2T4QAaC/QvmpoWOP/UT1FhEGeuFjSyAtuDCKJRZO.vLSqy",
     "tipus": "A",
     "add": true,
     "modify": true,
