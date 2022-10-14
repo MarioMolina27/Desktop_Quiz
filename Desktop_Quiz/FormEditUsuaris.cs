@@ -15,7 +15,7 @@ namespace Desktop_Quiz
     {
 
 
-        private int IndexPosition;
+        private int IndexPosition = -1;
 
 
         public FormEditUsuaris()
@@ -54,16 +54,15 @@ namespace Desktop_Quiz
             }
         }
         
-        public bool  ValidarUser()
+        public bool ValidarUser()
         {
-            if (textBoxNickName.Equals(null) || textBoxNomEdit.Equals(null) || textBoxContrasenya.Equals(null) || textBoxRepeatContrasenya.Equals(null))
+            bool validReturn = true;
+            if (textBoxNickName.Text.Equals("") || textBoxNomEdit.Text.Equals("") || textBoxContrasenya.Text.Equals("") || textBoxRepeatContrasenya.Text.Equals(""))
             {
-                MessageBox.Show("No puedes dejar ningún campo en blanco");
-                return false;
-            } else
-            {
-                return true;
+                MessageBox.Show("No puedes dejar ningún campo en blanco", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                validReturn = false; 
             }
+            return validReturn;
         }
 
         private void labelNickname_Click(object sender, EventArgs e)
@@ -91,10 +90,14 @@ namespace Desktop_Quiz
 
         private void FormEditUsuaris_Load(object sender, EventArgs e)
         {
-            textBoxNickName.Text = UsuarisRepositori.users[IndexPosition].nickname;
-            textBoxNomEdit.Text = UsuarisRepositori.users[IndexPosition].nom;
-            textBoxContrasenya.Text = UsuarisRepositori.users[IndexPosition].contrasenya;
-            textBoxRepeatContrasenya.Text = UsuarisRepositori.users[IndexPosition].contrasenya;
+            if (IndexPosition != -1)
+            {
+                textBoxNickName.Text = UsuarisRepositori.users[IndexPosition].nickname;
+                textBoxNomEdit.Text = UsuarisRepositori.users[IndexPosition].nom;
+                textBoxContrasenya.Text = UsuarisRepositori.users[IndexPosition].contrasenya;
+                textBoxRepeatContrasenya.Text = UsuarisRepositori.users[IndexPosition].contrasenya;
+            }
+            
         }
 
         private void textBoxRepeatContrasenya_TextChanged(object sender, EventArgs e)
@@ -104,15 +107,23 @@ namespace Desktop_Quiz
 
         private void buttonAceptarEditUsers_Click(object sender, EventArgs e)
         {
-            if (ValidarUser())
+            if(IndexPosition == -1)
             {
-                UsuarisRepositori.users[IndexPosition].nickname = textBoxNickName.Text;
-                UsuarisRepositori.users[IndexPosition].nom = textBoxNomEdit.Text;
-                UsuarisRepositori.users[IndexPosition].contrasenya = textBoxContrasenya.Text;
-                
-                //Cridem a la funció que guarda el Json
-                UsuarisRepositori.SaveUsers();
+
+            }else
+            {
+                if (ValidarUser())
+                {
+                    UsuarisRepositori.users[IndexPosition].nickname = textBoxNickName.Text;
+                    UsuarisRepositori.users[IndexPosition].nom = textBoxNomEdit.Text;
+                    UsuarisRepositori.users[IndexPosition].contrasenya = textBoxContrasenya.Text;
+
+                    //Cridem a la funció que guarda el Json
+                    UsuarisRepositori.SaveUsers();
+                    this.Close();
+                }
             }
+            
             
         }
     }

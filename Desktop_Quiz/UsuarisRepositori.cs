@@ -15,7 +15,8 @@ namespace Desktop_Quiz
 {
     public class UsuarisRepositori
     {
-        public static List<Usuari> users;
+        public static List<Usuari> users { get; set; }
+
         private const String RUTAJSON = @"..\..\JSON\USUARIS.json"; 
 
         public static void LoadUsersList() 
@@ -23,9 +24,9 @@ namespace Desktop_Quiz
             JArray arrayUsers = JArray.Parse(File.ReadAllText(RUTAJSON));
             UsuarisRepositori.users = arrayUsers.ToObject<List<Usuari>>();
         }
-        public static void AddUser (Usuari user)
+        public static void AddUser (String nickName, String nom, String contrasenya)
         {
-            users.Add(user);
+            //users.Add();
             
         }
 

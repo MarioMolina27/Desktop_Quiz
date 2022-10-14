@@ -65,7 +65,7 @@ namespace Desktop_Quiz
         }
 
         //button edit
-        private void button2_Click(object sender, EventArgs e)
+        private void buttonEditUser1_Click(object sender, EventArgs e)
         {
             if (conseguirRowIndex() != -1)
             {
@@ -81,8 +81,8 @@ namespace Desktop_Quiz
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormEditUsuaris editUsuaris1 = new FormEditUsuaris();
-            editUsuaris1.ShowDialog();
+            FormEditUsuaris editUsuaris2 = new FormEditUsuaris();
+            editUsuaris2.ShowDialog();
         }
 
         //funcio per saver quina fila esta seleccionada 

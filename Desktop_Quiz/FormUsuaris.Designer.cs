@@ -103,7 +103,7 @@
             this.buttonEditUser1.Size = new System.Drawing.Size(69, 79);
             this.buttonEditUser1.TabIndex = 4;
             this.buttonEditUser1.UseVisualStyleBackColor = false;
-            this.buttonEditUser1.Click += new System.EventHandler(this.button2_Click);
+            this.buttonEditUser1.Click += new System.EventHandler(this.buttonEditUser1_Click);
             // 
             // button3
             // 
