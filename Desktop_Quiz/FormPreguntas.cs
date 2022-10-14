@@ -13,17 +13,17 @@ namespace Desktop_Quiz
 {
     public partial class FormPreguntas : Form
     {
-        public static BindingList<Pelicula> peliculaList = new BindingList<Pelicula>();
-        public static BindingList<Pelicula> CAST_DIFICIL = new BindingList<Pelicula>();
-        public static BindingList<Pelicula> CAST_FACIL =  new BindingList<Pelicula>();
-        public static BindingList<Pelicula> CAST_MEDIANO = new BindingList<Pelicula>();
-        public static BindingList<Pelicula> CAT_DIFICIL = new BindingList<Pelicula>();
-        public static BindingList<Pelicula> CAT_MEDIANO = new BindingList<Pelicula>();
-        public static BindingList<Pelicula> CAT_FACIL = new  BindingList<Pelicula>();
-        public static BindingList<Pelicula> ENG_DIFICIL=new BindingList<Pelicula>();
-        public static BindingList<Pelicula> ENG_MEDIANO=new BindingList<Pelicula>();
-        public static BindingList<Pelicula> ENG_FACIL=new BindingList<Pelicula>();
-        public FormPreguntas()
+        public static BindingList<Pelicula> peliculaList  { get; set; }
+        public static BindingList<Pelicula> CAST_DIFICIL { get; set; }
+        public static BindingList<Pelicula> CAST_FACIL { get; set; }
+        public static BindingList<Pelicula> CAST_MEDIANO { get; set; }
+        public static BindingList<Pelicula> CAT_DIFICIL { get; set; }
+        public static BindingList<Pelicula> CAT_MEDIANO { get; set; }
+        public static BindingList<Pelicula> CAT_FACIL { get; set; }
+        public static BindingList<Pelicula> ENG_DIFICIL { get; set; }
+        public static BindingList<Pelicula> ENG_MEDIANO { get; set; }
+        public static BindingList<Pelicula> ENG_FACIL { get; set; }
+    public FormPreguntas()
         {
             InitializeComponent();
         }
@@ -179,8 +179,7 @@ namespace Desktop_Quiz
         }
         private void eliminarElemento(String id)
         {
-            String txtID;
-            txtID = id.Substring(0, 5);
+            String txtID = obtenerTxtID(id);
             int userPosition;
             switch (txtID)
             {
@@ -236,7 +235,14 @@ namespace Desktop_Quiz
             updateList();
             updateDataGrid();
         }
-        private static int retornarIndice(String id,BindingList<Pelicula>lista)
+
+        public static string obtenerTxtID(String id)
+        {
+            String txtID;
+            txtID = id.Substring(0, 5);
+            return txtID;
+        }
+        public static int retornarIndice(String id,BindingList<Pelicula>lista)
         {
             int userPosition = -1;
             for (int i = 0; i < lista.Count(); i++)

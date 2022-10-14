@@ -18,6 +18,7 @@ namespace Desktop_Quiz
 
         private void buttonGuardar_Click_1(object sender, EventArgs e)
         {
+         
             String nom = textBoxNom.Text;
             String pregunta = textBoxPregunta.Text;
             String resposta1 = textBoxResposta1.Text;
