@@ -13,17 +13,17 @@ namespace Desktop_Quiz
 {
     public partial class FormPreguntas : Form
     {
-        public static BindingList<Pelicula> peliculaList  { get; set; }
-        public static BindingList<Pelicula> CAST_DIFICIL { get; set; }
-        public static BindingList<Pelicula> CAST_FACIL { get; set; }
-        public static BindingList<Pelicula> CAST_MEDIANO { get; set; }
-        public static BindingList<Pelicula> CAT_DIFICIL { get; set; }
-        public static BindingList<Pelicula> CAT_MEDIANO { get; set; }
-        public static BindingList<Pelicula> CAT_FACIL { get; set; }
-        public static BindingList<Pelicula> ENG_DIFICIL { get; set; }
-        public static BindingList<Pelicula> ENG_MEDIANO { get; set; }
-        public static BindingList<Pelicula> ENG_FACIL { get; set; }
-    public FormPreguntas()
+        public static BindingList<Pelicula> peliculaList = new BindingList<Pelicula>();
+        public static BindingList<Pelicula> CAST_DIFICIL = new BindingList<Pelicula>();
+        public static BindingList<Pelicula> CAST_FACIL = new BindingList<Pelicula>();
+        public static BindingList<Pelicula> CAST_MEDIANO = new BindingList<Pelicula>();
+        public static BindingList<Pelicula> CAT_DIFICIL = new BindingList<Pelicula>();
+        public static BindingList<Pelicula> CAT_MEDIANO = new BindingList<Pelicula>();
+        public static BindingList<Pelicula> CAT_FACIL = new BindingList<Pelicula>();
+        public static BindingList<Pelicula> ENG_DIFICIL = new BindingList<Pelicula>();
+        public static BindingList<Pelicula> ENG_MEDIANO = new BindingList<Pelicula>();
+        public static BindingList<Pelicula> ENG_FACIL = new BindingList<Pelicula>();
+        public FormPreguntas()
         {
             InitializeComponent();
         }
@@ -137,6 +137,7 @@ namespace Desktop_Quiz
                 int dificultat = Int32.Parse(filaSeleccionada.Cells[9].Value.ToString());
 
                 FormEditPreguntes p2 = new FormEditPreguntes(id,pelicula,pregunta,resposta1,resposta2,resposta3,resposta_correcte,categoria,imgaudio,dificultat);
+                eliminarElemento(id);
                 p2.ShowDialog();
 
             }
@@ -144,6 +145,8 @@ namespace Desktop_Quiz
             {
                 MessageBox.Show("No has elegit cap pregunta per modificar-la");
             }
+            updateDataGrid();
+            updateList();
         }
         private int conseguirRowIndex()
         {
