@@ -14,6 +14,7 @@ namespace Desktop_Quiz
     public partial class FormPreguntas : Form
     {
         List<Pelicula> peliculaList = new List<Pelicula>();
+        //DataTable taulaPelicules = new DataTable();
         public FormPreguntas()
         {
             InitializeComponent();

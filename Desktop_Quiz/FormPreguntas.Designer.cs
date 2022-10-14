@@ -191,6 +191,7 @@
             this.textBoxTitulo.Name = "textBoxTitulo";
             this.textBoxTitulo.Size = new System.Drawing.Size(394, 20);
             this.textBoxTitulo.TabIndex = 1;
+            this.textBoxTitulo.TextChanged += new System.EventHandler(this.textBoxTitulo_TextChanged);
             // 
             // labelTitul
             // 

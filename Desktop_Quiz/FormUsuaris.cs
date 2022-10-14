@@ -24,21 +24,6 @@ namespace Desktop_Quiz
             InitializeComponent();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxNickSearch_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void textBoxNickSearch_Enter(object sender, EventArgs e)
         {
             if (textBoxNickSearch.Text == "  Buscar...")
@@ -60,6 +45,7 @@ namespace Desktop_Quiz
 
         private void button2_Click(object sender, EventArgs e)
         {
+
             FormEditUsuaris editUsuaris1 = new FormEditUsuaris();
             editUsuaris1.ShowDialog();
         }
@@ -68,6 +54,9 @@ namespace Desktop_Quiz
         {
             JArray arrayUsers = JArray.Parse(File.ReadAllText(@"..\..\JSON\USUARIS.json"));
             usuaris = arrayUsers.ToObject<List<Usuari>>();
+            
+
+
             
             dataGridUsuaris1.DataSource = null;
             dataGridUsuaris1.DataSource = usuaris;   

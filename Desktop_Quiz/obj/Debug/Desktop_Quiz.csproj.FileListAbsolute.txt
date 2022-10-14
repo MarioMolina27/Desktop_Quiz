@@ -121,3 +121,13 @@ C:\Users\Gato\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.
 C:\Users\Gato\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.csproj.CopyComplete
 C:\Users\Gato\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.exe
 C:\Users\Gato\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.pdb
+D:\DAM2\PROJECTE\Desktop_Quiz\bin\Debug\BCrypt.Net-Next.dll
+D:\DAM2\PROJECTE\Desktop_Quiz\bin\Debug\System.Buffers.dll
+D:\DAM2\PROJECTE\Desktop_Quiz\bin\Debug\System.Memory.dll
+D:\DAM2\PROJECTE\Desktop_Quiz\bin\Debug\System.Numerics.Vectors.dll
+D:\DAM2\PROJECTE\Desktop_Quiz\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\DAM2\PROJECTE\Desktop_Quiz\bin\Debug\BCrypt.Net-Next.xml
+D:\DAM2\PROJECTE\Desktop_Quiz\bin\Debug\System.Buffers.xml
+D:\DAM2\PROJECTE\Desktop_Quiz\bin\Debug\System.Memory.xml
+D:\DAM2\PROJECTE\Desktop_Quiz\bin\Debug\System.Numerics.Vectors.xml
+D:\DAM2\PROJECTE\Desktop_Quiz\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml

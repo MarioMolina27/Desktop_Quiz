@@ -30,7 +30,7 @@ namespace Desktop_Quiz
             this.resposta_correcte = resposta_correcte;
             this.categoria = categoria;
             this.imgaudio = imgaudio;
-            dificultat = dificultat;
+            this.dificultad = dificultat;
         }
     }
 }

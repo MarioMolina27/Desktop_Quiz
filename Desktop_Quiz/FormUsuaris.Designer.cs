@@ -70,7 +70,6 @@
             this.labelSearchNickname.Size = new System.Drawing.Size(91, 19);
             this.labelSearchNickname.TabIndex = 0;
             this.labelSearchNickname.Text = "Nickname:";
-            this.labelSearchNickname.Click += new System.EventHandler(this.label1_Click);
             // 
             // textBoxNickSearch
             // 
@@ -82,7 +81,6 @@
             this.textBoxNickSearch.Size = new System.Drawing.Size(358, 25);
             this.textBoxNickSearch.TabIndex = 1;
             this.textBoxNickSearch.Text = "  Buscar...";
-            this.textBoxNickSearch.TextChanged += new System.EventHandler(this.textBoxNickSearch_TextChanged);
             this.textBoxNickSearch.Enter += new System.EventHandler(this.textBoxNickSearch_Enter);
             this.textBoxNickSearch.Leave += new System.EventHandler(this.textBoxNickSearch_Leave);
             // 
