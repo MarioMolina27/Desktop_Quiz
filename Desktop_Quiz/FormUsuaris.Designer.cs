@@ -35,7 +35,7 @@
             this.labelSearchNickname = new System.Windows.Forms.Label();
             this.textBoxNickSearch = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.buttonEditUser1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
@@ -95,16 +95,16 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // button2
+            // buttonEditUser1
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(44, 284);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(69, 79);
-            this.button2.TabIndex = 4;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.buttonEditUser1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonEditUser1.Image = ((System.Drawing.Image)(resources.GetObject("buttonEditUser1.Image")));
+            this.buttonEditUser1.Location = new System.Drawing.Point(44, 284);
+            this.buttonEditUser1.Name = "buttonEditUser1";
+            this.buttonEditUser1.Size = new System.Drawing.Size(69, 79);
+            this.buttonEditUser1.TabIndex = 4;
+            this.buttonEditUser1.UseVisualStyleBackColor = false;
+            this.buttonEditUser1.Click += new System.EventHandler(this.buttonEditUser1_Click);
             // 
             // button3
             // 
@@ -156,7 +156,7 @@
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.buttonEditUser1);
             this.Controls.Add(this.labelSearchNickname);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxNickSearch);
@@ -181,7 +181,7 @@
         private System.Windows.Forms.Label labelSearchNickname;
         private System.Windows.Forms.TextBox textBoxNickSearch;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button buttonEditUser1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.ToolStrip toolStrip1;

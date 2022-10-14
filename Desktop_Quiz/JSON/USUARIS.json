@@ -3,21 +3,27 @@
     "nickname": "SuperAdmin",
     "nom": "Super Admin",
     "contrasenya": "$2a$11$KwqbRPexNVvBbsbEgcfytOl5S9vsoVosY.Yy6ZYfhRKogG2c0860.",
-    "tipus": "SA",
-    "privilegis": "SuperAdmin"
+    "tipus": "SA", 
+    "add": true,
+    "modify": true,
+    "delete": true
   },
   {
     "nickname": "Crespo",
     "nom": "Pol",
     "contrasenya": "$2a$11$rjZ324X4rxNt5KA0LK6uvuQqenI.67M/SYGjpCC5UAPfh16KPOTri",
     "tipus": "A",
-    "privilegis": "Add/Modify/Delete"
+    "add": true,
+    "modify": true,
+    "delete": true
   },
   {
     "nickname": "Albertote",
     "nom": "Albert",
     "contrasenya": "$2a$11$/XJYD.whM0elcyJjiswCfeuAiZfrJpy/IWZvab3myYz7bj3WAN7dG",
     "tipus": "A",
-    "privilegis": "Add/Modify"
+    "add": true,
+    "modify": true,
+    "delete": true
   }
 ]
