@@ -131,3 +131,14 @@ D:\DAM2\PROJECTE\Desktop_Quiz\bin\Debug\System.Buffers.xml
 D:\DAM2\PROJECTE\Desktop_Quiz\bin\Debug\System.Memory.xml
 D:\DAM2\PROJECTE\Desktop_Quiz\bin\Debug\System.Numerics.Vectors.xml
 D:\DAM2\PROJECTE\Desktop_Quiz\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormEditUsuaris.resources
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\bin\Debug\BCrypt.Net-Next.dll
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Buffers.dll
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Memory.dll
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Numerics.Vectors.dll
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\bin\Debug\BCrypt.Net-Next.xml
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Buffers.xml
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Memory.xml
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Numerics.Vectors.xml
+D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
