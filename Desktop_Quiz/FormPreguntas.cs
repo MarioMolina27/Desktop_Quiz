@@ -17,7 +17,7 @@ namespace Desktop_Quiz
         public static BindingList<Pelicula> CAST_DIFICIL = new BindingList<Pelicula>();
         public static BindingList<Pelicula> CAST_FACIL =  new BindingList<Pelicula>();
         public static BindingList<Pelicula> CAST_MEDIANO = new BindingList<Pelicula>();
-        public static BindingList<Pelicula> CAT_DIFICL = new BindingList<Pelicula>();
+        public static BindingList<Pelicula> CAT_DIFICIL = new BindingList<Pelicula>();
         public static BindingList<Pelicula> CAT_MEDIANO = new BindingList<Pelicula>();
         public static BindingList<Pelicula> CAT_FACIL = new  BindingList<Pelicula>();
         public static BindingList<Pelicula> ENG_DIFICIL=new BindingList<Pelicula>();
@@ -40,7 +40,7 @@ namespace Desktop_Quiz
                 CAST_MEDIANO = jarrayCastM.ToObject<BindingList<Pelicula>>();
 
                 JArray jarrayCatD = JArray.Parse(File.ReadAllText(@"..\..\JSON\CATALA_DIFICIL.json", Encoding.UTF8));
-                CAT_DIFICL = jarrayCatD.ToObject<BindingList<Pelicula>>();
+                CAT_DIFICIL = jarrayCatD.ToObject<BindingList<Pelicula>>();
 
                 JArray jarrayCatM = JArray.Parse(File.ReadAllText(@"..\..\JSON\CATALA_MEDIANO.json", Encoding.UTF8));
                 CAT_MEDIANO = jarrayCatM.ToObject<BindingList<Pelicula>>();
@@ -131,16 +131,18 @@ namespace Desktop_Quiz
                 String resposta3 = filaSeleccionada.Cells[5].Value.ToString();
                 int resposta_correcte = Int32.Parse(filaSeleccionada.Cells[6].Value.ToString());
                 String categoria = filaSeleccionada.Cells[7].Value.ToString();
-                String imgaudio = "";
-                //bool nullImg = string.IsNullOrEmpty(filaSeleccionada.Cells[8].Value?.ToString());
-               
-                    imgaudio = filaSeleccionada.Cells[8].Value?.ToString();
+                //REVISAR CUANDO SE TENGAN EJEMPLOS PRACTICOS
+                String imgaudio = filaSeleccionada.Cells[8].Value?.ToString();
                 
                 int dificultat = Int32.Parse(filaSeleccionada.Cells[9].Value.ToString());
 
                 FormEditPreguntes p2 = new FormEditPreguntes(id,pelicula,pregunta,resposta1,resposta2,resposta3,resposta_correcte,categoria,imgaudio,dificultat);
                 p2.ShowDialog();
 
+            }
+            else
+            {
+                MessageBox.Show("No has elegit cap pregunta per modificar-la");
             }
         }
         private int conseguirRowIndex()
@@ -154,6 +156,121 @@ namespace Desktop_Quiz
  
             dataGridViewPelicules.Sort(dataGridViewPelicules.Columns[7], ListSortDirection.Ascending);
         }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            int rowIndex = conseguirRowIndex();
+            if (rowIndex != -1)
+            {
+                DataGridViewRow filaSeleccionada = dataGridViewPelicules.Rows[rowIndex];
+                String id = filaSeleccionada.Cells[0].Value.ToString();        
+                
+
+                if (!String.IsNullOrEmpty(id))
+                {
+                    eliminarElemento(id);
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("No has elegit cap pregunta per eliminar-la");
+            }
+        }
+        private void eliminarElemento(String id)
+        {
+            String txtID;
+            txtID = id.Substring(0, 5);
+            int userPosition;
+            switch (txtID)
+            {
+                case "CAT_F":
+                    userPosition = retornarIndice(id,CAT_FACIL);
+                    CAT_FACIL.RemoveAt(userPosition);
+                    CAT_FACIL = UpdateIDs(txtID + "_", CAT_FACIL);
+                    break;
+                case "CAT_M":
+                    userPosition = retornarIndice(id,CAT_MEDIANO);
+                    CAT_MEDIANO.RemoveAt(userPosition);
+                    CAT_MEDIANO = UpdateIDs(txtID + "_", CAT_MEDIANO);
+                    break;
+                case "CAT_D":
+                    userPosition = retornarIndice(id,CAT_DIFICIL);
+                    CAT_DIFICIL.RemoveAt(userPosition);
+                    CAT_DIFICIL = UpdateIDs(txtID+"_", CAT_DIFICIL);
+                    break;
+                case "CAS_F":
+                    userPosition = retornarIndice(id,CAST_FACIL);
+                    CAST_FACIL.RemoveAt(userPosition);
+                    CAST_FACIL=UpdateIDs(txtID + "_", CAST_FACIL);
+                    break;
+                case "CAS_M":
+                    userPosition = retornarIndice(id,CAST_MEDIANO);
+                    CAST_MEDIANO.RemoveAt(userPosition);
+                    CAST_MEDIANO=UpdateIDs(txtID + "_", CAST_MEDIANO);
+                    break;
+                case "CAS_D":
+                    userPosition = retornarIndice(id,CAST_DIFICIL);
+                    
+                    CAST_DIFICIL.RemoveAt(userPosition);
+                    CAST_DIFICIL = UpdateIDs(txtID + "_", CAST_DIFICIL);
+
+                    break;
+                case "EN_F_":
+                    userPosition = retornarIndice(id,ENG_FACIL);
+                    ENG_FACIL.RemoveAt(userPosition);
+                    ENG_FACIL= UpdateIDs(txtID,ENG_FACIL);
+                    break;
+                case "EN_M_":
+                    userPosition = retornarIndice(id,ENG_MEDIANO);
+                    ENG_MEDIANO.RemoveAt(userPosition);
+                    ENG_MEDIANO= UpdateIDs(txtID,ENG_MEDIANO);
+                    break;
+                case "EN_D_":
+                    userPosition = retornarIndice(id,ENG_DIFICIL);
+                    ENG_DIFICIL.RemoveAt(userPosition);
+                    ENG_DIFICIL=UpdateIDs(txtID,ENG_DIFICIL);
+                    break;
+
+            }
+            updateList();
+            updateDataGrid();
+        }
+        private static int retornarIndice(String id,BindingList<Pelicula>lista)
+        {
+            int userPosition = -1;
+            for (int i = 0; i < lista.Count(); i++)
+            {
+                if (id.Equals(lista[i].id))
+                {
+                    userPosition = i;
+                }
+            }
+            return userPosition;
+        }
+        private static BindingList<Pelicula> UpdateIDs(String txtID,BindingList<Pelicula> lista)
+        {
+            int num = 1;
+            for (int i = 0; i < lista.Count; i++)
+            {
+                
+                if (num < 10)
+                {
+                    lista[i].id =txtID + "00" + num;
+                }
+                else if (num < 100)
+                {
+                    lista[i].id = txtID + "0" + num;
+                }
+                else
+                {
+                    lista[i].id = txtID + num;
+                }
+                num++;
+            }
+            return lista;
+        }
+        
     }
-    }
+}
 

@@ -1,6 +1,6 @@
 [
   {
-    "id": "CAST_F_001",
+    "id": "CAS_F_001",
     "película": "IT",
     "pregunta": "¿Que aspecto tiene Pennywise en IT?",
     "resposta1": "Vampiro",
@@ -12,7 +12,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_002",
+    "id": "CAS_F_002",
     "película": "Mamá",
     "pregunta": "¿Cuantas hijas tiene mamá?",
     "resposta1": 2,
@@ -24,7 +24,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_003",
+    "id": "CAS_F_003",
     "película": "Poltergeist",
     "pregunta": "¿Donde se enconde la fuerza misteriosa en la pelicula de Poltergeist?",
     "resposta1": "Detrás de la televisión",
@@ -36,7 +36,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_004",
+    "id": "CAS_F_004",
     "película": "PSICOSIS",
     "pregunta": "¿Donde muere Marion Crane en la siniestra pelicula PSICOSIS?",
     "resposta1": "En el baño",
@@ -48,7 +48,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_005",
+    "id": "CAS_F_005",
     "película": "REC",
     "pregunta": "¿Donde transcurre la terrorifica trama de la pelicula REC?",
     "resposta1": "En un palacio",
@@ -60,7 +60,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_006",
+    "id": "CAS_F_006",
     "película": "SLENDERMAN",
     "pregunta": "Personaje al cual no se le ve el rostro. Muy alto y delgado con unos brazos extremadamente largos",
     "resposta1": "Chuky",
@@ -72,7 +72,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_007",
+    "id": "CAS_F_007",
     "película": "Como entrenar a tu dragón",
     "pregunta": "¿Como se llama el dragón protagonista?",
     "resposta1": "Cuchilla",
@@ -84,7 +84,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_008",
+    "id": "CAS_F_008",
     "película": "Dora la Exploradora",
     "pregunta": "¿Como se llama este personaje de Dora la Exploradora?",
     "resposta1": "Zispas",
@@ -96,7 +96,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_009",
+    "id": "CAS_F_009",
     "película": "Frozen",
     "pregunta": "¿Cuando suena esta SoundTrack que película nos viene en la cabeza?",
     "resposta1": "Frozen",
@@ -108,7 +108,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_010",
+    "id": "CAS_F_010",
     "película": "Ice Age",
     "pregunta": "¿Como se llama este personaje de Ice Age?",
     "resposta1": "Scrat",
@@ -120,7 +120,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_011",
+    "id": "CAS_F_011",
     "película": "Peter Pan",
     "pregunta": "¿ Como se llama el villano de la película?",
     "resposta1": "Capitán pata palo",
@@ -132,7 +132,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_012",
+    "id": "CAS_F_012",
     "película": "Shrek",
     "pregunta": "¿De quien se enamora Asno?",
     "resposta1": "De un cerdo",
@@ -144,7 +144,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_013",
+    "id": "CAS_F_013",
     "película": "2001: Una odisea del espacio",
     "pregunta": "¿Quien dirigio 2001: Una odisea del espacio?",
     "resposta1": "Stanley Kubrick",
@@ -156,7 +156,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_014",
+    "id": "CAS_F_014",
     "película": "Alien, el octavo pasajero",
     "pregunta": "¿Como se llama la nave donde ocurre todo?",
     "resposta1": "Nostromo",
@@ -168,7 +168,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_015",
+    "id": "CAS_F_015",
     "película": "Blade Runner",
     "pregunta": "¿Como se llama la organización antagonista en la pelicula Blade Runner?",
     "resposta1": "Tyrell Corporation",
@@ -180,7 +180,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_016",
+    "id": "CAS_F_016",
     "película": "El planeta de los Simios",
     "pregunta": "¿Como se llama el simo jefe en la saga del Planeta de los simios de 2011?",
     "resposta1": "César",
@@ -192,7 +192,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_017",
+    "id": "CAS_F_017",
     "película": "Interestelar",
     "pregunta": "¿Como se llama el personaje al que despiertan a la mitad de la pelicula?",
     "resposta1": "Dr  Mann",
@@ -204,7 +204,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_018",
+    "id": "CAS_F_018",
     "película": "REGRESO AL FUTURO",
     "pregunta": "¿A que año viajan en la segunda pelicula de Regreso al Futuro?",
     "resposta1": 2015,
@@ -216,7 +216,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_019",
+    "id": "CAS_F_019",
     "película": "Braveheart",
     "pregunta": "¿Quienes son los enemigos de Indiana Jones En busca del arca perdida?",
     "resposta1": "Españoles",
@@ -228,7 +228,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_020",
+    "id": "CAS_F_020",
     "película": "Bullet Train",
     "pregunta": "¿Quien es el actor que hace de antagonista en Fast and Furious 9?",
     "resposta1": "John Cena",
@@ -240,7 +240,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_021",
+    "id": "CAS_F_021",
     "película": "El juego del calamar",
     "pregunta": "¿Que limpia LaRusso cuando el señor Miyagi le dice la famosa frase \"Dar cera, pulir cera\"?",
     "resposta1": "Coches",
@@ -252,7 +252,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_022",
+    "id": "CAS_F_022",
     "película": "El renacido",
     "pregunta": "¿Quien puede levantar el martillo de Thor?",
     "resposta1": "Quien sea digno",
@@ -264,7 +264,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_023",
+    "id": "CAS_F_023",
     "película": "El renacido",
     "pregunta": "¿Como se llama el barco de Davy Jones?",
     "resposta1": "El Holandés herrante",
@@ -276,7 +276,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_024",
+    "id": "CAS_F_024",
     "película": "En busca del arca perdida",
     "pregunta": "¿Cual es el verdadero nombre de Darth Vader?",
     "resposta1": "Obi-Wan Kenobi",
@@ -288,7 +288,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_025",
+    "id": "CAS_F_025",
     "película": "El sargento de hierro",
     "pregunta": "¿Que actor interpreta al papel protagonista?",
     "resposta1": "Morgan Freeman",
@@ -300,7 +300,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_026",
+    "id": "CAS_F_026",
     "película": "El show de truman",
     "pregunta": "¿Donde vive Truman?",
     "resposta1": "En un plató del tamaño de un pueblo",
@@ -312,7 +312,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_027",
+    "id": "CAS_F_027",
     "película": "FORREST GUMP",
     "pregunta": "¿Cual es el nombre del hijo de Forrest Gumb?",
     "resposta1": "Forrest",
@@ -324,7 +324,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_028",
+    "id": "CAS_F_028",
     "película": "Forrest Gump",
     "pregunta": "¿ Como se llama la empresa que crea forrest Gump ?",
     "resposta1": "Gambas Bubba Gump",
@@ -336,7 +336,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_029",
+    "id": "CAS_F_029",
     "película": "Joker (2019)",
     "pregunta": "¿ Como se llama el programa al que se presenta el Joker?",
     "resposta1": "Programa de Pablo Motos",
@@ -348,7 +348,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAST_F_030",
+    "id": "CAS_F_030",
     "película": "TITANIC",
     "pregunta": "¿Quien interpreta el papel de Jack el protagonista?",
     "resposta1": "Chris Evans",

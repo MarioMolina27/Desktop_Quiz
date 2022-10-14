@@ -96,24 +96,24 @@ namespace Desktop_Quiz
             {
                 txtId = "CAT_D_";
                 id = newID(txtId);
-                FormPreguntas.CAT_DIFICL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
+                FormPreguntas.CAT_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
             }
             else if (idioma.Equals("Castellano") && dificultad == 1)
             {
-                txtId = "CAST_F_";
+                txtId = "CAS_F_";
 
                 id = newID(txtId);
                 FormPreguntas.CAST_FACIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
             }
             else if (idioma.Equals("Castellano") && dificultad == 2)
             {
-                txtId = "CAST_M_";
+                txtId = "CAS_M_";
                 id = newID(txtId);
                 FormPreguntas.CAST_MEDIANO.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
             }
             else if (idioma.Equals("Castellano") && dificultad == 3)
             {
-                txtId = "CAST_D_";
+                txtId = "CAS_D_";
                 id = newID(txtId);
                 FormPreguntas.CAST_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
             }

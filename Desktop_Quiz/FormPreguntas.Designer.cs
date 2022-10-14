@@ -135,6 +135,7 @@
             this.buttonEliminar.Size = new System.Drawing.Size(69, 79);
             this.buttonEliminar.TabIndex = 8;
             this.buttonEliminar.UseVisualStyleBackColor = false;
+            this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
             // 
             // buttonAfegir
             // 
