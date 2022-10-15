@@ -55,6 +55,7 @@ namespace Desktop_Quiz
             {
                 MessageBox.Show("ERROR - NO ES POT TENIR UNA IMATGE I AUDIO EN LA PREGUNTA");
             }
+
             if (resposta1Correcte)
             {
                 resposta_correcte = 1;
@@ -83,7 +84,7 @@ namespace Desktop_Quiz
 
             String id;
             String txtId = "";
-            if (idioma.Equals("Català") && dificultad == 1)
+                if (idioma.Equals("Català") && dificultad == 1)
                 {
                     txtId = "CAT_F_";
                     id = newID(txtId);

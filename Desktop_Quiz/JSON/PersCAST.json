@@ -1,0 +1,121 @@
+[
+  {
+    "Nom": "Cap",
+    "Descripció": "No has acertado ninguna pregunta, puede que te tengas que ver alguna pelicula.",
+    "Gènere": "General",
+    "Acerts": 0,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Uncharted",
+    "Descripció": "La categoría donde màs has acertado es Acción y aún así no lo has hecho bien 7w7",
+    "Gènere": "Acció",
+    "Acerts": 33.3,
+    "Ruta": ""
+  },
+  {
+    "Nom": "James Bond",
+    "Descripció": "La categoría a destacar és Acción, però aún puedes mejorar",
+    "Gènere": "Acció",
+    "Acerts": 66.6,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Fast & Furious",
+    "Descripció": "Bien hecho, has acertado muchas preguntas de Acción, se nota que te gustan las explosiones",
+    "Gènere": "Acció",
+    "Acerts": 99.9,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Sid",
+    "Descripció": "En serio no te sabes ni siquiera las de Animación?",
+    "Gènere": "Animació",
+    "Acerts": 33.3,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Doraemon",
+    "Descripció": "Veo que has acertado unas cuantas preguntas, pero aún te queda camino por delante",
+    "Gènere": "Animació",
+    "Acerts": 66.6,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Barbie",
+    "Descripció": "Com era de esperar has acertado muchas preguntas, por eso tienes tanto en común con este personatge",
+    "Gènere": "Animació",
+    "Acerts": 99.9,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Marty",
+    "Descripció": "Tiennes que vigilar con tus acciones, para que no te pase como a este personate.",
+    "Gènere": "Ciencia ficció",
+    "Acerts": 33.3,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Piratas del Caribe",
+    "Descripció": "Te atreves a ir de aventuras con Jack Sparrow y su tripulación?",
+    "Gènere": "Ciencia ficció",
+    "Acerts": 66.6,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Rick",
+    "Descripció": "Has contestado bien muchas preguntas, quieres viajar a otra dimensión a ver como te va?",
+    "Gènere": "Ciencia ficció",
+    "Acerts": 99.9,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Naufrago",
+    "Descripció": "Tu tambien llevas tiempo en una isla perdida o es que no vas al cine?",
+    "Gènere": "Drama",
+    "Acerts": 33.3,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Club de la lucha",
+    "Descripció": "Veo que vas bien con las preguntas, pero no hace falta que te inventes las cosas como el protagonista",
+    "Gènere": "Drama",
+    "Acerts": 66.6,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Titanic",
+    "Descripció": "Como sabes tanto de peliculas tambien sabras que cabian los dos en la madera",
+    "Gènere": "Drama",
+    "Acerts": 99.9,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Get Out",
+    "Descripció": "Podria entender que apartases la mirada en las peliculas de Terror, però con las demas categories?",
+    "Gènere": "Terror",
+    "Acerts": 33.3,
+    "Ruta": ""
+  },
+  {
+    "Nom": "La Purga",
+    "Descripció": "Veo que tienes confianza, però aun quitas la vista de la pantalla de vez en cuando eh!",
+    "Gènere": "Terror",
+    "Acerts": 66.6,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Guerra Mundial Z",
+    "Descripció": "Como puede ser que apartes la mirada en las demás categorias pero las de terror te las sepas todas?",
+    "Gènere": "Terror",
+    "Acerts": 99.9,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Totes",
+    "Descripció": "Has contestado bien todas las preguntas de todas las categorias, felicidades.",
+    "Gènere": "General",
+    "Acerts": 100,
+    "Ruta": ""
+  }
+]
