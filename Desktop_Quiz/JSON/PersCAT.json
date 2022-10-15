@@ -1,0 +1,121 @@
+[
+  {
+    "Nom": "Cap",
+    "Descripció": "No has acertat cap pregunta, potser t'hauries de veure alguna pel·lícula abans de fer el quiz.",
+    "Gènere": "General",
+    "Acerts": 0,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Uncharted",
+    "Descripció": "La categoria on més has acertat és Acció i tot i així no ho has fet bé 7w7",
+    "Gènere": "Acció",
+    "Acerts": 33.3,
+    "Ruta": ""
+  },
+  {
+    "Nom": "James Bond",
+    "Descripció": "La categoria a destacar és acció, però encara pots millorar",
+    "Gènere": "Acció",
+    "Acerts": 66.6,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Fast & Furious",
+    "Descripció": "Ben fet has acertat moltes preguntes d'Acció, es nota que t'agraden les explosions",
+    "Gènere": "Acció",
+    "Acerts": 99.9,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Sid",
+    "Descripció": "En serio no t'en saps ni tan sols les d'animació?",
+    "Gènere": "Animació",
+    "Acerts": 33.3,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Doraemon",
+    "Descripció": "Veig que has acertat unes quantes preguntes, però encara et queda camí per davant",
+    "Gènere": "Animació",
+    "Acerts": 66.6,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Barbie",
+    "Descripció": "Com és d'esperar has acertat moltes preguntes, per això tens tant en comú amb aquest personatge",
+    "Gènere": "Animació",
+    "Acerts": 99.9,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Marty",
+    "Descripció": "Has de vigilar amb les teves accions, no et passi com a aquest personatge.",
+    "Gènere": "Ciencia ficció",
+    "Acerts": 33.3,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Piratas del Caribe",
+    "Descripció": "T'atreveixes a anar d'aventures amb Jack Sparrow i la seva tripulació?",
+    "Gènere": "Ciencia ficció",
+    "Acerts": 66.6,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Rick",
+    "Descripció": "Has contestat bé moltes preguntes, vols viatjar a una altre dimensió a veure com et va?",
+    "Gènere": "Ciencia ficció",
+    "Acerts": 99.9,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Naufrago",
+    "Descripció": "Tu també portes temps a una illa perduda o es que no vas al cinema?",
+    "Gènere": "Drama",
+    "Acerts": 33.3,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Club de la lucha",
+    "Descripció": "Veig que vas bé amb les preguntes, pero no cal que t'inventis les coses com el protagonista",
+    "Gènere": "Drama",
+    "Acerts": 66.6,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Titanic",
+    "Descripció": "Com saps tant de pelicules també sabràs que i entren tots dos a la fusta",
+    "Gènere": "Drama",
+    "Acerts": 99.9,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Get Out",
+    "Descripció": "Podria entendre que apartesis la mirada en les categories de terror, però amb les demès categories?",
+    "Gènere": "Terror",
+    "Acerts": 33.3,
+    "Ruta": ""
+  },
+  {
+    "Nom": "La Purga",
+    "Descripció": "Veig que tenc confiança, però encara treus la vista de la pantalla de tant en tant eh!",
+    "Gènere": "Terror",
+    "Acerts": 66.6,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Guerra Mundial Z",
+    "Descripció": "Com pot ser que apartis la mirada a les demès categories però les de terror te les sàpigues totes?",
+    "Gènere": "Terror",
+    "Acerts": 99.9,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Totes",
+    "Descripció": "Has contestat bé totes les preguntes de totes les categoríes, felicitats.",
+    "Gènere": "General",
+    "Acerts": 100,
+    "Ruta": ""
+  }
+]
