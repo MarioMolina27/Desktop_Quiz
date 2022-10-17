@@ -68,6 +68,8 @@ namespace Desktop_Quiz
         //button edit
         private void buttonEditUser1_Click(object sender, EventArgs e)
         {
+           
+
             if (conseguirRowIndex() != -1)
             {
                 FormEditUsuaris userEdit1 = new FormEditUsuaris(conseguirRowIndex());
@@ -78,11 +80,13 @@ namespace Desktop_Quiz
 
        
 
-        
+        //button afegir
 
         private void button1_Click(object sender, EventArgs e)
-        {
-            FormEditUsuaris editUsuaris2 = new FormEditUsuaris();
+        {   
+            
+            int rowNotEdtit = -1;
+            FormEditUsuaris editUsuaris2 = new FormEditUsuaris(rowNotEdtit);
             editUsuaris2.ShowDialog();
         }
 

@@ -16,6 +16,7 @@ namespace Desktop_Quiz
 
 
         private int IndexPosition = -1;
+        
 
 
         public FormEditUsuaris()
@@ -111,8 +112,10 @@ namespace Desktop_Quiz
             //EncriptarContrasenyes ec = new EncriptarContrasenyes();
             if(IndexPosition == -1)
             {
+                UsuarisRepositori.users[UsuarisRepositori.users.Count+1].nickname = textBoxNickName.Text;
 
-            }else
+            }
+            else
             {
                 if (ValidarUser())
                 {
