@@ -1,6 +1,6 @@
 [
   {
-    "id": "CAST_M_001",
+    "id": "CAS_M_001",
     "película": "A 47 metros",
     "pregunta": "¿A que pelicula pertenece este plano?",
     "resposta1": "The Shallows",
@@ -12,7 +12,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_002",
+    "id": "CAS_M_002",
     "película": "Army of the Death",
     "pregunta": "¿En cual de estas películas de terror hay ambiente de apocalipsis Zombie?",
     "resposta1": "Army of the Death",
@@ -24,7 +24,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_003",
+    "id": "CAS_M_003",
     "película": "El sexto sentido",
     "pregunta": "¿Que profesión tiene el protagonista de la pelicula El sexto sentido?",
     "resposta1": "Doctor",
@@ -36,7 +36,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_004",
+    "id": "CAS_M_004",
     "película": "La 8a Noche",
     "pregunta": "¿Cual de estas películas de terror estan disponibles en Netflix?",
     "resposta1": "La abuela",
@@ -48,7 +48,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_005",
+    "id": "CAS_M_005",
     "película": "Scream",
     "pregunta": "¿A que película pertenece esta SoundTrack?",
     "resposta1": "El exorcista",
@@ -60,7 +60,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_006",
+    "id": "CAS_M_006",
     "película": "Sinister",
     "pregunta": "¿Cuál es la película de terror que da más miedo según especialistas?",
     "resposta1": "Sinister",
@@ -72,7 +72,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_007",
+    "id": "CAS_M_007",
     "película": "Un lugar tranquilo",
     "pregunta": "¿En que año salio la película \"Un lugar tranquilo\"?",
     "resposta1": 2018,
@@ -84,7 +84,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_008",
+    "id": "CAS_M_008",
     "película": "DORAEMON",
     "pregunta": "¿Como se llama el invento que aparece en la fotografía?",
     "resposta1": "Gelatina Traductora",
@@ -96,7 +96,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_009",
+    "id": "CAS_M_009",
     "película": "UP",
     "pregunta": "¿Como se llama el niño que acompaña al protagonista en su viaje?",
     "resposta1": "Danny",
@@ -108,7 +108,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_010",
+    "id": "CAS_M_010",
     "película": "CARS",
     "pregunta": "¿ Como se llama el camión que transporta a rayo mcqueen ?",
     "resposta1": "Mike",
@@ -120,7 +120,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_011",
+    "id": "CAS_M_011",
     "película": "El castillo en el cielo",
     "pregunta": "¿A que pelicula pertenece este plano?",
     "resposta1": "El castillo en el cielo",
@@ -132,7 +132,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_012",
+    "id": "CAS_M_012",
     "película": "Kun fu Panda",
     "pregunta": "¿Que animal es el padre adoptivo de po el protagonista?",
     "resposta1": "Un panda",
@@ -144,7 +144,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_013",
+    "id": "CAS_M_013",
     "película": "LOS INCREIBLES",
     "pregunta": "Cuantos miembros son en la família de LOS INCREÍBLES",
     "resposta1": 4,
@@ -156,7 +156,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_014",
+    "id": "CAS_M_014",
     "película": "Ratatouille",
     "pregunta": "¿Cual es el sueño de Remy (rata)?",
     "resposta1": "Ser el mejor Chef",
@@ -168,7 +168,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_015",
+    "id": "CAS_M_015",
     "película": "AVATAR",
     "pregunta": "¿En que año salio la película Avatar?",
     "resposta1": 2017,
@@ -180,7 +180,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_016",
+    "id": "CAS_M_016",
     "película": "E.T el extraterrestre",
     "pregunta": "¿En que año fue publicada la pelíclua ET el extraterrestre",
     "resposta1": 1982,
@@ -192,7 +192,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_017",
+    "id": "CAS_M_017",
     "película": "Independence Day",
     "pregunta": "¿Que actor interpreta a David Levinson?",
     "resposta1": "Will Smith",
@@ -204,7 +204,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_018",
+    "id": "CAS_M_018",
     "película": "Juego de tronos",
     "pregunta": "¿A que serie/película pertenece esta banda sonora?",
     "resposta1": "Salvar al soldado Ryan",
@@ -216,7 +216,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_019",
+    "id": "CAS_M_019",
     "película": "Matrix",
     "pregunta": "¿De que colores son las pastillas que le ofrece Morfeo a Neo?",
     "resposta1": "Verde y roja",
@@ -228,7 +228,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_020",
+    "id": "CAS_M_020",
     "película": "PIRATAS DEL CARIBE",
     "pregunta": "Escucha el siguiente Soundtrack. ¿Que pelicula es?",
     "resposta1": "Jurasic Park",
@@ -240,7 +240,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_021",
+    "id": "CAS_M_021",
     "película": "Rick y Morty",
     "pregunta": "¿A que universo pertenece el Rick protagonista?",
     "resposta1": "C-A34",
@@ -252,7 +252,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_022",
+    "id": "CAS_M_022",
     "película": "Fast and Furious 9",
     "pregunta": "¿De donde es William Wallace?",
     "resposta1": "Estados Unidos",
@@ -264,7 +264,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_023",
+    "id": "CAS_M_023",
     "película": "Iron man",
     "pregunta": "¿Cual es el nombre en clave del protagonista?",
     "resposta1": "Mariquita",
@@ -276,7 +276,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_024",
+    "id": "CAS_M_024",
     "película": "James Bond",
     "pregunta": "¿Donde ocurren todos los hechos narrados en la pelicula del Renacido?",
     "resposta1": "America",
@@ -288,7 +288,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_025",
+    "id": "CAS_M_025",
     "película": "Jungla de Cristal",
     "pregunta": "¿Que elemento está intoxicando a Tony Stark?",
     "resposta1": "Carbón",
@@ -300,7 +300,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_026",
+    "id": "CAS_M_026",
     "película": "Karate Kid",
     "pregunta": "¿Como se llama el protagonista de la Jungla de Cristal?",
     "resposta1": "John Rambo",
@@ -312,7 +312,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_027",
+    "id": "CAS_M_027",
     "película": "MARVEL COMICS",
     "pregunta": "¿En que pelicula aparecen juntos los 3 Spidermans del multiverso Marvel?",
     "resposta1": "Spiderman Homecoming",
@@ -324,7 +324,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_028",
+    "id": "CAS_M_028",
     "película": "MARVEL COMICS",
     "pregunta": "¿Quien és el villano principal en The Batman de 2022?",
     "resposta1": "Joker",
@@ -336,7 +336,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_029",
+    "id": "CAS_M_029",
     "película": "DJANGO",
     "pregunta": "¿Cuánto paga Schultz a los Speck Brothers por Django?",
     "resposta1": "$800",
@@ -348,7 +348,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_030",
+    "id": "CAS_M_030",
     "película": "El discurso del rey",
     "pregunta": "¿ Que problema tiene el rey ?",
     "resposta1": "Es tartamudo",
@@ -360,7 +360,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_031",
+    "id": "CAS_M_031",
     "película": "El lobo de wallstreet",
     "pregunta": "¿En que país abre una cuenta Jordan Belfort para guardar dinero negro?",
     "resposta1": "Suecia",
@@ -372,7 +372,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_032",
+    "id": "CAS_M_032",
     "película": "El lobo de Wallstret",
     "pregunta": "¿ Como se llaman las pastillas con las que se colocan los protagonistas?",
     "resposta1": "Juanolas",
@@ -384,7 +384,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_033",
+    "id": "CAS_M_033",
     "película": "El padrino",
     "pregunta": "¿Cómo se llama la hermana de Sonny, Fredo y Michael Corleone?",
     "resposta1": "Connie",
@@ -396,7 +396,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_034",
+    "id": "CAS_M_034",
     "película": "Fight Club",
     "pregunta": "¿ Al principio de la peli, que le ayuda a dormir al protagonista?",
     "resposta1": "Ir al cine",
@@ -408,7 +408,7 @@
     "dificultad": 2
   },
   {
-    "id": "CAST_M_035",
+    "id": "CAS_M_035",
     "película": "TITANIC",
     "pregunta": "¿ Como consigue Jack el billete para el barco ?",
     "resposta1": "En una partida de poker",

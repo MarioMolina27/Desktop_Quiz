@@ -33,9 +33,9 @@ namespace Desktop_Quiz
 
             foreach (Usuari user in usuaris)
             {
-                if (nom.Equals(user.nickname) && contrasenya.Equals(user.contrasenya))
+                if (nom.Equals(user.nickname) && EncriptarContrasenyes.verificarContra(contrasenya, user.contrasenya))
                 {
-                    if (user.tipus.Equals("SA"))
+                    if (user.tipus == 'S')
                     {
                         FormSAdimOpciones formSuperAdmin = new FormSAdimOpciones(user.nom);
                         formSuperAdmin.ShowDialog();

@@ -16,14 +16,21 @@ namespace Desktop_Quiz
     public partial class FormUsuaris : Form
     {
 
-        List<Usuari> usuaris;
-
 
         public FormUsuaris()
         {
             InitializeComponent();
         }
 
+        private void FormUsuaris_Load(object sender, EventArgs e)
+        {
+            //cargamos la lista con el contenido del Json
+            UsuarisRepositori.LoadUsersList();
+
+            dataGridUsuaris1.DataSource = null;
+            dataGridUsuaris1.DataSource = UsuarisRepositori.users; 
+
+        }
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -58,27 +65,39 @@ namespace Desktop_Quiz
             
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        //button edit
+        private void buttonEditUser1_Click(object sender, EventArgs e)
         {
-            FormEditUsuaris editUsuaris1 = new FormEditUsuaris();
-            editUsuaris1.ShowDialog();
+            if (conseguirRowIndex() != -1)
+            {
+                FormEditUsuaris userEdit1 = new FormEditUsuaris(conseguirRowIndex());
+                userEdit1.ShowDialog();
+            }
+
         }
 
-        private void FormUsuaris_Load(object sender, EventArgs e)
-        {
-            JArray arrayUsers = JArray.Parse(File.ReadAllText(@"..\..\JSON\USUARIS.json"));
-            usuaris = arrayUsers.ToObject<List<Usuari>>();
-            
-            dataGridUsuaris1.DataSource = null;
-            dataGridUsuaris1.DataSource = usuaris;   
+       
 
-
-        }
+        
 
         private void button1_Click(object sender, EventArgs e)
         {
-            FormEditUsuaris editUsuaris1 = new FormEditUsuaris();
-            editUsuaris1.ShowDialog();
+            FormEditUsuaris editUsuaris2 = new FormEditUsuaris();
+            editUsuaris2.ShowDialog();
+        }
+
+        //funcio per saver quina fila esta seleccionada 
+        private int conseguirRowIndex()
+        {
+            int rowIndex = -1;
+            if (dataGridUsuaris1.CurrentCell.RowIndex == -1)
+            {
+                MessageBox.Show("Has de seleccionar una filera");
+            }else
+            {
+                rowIndex = dataGridUsuaris1.CurrentCell.RowIndex;
+            }
+            return rowIndex;
         }
 
         private void toolStripButton1_Click(object sender, EventArgs e)

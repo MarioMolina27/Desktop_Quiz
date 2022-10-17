@@ -1,0 +1,121 @@
+[
+  {
+    "Nom": "Cap",
+    "Descripció": "You have answered all the questions wrong,  you may have to watch some movies before answering the quiz",
+    "Gènere": "General",
+    "Acerts": 0,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Uncharted",
+    "Descripció": "The category where you have hit the most is Action, and still you haven't done well 7w7",
+    "Gènere": "Acció",
+    "Acerts": 33.3,
+    "Ruta": ""
+  },
+  {
+    "Nom": "James Bond",
+    "Descripció": "The category where you stand out is Action, but you have room for improvement",
+    "Gènere": "Acció",
+    "Acerts": 66.6,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Fast & Furious",
+    "Descripció": "Well done, you have answered well some Action questions, it seems that you like films with explosions",
+    "Gènere": "Acció",
+    "Acerts": 99.9,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Sid",
+    "Descripció": "Really, you know nothing about Animation films?",
+    "Gènere": "Animació",
+    "Acerts": 33.3,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Doraemon",
+    "Descripció": "It looks like you have some answers right, but you'll have to do better next time",
+    "Gènere": "Animació",
+    "Acerts": 66.6,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Barbie",
+    "Descripció": "As expected you have answered correctly most of the questions, that's why you have things in common with this person.",
+    "Gènere": "Animació",
+    "Acerts": 99.9,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Marty",
+    "Descripció": "You have to be carefull with your actions, to avoid the same problems this character had.",
+    "Gènere": "Ciencia ficció",
+    "Acerts": 33.3,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Piratas del Caribe",
+    "Descripció": "Do you dare to go on adventures with Jack Sparrow and his crew?",
+    "Gènere": "Ciencia ficció",
+    "Acerts": 66.6,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Rick",
+    "Descripció": "You have answered correctly a lot of questions, do you want to go to another dimension to see how it goes?",
+    "Gènere": "Ciencia ficció",
+    "Acerts": 99.9,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Naufrago",
+    "Descripció": "Have you been alone on a lost island too, or it's only that you don't go to the cinema?",
+    "Gènere": "Drama",
+    "Acerts": 33.3,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Club de la lucha",
+    "Descripció": "It looks like you are doing great with the questions, but try not to make up things like the main character.",
+    "Gènere": "Drama",
+    "Acerts": 66.6,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Titanic",
+    "Descripció": "As you know so much about movies, then you shoud knoe that they both fit in there",
+    "Gènere": "Drama",
+    "Acerts": 99.9,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Get Out",
+    "Descripció": "I could understand that you look away in Horror movies, but what happened with the others?",
+    "Gènere": "Terror",
+    "Acerts": 33.3,
+    "Ruta": ""
+  },
+  {
+    "Nom": "La Purga",
+    "Descripció": "I see that you are confident, but you are taking your eyes out from the screen sometimes",
+    "Gènere": "Terror",
+    "Acerts": 66.6,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Guerra Mundial Z",
+    "Descripció": "How is it possible that you look away in the other categories, but you know everything about the Horror ones?",
+    "Gènere": "Terror",
+    "Acerts": 99.9,
+    "Ruta": ""
+  },
+  {
+    "Nom": "Totes",
+    "Descripció": "You have answered all the questions form all the categories right, congratulations!!!",
+    "Gènere": "General",
+    "Acerts": 100,
+    "Ruta": ""
+  }
+]
