@@ -102,7 +102,7 @@
             // 
             // buttonGuardar
             // 
-            this.buttonGuardar.ImageIndex = 0;
+            this.buttonGuardar.ImageKey = "save.png";
             this.buttonGuardar.ImageList = this.imageList1;
             this.buttonGuardar.Location = new System.Drawing.Point(851, 502);
             this.buttonGuardar.Margin = new System.Windows.Forms.Padding(2);
@@ -158,7 +158,7 @@
             this.radioButtonDificultat3.Location = new System.Drawing.Point(219, 23);
             this.radioButtonDificultat3.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonDificultat3.Name = "radioButtonDificultat3";
-            this.radioButtonDificultat3.Size = new System.Drawing.Size(31, 17);
+            this.radioButtonDificultat3.Size = new System.Drawing.Size(38, 20);
             this.radioButtonDificultat3.TabIndex = 23;
             this.radioButtonDificultat3.TabStop = true;
             this.radioButtonDificultat3.Text = "3";
@@ -170,7 +170,7 @@
             this.radioButtonDificultat2.Location = new System.Drawing.Point(118, 23);
             this.radioButtonDificultat2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonDificultat2.Name = "radioButtonDificultat2";
-            this.radioButtonDificultat2.Size = new System.Drawing.Size(31, 17);
+            this.radioButtonDificultat2.Size = new System.Drawing.Size(38, 20);
             this.radioButtonDificultat2.TabIndex = 23;
             this.radioButtonDificultat2.TabStop = true;
             this.radioButtonDificultat2.Text = "2";
@@ -182,7 +182,7 @@
             this.radioButtonDificultat1.Location = new System.Drawing.Point(18, 23);
             this.radioButtonDificultat1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonDificultat1.Name = "radioButtonDificultat1";
-            this.radioButtonDificultat1.Size = new System.Drawing.Size(31, 17);
+            this.radioButtonDificultat1.Size = new System.Drawing.Size(38, 20);
             this.radioButtonDificultat1.TabIndex = 22;
             this.radioButtonDificultat1.TabStop = true;
             this.radioButtonDificultat1.Text = "1";
@@ -208,7 +208,7 @@
             this.radioButtonResposta3.Location = new System.Drawing.Point(219, 23);
             this.radioButtonResposta3.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonResposta3.Name = "radioButtonResposta3";
-            this.radioButtonResposta3.Size = new System.Drawing.Size(31, 17);
+            this.radioButtonResposta3.Size = new System.Drawing.Size(38, 20);
             this.radioButtonResposta3.TabIndex = 23;
             this.radioButtonResposta3.TabStop = true;
             this.radioButtonResposta3.Text = "3";
@@ -220,7 +220,7 @@
             this.radioButtonResposta2.Location = new System.Drawing.Point(118, 23);
             this.radioButtonResposta2.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonResposta2.Name = "radioButtonResposta2";
-            this.radioButtonResposta2.Size = new System.Drawing.Size(31, 17);
+            this.radioButtonResposta2.Size = new System.Drawing.Size(38, 20);
             this.radioButtonResposta2.TabIndex = 23;
             this.radioButtonResposta2.TabStop = true;
             this.radioButtonResposta2.Text = "2";
@@ -232,7 +232,7 @@
             this.radioButtonResposta1.Location = new System.Drawing.Point(18, 23);
             this.radioButtonResposta1.Margin = new System.Windows.Forms.Padding(2);
             this.radioButtonResposta1.Name = "radioButtonResposta1";
-            this.radioButtonResposta1.Size = new System.Drawing.Size(31, 17);
+            this.radioButtonResposta1.Size = new System.Drawing.Size(38, 20);
             this.radioButtonResposta1.TabIndex = 22;
             this.radioButtonResposta1.TabStop = true;
             this.radioButtonResposta1.Text = "1";

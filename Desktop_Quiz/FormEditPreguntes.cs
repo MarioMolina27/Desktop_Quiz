@@ -17,6 +17,52 @@ namespace Desktop_Quiz
         String id, pelicula, pregunta, resposta1, resposta2, resposta3, categoria, imgaudio;
         int resposta_correcte, dificultat;
 
+        public BindingList<Pelicula> peliculaList { get; set; }
+        public BindingList<Pelicula> CAST_DIFICIL { get; set; }
+        public BindingList<Pelicula> CAST_FACIL { get; set; }
+        public BindingList<Pelicula> CAST_MEDIANO { get; set; }
+        public BindingList<Pelicula> CAT_DIFICIL { get; set; }
+        public BindingList<Pelicula> CAT_MEDIANO { get; set; }
+        public BindingList<Pelicula> CAT_FACIL { get; set; }
+        public BindingList<Pelicula> ENG_DIFICIL { get; set; }
+        public BindingList<Pelicula> ENG_MEDIANO { get; set; }
+        public BindingList<Pelicula> ENG_FACIL { get; set; }
+
+        public FormEditPreguntes()
+        {
+            InitializeComponent();
+        }
+
+        public FormEditPreguntes(BindingList<Pelicula> peliculaList, BindingList<Pelicula> CAST_DIFICIL, BindingList<Pelicula> CAST_MEDIANO, 
+                                BindingList<Pelicula> CAST_FACIL, BindingList<Pelicula> CAT_DIFICIL, BindingList<Pelicula> CAT_MEDIANO, 
+                                BindingList<Pelicula> CAT_FACIL, BindingList<Pelicula> ENG_DIFICIL, BindingList<Pelicula> ENG_MEDIANO, 
+                                BindingList<Pelicula> ENG_FACIL)
+        {
+            InitializeComponent();
+        }
+
+        public FormEditPreguntes(String id, String pelicula, String pregunta, String resposta1, String resposta2, String resposta3, int resposta_correcte, String categoria, String imgaudio, int dificultat,
+                                BindingList<Pelicula> peliculaList, BindingList<Pelicula> CAST_DIFICIL, BindingList<Pelicula> CAST_MEDIANO,
+                                BindingList<Pelicula> CAST_FACIL, BindingList<Pelicula> CAT_DIFICIL, BindingList<Pelicula> CAT_MEDIANO,
+                                BindingList<Pelicula> CAT_FACIL, BindingList<Pelicula> ENG_DIFICIL, BindingList<Pelicula> ENG_MEDIANO,
+                                BindingList<Pelicula> ENG_FACIL)
+        {
+            this.id = id;
+            this.pelicula = pelicula;
+            this.pregunta = pregunta;
+            this.resposta1 = resposta1;
+            this.resposta2 = resposta2;
+            this.resposta3 = resposta3;
+            this.resposta_correcte = resposta_correcte;
+            this.categoria = categoria;
+            this.imgaudio = imgaudio;
+            this.dificultat = dificultat;
+
+
+
+            InitializeComponent();
+        }
+
         private void buttonGuardar_Click_1(object sender, EventArgs e)
         {
         
@@ -87,59 +133,59 @@ namespace Desktop_Quiz
                 if (idioma.Equals("Català") && dificultad == 1)
                 {
                     txtId = "CAT_F_";
-                    id = newID(txtId);
-                    FormPreguntas.CAT_FACIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
+                    id = newID(txtId,peliculaList);
+                    this.CAT_FACIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Català") && dificultad == 2)
                 {
                     txtId = "CAT_M_";
 
-                    id = newID(txtId);
-                    FormPreguntas.CAT_MEDIANO.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
+                id = newID(txtId, peliculaList);
+                this.CAT_MEDIANO.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
 
                 }
                 else if (idioma.Equals("Català") && dificultad == 3)
                 {
                     txtId = "CAT_D_";
-                    id = newID(txtId);
-                    FormPreguntas.CAT_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
+                id = newID(txtId, peliculaList);
+                this.CAT_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Castellano") && dificultad == 1)
                 {
                     txtId = "CAS_F_";
 
-                    id = newID(txtId);
-                    FormPreguntas.CAST_FACIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
+                id = newID(txtId, peliculaList);
+                this.CAST_FACIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Castellano") && dificultad == 2)
                 {
                     txtId = "CAS_M_";
-                    id = newID(txtId);
-                    FormPreguntas.CAST_MEDIANO.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
+                id = newID(txtId, peliculaList);
+                this.CAST_MEDIANO.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Castellano") && dificultad == 3)
                 {
                     txtId = "CAS_D_";
-                    id = newID(txtId);
-                    FormPreguntas.CAST_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
+                id = newID(txtId, peliculaList);
+                this.CAST_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("English") && dificultad == 1)
                 {
                     txtId = "EN_F_";
-                    id = newID(txtId);
-                    FormPreguntas.ENG_FACIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
+                id = newID(txtId, peliculaList);
+                this.ENG_FACIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("English") && dificultad == 2)
                 {
                     txtId = "EN_M_";
-                    id = newID(txtId);
-                    FormPreguntas.ENG_MEDIANO.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
+                id = newID(txtId, peliculaList);
+                this.ENG_MEDIANO.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("English") && dificultad == 3)
                 {
                     txtId = "EN_D_";
-                    id = newID(txtId);
-                    FormPreguntas.ENG_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
+                id = newID(txtId, peliculaList);
+                this.ENG_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
 
             this.Close();
@@ -219,35 +265,10 @@ namespace Desktop_Quiz
         }
 
        
-
-        public FormEditPreguntes()
+        public static String newID(String txtID,BindingList<Pelicula>peliculaList)
         {
-            InitializeComponent();
-        }
-        public FormEditPreguntes(String id, String pelicula, String pregunta, String resposta1, String resposta2, String resposta3, int resposta_correcte,String categoria, String imgaudio, int dificultat)
-        {
-            this.id = id;
-            this.pelicula = pelicula;   
-            this.pregunta = pregunta;   
-            this.resposta1 = resposta1; 
-            this.resposta2 = resposta2;
-            this.resposta3 = resposta3;
-            this.resposta_correcte = resposta_correcte; 
-            this.categoria = categoria;
-            this.imgaudio = imgaudio;
-            this.dificultat = dificultat;
-
-
-
-            InitializeComponent();
-        }
-
-       
-
-        private static String newID(String txtID)
-        {
-            int lastObject = FormPreguntas.peliculaList.Count - 1;
-            String id = FormPreguntas.peliculaList[lastObject].id;
+            int lastObject = peliculaList.Count - 1;
+            String id = peliculaList[lastObject].id;
             String b = string.Empty;
             int num = 0;
             String newId;

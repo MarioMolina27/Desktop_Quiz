@@ -60,8 +60,7 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(1904, 31);
+            this.toolStrip1.Size = new System.Drawing.Size(1904, 33);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -71,7 +70,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(28, 28);
+            this.toolStripButton1.Size = new System.Drawing.Size(34, 28);
             this.toolStripButton1.Text = "toolStripButton1";
             // 
             // groupBoxPreguntes
@@ -84,9 +83,9 @@
             this.groupBoxPreguntes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBoxPreguntes.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxPreguntes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBoxPreguntes.Location = new System.Drawing.Point(0, 31);
+            this.groupBoxPreguntes.Location = new System.Drawing.Point(0, 33);
             this.groupBoxPreguntes.Name = "groupBoxPreguntes";
-            this.groupBoxPreguntes.Size = new System.Drawing.Size(1904, 1010);
+            this.groupBoxPreguntes.Size = new System.Drawing.Size(1904, 1008);
             this.groupBoxPreguntes.TabIndex = 2;
             this.groupBoxPreguntes.TabStop = false;
             this.groupBoxPreguntes.Text = "Preguntes";
@@ -175,18 +174,19 @@
             this.radioButtonDificultat.AutoSize = true;
             this.radioButtonDificultat.Location = new System.Drawing.Point(31, 66);
             this.radioButtonDificultat.Name = "radioButtonDificultat";
-            this.radioButtonDificultat.Size = new System.Drawing.Size(86, 24);
+            this.radioButtonDificultat.Size = new System.Drawing.Size(127, 33);
             this.radioButtonDificultat.TabIndex = 1;
             this.radioButtonDificultat.TabStop = true;
             this.radioButtonDificultat.Text = "Dificultad";
             this.radioButtonDificultat.UseVisualStyleBackColor = true;
+            this.radioButtonDificultat.CheckedChanged += new System.EventHandler(this.radioButtonDificultat_CheckedChanged);
             // 
             // radioButtonCategoria
             // 
             this.radioButtonCategoria.AutoSize = true;
             this.radioButtonCategoria.Location = new System.Drawing.Point(31, 31);
             this.radioButtonCategoria.Name = "radioButtonCategoria";
-            this.radioButtonCategoria.Size = new System.Drawing.Size(86, 24);
+            this.radioButtonCategoria.Size = new System.Drawing.Size(129, 33);
             this.radioButtonCategoria.TabIndex = 0;
             this.radioButtonCategoria.TabStop = true;
             this.radioButtonCategoria.Text = "Categoría";
@@ -199,7 +199,7 @@
             this.labelOrdenacio.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelOrdenacio.Location = new System.Drawing.Point(43, 79);
             this.labelOrdenacio.Name = "labelOrdenacio";
-            this.labelOrdenacio.Size = new System.Drawing.Size(87, 20);
+            this.labelOrdenacio.Size = new System.Drawing.Size(133, 29);
             this.labelOrdenacio.TabIndex = 0;
             this.labelOrdenacio.Text = "Ordenar per:";
             // 
@@ -219,7 +219,7 @@
             // 
             this.textBoxTitulo.Location = new System.Drawing.Point(332, 92);
             this.textBoxTitulo.Name = "textBoxTitulo";
-            this.textBoxTitulo.Size = new System.Drawing.Size(394, 26);
+            this.textBoxTitulo.Size = new System.Drawing.Size(394, 35);
             this.textBoxTitulo.TabIndex = 1;
             // 
             // labelTitul
@@ -228,7 +228,7 @@
             this.labelTitul.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.labelTitul.Location = new System.Drawing.Point(267, 95);
             this.labelTitul.Name = "labelTitul";
-            this.labelTitul.Size = new System.Drawing.Size(42, 19);
+            this.labelTitul.Size = new System.Drawing.Size(65, 29);
             this.labelTitul.TabIndex = 0;
             this.labelTitul.Text = "Títul";
             // 
