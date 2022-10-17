@@ -27,46 +27,64 @@ namespace Desktop_Quiz
         public FormPreguntas()
         {
             InitializeComponent();
+            JArray jarrayCastD = JArray.Parse(File.ReadAllText(@"..\..\JSON\CASTELLANO_DIFICIL.json", Encoding.UTF8));
+            this.CAST_DIFICIL = jarrayCastD.ToObject<BindingList<Pelicula>>();
+
+            JArray jarrayCastF = JArray.Parse(File.ReadAllText(@"..\..\JSON\CASTELLANO_FACIL.json", Encoding.UTF8));
+            this.CAST_FACIL = jarrayCastF.ToObject<BindingList<Pelicula>>();
+
+            JArray jarrayCastM = JArray.Parse(File.ReadAllText(@"..\..\JSON\CASTELLANO_MEDIANO.json", Encoding.UTF8));
+            this.CAST_MEDIANO = jarrayCastM.ToObject<BindingList<Pelicula>>();
+
+            JArray jarrayCatD = JArray.Parse(File.ReadAllText(@"..\..\JSON\CATALA_DIFICIL.json", Encoding.UTF8));
+            this.CAT_DIFICIL = jarrayCatD.ToObject<BindingList<Pelicula>>();
+
+            JArray jarrayCatM = JArray.Parse(File.ReadAllText(@"..\..\JSON\CATALA_MEDIANO.json", Encoding.UTF8));
+            this.CAT_MEDIANO = jarrayCatM.ToObject<BindingList<Pelicula>>();
+
+            JArray jarrayCatF = JArray.Parse(File.ReadAllText(@"..\..\JSON\CATALA_FACIL.json", Encoding.UTF8));
+            this.CAT_FACIL = jarrayCatF.ToObject<BindingList<Pelicula>>();
+
+            JArray jarrayEngD = JArray.Parse(File.ReadAllText(@"..\..\JSON\ENGLISH_DIFICIL.json", Encoding.UTF8));
+            this.ENG_DIFICIL = jarrayEngD.ToObject<BindingList<Pelicula>>();
+
+            JArray jarrayEngM = JArray.Parse(File.ReadAllText(@"..\..\JSON\ENGLISH_MEDIANO.json", Encoding.UTF8));
+            this.ENG_MEDIANO = jarrayEngM.ToObject<BindingList<Pelicula>>();
+
+            JArray jarrayEngF = JArray.Parse(File.ReadAllText(@"..\..\JSON\ENGLISH_FACIL.json", Encoding.UTF8));
+            this.ENG_FACIL = jarrayEngF.ToObject<BindingList<Pelicula>>();
+
+            BindingList<Pelicula> list = new BindingList<Pelicula>();
+            this.peliculaList = list;
+
+        }
+
+        public FormPreguntas(BindingList<Pelicula> peliculaList, BindingList<Pelicula> cAST_DIFICIL, BindingList<Pelicula> cAST_FACIL, BindingList<Pelicula> cAST_MEDIANO, BindingList<Pelicula> cAT_DIFICIL, BindingList<Pelicula> cAT_MEDIANO, BindingList<Pelicula> cAT_FACIL, BindingList<Pelicula> eNG_DIFICIL, BindingList<Pelicula> eNG_MEDIANO, BindingList<Pelicula> eNG_FACIL)
+        {
+            this.peliculaList = peliculaList;
+            this.CAST_DIFICIL = cAST_DIFICIL;
+            this.CAST_FACIL = cAST_FACIL;
+            this.CAST_MEDIANO = cAST_MEDIANO;
+            this.CAT_DIFICIL = cAT_DIFICIL;
+            this.CAT_MEDIANO = cAT_MEDIANO;
+            this.CAT_FACIL = cAT_FACIL;
+            this.ENG_DIFICIL = eNG_DIFICIL;
+            this.ENG_MEDIANO = eNG_MEDIANO;
+            this.ENG_FACIL = eNG_FACIL;
         }
 
         private void FormPreguntas_Load(object sender, EventArgs e)
         {
-                JArray jarrayCastD = JArray.Parse(File.ReadAllText(@"..\..\JSON\CASTELLANO_DIFICIL.json", Encoding.UTF8));
-                this.CAST_DIFICIL = jarrayCastD.ToObject<BindingList<Pelicula>>();
-
-                JArray jarrayCastF = JArray.Parse(File.ReadAllText(@"..\..\JSON\CASTELLANO_FACIL.json", Encoding.UTF8));
-                this.CAST_FACIL = jarrayCastF.ToObject<BindingList<Pelicula>>();
-
-                JArray jarrayCastM = JArray.Parse(File.ReadAllText(@"..\..\JSON\CASTELLANO_MEDIANO.json", Encoding.UTF8));
-                this.CAST_MEDIANO = jarrayCastM.ToObject<BindingList<Pelicula>>();
-
-                JArray jarrayCatD = JArray.Parse(File.ReadAllText(@"..\..\JSON\CATALA_DIFICIL.json", Encoding.UTF8));
-                this.CAT_DIFICIL = jarrayCatD.ToObject<BindingList<Pelicula>>();
-
-                JArray jarrayCatM = JArray.Parse(File.ReadAllText(@"..\..\JSON\CATALA_MEDIANO.json", Encoding.UTF8));
-                this.CAT_MEDIANO = jarrayCatM.ToObject<BindingList<Pelicula>>();
-
-                JArray jarrayCatF = JArray.Parse(File.ReadAllText(@"..\..\JSON\CATALA_FACIL.json", Encoding.UTF8));
-                this.CAT_FACIL = jarrayCatF.ToObject<BindingList<Pelicula>>();
-
-                JArray jarrayEngD = JArray.Parse(File.ReadAllText(@"..\..\JSON\ENGLISH_DIFICIL.json", Encoding.UTF8));
-                this.ENG_DIFICIL = jarrayEngD.ToObject<BindingList<Pelicula>>();
-
-                JArray jarrayEngM = JArray.Parse(File.ReadAllText(@"..\..\JSON\ENGLISH_MEDIANO.json", Encoding.UTF8));
-                this.ENG_MEDIANO = jarrayEngM.ToObject<BindingList<Pelicula>>();
-
-                JArray jarrayEngF = JArray.Parse(File.ReadAllText(@"..\..\JSON\ENGLISH_FACIL.json", Encoding.UTF8));
-                this.ENG_FACIL =  jarrayEngF.ToObject<BindingList<Pelicula>>();
-
-                BindingList<Pelicula> list = new BindingList<Pelicula>();
-                this.peliculaList = list;
-
             updateList();
+            updateDataGrid();
         }
 
         private void buttonAfegir_Click(object sender, EventArgs e)
         {
-            FormEditPreguntes p = new FormEditPreguntes();
+            FormEditPreguntes p = new FormEditPreguntes(peliculaList, CAST_DIFICIL, CAST_MEDIANO,
+                                 CAST_FACIL, CAT_DIFICIL, CAT_MEDIANO,
+                                 CAT_FACIL, ENG_DIFICIL, ENG_MEDIANO,
+                                ENG_FACIL);
             p.ShowDialog();
             updateList();
         }
@@ -145,11 +163,8 @@ namespace Desktop_Quiz
                                  CAST_FACIL, CAT_DIFICIL, CAT_MEDIANO,
                                  CAT_FACIL, ENG_DIFICIL,  ENG_MEDIANO,
                                 ENG_FACIL);
-
                 eliminarElemento(id);
-               
                 p2.ShowDialog();
-
             }
             else
             {

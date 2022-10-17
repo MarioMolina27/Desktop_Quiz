@@ -25,5 +25,14 @@
     "add": true,
     "modify": true,
     "delete": true
+  },
+  {
+    "nickname": "mmolina",
+    "nom": "Mario",
+    "contrasenya": "$2a$11$TLONULQ8bm2kQ.nFZksPz.K/srTCDGUloj9.F5l84O/xWd6VA4n/W",
+    "tipus": "A",
+    "add": true,
+    "modify": true,
+    "delete": true
   }
 ]

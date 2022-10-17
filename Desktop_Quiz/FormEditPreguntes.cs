@@ -38,6 +38,16 @@ namespace Desktop_Quiz
                                 BindingList<Pelicula> CAT_FACIL, BindingList<Pelicula> ENG_DIFICIL, BindingList<Pelicula> ENG_MEDIANO, 
                                 BindingList<Pelicula> ENG_FACIL)
         {
+            this.peliculaList = peliculaList;
+            this.CAST_DIFICIL = CAST_DIFICIL;
+            this.CAST_FACIL = CAST_FACIL;
+            this.CAST_MEDIANO = CAST_MEDIANO;
+            this.CAT_DIFICIL = CAT_DIFICIL;
+            this.CAT_MEDIANO = CAT_MEDIANO;
+            this.CAT_FACIL = CAT_FACIL;
+            this.ENG_DIFICIL = ENG_DIFICIL;
+            this.ENG_MEDIANO = ENG_MEDIANO;
+            this.ENG_FACIL = ENG_FACIL;
             InitializeComponent();
         }
 
@@ -57,6 +67,16 @@ namespace Desktop_Quiz
             this.categoria = categoria;
             this.imgaudio = imgaudio;
             this.dificultat = dificultat;
+            this.peliculaList = peliculaList;
+            this.CAST_DIFICIL = CAST_DIFICIL;
+            this.CAST_FACIL = CAST_FACIL;
+            this.CAST_MEDIANO = CAST_MEDIANO;
+            this.CAT_DIFICIL = CAT_DIFICIL;
+            this.CAT_MEDIANO = CAT_MEDIANO;
+            this.CAT_FACIL = CAT_FACIL;
+            this.ENG_DIFICIL = ENG_DIFICIL;
+            this.ENG_MEDIANO = ENG_MEDIANO;
+            this.ENG_FACIL = ENG_FACIL;
 
 
 
@@ -133,62 +153,68 @@ namespace Desktop_Quiz
                 if (idioma.Equals("Català") && dificultad == 1)
                 {
                     txtId = "CAT_F_";
-                    id = newID(txtId,peliculaList);
+                    id = newID(txtId,this.peliculaList);
                     this.CAT_FACIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Català") && dificultad == 2)
                 {
                     txtId = "CAT_M_";
 
-                id = newID(txtId, peliculaList);
+                id = newID(txtId, this.peliculaList);
                 this.CAT_MEDIANO.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
 
                 }
                 else if (idioma.Equals("Català") && dificultad == 3)
                 {
                     txtId = "CAT_D_";
-                id = newID(txtId, peliculaList);
+                id = newID(txtId, this.peliculaList);
                 this.CAT_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Castellano") && dificultad == 1)
                 {
                     txtId = "CAS_F_";
 
-                id = newID(txtId, peliculaList);
+                id = newID(txtId, this.peliculaList);
                 this.CAST_FACIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Castellano") && dificultad == 2)
                 {
                     txtId = "CAS_M_";
-                id = newID(txtId, peliculaList);
+                id = newID(txtId, this.peliculaList);
                 this.CAST_MEDIANO.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Castellano") && dificultad == 3)
                 {
                     txtId = "CAS_D_";
-                id = newID(txtId, peliculaList);
+                id = newID(txtId, this.peliculaList);
                 this.CAST_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("English") && dificultad == 1)
                 {
                     txtId = "EN_F_";
-                id = newID(txtId, peliculaList);
+                id = newID(txtId, this.peliculaList);
                 this.ENG_FACIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("English") && dificultad == 2)
                 {
                     txtId = "EN_M_";
-                id = newID(txtId, peliculaList);
+                id = newID(txtId, this.peliculaList);
                 this.ENG_MEDIANO.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("English") && dificultad == 3)
                 {
                     txtId = "EN_D_";
-                id = newID(txtId, peliculaList);
+                id = newID(txtId, this.peliculaList);
                 this.ENG_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
-
+            FormPreguntas formPreguntas = new FormPreguntas(peliculaList, CAST_DIFICIL, CAST_MEDIANO,
+                                 CAST_FACIL, CAT_DIFICIL, CAT_MEDIANO,
+                                 CAT_FACIL, ENG_DIFICIL, ENG_MEDIANO,
+                                 ENG_FACIL);
+            formPreguntas.Show();
             this.Close();
+            
+            
         }
 
         
@@ -301,11 +327,7 @@ namespace Desktop_Quiz
             {
                 newId = txtID + num;
             }
-
            return newId;
         }
-       
-
-        
     }
 }
