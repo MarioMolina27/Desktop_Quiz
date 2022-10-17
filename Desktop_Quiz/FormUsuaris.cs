@@ -104,5 +104,14 @@ namespace Desktop_Quiz
         {
             this.Close();
         }
+
+        private void buttonRefreshUsers_Click(object sender, EventArgs e)
+        {
+            //cargamos la lista con el contenido del Json
+            UsuarisRepositori.LoadUsersList();
+
+            dataGridUsuaris1.DataSource = null;
+            dataGridUsuaris1.DataSource = UsuarisRepositori.users;
+        }
     }
 }

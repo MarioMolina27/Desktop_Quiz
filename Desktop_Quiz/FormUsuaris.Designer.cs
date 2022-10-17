@@ -37,7 +37,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.buttonEditUser1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.buttonRefreshUsers = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuaris1)).BeginInit();
@@ -116,16 +116,17 @@
             this.button3.TabIndex = 5;
             this.button3.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // buttonRefreshUsers
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button4.ForeColor = System.Drawing.Color.Cyan;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(1767, 36);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(93, 87);
-            this.button4.TabIndex = 6;
-            this.button4.UseVisualStyleBackColor = false;
+            this.buttonRefreshUsers.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonRefreshUsers.ForeColor = System.Drawing.Color.Cyan;
+            this.buttonRefreshUsers.Image = ((System.Drawing.Image)(resources.GetObject("buttonRefreshUsers.Image")));
+            this.buttonRefreshUsers.Location = new System.Drawing.Point(1785, 52);
+            this.buttonRefreshUsers.Name = "buttonRefreshUsers";
+            this.buttonRefreshUsers.Size = new System.Drawing.Size(75, 75);
+            this.buttonRefreshUsers.TabIndex = 6;
+            this.buttonRefreshUsers.UseVisualStyleBackColor = false;
+            this.buttonRefreshUsers.Click += new System.EventHandler(this.buttonRefreshUsers_Click);
             // 
             // toolStrip1
             // 
@@ -154,7 +155,7 @@
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.buttonRefreshUsers);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.buttonEditUser1);
             this.Controls.Add(this.labelSearchNickname);
@@ -183,7 +184,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonEditUser1;
         private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonRefreshUsers;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
