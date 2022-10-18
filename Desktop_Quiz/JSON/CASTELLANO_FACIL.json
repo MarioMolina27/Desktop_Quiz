@@ -92,7 +92,7 @@
     "resposta3": "Monkey",
     "resposta_correcte": 2,
     "categoria": "Animación",
-    "img/audio": "https://i.pinimg.com/474x/9f/04/1d/9f041d443bc5359a39d8f7c663819a25.jpg",
+    "img/audio": "..\\..\\ImatgePreguntes\\dora.png",
     "dificultad": 1
   },
   {
@@ -116,7 +116,7 @@
     "resposta3": "Diego",
     "resposta_correcte": 2,
     "categoria": "Animación",
-    "img/audio": "",
+    "img/audio": "..\\..\\ImatgePreguntes\\ice_age.png",
     "dificultad": 1
   },
   {
@@ -128,7 +128,7 @@
     "resposta3": "Capitan garfio",
     "resposta_correcte": 3,
     "categoria": "Animación",
-    "img/audio": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhus-dSNjGh5zinzdHdbwYuxw46psSdK2JaQ&usqp=CAU",
+    "img/audio": "",
     "dificultad": 1
   },
   {

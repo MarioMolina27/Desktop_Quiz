@@ -44,6 +44,10 @@
             // 
             // dataGridViewPersonatges
             // 
+            this.dataGridViewPersonatges.AllowUserToAddRows = false;
+            this.dataGridViewPersonatges.AllowUserToDeleteRows = false;
+            this.dataGridViewPersonatges.AllowUserToResizeColumns = false;
+            this.dataGridViewPersonatges.AllowUserToResizeRows = false;
             this.dataGridViewPersonatges.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataGridViewPersonatges.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPersonatges.Location = new System.Drawing.Point(246, 151);
@@ -161,8 +165,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.DataGridView dataGridViewPersonatges;
         private System.Windows.Forms.Button buttonNouPersonatge;
         private System.Windows.Forms.Button buttonEditarPersonatge;
         private System.Windows.Forms.Button buttonEliminarPersonatge;
@@ -171,5 +173,6 @@
         private System.Windows.Forms.TextBox textBoxBuscadorPersonatges;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButtonTornarEnrere;
+        private System.Windows.Forms.DataGridView dataGridViewPersonatges;
     }
 }

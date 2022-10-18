@@ -8,7 +8,7 @@
     "resposta3": "Open Sea",
     "resposta_correcte": 2,
     "categoria": "Terror",
-    "img/audio": "",
+    "img/audio": "..\\..\\ImatgePreguntes\\47metros.png",
     "dificultad": 2
   },
   {
@@ -104,7 +104,7 @@
     "resposta3": "Pete",
     "resposta_correcte": 2,
     "categoria": "Animación",
-    "img/audio": "",
+    "img/audio": "..\\..\\JSON\\ImatgePreguntes\\Russel.png",
     "dificultad": 2
   },
   {
@@ -116,7 +116,7 @@
     "resposta3": "Mate",
     "resposta_correcte": 2,
     "categoria": "Animación",
-    "img/audio": "https://drive.google.com/file/d/1FzisKIbKkfTElb6HgHCAq9C59Y_Oj1rV/view?usp=sharing",
+    "img/audio": "",
     "dificultad": 2
   },
   {
@@ -128,7 +128,7 @@
     "resposta3": "El castell ambulant",
     "resposta_correcte": 1,
     "categoria": "Animación",
-    "img/audio": "",
+    "img/audio": "..\\..\\ImatgePreguntes\\castillo en el cielo.png",
     "dificultad": 2
   },
   {
@@ -140,7 +140,7 @@
     "resposta3": "Tigre",
     "resposta_correcte": 2,
     "categoria": "Animación",
-    "img/audio": "https://img.remediosdigitales.com/61e889/los-20increibles/450_1000.jpg",
+    "img/audio": "",
     "dificultad": 2
   },
   {
@@ -152,7 +152,7 @@
     "resposta3": 6,
     "resposta_correcte": 2,
     "categoria": "Animación",
-    "img/audio": "https://static.wikia.nocookie.net/disney/images/2/27/Russell-up.jpg/revision/latest/top-crop/width/360/height/360?cb=20170712010019&path-prefix=es",
+    "img/audio": "..\\..\\ImatgePreguntes\\increibles.png",
     "dificultad": 2
   },
   {

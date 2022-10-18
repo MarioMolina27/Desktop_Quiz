@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Net.NetworkInformation;
 using System.Text;
@@ -14,8 +15,9 @@ namespace Desktop_Quiz
 {
     public partial class FormEditPreguntes : Form
     {
-        String id, pelicula, pregunta, resposta1, resposta2, resposta3, categoria, imgaudio;
-        int resposta_correcte, dificultat;
+        public String id, pelicula, pregunta, resposta1, resposta2, resposta3, categoria, imgaudio;
+        public int resposta_correcte, dificultat;
+        public bool modificar;
 
         public BindingList<Pelicula> peliculaList { get; set; }
         public BindingList<Pelicula> CAST_DIFICIL { get; set; }
@@ -26,6 +28,31 @@ namespace Desktop_Quiz
         public BindingList<Pelicula> CAT_FACIL { get; set; }
         public BindingList<Pelicula> ENG_DIFICIL { get; set; }
         public BindingList<Pelicula> ENG_MEDIANO { get; set; }
+
+        private void buttonImatgeAceptar_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folder = new FolderBrowserDialog();
+            DialogResult result = folder.ShowDialog();
+
+            if (result.Equals(DialogResult.OK))
+            {
+                textBoxImatge.Text = folder.SelectedPath;
+           
+            }
+        }
+
+        private void buttonAudioAceptar_Click(object sender, EventArgs e)
+        {
+            FolderBrowserDialog folder = new FolderBrowserDialog();
+            DialogResult result = folder.ShowDialog();
+
+            if (result.Equals(DialogResult.OK))
+            {
+                textBoxAudio.Text = folder.SelectedPath;
+
+            }
+        }
+
         public BindingList<Pelicula> ENG_FACIL { get; set; }
 
         public FormEditPreguntes()
@@ -48,6 +75,7 @@ namespace Desktop_Quiz
             this.ENG_DIFICIL = ENG_DIFICIL;
             this.ENG_MEDIANO = ENG_MEDIANO;
             this.ENG_FACIL = ENG_FACIL;
+            this.modificar = false;
             InitializeComponent();
         }
 
@@ -77,6 +105,7 @@ namespace Desktop_Quiz
             this.ENG_DIFICIL = ENG_DIFICIL;
             this.ENG_MEDIANO = ENG_MEDIANO;
             this.ENG_FACIL = ENG_FACIL;
+            this.modificar = true;
 
 
 
@@ -104,6 +133,8 @@ namespace Desktop_Quiz
             String audio = textBoxAudio.Text;
             String imatge = textBoxImatge.Text;
             String imgaudio = "";
+
+            
 
             if (string.IsNullOrEmpty(imatge) && !string.IsNullOrEmpty(audio))
             {
@@ -153,68 +184,67 @@ namespace Desktop_Quiz
                 if (idioma.Equals("Català") && dificultad == 1)
                 {
                     txtId = "CAT_F_";
-                    id = newID(txtId,this.peliculaList);
+                    id = modificarID(this.modificar, peliculaList, this.id, txtId);
                     this.CAT_FACIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Català") && dificultad == 2)
                 {
                     txtId = "CAT_M_";
 
-                id = newID(txtId, this.peliculaList);
+                id = modificarID(this.modificar, peliculaList, this.id, txtId);
                 this.CAT_MEDIANO.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
 
                 }
                 else if (idioma.Equals("Català") && dificultad == 3)
                 {
                     txtId = "CAT_D_";
-                id = newID(txtId, this.peliculaList);
+                id = modificarID(this.modificar, peliculaList, this.id, txtId);
                 this.CAT_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Castellano") && dificultad == 1)
                 {
                     txtId = "CAS_F_";
 
-                id = newID(txtId, this.peliculaList);
+                id = modificarID(this.modificar, peliculaList, this.id, txtId);
                 this.CAST_FACIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Castellano") && dificultad == 2)
                 {
                     txtId = "CAS_M_";
-                id = newID(txtId, this.peliculaList);
+                id = modificarID(this.modificar, peliculaList, this.id, txtId);
                 this.CAST_MEDIANO.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Castellano") && dificultad == 3)
                 {
                     txtId = "CAS_D_";
-                id = newID(txtId, this.peliculaList);
+                id = modificarID(this.modificar, peliculaList, this.id, txtId);
                 this.CAST_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("English") && dificultad == 1)
                 {
                     txtId = "EN_F_";
-                id = newID(txtId, this.peliculaList);
+                id = modificarID(this.modificar, peliculaList, this.id, txtId);
                 this.ENG_FACIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("English") && dificultad == 2)
                 {
                     txtId = "EN_M_";
-                id = newID(txtId, this.peliculaList);
+                id = modificarID(this.modificar, peliculaList, this.id, txtId);
                 this.ENG_MEDIANO.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("English") && dificultad == 3)
                 {
                     txtId = "EN_D_";
-                id = newID(txtId, this.peliculaList);
+                id = modificarID(this.modificar, peliculaList, this.id, txtId);
                 this.ENG_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
+           
             FormPreguntas formPreguntas = new FormPreguntas(peliculaList, CAST_DIFICIL, CAST_MEDIANO,
                                  CAST_FACIL, CAT_DIFICIL, CAT_MEDIANO,
                                  CAT_FACIL, ENG_DIFICIL, ENG_MEDIANO,
                                  ENG_FACIL);
             formPreguntas.Show();
             this.Close();
-            
-            
         }
 
         
@@ -290,7 +320,19 @@ namespace Desktop_Quiz
             }
         }
 
-       
+       public static string modificarID(bool modificar,BindingList<Pelicula>list,String oldId,String txtId)
+        {
+            String id;
+            if (modificar)
+            {
+                id = oldId;
+            }
+            else
+            {
+                id = newID(txtId, list);
+            }
+            return id;
+        }
         public static String newID(String txtID,BindingList<Pelicula>peliculaList)
         {
             int lastObject = peliculaList.Count - 1;

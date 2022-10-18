@@ -24,6 +24,9 @@ namespace Desktop_Quiz
         public  BindingList<Pelicula> ENG_DIFICIL { get; set; }
         public BindingList<Pelicula> ENG_MEDIANO { get; set; }
         public  BindingList<Pelicula> ENG_FACIL { get; set; }
+
+        public bool modificar { get; set; }
+
         public FormPreguntas()
         {
             InitializeComponent();
@@ -56,7 +59,7 @@ namespace Desktop_Quiz
 
             BindingList<Pelicula> list = new BindingList<Pelicula>();
             this.peliculaList = list;
-
+      
         }
 
         public FormPreguntas(BindingList<Pelicula> peliculaList, BindingList<Pelicula> cAST_DIFICIL, BindingList<Pelicula> cAST_FACIL, BindingList<Pelicula> cAST_MEDIANO, BindingList<Pelicula> cAT_DIFICIL, BindingList<Pelicula> cAT_MEDIANO, BindingList<Pelicula> cAT_FACIL, BindingList<Pelicula> eNG_DIFICIL, BindingList<Pelicula> eNG_MEDIANO, BindingList<Pelicula> eNG_FACIL)
@@ -71,6 +74,7 @@ namespace Desktop_Quiz
             this.ENG_DIFICIL = eNG_DIFICIL;
             this.ENG_MEDIANO = eNG_MEDIANO;
             this.ENG_FACIL = eNG_FACIL;
+
         }
 
         private void FormPreguntas_Load(object sender, EventArgs e)
@@ -127,7 +131,7 @@ namespace Desktop_Quiz
                     this.peliculaList.Add(item);
                 }
             }
-
+            ordenarList();
             updateDataGrid();
           
 
@@ -138,9 +142,14 @@ namespace Desktop_Quiz
             dataGridViewPelicules.DataSource = null;
             dataGridViewPelicules.DataSource = this.peliculaList;
         }
+        public void ordenarList()
+        {
+            peliculaList = new BindingList<Pelicula>(peliculaList.OrderBy(p => p.id).ToList());
+        }
 
         private void buttonModificar_Click(object sender, EventArgs e)
         {
+            this.modificar = true;
             int rowIndex = conseguirRowIndex();
             if (rowIndex != -1)
             {
@@ -186,8 +195,7 @@ namespace Desktop_Quiz
             {
                 DataGridViewRow filaSeleccionada = dataGridViewPelicules.Rows[rowIndex];
                 String id = filaSeleccionada.Cells[0].Value.ToString();        
-                
-
+               
                 if (!String.IsNullOrEmpty(id))
                 {
                     eliminarElemento(id);
@@ -201,59 +209,58 @@ namespace Desktop_Quiz
         }
         private void eliminarElemento(String id)
         {
-            String txtID = obtenerTxtID(id);
-            int userPosition;
-            switch (txtID)
-            {
-                case "CAT_F":
-                    userPosition = retornarIndice(id,this.CAT_FACIL);
-                    CAT_FACIL.RemoveAt(userPosition);
-                    CAT_FACIL = UpdateIDs(txtID + "_", this.CAT_FACIL);
-                    break;
-                case "CAT_M":
-                    userPosition = retornarIndice(id,this.CAT_MEDIANO);
-                    CAT_MEDIANO.RemoveAt(userPosition);
-                    CAT_MEDIANO = UpdateIDs(txtID + "_", this.CAT_MEDIANO);
-                    break;
-                case "CAT_D":
-                    userPosition = retornarIndice(id,this.CAT_DIFICIL);
-                    CAT_DIFICIL.RemoveAt(userPosition);
-                    CAT_DIFICIL = UpdateIDs(txtID+"_",this.CAT_DIFICIL);
-                    break;
-                case "CAS_F":
-                    userPosition = retornarIndice(id,this.CAST_FACIL);
-                    CAST_FACIL.RemoveAt(userPosition);
-                    CAST_FACIL=UpdateIDs(txtID + "_", this.CAST_FACIL);
-                    break;
-                case "CAS_M":
-                    userPosition = retornarIndice(id,this.CAST_MEDIANO);
-                    CAST_MEDIANO.RemoveAt(userPosition);
-                    CAST_MEDIANO=UpdateIDs(txtID + "_", this.CAST_MEDIANO);
-                    break;
-                case "CAS_D":
-                    userPosition = retornarIndice(id,this.CAST_DIFICIL);
-                    
-                    CAST_DIFICIL.RemoveAt(userPosition);
-                    CAST_DIFICIL = UpdateIDs(txtID + "_", this.CAST_DIFICIL);
+           
+                String txtID = obtenerTxtID(id);
+                int userPosition;
+                switch (txtID)
+                {
+                    case "CAT_F":
+                        userPosition = retornarIndice(id, this.CAT_FACIL);
+                        CAT_FACIL.RemoveAt(userPosition);
+                        if (!this.modificar) { CAT_FACIL = UpdateIDs(txtID + "_", this.CAT_FACIL); }
+                        break;
+                    case "CAT_M":
+                        userPosition = retornarIndice(id, this.CAT_MEDIANO);
+                        CAT_MEDIANO.RemoveAt(userPosition);
+                        if (!this.modificar) { CAT_MEDIANO = UpdateIDs(txtID + "_", this.CAT_MEDIANO); }
+                        break;
+                    case "CAT_D":
+                        userPosition = retornarIndice(id, this.CAT_DIFICIL);
+                        CAT_DIFICIL.RemoveAt(userPosition);
+                        if (!this.modificar) { CAT_DIFICIL = UpdateIDs(txtID + "_", this.CAT_DIFICIL); }
+                        break;
+                    case "CAS_F":
+                        userPosition = retornarIndice(id, this.CAST_FACIL);
+                        CAST_FACIL.RemoveAt(userPosition);
+                        if (!this.modificar) { CAST_FACIL = UpdateIDs(txtID + "_", this.CAST_FACIL); }
+                        break;
+                    case "CAS_M":
+                        userPosition = retornarIndice(id, this.CAST_MEDIANO);
+                        CAST_MEDIANO.RemoveAt(userPosition);
+                        if (!this.modificar) { CAST_MEDIANO = UpdateIDs(txtID + "_", this.CAST_MEDIANO); }
+                        break;
+                    case "CAS_D":
+                        userPosition = retornarIndice(id, this.CAST_DIFICIL);
+                        CAST_DIFICIL.RemoveAt(userPosition);
+                        if (!this.modificar) { CAST_DIFICIL = UpdateIDs(txtID + "_", this.CAST_DIFICIL); }
+                        break;
+                    case "EN_F_":
+                        userPosition = retornarIndice(id, this.ENG_FACIL);
+                        ENG_FACIL.RemoveAt(userPosition);
+                        if (!this.modificar) { ENG_FACIL = UpdateIDs(txtID, this.ENG_FACIL); }
+                        break;
+                    case "EN_M_":
+                        userPosition = retornarIndice(id, this.ENG_MEDIANO);
+                        ENG_MEDIANO.RemoveAt(userPosition);
+                        if (!this.modificar) { ENG_MEDIANO = UpdateIDs(txtID, this.ENG_MEDIANO); }
+                        break;
+                    case "EN_D_":
+                        userPosition = retornarIndice(id, this.ENG_DIFICIL);
+                        ENG_DIFICIL.RemoveAt(userPosition);
+                        if (!this.modificar) { ENG_DIFICIL = UpdateIDs(txtID, this.ENG_DIFICIL); }
+                        break;
 
-                    break;
-                case "EN_F_":
-                    userPosition = retornarIndice(id,this.ENG_FACIL);
-                    ENG_FACIL.RemoveAt(userPosition);
-                    ENG_FACIL= UpdateIDs(txtID,this.ENG_FACIL);
-                    break;
-                case "EN_M_":
-                    userPosition = retornarIndice(id,this.ENG_MEDIANO);
-                    ENG_MEDIANO.RemoveAt(userPosition);
-                    ENG_MEDIANO= UpdateIDs(txtID,this.ENG_MEDIANO);
-                    break;
-                case "EN_D_":
-                    userPosition = retornarIndice(id,this.ENG_DIFICIL);
-                    ENG_DIFICIL.RemoveAt(userPosition);
-                    ENG_DIFICIL=UpdateIDs(txtID,this.ENG_DIFICIL);
-                    break;
-
-            }
+                }
             updateList();
             updateDataGrid();
         }
@@ -310,6 +317,21 @@ namespace Desktop_Quiz
         {
             peliculaList = new BindingList<Pelicula>(peliculaList.OrderBy(p => p.categoria).ToList());
             updateDataGrid();
+        }
+
+        private void buttonAceptar_Click(object sender, EventArgs e)
+        {
+            BindingList<Pelicula> listaFiltre = new BindingList<Pelicula>();
+            String titulo = textBoxTitulo.Text;
+            foreach (var pelicula in peliculaList)
+            {
+                if (titulo.Equals(pelicula.película))
+                {
+                    listaFiltre.Add(pelicula);
+                }
+                dataGridViewPelicules.DataSource = null;
+                dataGridViewPelicules.DataSource = listaFiltre;
+            }
         }
     }
 }
