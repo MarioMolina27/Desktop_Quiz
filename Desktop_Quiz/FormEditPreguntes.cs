@@ -254,7 +254,7 @@ namespace Desktop_Quiz
 
             for (int i = 0; i < id.Length; i++)
             {
-                if (Char.IsDigit(id[i]))
+                if (char.IsDigit(id[i]))
                 {
                     b += id[i];
                 }

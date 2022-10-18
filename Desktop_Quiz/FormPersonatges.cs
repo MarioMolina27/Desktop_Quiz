@@ -12,9 +12,19 @@ namespace Desktop_Quiz
 {
     public partial class FormPersonatges : Form
     {
+
+        private Form pers = new FormEditPersonatges();
+
         public FormPersonatges()
         {
             InitializeComponent();
+        }
+        private void FormPersonatges_Load(object sender, EventArgs e)
+        {
+            PersRepo.LoadPersListCat();
+
+            dataGridViewPersonatges.DataSource = null;
+            dataGridViewPersonatges.DataSource = PersRepo.personatgesCat;
         }
 
         private void toolStripButtonTornarEnrere_Click(object sender, EventArgs e)
@@ -47,7 +57,45 @@ namespace Desktop_Quiz
 
         private void buttonNouPersonatge_Click(object sender, EventArgs e)
         {
-            new FormEditPersonatges().ShowDialog();
+            pers.ShowDialog();
         }
+
+        private void buttonEditarPersonatge_Click(object sender, EventArgs e)
+        {
+            
+            
+            
+        }
+
+        private void radioButtonCatala_CheckedChanged(object sender, EventArgs e)
+        {
+            
+            PersRepo.LoadPersListCat();
+            
+            dataGridViewPersonatges.DataSource = null;
+            dataGridViewPersonatges.DataSource = PersRepo.personatgesCat;
+            
+        }
+
+        private void radioButtonCastella_CheckedChanged(object sender, EventArgs e)
+        {
+
+            PersRepo.LoadPersListCast();
+
+            dataGridViewPersonatges.DataSource = null;
+            dataGridViewPersonatges.DataSource = PersRepo.personatgesCast;
+
+        }
+
+        private void radioButtonAngles_CheckedChanged(object sender, EventArgs e)
+        {
+            PersRepo.LoadPersListAng();
+
+            dataGridViewPersonatges.DataSource = null;
+            dataGridViewPersonatges.DataSource = PersRepo.personatgesAng;
+
+        }
+
+        
     }
 }

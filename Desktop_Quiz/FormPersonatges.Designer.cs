@@ -38,8 +38,13 @@
             this.textBoxBuscadorPersonatges = new System.Windows.Forms.TextBox();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonTornarEnrere = new System.Windows.Forms.ToolStripButton();
+            this.groupBoxIdioma = new System.Windows.Forms.GroupBox();
+            this.radioButtonAngles = new System.Windows.Forms.RadioButton();
+            this.radioButtonCastella = new System.Windows.Forms.RadioButton();
+            this.radioButtonCatala = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPersonatges)).BeginInit();
             this.toolStrip1.SuspendLayout();
+            this.groupBoxIdioma.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewPersonatges
@@ -71,6 +76,7 @@
             this.buttonEditarPersonatge.Size = new System.Drawing.Size(69, 79);
             this.buttonEditarPersonatge.TabIndex = 2;
             this.buttonEditarPersonatge.UseVisualStyleBackColor = false;
+            this.buttonEditarPersonatge.Click += new System.EventHandler(this.buttonEditarPersonatge_Click);
             // 
             // buttonEliminarPersonatge
             // 
@@ -136,12 +142,60 @@
             this.toolStripButtonTornarEnrere.ToolTipText = "Tornar";
             this.toolStripButtonTornarEnrere.Click += new System.EventHandler(this.toolStripButtonTornarEnrere_Click);
             // 
+            // groupBoxIdioma
+            // 
+            this.groupBoxIdioma.Controls.Add(this.radioButtonAngles);
+            this.groupBoxIdioma.Controls.Add(this.radioButtonCastella);
+            this.groupBoxIdioma.Controls.Add(this.radioButtonCatala);
+            this.groupBoxIdioma.Location = new System.Drawing.Point(34, 531);
+            this.groupBoxIdioma.Name = "groupBoxIdioma";
+            this.groupBoxIdioma.Size = new System.Drawing.Size(144, 125);
+            this.groupBoxIdioma.TabIndex = 8;
+            this.groupBoxIdioma.TabStop = false;
+            this.groupBoxIdioma.Text = "Idioma";
+            // 
+            // radioButtonAngles
+            // 
+            this.radioButtonAngles.AutoSize = true;
+            this.radioButtonAngles.Location = new System.Drawing.Point(38, 83);
+            this.radioButtonAngles.Name = "radioButtonAngles";
+            this.radioButtonAngles.Size = new System.Drawing.Size(59, 17);
+            this.radioButtonAngles.TabIndex = 2;
+            this.radioButtonAngles.Text = "English";
+            this.radioButtonAngles.UseVisualStyleBackColor = true;
+            this.radioButtonAngles.CheckedChanged += new System.EventHandler(this.radioButtonAngles_CheckedChanged);
+            // 
+            // radioButtonCastella
+            // 
+            this.radioButtonCastella.AutoSize = true;
+            this.radioButtonCastella.Location = new System.Drawing.Point(38, 59);
+            this.radioButtonCastella.Name = "radioButtonCastella";
+            this.radioButtonCastella.Size = new System.Drawing.Size(74, 17);
+            this.radioButtonCastella.TabIndex = 1;
+            this.radioButtonCastella.Text = "Castellano";
+            this.radioButtonCastella.UseVisualStyleBackColor = true;
+            this.radioButtonCastella.CheckedChanged += new System.EventHandler(this.radioButtonCastella_CheckedChanged);
+            // 
+            // radioButtonCatala
+            // 
+            this.radioButtonCatala.AutoSize = true;
+            this.radioButtonCatala.Checked = true;
+            this.radioButtonCatala.Location = new System.Drawing.Point(38, 35);
+            this.radioButtonCatala.Name = "radioButtonCatala";
+            this.radioButtonCatala.Size = new System.Drawing.Size(55, 17);
+            this.radioButtonCatala.TabIndex = 0;
+            this.radioButtonCatala.TabStop = true;
+            this.radioButtonCatala.Text = "Català";
+            this.radioButtonCatala.UseVisualStyleBackColor = true;
+            this.radioButtonCatala.CheckedChanged += new System.EventHandler(this.radioButtonCatala_CheckedChanged);
+            // 
             // FormPersonatges
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.groupBoxIdioma);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.textBoxBuscadorPersonatges);
             this.Controls.Add(this.buttonGuardar);
@@ -152,9 +206,12 @@
             this.Controls.Add(this.dataGridViewPersonatges);
             this.Name = "FormPersonatges";
             this.Text = "FormPersonatges";
+            this.Load += new System.EventHandler(this.FormPersonatges_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPersonatges)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.groupBoxIdioma.ResumeLayout(false);
+            this.groupBoxIdioma.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -171,5 +228,9 @@
         private System.Windows.Forms.TextBox textBoxBuscadorPersonatges;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButtonTornarEnrere;
+        private System.Windows.Forms.GroupBox groupBoxIdioma;
+        private System.Windows.Forms.RadioButton radioButtonAngles;
+        private System.Windows.Forms.RadioButton radioButtonCastella;
+        private System.Windows.Forms.RadioButton radioButtonCatala;
     }
 }

@@ -16,7 +16,7 @@ namespace Desktop_Quiz
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormInicioSesion());
+            Application.Run(new FormPersonatges());
         }
     }
 }
