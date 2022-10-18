@@ -36,7 +36,7 @@
             this.textBoxNickSearch = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.buttonEditUser1 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.buttonDeleteUsers = new System.Windows.Forms.Button();
             this.buttonRefreshUsers = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
@@ -106,15 +106,16 @@
             this.buttonEditUser1.UseVisualStyleBackColor = false;
             this.buttonEditUser1.Click += new System.EventHandler(this.buttonEditUser1_Click);
             // 
-            // button3
+            // buttonDeleteUsers
             // 
-            this.button3.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
-            this.button3.Location = new System.Drawing.Point(119, 284);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(69, 79);
-            this.button3.TabIndex = 5;
-            this.button3.UseVisualStyleBackColor = false;
+            this.buttonDeleteUsers.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonDeleteUsers.Image = ((System.Drawing.Image)(resources.GetObject("buttonDeleteUsers.Image")));
+            this.buttonDeleteUsers.Location = new System.Drawing.Point(119, 284);
+            this.buttonDeleteUsers.Name = "buttonDeleteUsers";
+            this.buttonDeleteUsers.Size = new System.Drawing.Size(69, 79);
+            this.buttonDeleteUsers.TabIndex = 5;
+            this.buttonDeleteUsers.UseVisualStyleBackColor = false;
+            this.buttonDeleteUsers.Click += new System.EventHandler(this.buttonDeleteUsers_Click);
             // 
             // buttonRefreshUsers
             // 
@@ -156,7 +157,7 @@
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.buttonRefreshUsers);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.buttonDeleteUsers);
             this.Controls.Add(this.buttonEditUser1);
             this.Controls.Add(this.labelSearchNickname);
             this.Controls.Add(this.button1);
@@ -183,7 +184,7 @@
         private System.Windows.Forms.TextBox textBoxNickSearch;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonEditUser1;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button buttonDeleteUsers;
         private System.Windows.Forms.Button buttonRefreshUsers;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;

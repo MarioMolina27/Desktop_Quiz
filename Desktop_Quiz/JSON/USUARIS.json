@@ -25,5 +25,14 @@
     "add": true,
     "modify": true,
     "delete": true
+  },
+  {
+    "nickname": "Juanw",
+    "nom": "Juan",
+    "contrasenya": "$2a$11$iv6YbKqsCDGfcZcNqBunEeJub0.BFe6cjfIL7z32YD2rqrg4fCZHa",
+    "tipus": "A",
+    "add": true,
+    "modify": true,
+    "delete": true
   }
 ]

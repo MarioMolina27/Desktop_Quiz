@@ -117,5 +117,11 @@ namespace Desktop_Quiz
             dataGridUsuaris1.DataSource = null;
             dataGridUsuaris1.DataSource = UsuarisRepositori.users;
         }
+
+        private void buttonDeleteUsers_Click(object sender, EventArgs e)
+        {   
+            //eliminar usuario
+            UsuarisRepositori.DeleteUser(conseguirRowIndex());
+        }
     }
 }

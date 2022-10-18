@@ -98,6 +98,11 @@ namespace Desktop_Quiz
             {
                 textBoxNickName.Text = UsuarisRepositori.users[IndexPosition].nickname;
                 textBoxNomEdit.Text = UsuarisRepositori.users[IndexPosition].nom;
+                checkBoxAfegir.Checked = UsuarisRepositori.users[IndexPosition].add;
+                checkBoxEditar.Checked = UsuarisRepositori.users[IndexPosition].modify;
+                checkBoxEliminar.Checked = UsuarisRepositori.users[IndexPosition].delete;
+
+
             }
             
         }
@@ -109,27 +114,32 @@ namespace Desktop_Quiz
 
         private void buttonAceptarEditUsers_Click(object sender, EventArgs e)
         {
-            //EncriptarContrasenyes ec = new EncriptarContrasenyes();
-            if(IndexPosition == -1)
-            {
-                UsuarisRepositori.users[UsuarisRepositori.users.Count+1].nickname = textBoxNickName.Text;
+            char tipus = 'A';
 
+
+            if (IndexPosition == -1)
+            {
+                //Afegir nou usuari
+                Usuari usuariAfegir = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
+
+                UsuarisRepositori.AddUser(usuariAfegir);
+                UsuarisRepositori.SaveUsers();
+                this.Close();
             }
             else
             {
                 if (ValidarUser())
                 {
-                    UsuarisRepositori.users[IndexPosition].nickname = textBoxNickName.Text;
-                    UsuarisRepositori.users[IndexPosition].nom = textBoxNomEdit.Text;
-                    UsuarisRepositori.users[IndexPosition].contrasenya = EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text);
+                    //Editar usuari existen
 
-                    //Cridem a la funció que guarda el Json
+                    Usuari usuariEdited = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
+
+
+                    UsuarisRepositori.EditUser(usuariEdited, IndexPosition);
                     UsuarisRepositori.SaveUsers();
                     this.Close();
                 }
-            }
-            
-            
+            }   
         }
     }
 }
