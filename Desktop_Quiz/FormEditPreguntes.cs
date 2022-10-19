@@ -106,9 +106,6 @@ namespace Desktop_Quiz
             this.ENG_MEDIANO = ENG_MEDIANO;
             this.ENG_FACIL = ENG_FACIL;
             this.modificar = true;
-
-
-
             InitializeComponent();
         }
 

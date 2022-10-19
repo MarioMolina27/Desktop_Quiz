@@ -72,6 +72,7 @@
             // 
             // buttonAceptarEditUsers
             // 
+            this.buttonAceptarEditUsers.DialogResult = System.Windows.Forms.DialogResult.Cancel;
             this.buttonAceptarEditUsers.Location = new System.Drawing.Point(335, 285);
             this.buttonAceptarEditUsers.Name = "buttonAceptarEditUsers";
             this.buttonAceptarEditUsers.Size = new System.Drawing.Size(87, 36);

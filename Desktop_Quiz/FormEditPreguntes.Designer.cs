@@ -423,6 +423,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(955, 593);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBoxPelicules);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormEditPreguntes";

@@ -10,11 +10,16 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.TextBox;
+
 namespace Desktop_Quiz
 {
     public partial class FormPreguntas : Form
     {
         public  BindingList<Pelicula> peliculaList { get; set; }
+        public  BindingList<Pelicula> CASTELLANO { get; set; }
+        public  BindingList<Pelicula> CATALA { get; set; }
+        public  BindingList<Pelicula> ENGLISH { get; set; }
         public  BindingList<Pelicula> CAST_DIFICIL { get; set; }
         public  BindingList<Pelicula> CAST_FACIL  { get; set; }
         public  BindingList<Pelicula> CAST_MEDIANO { get; set; }
@@ -57,8 +62,10 @@ namespace Desktop_Quiz
             JArray jarrayEngF = JArray.Parse(File.ReadAllText(@"..\..\JSON\ENGLISH_FACIL.json", Encoding.UTF8));
             this.ENG_FACIL = jarrayEngF.ToObject<BindingList<Pelicula>>();
 
-            BindingList<Pelicula> list = new BindingList<Pelicula>();
-            this.peliculaList = list;
+            this.peliculaList = new BindingList<Pelicula>();
+            this.CASTELLANO = new BindingList<Pelicula>();
+            this.CATALA = new BindingList<Pelicula>();
+            this.ENGLISH = new BindingList<Pelicula>();
       
         }
 
@@ -79,7 +86,7 @@ namespace Desktop_Quiz
 
         private void FormPreguntas_Load(object sender, EventArgs e)
         {
-            updateList();
+            updateListAllLanguages();
             updateDataGrid();
         }
 
@@ -90,9 +97,9 @@ namespace Desktop_Quiz
                                  CAT_FACIL, ENG_DIFICIL, ENG_MEDIANO,
                                 ENG_FACIL);
             p.ShowDialog();
-            updateList();
+            updateListAllLanguages();
         }
-        public void updateList()
+        public void updateListAllLanguages()
         {
             BindingList<Pelicula> carga = new BindingList<Pelicula>();
             
@@ -132,9 +139,86 @@ namespace Desktop_Quiz
                 }
             }
             ordenarList();
+            updateListCAS();
+            updateListCAT();
+            updateListENG();
             updateDataGrid();
           
+        }
 
+        public void updateListCAS() 
+        {
+            this.CASTELLANO.Clear();
+            BindingList<Pelicula> carga = new BindingList<Pelicula>();
+            for (int json = 0; json < 3; json++)
+            {
+                switch (json)
+                {
+                    case 0:
+                        carga = this.CAST_DIFICIL;
+                        break;
+                    case 1:
+                        carga = this.CAST_FACIL;
+                        break;
+                    case 2:
+                        carga = this.CAST_MEDIANO;
+                        break;
+                }
+                foreach (var item in carga)
+                {
+                    this.CASTELLANO.Add(item);
+                }
+            }
+        }
+
+        public void updateListCAT()
+        {
+            this.CATALA.Clear(); ;
+            BindingList<Pelicula> carga = new BindingList<Pelicula>();
+            for (int json = 0; json < 3; json++)
+            {
+                switch (json)
+                {
+                    case 0:
+                        carga = this.CAT_DIFICIL;
+                        break;
+                    case 1:
+                        carga = this.CAT_FACIL;
+                        break;
+                    case 2:
+                        carga = this.CAT_MEDIANO;
+                        break;
+                }
+                foreach (var item in carga)
+                {
+                    this.CATALA.Add(item);
+                }
+            }
+        }
+
+        public void updateListENG()
+        {
+            this.ENGLISH.Clear();
+            BindingList<Pelicula> carga = new BindingList<Pelicula>();
+            for (int json = 0; json < 3; json++)
+            {
+                switch (json)
+                {
+                    case 0:
+                        carga = this.ENG_DIFICIL;
+                        break;
+                    case 1:
+                        carga = this.ENG_FACIL;
+                        break;
+                    case 2:
+                        carga = this.ENG_MEDIANO;
+                        break;
+                }
+                foreach (var item in carga)
+                {
+                    this.ENGLISH.Add(item);
+                }
+            }
         }
 
         public void updateDataGrid()
@@ -162,7 +246,6 @@ namespace Desktop_Quiz
                 String resposta3 = filaSeleccionada.Cells[5].Value.ToString();
                 int resposta_correcte = Int32.Parse(filaSeleccionada.Cells[6].Value.ToString());
                 String categoria = filaSeleccionada.Cells[7].Value.ToString();
-                //REVISAR CUANDO SE TENGAN EJEMPLOS PRACTICOS
                 String imgaudio = filaSeleccionada.Cells[8].Value?.ToString();
                 
                 int dificultat = Int32.Parse(filaSeleccionada.Cells[9].Value.ToString());
@@ -180,7 +263,7 @@ namespace Desktop_Quiz
                 MessageBox.Show("No has elegit cap pregunta per modificar-la");
             }
             updateDataGrid();
-            updateList();
+            updateListAllLanguages();
         }
         private int conseguirRowIndex()
         {
@@ -261,7 +344,7 @@ namespace Desktop_Quiz
                         break;
 
                 }
-            updateList();
+            updateListAllLanguages();
             updateDataGrid();
         }
 
@@ -305,20 +388,6 @@ namespace Desktop_Quiz
             }
             return lista;
         }
-
-        private void radioButtonDificultat_CheckedChanged(object sender, EventArgs e)
-        {
-            peliculaList = new BindingList<Pelicula>(peliculaList.OrderBy(p => p.dificultad).ToList());
-          
-            updateDataGrid();
-        }
-       
-        private void radioButtonCategoria_CheckedChanged(object sender, EventArgs e)
-        {
-            peliculaList = new BindingList<Pelicula>(peliculaList.OrderBy(p => p.categoria).ToList());
-            updateDataGrid();
-        }
-
         private void buttonAceptar_Click(object sender, EventArgs e)
         {
             BindingList<Pelicula> listaFiltre = new BindingList<Pelicula>();
@@ -331,6 +400,92 @@ namespace Desktop_Quiz
                 }
                 dataGridViewPelicules.DataSource = null;
                 dataGridViewPelicules.DataSource = listaFiltre;
+            }
+        }
+
+        private void radioButtonDificultat_CheckedChanged(object sender, EventArgs e)
+        {
+            ordenar();
+        }
+       
+        private void radioButtonCategoria_CheckedChanged(object sender, EventArgs e)
+        {
+            ordenar();
+        }
+
+        private void radioButtonIdiomesTots_CheckedChanged(object sender, EventArgs e)
+        {
+            updateListAllLanguages();
+        }
+
+        private void radioButtonCatala_CheckedChanged(object sender, EventArgs e)
+        {
+            ordenar();
+        }
+
+        private void radioButtonCastellano_CheckedChanged(object sender, EventArgs e)
+        {
+            ordenar();
+
+        }
+
+        private void radioButtonEnglish_CheckedChanged(object sender, EventArgs e)
+        {
+            ordenar();
+        }
+
+        public void ordenar()
+        {
+            if (radioButtonCatala.Checked)
+            {
+                if (radioButtonDificultat.Checked)
+                {
+                    CATALA = new BindingList<Pelicula>(CATALA.OrderBy(p => p.dificultad).ToList());
+                    dataGridViewPelicules.DataSource = null;
+                    dataGridViewPelicules.DataSource = this.CATALA;
+                }
+                else if (radioButtonCategoria.Checked)
+                {
+                    CATALA = new BindingList<Pelicula>(CATALA.OrderBy(p => p.categoria).ToList());
+                    dataGridViewPelicules.DataSource = null;
+                    dataGridViewPelicules.DataSource = this.CATALA;
+                }
+            }
+
+            else if (radioButtonCastellano.Checked)
+            {
+                if (radioButtonDificultat.Checked)
+                {
+                    CASTELLANO = new BindingList<Pelicula>(CASTELLANO.OrderBy(p => p.dificultad).ToList());
+                    dataGridViewPelicules.DataSource = null;
+                    dataGridViewPelicules.DataSource = this.CASTELLANO;
+                }
+                else if (radioButtonCategoria.Checked)
+                {
+                    CASTELLANO = new BindingList<Pelicula>(CASTELLANO.OrderBy(p => p.categoria).ToList());
+                    dataGridViewPelicules.DataSource = null;
+                    dataGridViewPelicules.DataSource = this.CASTELLANO;
+                }
+            }
+            else if (radioButtonEnglish.Checked)
+            {
+                if (radioButtonDificultat.Checked)
+                {
+                    ENGLISH = new BindingList<Pelicula>(ENGLISH.OrderBy(p => p.dificultad).ToList());
+                    dataGridViewPelicules.DataSource = null;
+                    dataGridViewPelicules.DataSource = this.ENGLISH;
+                }
+                else if (radioButtonCategoria.Checked)
+                {
+                    ENGLISH = new BindingList<Pelicula>(ENGLISH.OrderBy(p => p.categoria).ToList());
+                    dataGridViewPelicules.DataSource = null;
+                    dataGridViewPelicules.DataSource = this.ENGLISH;
+                }
+            }
+            else
+            {
+                peliculaList = new BindingList<Pelicula>(peliculaList.OrderBy(p => p.dificultad).ToList());
+                updateDataGrid();
             }
         }
     }
