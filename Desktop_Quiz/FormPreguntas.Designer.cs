@@ -155,6 +155,7 @@
             this.radioButtonCategoria.TabStop = true;
             this.radioButtonCategoria.Text = "Categoría";
             this.radioButtonCategoria.UseVisualStyleBackColor = true;
+            this.radioButtonCategoria.CheckedChanged += new System.EventHandler(this.radioButtonCategoria_CheckedChanged);
             // 
             // labelOrdenacio
             // 
@@ -191,7 +192,6 @@
             this.textBoxTitulo.Name = "textBoxTitulo";
             this.textBoxTitulo.Size = new System.Drawing.Size(394, 20);
             this.textBoxTitulo.TabIndex = 1;
-            this.textBoxTitulo.TextChanged += new System.EventHandler(this.textBoxTitulo_TextChanged);
             // 
             // labelTitul
             // 

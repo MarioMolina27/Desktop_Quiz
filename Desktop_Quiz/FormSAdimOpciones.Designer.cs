@@ -37,6 +37,7 @@
             this.toolStripBackOption = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonBack = new System.Windows.Forms.ToolStripButton();
             this.pictureBoxIconUser = new System.Windows.Forms.PictureBox();
+            this.labelNom = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.toolStripBackOption.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconUser)).BeginInit();
@@ -46,11 +47,12 @@
             // 
             this.labelBenvinguda.AutoSize = true;
             this.labelBenvinguda.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBenvinguda.Location = new System.Drawing.Point(828, 400);
+            this.labelBenvinguda.Location = new System.Drawing.Point(878, 371);
             this.labelBenvinguda.Name = "labelBenvinguda";
             this.labelBenvinguda.Size = new System.Drawing.Size(127, 24);
             this.labelBenvinguda.TabIndex = 3;
             this.labelBenvinguda.Text = "BENVINGUT";
+            this.labelBenvinguda.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBoxIcon
             // 
@@ -132,11 +134,21 @@
             this.pictureBoxIconUser.TabIndex = 12;
             this.pictureBoxIconUser.TabStop = false;
             // 
+            // labelNom
+            // 
+            this.labelNom.AutoSize = true;
+            this.labelNom.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNom.Location = new System.Drawing.Point(878, 407);
+            this.labelNom.Name = "labelNom";
+            this.labelNom.Size = new System.Drawing.Size(0, 19);
+            this.labelNom.TabIndex = 13;
+            // 
             // FormSAdimOpciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.labelNom);
             this.Controls.Add(this.pictureBoxIconUser);
             this.Controls.Add(this.toolStripBackOption);
             this.Controls.Add(this.buttonPreguntes);
@@ -167,5 +179,6 @@
         private System.Windows.Forms.ToolStrip toolStripBackOption;
         private System.Windows.Forms.ToolStripButton toolStripButtonBack;
         private System.Windows.Forms.PictureBox pictureBoxIconUser;
+        private System.Windows.Forms.Label labelNom;
     }
 }

@@ -55,13 +55,9 @@ namespace Desktop_Quiz
             JArray arrayUsers = JArray.Parse(File.ReadAllText(@"..\..\JSON\USUARIS.json"));
             usuaris = arrayUsers.ToObject<List<Usuari>>();
             
-
-
-            
             dataGridUsuaris1.DataSource = null;
-            dataGridUsuaris1.DataSource = usuaris;   
-
-
+            dataGridUsuaris1.DataSource = usuaris;
+            dataGridUsuaris1.ClearSelection();
         }
 
         private void button1_Click(object sender, EventArgs e)

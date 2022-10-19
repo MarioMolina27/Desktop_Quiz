@@ -28,78 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.buttonIniciSesio = new System.Windows.Forms.Button();
+            this.pictureBoxIconUser = new System.Windows.Forms.PictureBox();
             this.labelNom = new System.Windows.Forms.Label();
             this.labelContrasenya = new System.Windows.Forms.Label();
             this.textBoxNom = new System.Windows.Forms.TextBox();
             this.textBoxContrasenya = new System.Windows.Forms.TextBox();
-            this.groupBoxDades = new System.Windows.Forms.GroupBox();
             this.checkBoxMostraPass = new System.Windows.Forms.CheckBox();
-            this.buttonIniciSesio = new System.Windows.Forms.Button();
-            this.pictureBoxIconUser = new System.Windows.Forms.PictureBox();
-            this.groupBoxDades.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconUser)).BeginInit();
             this.SuspendLayout();
-            // 
-            // labelNom
-            // 
-            this.labelNom.AutoSize = true;
-            this.labelNom.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNom.Location = new System.Drawing.Point(174, 112);
-            this.labelNom.Name = "labelNom";
-            this.labelNom.Size = new System.Drawing.Size(75, 17);
-            this.labelNom.TabIndex = 0;
-            this.labelNom.Text = "NickName";
-            // 
-            // labelContrasenya
-            // 
-            this.labelContrasenya.AutoSize = true;
-            this.labelContrasenya.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelContrasenya.Location = new System.Drawing.Point(174, 188);
-            this.labelContrasenya.Name = "labelContrasenya";
-            this.labelContrasenya.Size = new System.Drawing.Size(91, 17);
-            this.labelContrasenya.TabIndex = 1;
-            this.labelContrasenya.Text = "Contrasenya";
-            // 
-            // textBoxNom
-            // 
-            this.textBoxNom.Location = new System.Drawing.Point(342, 105);
-            this.textBoxNom.Name = "textBoxNom";
-            this.textBoxNom.Size = new System.Drawing.Size(333, 20);
-            this.textBoxNom.TabIndex = 2;
-            this.textBoxNom.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxNom_KeyDown);
-            // 
-            // textBoxContrasenya
-            // 
-            this.textBoxContrasenya.Location = new System.Drawing.Point(342, 180);
-            this.textBoxContrasenya.Name = "textBoxContrasenya";
-            this.textBoxContrasenya.Size = new System.Drawing.Size(333, 20);
-            this.textBoxContrasenya.TabIndex = 3;
-            this.textBoxContrasenya.UseSystemPasswordChar = true;
-            this.textBoxContrasenya.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxContrasenya_KeyDown);
-            // 
-            // groupBoxDades
-            // 
-            this.groupBoxDades.Controls.Add(this.checkBoxMostraPass);
-            this.groupBoxDades.Controls.Add(this.textBoxContrasenya);
-            this.groupBoxDades.Controls.Add(this.textBoxNom);
-            this.groupBoxDades.Controls.Add(this.labelContrasenya);
-            this.groupBoxDades.Controls.Add(this.labelNom);
-            this.groupBoxDades.Location = new System.Drawing.Point(510, 350);
-            this.groupBoxDades.Name = "groupBoxDades";
-            this.groupBoxDades.Size = new System.Drawing.Size(845, 337);
-            this.groupBoxDades.TabIndex = 0;
-            this.groupBoxDades.TabStop = false;
-            // 
-            // checkBoxMostraPass
-            // 
-            this.checkBoxMostraPass.AutoSize = true;
-            this.checkBoxMostraPass.Location = new System.Drawing.Point(682, 182);
-            this.checkBoxMostraPass.Name = "checkBoxMostraPass";
-            this.checkBoxMostraPass.Size = new System.Drawing.Size(123, 17);
-            this.checkBoxMostraPass.TabIndex = 4;
-            this.checkBoxMostraPass.Text = "Mostrar Contrasenya";
-            this.checkBoxMostraPass.UseVisualStyleBackColor = true;
-            this.checkBoxMostraPass.CheckedChanged += new System.EventHandler(this.checkBoxMostraPass_CheckedChanged);
             // 
             // buttonIniciSesio
             // 
@@ -126,32 +63,82 @@
             this.pictureBoxIconUser.TabIndex = 6;
             this.pictureBoxIconUser.TabStop = false;
             // 
+            // labelNom
+            // 
+            this.labelNom.AutoSize = true;
+            this.labelNom.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNom.Location = new System.Drawing.Point(653, 412);
+            this.labelNom.Name = "labelNom";
+            this.labelNom.Size = new System.Drawing.Size(75, 17);
+            this.labelNom.TabIndex = 0;
+            this.labelNom.Text = "NickName";
+            // 
+            // labelContrasenya
+            // 
+            this.labelContrasenya.AutoSize = true;
+            this.labelContrasenya.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelContrasenya.Location = new System.Drawing.Point(653, 488);
+            this.labelContrasenya.Name = "labelContrasenya";
+            this.labelContrasenya.Size = new System.Drawing.Size(91, 17);
+            this.labelContrasenya.TabIndex = 1;
+            this.labelContrasenya.Text = "Contrasenya";
+            // 
+            // textBoxNom
+            // 
+            this.textBoxNom.Location = new System.Drawing.Point(821, 405);
+            this.textBoxNom.Name = "textBoxNom";
+            this.textBoxNom.Size = new System.Drawing.Size(333, 20);
+            this.textBoxNom.TabIndex = 2;
+            this.textBoxNom.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxNom_KeyDown);
+            // 
+            // textBoxContrasenya
+            // 
+            this.textBoxContrasenya.Location = new System.Drawing.Point(821, 480);
+            this.textBoxContrasenya.Name = "textBoxContrasenya";
+            this.textBoxContrasenya.Size = new System.Drawing.Size(333, 20);
+            this.textBoxContrasenya.TabIndex = 3;
+            this.textBoxContrasenya.UseSystemPasswordChar = true;
+            this.textBoxContrasenya.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxContrasenya_KeyDown);
+            // 
+            // checkBoxMostraPass
+            // 
+            this.checkBoxMostraPass.AutoSize = true;
+            this.checkBoxMostraPass.Location = new System.Drawing.Point(1161, 482);
+            this.checkBoxMostraPass.Name = "checkBoxMostraPass";
+            this.checkBoxMostraPass.Size = new System.Drawing.Size(123, 17);
+            this.checkBoxMostraPass.TabIndex = 4;
+            this.checkBoxMostraPass.Text = "Mostrar Contrasenya";
+            this.checkBoxMostraPass.UseVisualStyleBackColor = true;
+            this.checkBoxMostraPass.CheckedChanged += new System.EventHandler(this.checkBoxMostraPass_CheckedChanged);
+            // 
             // FormInicioSesion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.checkBoxMostraPass);
             this.Controls.Add(this.pictureBoxIconUser);
+            this.Controls.Add(this.textBoxContrasenya);
+            this.Controls.Add(this.textBoxNom);
             this.Controls.Add(this.buttonIniciSesio);
-            this.Controls.Add(this.groupBoxDades);
+            this.Controls.Add(this.labelContrasenya);
+            this.Controls.Add(this.labelNom);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormInicioSesion";
             this.Text = "FormInicioSesion";
-            this.groupBoxDades.ResumeLayout(false);
-            this.groupBoxDades.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconUser)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+        private System.Windows.Forms.Button buttonIniciSesio;
+        private System.Windows.Forms.PictureBox pictureBoxIconUser;
         private System.Windows.Forms.Label labelNom;
         private System.Windows.Forms.Label labelContrasenya;
         private System.Windows.Forms.TextBox textBoxNom;
         private System.Windows.Forms.TextBox textBoxContrasenya;
-        private System.Windows.Forms.GroupBox groupBoxDades;
-        private System.Windows.Forms.Button buttonIniciSesio;
         private System.Windows.Forms.CheckBox checkBoxMostraPass;
-        private System.Windows.Forms.PictureBox pictureBoxIconUser;
     }
 }

@@ -25,7 +25,7 @@ namespace Desktop_Quiz
 
         private void FormAdminOpciones_Load(object sender, EventArgs e)
         {
-            labelBenvinguda.Text = "Benvingut " + nomAdmin;
+            labelNom.Text = nomAdmin;
         }
 
         private void buttonPersonatges_Click(object sender, EventArgs e)

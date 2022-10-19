@@ -25,7 +25,7 @@ namespace Desktop_Quiz
 
         private void FormSAdimOpciones_Load(object sender, EventArgs e)
         {
-            labelBenvinguda.Text = "Benvingut " + nomSuperAdmin;
+            labelNom.Text = nomSuperAdmin;
         }
 
         private void buttonUsuari_Click(object sender, EventArgs e)

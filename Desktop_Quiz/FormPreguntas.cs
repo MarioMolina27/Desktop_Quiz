@@ -9,11 +9,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+
+
 namespace Desktop_Quiz
 {
     public partial class FormPreguntas : Form
     {
-        List<Pelicula> peliculaList = new List<Pelicula>();
+        BindingList<Pelicula> peliculaList = new BindingList<Pelicula>();
         //DataTable taulaPelicules = new DataTable();
         public FormPreguntas()
         {
@@ -49,7 +51,7 @@ namespace Desktop_Quiz
                 JArray jarrayEngF = JArray.Parse(File.ReadAllText(@"..\..\JSON\ENGLISH_FACIL.json", Encoding.UTF8));
                 List<Pelicula> ENG_FACIL =  jarrayEngF.ToObject<List<Pelicula>>();
 
-            List<Pelicula> carga = new List<Pelicula>();
+                List<Pelicula> carga = new List<Pelicula>();
 
             for (int json = 0; json < 8; json++)
             {
@@ -87,7 +89,11 @@ namespace Desktop_Quiz
             }
                 dataGridViewPelicules.DataSource = null;
                 dataGridViewPelicules.DataSource = peliculaList;
+        }
 
+        private void radioButtonCategoria_CheckedChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
