@@ -37,11 +37,11 @@ namespace Desktop_Quiz
                 {
                     if (user.tipus == 'S')
                     {
-                        FormSAdimOpciones formSuperAdmin = new FormSAdimOpciones(user.nom);
+                        FormSAdimOpciones formSuperAdmin = new FormSAdimOpciones(user);
                         formSuperAdmin.ShowDialog();
                     } else
                     {
-                        FormAdminOpciones formAdmin = new FormAdminOpciones(user.nom);
+                        FormAdminOpciones formAdmin = new FormAdminOpciones(user);
                         formAdmin.ShowDialog();
                     }
                     this.Close();
@@ -82,6 +82,9 @@ namespace Desktop_Quiz
             }
         }
 
-       
+        private void textBoxNom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

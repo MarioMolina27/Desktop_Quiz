@@ -49,5 +49,10 @@ namespace Desktop_Quiz
         {
             new FormEditPersonatges().ShowDialog();
         }
+
+        private void textBoxBuscadorPersonatges_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

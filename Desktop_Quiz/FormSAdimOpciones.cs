@@ -13,8 +13,14 @@ namespace Desktop_Quiz
     public partial class FormSAdimOpciones : Form
     {
         String nomSuperAdmin;
+        public Usuari usuari { get; set; }
         public FormSAdimOpciones()
         {
+            InitializeComponent();
+        }
+        public FormSAdimOpciones(Usuari u)
+        {
+            this.usuari = u;
             InitializeComponent();
         }
         public FormSAdimOpciones(String nomUser)
@@ -42,7 +48,7 @@ namespace Desktop_Quiz
 
         private void buttonPreguntes_Click(object sender, EventArgs e)
         {
-            FormPreguntas formPreguntas = new FormPreguntas();
+            FormPreguntas formPreguntas = new FormPreguntas(this.usuari);
             formPreguntas.ShowDialog();
         }
 

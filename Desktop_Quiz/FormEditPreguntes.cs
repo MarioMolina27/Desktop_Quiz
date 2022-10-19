@@ -18,6 +18,7 @@ namespace Desktop_Quiz
         public String id, pelicula, pregunta, resposta1, resposta2, resposta3, categoria, imgaudio;
         public int resposta_correcte, dificultat;
         public bool modificar;
+        public Usuari usuari;
 
         public BindingList<Pelicula> peliculaList { get; set; }
         public BindingList<Pelicula> CAST_DIFICIL { get; set; }
@@ -28,6 +29,62 @@ namespace Desktop_Quiz
         public BindingList<Pelicula> CAT_FACIL { get; set; }
         public BindingList<Pelicula> ENG_DIFICIL { get; set; }
         public BindingList<Pelicula> ENG_MEDIANO { get; set; }
+        public BindingList<Pelicula> ENG_FACIL { get; set; }
+        public FormEditPreguntes()
+        {
+            InitializeComponent();
+        }
+
+        public FormEditPreguntes(BindingList<Pelicula> peliculaList, BindingList<Pelicula> CAST_DIFICIL, BindingList<Pelicula> CAST_MEDIANO,
+                                BindingList<Pelicula> CAST_FACIL, BindingList<Pelicula> CAT_DIFICIL, BindingList<Pelicula> CAT_MEDIANO,
+                                BindingList<Pelicula> CAT_FACIL, BindingList<Pelicula> ENG_DIFICIL, BindingList<Pelicula> ENG_MEDIANO,
+                                BindingList<Pelicula> ENG_FACIL,    Usuari u)
+        {
+            this.peliculaList = peliculaList;
+            this.CAST_DIFICIL = CAST_DIFICIL;
+            this.CAST_FACIL = CAST_FACIL;
+            this.CAST_MEDIANO = CAST_MEDIANO;
+            this.CAT_DIFICIL = CAT_DIFICIL;
+            this.CAT_MEDIANO = CAT_MEDIANO;
+            this.CAT_FACIL = CAT_FACIL;
+            this.ENG_DIFICIL = ENG_DIFICIL;
+            this.ENG_MEDIANO = ENG_MEDIANO;
+            this.ENG_FACIL = ENG_FACIL;
+            this.modificar = false;
+            this.usuari = u;
+            InitializeComponent();
+        }
+
+        public FormEditPreguntes(String id, String pelicula, String pregunta, String resposta1, String resposta2, String resposta3, int resposta_correcte, String categoria, String imgaudio, int dificultat,
+                                BindingList<Pelicula> peliculaList, BindingList<Pelicula> CAST_DIFICIL, BindingList<Pelicula> CAST_MEDIANO,
+                                BindingList<Pelicula> CAST_FACIL, BindingList<Pelicula> CAT_DIFICIL, BindingList<Pelicula> CAT_MEDIANO,
+                                BindingList<Pelicula> CAT_FACIL, BindingList<Pelicula> ENG_DIFICIL, BindingList<Pelicula> ENG_MEDIANO,
+                                BindingList<Pelicula> ENG_FACIL, Usuari u)
+        {
+            this.id = id;
+            this.pelicula = pelicula;
+            this.pregunta = pregunta;
+            this.resposta1 = resposta1;
+            this.resposta2 = resposta2;
+            this.resposta3 = resposta3;
+            this.resposta_correcte = resposta_correcte;
+            this.categoria = categoria;
+            this.imgaudio = imgaudio;
+            this.dificultat = dificultat;
+            this.peliculaList = peliculaList;
+            this.CAST_DIFICIL = CAST_DIFICIL;
+            this.CAST_FACIL = CAST_FACIL;
+            this.CAST_MEDIANO = CAST_MEDIANO;
+            this.CAT_DIFICIL = CAT_DIFICIL;
+            this.CAT_MEDIANO = CAT_MEDIANO;
+            this.CAT_FACIL = CAT_FACIL;
+            this.ENG_DIFICIL = ENG_DIFICIL;
+            this.ENG_MEDIANO = ENG_MEDIANO;
+            this.ENG_FACIL = ENG_FACIL;
+            this.modificar = true;
+            this.usuari = u;
+            InitializeComponent();
+        }
 
         private void buttonImatgeAceptar_Click(object sender, EventArgs e)
         {
@@ -53,62 +110,9 @@ namespace Desktop_Quiz
             }
         }
 
-        public BindingList<Pelicula> ENG_FACIL { get; set; }
+       
 
-        public FormEditPreguntes()
-        {
-            InitializeComponent();
-        }
-
-        public FormEditPreguntes(BindingList<Pelicula> peliculaList, BindingList<Pelicula> CAST_DIFICIL, BindingList<Pelicula> CAST_MEDIANO, 
-                                BindingList<Pelicula> CAST_FACIL, BindingList<Pelicula> CAT_DIFICIL, BindingList<Pelicula> CAT_MEDIANO, 
-                                BindingList<Pelicula> CAT_FACIL, BindingList<Pelicula> ENG_DIFICIL, BindingList<Pelicula> ENG_MEDIANO, 
-                                BindingList<Pelicula> ENG_FACIL)
-        {
-            this.peliculaList = peliculaList;
-            this.CAST_DIFICIL = CAST_DIFICIL;
-            this.CAST_FACIL = CAST_FACIL;
-            this.CAST_MEDIANO = CAST_MEDIANO;
-            this.CAT_DIFICIL = CAT_DIFICIL;
-            this.CAT_MEDIANO = CAT_MEDIANO;
-            this.CAT_FACIL = CAT_FACIL;
-            this.ENG_DIFICIL = ENG_DIFICIL;
-            this.ENG_MEDIANO = ENG_MEDIANO;
-            this.ENG_FACIL = ENG_FACIL;
-            this.modificar = false;
-            InitializeComponent();
-        }
-
-        public FormEditPreguntes(String id, String pelicula, String pregunta, String resposta1, String resposta2, String resposta3, int resposta_correcte, String categoria, String imgaudio, int dificultat,
-                                BindingList<Pelicula> peliculaList, BindingList<Pelicula> CAST_DIFICIL, BindingList<Pelicula> CAST_MEDIANO,
-                                BindingList<Pelicula> CAST_FACIL, BindingList<Pelicula> CAT_DIFICIL, BindingList<Pelicula> CAT_MEDIANO,
-                                BindingList<Pelicula> CAT_FACIL, BindingList<Pelicula> ENG_DIFICIL, BindingList<Pelicula> ENG_MEDIANO,
-                                BindingList<Pelicula> ENG_FACIL)
-        {
-            this.id = id;
-            this.pelicula = pelicula;
-            this.pregunta = pregunta;
-            this.resposta1 = resposta1;
-            this.resposta2 = resposta2;
-            this.resposta3 = resposta3;
-            this.resposta_correcte = resposta_correcte;
-            this.categoria = categoria;
-            this.imgaudio = imgaudio;
-            this.dificultat = dificultat;
-            this.peliculaList = peliculaList;
-            this.CAST_DIFICIL = CAST_DIFICIL;
-            this.CAST_FACIL = CAST_FACIL;
-            this.CAST_MEDIANO = CAST_MEDIANO;
-            this.CAT_DIFICIL = CAT_DIFICIL;
-            this.CAT_MEDIANO = CAT_MEDIANO;
-            this.CAT_FACIL = CAT_FACIL;
-            this.ENG_DIFICIL = ENG_DIFICIL;
-            this.ENG_MEDIANO = ENG_MEDIANO;
-            this.ENG_FACIL = ENG_FACIL;
-            this.modificar = true;
-            InitializeComponent();
-        }
-
+       
         private void buttonGuardar_Click_1(object sender, EventArgs e)
         {
         
@@ -239,7 +243,7 @@ namespace Desktop_Quiz
             FormPreguntas formPreguntas = new FormPreguntas(peliculaList, CAST_DIFICIL, CAST_MEDIANO,
                                  CAST_FACIL, CAT_DIFICIL, CAT_MEDIANO,
                                  CAT_FACIL, ENG_DIFICIL, ENG_MEDIANO,
-                                 ENG_FACIL);
+                                 ENG_FACIL,this.usuari);
             formPreguntas.Show();
             this.Close();
         }

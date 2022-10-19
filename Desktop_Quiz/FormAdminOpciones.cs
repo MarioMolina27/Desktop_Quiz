@@ -13,8 +13,14 @@ namespace Desktop_Quiz
     public partial class FormAdminOpciones : Form
     {
         String nomAdmin;
+        public Usuari usuari { get; set; }
         public FormAdminOpciones()
         {
+            InitializeComponent();
+        }
+        public FormAdminOpciones(Usuari u)
+        {
+            this.usuari = u;
             InitializeComponent();
         }
         public FormAdminOpciones(String nomUser)
@@ -25,7 +31,7 @@ namespace Desktop_Quiz
 
         private void FormAdminOpciones_Load(object sender, EventArgs e)
         {
-            labelBenvinguda.Text = "Benvingut " + nomAdmin;
+            labelBenvinguda.Text = "Benvingut " + usuari.nom;
         }
 
         private void buttonPersonatges_Click(object sender, EventArgs e)
@@ -36,7 +42,7 @@ namespace Desktop_Quiz
 
         private void buttonPreguntes_Click(object sender, EventArgs e)
         {
-            FormPreguntas formPreguntes = new FormPreguntas();
+            FormPreguntas formPreguntes = new FormPreguntas(this.usuari);
             formPreguntes.ShowDialog();
         }
 

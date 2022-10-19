@@ -32,7 +32,9 @@ namespace Desktop_Quiz
 
         public bool modificar { get; set; }
 
-        public FormPreguntas()
+        public Usuari usuari { get; set; }
+
+        public FormPreguntas(Usuari u)
         {
             InitializeComponent();
             JArray jarrayCastD = JArray.Parse(File.ReadAllText(@"..\..\JSON\CASTELLANO_DIFICIL.json", Encoding.UTF8));
@@ -66,10 +68,10 @@ namespace Desktop_Quiz
             this.CASTELLANO = new BindingList<Pelicula>();
             this.CATALA = new BindingList<Pelicula>();
             this.ENGLISH = new BindingList<Pelicula>();
-      
+            this.usuari = u;
         }
 
-        public FormPreguntas(BindingList<Pelicula> peliculaList, BindingList<Pelicula> cAST_DIFICIL, BindingList<Pelicula> cAST_FACIL, BindingList<Pelicula> cAST_MEDIANO, BindingList<Pelicula> cAT_DIFICIL, BindingList<Pelicula> cAT_MEDIANO, BindingList<Pelicula> cAT_FACIL, BindingList<Pelicula> eNG_DIFICIL, BindingList<Pelicula> eNG_MEDIANO, BindingList<Pelicula> eNG_FACIL)
+        public FormPreguntas(BindingList<Pelicula> peliculaList, BindingList<Pelicula> cAST_DIFICIL, BindingList<Pelicula> cAST_FACIL, BindingList<Pelicula> cAST_MEDIANO, BindingList<Pelicula> cAT_DIFICIL, BindingList<Pelicula> cAT_MEDIANO, BindingList<Pelicula> cAT_FACIL, BindingList<Pelicula> eNG_DIFICIL, BindingList<Pelicula> eNG_MEDIANO, BindingList<Pelicula> eNG_FACIL,Usuari u)
         {
             this.peliculaList = peliculaList;
             this.CAST_DIFICIL = cAST_DIFICIL;
@@ -81,13 +83,39 @@ namespace Desktop_Quiz
             this.ENG_DIFICIL = eNG_DIFICIL;
             this.ENG_MEDIANO = eNG_MEDIANO;
             this.ENG_FACIL = eNG_FACIL;
-
+            this.usuari = u;
         }
 
         private void FormPreguntas_Load(object sender, EventArgs e)
         {
             updateListAllLanguages();
             updateDataGrid();
+            if (usuari.add)
+            {
+                buttonAfegir.Visible = true;
+            }
+            else if (!usuari.add)
+            {
+                buttonAfegir.Visible = false;
+            }
+
+            if (usuari.delete)
+            {
+                buttonEliminar.Visible = true;
+            }
+            else if (!usuari.delete)
+            {
+                buttonEliminar.Visible = false;
+            }
+
+            if (usuari.modify)
+            {
+                buttonModificar.Visible = true;
+            }
+            else if (!usuari.modify)
+            {
+                buttonModificar.Visible = false;
+            }
         }
 
         private void buttonAfegir_Click(object sender, EventArgs e)
@@ -95,7 +123,7 @@ namespace Desktop_Quiz
             FormEditPreguntes p = new FormEditPreguntes(peliculaList, CAST_DIFICIL, CAST_MEDIANO,
                                  CAST_FACIL, CAT_DIFICIL, CAT_MEDIANO,
                                  CAT_FACIL, ENG_DIFICIL, ENG_MEDIANO,
-                                ENG_FACIL);
+                                ENG_FACIL,this.usuari);
             p.ShowDialog();
             updateListAllLanguages();
         }
@@ -254,7 +282,7 @@ namespace Desktop_Quiz
                                 peliculaList,CAST_DIFICIL,CAST_MEDIANO,
                                  CAST_FACIL, CAT_DIFICIL, CAT_MEDIANO,
                                  CAT_FACIL, ENG_DIFICIL,  ENG_MEDIANO,
-                                ENG_FACIL);
+                                ENG_FACIL,this.usuari);
                 eliminarElemento(id);
                 p2.ShowDialog();
             }
@@ -486,6 +514,24 @@ namespace Desktop_Quiz
             {
                 peliculaList = new BindingList<Pelicula>(peliculaList.OrderBy(p => p.dificultad).ToList());
                 updateDataGrid();
+            }
+        }
+
+        private void textBoxTitulo_Leave(object sender, EventArgs e)
+        {
+            if (textBoxTitulo.Text.Equals(""))
+            {
+                textBoxTitulo.Text = "  Buscar...";
+                textBoxTitulo.ForeColor = Color.Gray;
+            }
+        }
+
+        private void textBoxTitulo_Enter(object sender, EventArgs e)
+        {
+            if (textBoxTitulo.Text.Equals("  Buscar..."))
+            {
+                textBoxTitulo.Text = "";
+                textBoxTitulo.ForeColor = Color.Black;
             }
         }
     }
