@@ -71,9 +71,16 @@ namespace Desktop_Quiz
            
 
             if (conseguirRowIndex() != -1)
+
             {
+                //gaurdem el nickname de la fila seleccionada 
+                String nickname = dataGridUsuaris1.Rows[conseguirRowIndex()].Cells[0].Value.ToString();
+
                 FormEditUsuaris userEdit1 = new FormEditUsuaris(conseguirRowIndex());
                 userEdit1.ShowDialog();
+
+                //volvemos a cargar la grid
+                autoRefresh();
             }
 
         }
@@ -88,6 +95,8 @@ namespace Desktop_Quiz
             int rowNotEdtit = -1;
             FormEditUsuaris editUsuaris2 = new FormEditUsuaris(rowNotEdtit);
             editUsuaris2.ShowDialog();
+            //volvemos a cargar la grid
+            autoRefresh();
         }
 
         //funcio per saver quina fila esta seleccionada 
@@ -109,11 +118,8 @@ namespace Desktop_Quiz
             this.Close();
         }
 
-        private void buttonRefreshUsers_Click(object sender, EventArgs e)
+        private void autoRefresh()
         {
-            //cargamos la lista con el contenido del Json
-            UsuarisRepositori.LoadUsersList();
-
             dataGridUsuaris1.DataSource = null;
             dataGridUsuaris1.DataSource = UsuarisRepositori.users;
         }
@@ -122,6 +128,17 @@ namespace Desktop_Quiz
         {   
             //eliminar usuario
             UsuarisRepositori.DeleteUser(conseguirRowIndex());
+            UsuarisRepositori.SaveUsers();
+            autoRefresh();
+
+        }
+
+        private void textBoxNickSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+
+           
+            
+            
         }
     }
 }

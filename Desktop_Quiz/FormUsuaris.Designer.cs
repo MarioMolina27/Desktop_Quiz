@@ -37,7 +37,6 @@
             this.button1 = new System.Windows.Forms.Button();
             this.buttonEditUser1 = new System.Windows.Forms.Button();
             this.buttonDeleteUsers = new System.Windows.Forms.Button();
-            this.buttonRefreshUsers = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuaris1)).BeginInit();
@@ -55,7 +54,7 @@
             this.dataGridUsuaris1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridUsuaris1.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataGridUsuaris1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridUsuaris1.Location = new System.Drawing.Point(246, 153);
+            this.dataGridUsuaris1.Location = new System.Drawing.Point(241, 134);
             this.dataGridUsuaris1.Name = "dataGridUsuaris1";
             this.dataGridUsuaris1.Size = new System.Drawing.Size(1614, 827);
             this.dataGridUsuaris1.TabIndex = 2;
@@ -82,6 +81,7 @@
             this.textBoxNickSearch.TabIndex = 1;
             this.textBoxNickSearch.Text = "  Buscar...";
             this.textBoxNickSearch.Enter += new System.EventHandler(this.textBoxNickSearch_Enter);
+            this.textBoxNickSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxNickSearch_KeyDown);
             this.textBoxNickSearch.Leave += new System.EventHandler(this.textBoxNickSearch_Leave);
             // 
             // button1
@@ -117,18 +117,6 @@
             this.buttonDeleteUsers.UseVisualStyleBackColor = false;
             this.buttonDeleteUsers.Click += new System.EventHandler(this.buttonDeleteUsers_Click);
             // 
-            // buttonRefreshUsers
-            // 
-            this.buttonRefreshUsers.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonRefreshUsers.ForeColor = System.Drawing.Color.Cyan;
-            this.buttonRefreshUsers.Image = ((System.Drawing.Image)(resources.GetObject("buttonRefreshUsers.Image")));
-            this.buttonRefreshUsers.Location = new System.Drawing.Point(1785, 52);
-            this.buttonRefreshUsers.Name = "buttonRefreshUsers";
-            this.buttonRefreshUsers.Size = new System.Drawing.Size(75, 75);
-            this.buttonRefreshUsers.TabIndex = 6;
-            this.buttonRefreshUsers.UseVisualStyleBackColor = false;
-            this.buttonRefreshUsers.Click += new System.EventHandler(this.buttonRefreshUsers_Click);
-            // 
             // toolStrip1
             // 
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -156,7 +144,6 @@
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.buttonRefreshUsers);
             this.Controls.Add(this.buttonDeleteUsers);
             this.Controls.Add(this.buttonEditUser1);
             this.Controls.Add(this.labelSearchNickname);
@@ -185,7 +172,6 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button buttonEditUser1;
         private System.Windows.Forms.Button buttonDeleteUsers;
-        private System.Windows.Forms.Button buttonRefreshUsers;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
