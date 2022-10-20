@@ -30,23 +30,31 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditPersonatges));
             this.groupBoxDadesPersonatge = new System.Windows.Forms.GroupBox();
-            this.labelNom = new System.Windows.Forms.Label();
-            this.labelDescripcio = new System.Windows.Forms.Label();
-            this.labelRutaImg = new System.Windows.Forms.Label();
-            this.textBoxRutaImg = new System.Windows.Forms.TextBox();
-            this.buttonBuscarRutaImg = new System.Windows.Forms.Button();
-            this.textBoxDescripcioPers = new System.Windows.Forms.TextBox();
+            this.comboBoxGenere = new System.Windows.Forms.ComboBox();
+            this.textBoxEncerts = new System.Windows.Forms.TextBox();
+            this.labelEncerts = new System.Windows.Forms.Label();
+            this.labelGenere = new System.Windows.Forms.Label();
+            this.buttonGuardarEdit = new System.Windows.Forms.Button();
+            this.pictureBoxPers = new System.Windows.Forms.PictureBox();
             this.textBoxNomPers = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.textBoxDescripcioPers = new System.Windows.Forms.TextBox();
+            this.buttonBuscarRutaImg = new System.Windows.Forms.Button();
+            this.textBoxRutaImg = new System.Windows.Forms.TextBox();
+            this.labelRutaImg = new System.Windows.Forms.Label();
+            this.labelDescripcio = new System.Windows.Forms.Label();
+            this.labelNom = new System.Windows.Forms.Label();
             this.groupBoxDadesPersonatge.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPers)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxDadesPersonatge
             // 
-            this.groupBoxDadesPersonatge.Controls.Add(this.button1);
-            this.groupBoxDadesPersonatge.Controls.Add(this.pictureBox1);
+            this.groupBoxDadesPersonatge.Controls.Add(this.comboBoxGenere);
+            this.groupBoxDadesPersonatge.Controls.Add(this.textBoxEncerts);
+            this.groupBoxDadesPersonatge.Controls.Add(this.labelEncerts);
+            this.groupBoxDadesPersonatge.Controls.Add(this.labelGenere);
+            this.groupBoxDadesPersonatge.Controls.Add(this.buttonGuardarEdit);
+            this.groupBoxDadesPersonatge.Controls.Add(this.pictureBoxPers);
             this.groupBoxDadesPersonatge.Controls.Add(this.textBoxNomPers);
             this.groupBoxDadesPersonatge.Controls.Add(this.textBoxDescripcioPers);
             this.groupBoxDadesPersonatge.Controls.Add(this.buttonBuscarRutaImg);
@@ -61,39 +69,79 @@
             this.groupBoxDadesPersonatge.TabStop = false;
             this.groupBoxDadesPersonatge.Text = "Dades personatge";
             // 
-            // labelNom
+            // comboBoxGenere
             // 
-            this.labelNom.AutoSize = true;
-            this.labelNom.Location = new System.Drawing.Point(6, 36);
-            this.labelNom.Name = "labelNom";
-            this.labelNom.Size = new System.Drawing.Size(39, 17);
-            this.labelNom.TabIndex = 0;
-            this.labelNom.Text = "Nom";
+            this.comboBoxGenere.FormattingEnabled = true;
+            this.comboBoxGenere.Items.AddRange(new object[] {
+            "Acció",
+            "Animació",
+            "Ciencia ficció",
+            "Drama",
+            "Terror",
+            "General"});
+            this.comboBoxGenere.Location = new System.Drawing.Point(99, 215);
+            this.comboBoxGenere.Name = "comboBoxGenere";
+            this.comboBoxGenere.Size = new System.Drawing.Size(129, 25);
+            this.comboBoxGenere.TabIndex = 14;
             // 
-            // labelDescripcio
+            // textBoxEncerts
             // 
-            this.labelDescripcio.AutoSize = true;
-            this.labelDescripcio.Location = new System.Drawing.Point(6, 67);
-            this.labelDescripcio.Name = "labelDescripcio";
-            this.labelDescripcio.Size = new System.Drawing.Size(78, 17);
-            this.labelDescripcio.TabIndex = 1;
-            this.labelDescripcio.Text = "Descripció";
+            this.textBoxEncerts.Location = new System.Drawing.Point(321, 215);
+            this.textBoxEncerts.Name = "textBoxEncerts";
+            this.textBoxEncerts.Size = new System.Drawing.Size(112, 25);
+            this.textBoxEncerts.TabIndex = 13;
             // 
-            // labelRutaImg
+            // labelEncerts
             // 
-            this.labelRutaImg.AutoSize = true;
-            this.labelRutaImg.Location = new System.Drawing.Point(6, 178);
-            this.labelRutaImg.Name = "labelRutaImg";
-            this.labelRutaImg.Size = new System.Drawing.Size(87, 17);
-            this.labelRutaImg.TabIndex = 2;
-            this.labelRutaImg.Text = "Ruta Imatge";
+            this.labelEncerts.AutoSize = true;
+            this.labelEncerts.Location = new System.Drawing.Point(255, 218);
+            this.labelEncerts.Name = "labelEncerts";
+            this.labelEncerts.Size = new System.Drawing.Size(59, 17);
+            this.labelEncerts.TabIndex = 12;
+            this.labelEncerts.Text = "Encerts";
             // 
-            // textBoxRutaImg
+            // labelGenere
             // 
-            this.textBoxRutaImg.Location = new System.Drawing.Point(99, 175);
-            this.textBoxRutaImg.Name = "textBoxRutaImg";
-            this.textBoxRutaImg.Size = new System.Drawing.Size(257, 25);
-            this.textBoxRutaImg.TabIndex = 3;
+            this.labelGenere.AutoSize = true;
+            this.labelGenere.Location = new System.Drawing.Point(6, 218);
+            this.labelGenere.Name = "labelGenere";
+            this.labelGenere.Size = new System.Drawing.Size(56, 17);
+            this.labelGenere.TabIndex = 10;
+            this.labelGenere.Text = "Gènere";
+            // 
+            // buttonGuardarEdit
+            // 
+            this.buttonGuardarEdit.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonGuardarEdit.Image = ((System.Drawing.Image)(resources.GetObject("buttonGuardarEdit.Image")));
+            this.buttonGuardarEdit.Location = new System.Drawing.Point(355, 343);
+            this.buttonGuardarEdit.Name = "buttonGuardarEdit";
+            this.buttonGuardarEdit.Size = new System.Drawing.Size(93, 87);
+            this.buttonGuardarEdit.TabIndex = 9;
+            this.buttonGuardarEdit.UseVisualStyleBackColor = false;
+            this.buttonGuardarEdit.Click += new System.EventHandler(this.buttonGuardarEdit_Click);
+            // 
+            // pictureBoxPers
+            // 
+            this.pictureBoxPers.Location = new System.Drawing.Point(143, 258);
+            this.pictureBoxPers.Name = "pictureBoxPers";
+            this.pictureBoxPers.Size = new System.Drawing.Size(168, 157);
+            this.pictureBoxPers.TabIndex = 8;
+            this.pictureBoxPers.TabStop = false;
+            // 
+            // textBoxNomPers
+            // 
+            this.textBoxNomPers.Location = new System.Drawing.Point(99, 33);
+            this.textBoxNomPers.Name = "textBoxNomPers";
+            this.textBoxNomPers.Size = new System.Drawing.Size(257, 25);
+            this.textBoxNomPers.TabIndex = 7;
+            // 
+            // textBoxDescripcioPers
+            // 
+            this.textBoxDescripcioPers.Location = new System.Drawing.Point(99, 64);
+            this.textBoxDescripcioPers.Multiline = true;
+            this.textBoxDescripcioPers.Name = "textBoxDescripcioPers";
+            this.textBoxDescripcioPers.Size = new System.Drawing.Size(257, 100);
+            this.textBoxDescripcioPers.TabIndex = 5;
             // 
             // buttonBuscarRutaImg
             // 
@@ -105,38 +153,40 @@
             this.buttonBuscarRutaImg.UseVisualStyleBackColor = true;
             this.buttonBuscarRutaImg.Click += new System.EventHandler(this.buttonBuscarRutaImg_Click);
             // 
-            // textBoxDescripcioPers
+            // textBoxRutaImg
             // 
-            this.textBoxDescripcioPers.Location = new System.Drawing.Point(99, 64);
-            this.textBoxDescripcioPers.Multiline = true;
-            this.textBoxDescripcioPers.Name = "textBoxDescripcioPers";
-            this.textBoxDescripcioPers.Size = new System.Drawing.Size(257, 100);
-            this.textBoxDescripcioPers.TabIndex = 5;
+            this.textBoxRutaImg.Location = new System.Drawing.Point(99, 175);
+            this.textBoxRutaImg.Name = "textBoxRutaImg";
+            this.textBoxRutaImg.Size = new System.Drawing.Size(257, 25);
+            this.textBoxRutaImg.TabIndex = 3;
+            this.textBoxRutaImg.TextChanged += new System.EventHandler(this.textBoxRutaImg_TextChanged);
             // 
-            // textBoxNomPers
+            // labelRutaImg
             // 
-            this.textBoxNomPers.Location = new System.Drawing.Point(99, 33);
-            this.textBoxNomPers.Name = "textBoxNomPers";
-            this.textBoxNomPers.Size = new System.Drawing.Size(257, 25);
-            this.textBoxNomPers.TabIndex = 7;
+            this.labelRutaImg.AutoSize = true;
+            this.labelRutaImg.Location = new System.Drawing.Point(6, 178);
+            this.labelRutaImg.Name = "labelRutaImg";
+            this.labelRutaImg.Size = new System.Drawing.Size(87, 17);
+            this.labelRutaImg.TabIndex = 2;
+            this.labelRutaImg.Text = "Ruta Imatge";
             // 
-            // pictureBox1
+            // labelDescripcio
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(144, 220);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(168, 157);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.labelDescripcio.AutoSize = true;
+            this.labelDescripcio.Location = new System.Drawing.Point(6, 67);
+            this.labelDescripcio.Name = "labelDescripcio";
+            this.labelDescripcio.Size = new System.Drawing.Size(78, 17);
+            this.labelDescripcio.TabIndex = 1;
+            this.labelDescripcio.Text = "Descripció";
             // 
-            // button1
+            // labelNom
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(355, 343);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 87);
-            this.button1.TabIndex = 9;
-            this.button1.UseVisualStyleBackColor = false;
+            this.labelNom.AutoSize = true;
+            this.labelNom.Location = new System.Drawing.Point(6, 36);
+            this.labelNom.Name = "labelNom";
+            this.labelNom.Size = new System.Drawing.Size(39, 17);
+            this.labelNom.TabIndex = 0;
+            this.labelNom.Text = "Nom";
             // 
             // FormEditPersonatges
             // 
@@ -149,9 +199,10 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormEditPersonatges";
             this.Text = "FormEditPersonatges";
+            this.Load += new System.EventHandler(this.FormEditPersonatges_Load);
             this.groupBoxDadesPersonatge.ResumeLayout(false);
             this.groupBoxDadesPersonatge.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPers)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -165,8 +216,12 @@
         private System.Windows.Forms.Label labelRutaImg;
         private System.Windows.Forms.Label labelDescripcio;
         private System.Windows.Forms.Label labelNom;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button buttonGuardarEdit;
+        private System.Windows.Forms.PictureBox pictureBoxPers;
         private System.Windows.Forms.TextBox textBoxNomPers;
+        private System.Windows.Forms.ComboBox comboBoxGenere;
+        private System.Windows.Forms.TextBox textBoxEncerts;
+        private System.Windows.Forms.Label labelEncerts;
+        private System.Windows.Forms.Label labelGenere;
     }
 }
