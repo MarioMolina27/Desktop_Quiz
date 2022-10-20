@@ -44,8 +44,7 @@
             // 
             this.labelNom.AutoSize = true;
             this.labelNom.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNom.Location = new System.Drawing.Point(261, 172);
-            this.labelNom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNom.Location = new System.Drawing.Point(174, 112);
             this.labelNom.Name = "labelNom";
             this.labelNom.Size = new System.Drawing.Size(75, 17);
             this.labelNom.TabIndex = 0;
@@ -55,8 +54,7 @@
             // 
             this.labelContrasenya.AutoSize = true;
             this.labelContrasenya.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelContrasenya.Location = new System.Drawing.Point(261, 289);
-            this.labelContrasenya.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelContrasenya.Location = new System.Drawing.Point(174, 188);
             this.labelContrasenya.Name = "labelContrasenya";
             this.labelContrasenya.Size = new System.Drawing.Size(91, 17);
             this.labelContrasenya.TabIndex = 1;
@@ -64,20 +62,18 @@
             // 
             // textBoxNom
             // 
-            this.textBoxNom.Location = new System.Drawing.Point(513, 162);
-            this.textBoxNom.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxNom.Location = new System.Drawing.Point(342, 105);
             this.textBoxNom.Name = "textBoxNom";
-            this.textBoxNom.Size = new System.Drawing.Size(498, 26);
+            this.textBoxNom.Size = new System.Drawing.Size(333, 20);
             this.textBoxNom.TabIndex = 2;
             this.textBoxNom.TextChanged += new System.EventHandler(this.textBoxNom_TextChanged);
             this.textBoxNom.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxNom_KeyDown);
             // 
             // textBoxContrasenya
             // 
-            this.textBoxContrasenya.Location = new System.Drawing.Point(513, 277);
-            this.textBoxContrasenya.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxContrasenya.Location = new System.Drawing.Point(342, 180);
             this.textBoxContrasenya.Name = "textBoxContrasenya";
-            this.textBoxContrasenya.Size = new System.Drawing.Size(498, 26);
+            this.textBoxContrasenya.Size = new System.Drawing.Size(333, 20);
             this.textBoxContrasenya.TabIndex = 3;
             this.textBoxContrasenya.UseSystemPasswordChar = true;
             this.textBoxContrasenya.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxContrasenya_KeyDown);
@@ -89,21 +85,18 @@
             this.groupBoxDades.Controls.Add(this.textBoxNom);
             this.groupBoxDades.Controls.Add(this.labelContrasenya);
             this.groupBoxDades.Controls.Add(this.labelNom);
-            this.groupBoxDades.Location = new System.Drawing.Point(765, 538);
-            this.groupBoxDades.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxDades.Location = new System.Drawing.Point(510, 350);
             this.groupBoxDades.Name = "groupBoxDades";
-            this.groupBoxDades.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBoxDades.Size = new System.Drawing.Size(1268, 518);
+            this.groupBoxDades.Size = new System.Drawing.Size(845, 337);
             this.groupBoxDades.TabIndex = 0;
             this.groupBoxDades.TabStop = false;
             // 
             // checkBoxMostraPass
             // 
             this.checkBoxMostraPass.AutoSize = true;
-            this.checkBoxMostraPass.Location = new System.Drawing.Point(1023, 280);
-            this.checkBoxMostraPass.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.checkBoxMostraPass.Location = new System.Drawing.Point(682, 182);
             this.checkBoxMostraPass.Name = "checkBoxMostraPass";
-            this.checkBoxMostraPass.Size = new System.Drawing.Size(176, 24);
+            this.checkBoxMostraPass.Size = new System.Drawing.Size(123, 17);
             this.checkBoxMostraPass.TabIndex = 4;
             this.checkBoxMostraPass.Text = "Mostrar Contrasenya";
             this.checkBoxMostraPass.UseVisualStyleBackColor = true;
@@ -115,10 +108,9 @@
             this.buttonIniciSesio.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonIniciSesio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonIniciSesio.ForeColor = System.Drawing.Color.White;
-            this.buttonIniciSesio.Location = new System.Drawing.Point(1258, 1132);
-            this.buttonIniciSesio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonIniciSesio.Location = new System.Drawing.Point(839, 736);
             this.buttonIniciSesio.Name = "buttonIniciSesio";
-            this.buttonIniciSesio.Size = new System.Drawing.Size(290, 106);
+            this.buttonIniciSesio.Size = new System.Drawing.Size(193, 69);
             this.buttonIniciSesio.TabIndex = 5;
             this.buttonIniciSesio.Text = "INICIA SESSIÓ\r\n";
             this.buttonIniciSesio.UseVisualStyleBackColor = false;
@@ -128,22 +120,22 @@
             // 
             this.pictureBoxIconUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxIconUser.Image = global::Desktop_Quiz.Properties.Resources.loginImage;
-            this.pictureBoxIconUser.Location = new System.Drawing.Point(1232, 142);
-            this.pictureBoxIconUser.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.pictureBoxIconUser.Location = new System.Drawing.Point(821, 92);
             this.pictureBoxIconUser.Name = "pictureBoxIconUser";
-            this.pictureBoxIconUser.Size = new System.Drawing.Size(358, 294);
+            this.pictureBoxIconUser.Size = new System.Drawing.Size(239, 191);
             this.pictureBoxIconUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxIconUser.TabIndex = 6;
             this.pictureBoxIconUser.TabStop = false;
             // 
             // FormInicioSesion
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1924, 1061);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.pictureBoxIconUser);
             this.Controls.Add(this.buttonIniciSesio);
             this.Controls.Add(this.groupBoxDades);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FormInicioSesion";
             this.Text = "FormInicioSesion";
             this.groupBoxDades.ResumeLayout(false);

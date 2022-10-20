@@ -65,8 +65,8 @@
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 3, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(1924, 31);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
+            this.toolStrip1.Size = new System.Drawing.Size(1904, 31);
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -90,10 +90,8 @@
             this.groupBoxPreguntes.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxPreguntes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBoxPreguntes.Location = new System.Drawing.Point(0, 31);
-            this.groupBoxPreguntes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.groupBoxPreguntes.Name = "groupBoxPreguntes";
-            this.groupBoxPreguntes.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBoxPreguntes.Size = new System.Drawing.Size(1924, 1030);
+            this.groupBoxPreguntes.Size = new System.Drawing.Size(1904, 1010);
             this.groupBoxPreguntes.TabIndex = 2;
             this.groupBoxPreguntes.TabStop = false;
             this.groupBoxPreguntes.Text = "Preguntes";
@@ -102,10 +100,9 @@
             // 
             this.buttonAceptar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonAceptar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonAceptar.Location = new System.Drawing.Point(1116, 135);
-            this.buttonAceptar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonAceptar.Location = new System.Drawing.Point(744, 88);
             this.buttonAceptar.Name = "buttonAceptar";
-            this.buttonAceptar.Size = new System.Drawing.Size(166, 49);
+            this.buttonAceptar.Size = new System.Drawing.Size(111, 32);
             this.buttonAceptar.TabIndex = 9;
             this.buttonAceptar.Text = "Aceptar";
             this.buttonAceptar.UseVisualStyleBackColor = false;
@@ -117,11 +114,9 @@
             this.groupBoxOpcionsFilOr.Controls.Add(this.groupBoxModificacions);
             this.groupBoxOpcionsFilOr.Controls.Add(this.groupBoxOrdenacio);
             this.groupBoxOpcionsFilOr.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBoxOpcionsFilOr.Location = new System.Drawing.Point(54, 209);
-            this.groupBoxOpcionsFilOr.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxOpcionsFilOr.Location = new System.Drawing.Point(36, 136);
             this.groupBoxOpcionsFilOr.Name = "groupBoxOpcionsFilOr";
-            this.groupBoxOpcionsFilOr.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBoxOpcionsFilOr.Size = new System.Drawing.Size(362, 1285);
+            this.groupBoxOpcionsFilOr.Size = new System.Drawing.Size(241, 835);
             this.groupBoxOpcionsFilOr.TabIndex = 4;
             this.groupBoxOpcionsFilOr.TabStop = false;
             this.groupBoxOpcionsFilOr.Text = "Opcions";
@@ -133,11 +128,9 @@
             this.groupBoxIdiomes.Controls.Add(this.radioButtonCastellano);
             this.groupBoxIdiomes.Controls.Add(this.radioButtonCatala);
             this.groupBoxIdiomes.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.groupBoxIdiomes.Location = new System.Drawing.Point(32, 300);
-            this.groupBoxIdiomes.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxIdiomes.Location = new System.Drawing.Point(21, 195);
             this.groupBoxIdiomes.Name = "groupBoxIdiomes";
-            this.groupBoxIdiomes.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBoxIdiomes.Size = new System.Drawing.Size(300, 237);
+            this.groupBoxIdiomes.Size = new System.Drawing.Size(200, 154);
             this.groupBoxIdiomes.TabIndex = 3;
             this.groupBoxIdiomes.TabStop = false;
             this.groupBoxIdiomes.Text = "Idiomes";
@@ -147,8 +140,7 @@
             this.radioButtonIdiomesTots.AutoSize = true;
             this.radioButtonIdiomesTots.Checked = true;
             this.radioButtonIdiomesTots.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.radioButtonIdiomesTots.Location = new System.Drawing.Point(46, 175);
-            this.radioButtonIdiomesTots.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonIdiomesTots.Location = new System.Drawing.Point(31, 114);
             this.radioButtonIdiomesTots.Name = "radioButtonIdiomesTots";
             this.radioButtonIdiomesTots.Size = new System.Drawing.Size(54, 24);
             this.radioButtonIdiomesTots.TabIndex = 3;
@@ -161,8 +153,7 @@
             // 
             this.radioButtonEnglish.AutoSize = true;
             this.radioButtonEnglish.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.radioButtonEnglish.Location = new System.Drawing.Point(46, 129);
-            this.radioButtonEnglish.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonEnglish.Location = new System.Drawing.Point(31, 84);
             this.radioButtonEnglish.Name = "radioButtonEnglish";
             this.radioButtonEnglish.Size = new System.Drawing.Size(75, 24);
             this.radioButtonEnglish.TabIndex = 2;
@@ -174,8 +165,7 @@
             // radioButtonCastellano
             // 
             this.radioButtonCastellano.AutoSize = true;
-            this.radioButtonCastellano.Location = new System.Drawing.Point(46, 85);
-            this.radioButtonCastellano.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonCastellano.Location = new System.Drawing.Point(31, 55);
             this.radioButtonCastellano.Name = "radioButtonCastellano";
             this.radioButtonCastellano.Size = new System.Drawing.Size(92, 24);
             this.radioButtonCastellano.TabIndex = 1;
@@ -187,8 +177,7 @@
             // radioButtonCatala
             // 
             this.radioButtonCatala.AutoSize = true;
-            this.radioButtonCatala.Location = new System.Drawing.Point(46, 40);
-            this.radioButtonCatala.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonCatala.Location = new System.Drawing.Point(31, 26);
             this.radioButtonCatala.Name = "radioButtonCatala";
             this.radioButtonCatala.Size = new System.Drawing.Size(65, 24);
             this.radioButtonCatala.TabIndex = 0;
@@ -202,11 +191,9 @@
             this.groupBoxModificacions.Controls.Add(this.buttonEliminar);
             this.groupBoxModificacions.Controls.Add(this.buttonAfegir);
             this.groupBoxModificacions.Controls.Add(this.buttonModificar);
-            this.groupBoxModificacions.Location = new System.Drawing.Point(32, 546);
-            this.groupBoxModificacions.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxModificacions.Location = new System.Drawing.Point(21, 355);
             this.groupBoxModificacions.Name = "groupBoxModificacions";
-            this.groupBoxModificacions.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBoxModificacions.Size = new System.Drawing.Size(300, 374);
+            this.groupBoxModificacions.Size = new System.Drawing.Size(200, 243);
             this.groupBoxModificacions.TabIndex = 2;
             this.groupBoxModificacions.TabStop = false;
             // 
@@ -214,10 +201,9 @@
             // 
             this.buttonEliminar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonEliminar.Image = ((System.Drawing.Image)(resources.GetObject("buttonEliminar.Image")));
-            this.buttonEliminar.Location = new System.Drawing.Point(150, 214);
-            this.buttonEliminar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonEliminar.Location = new System.Drawing.Point(100, 139);
             this.buttonEliminar.Name = "buttonEliminar";
-            this.buttonEliminar.Size = new System.Drawing.Size(104, 122);
+            this.buttonEliminar.Size = new System.Drawing.Size(69, 79);
             this.buttonEliminar.TabIndex = 8;
             this.buttonEliminar.UseVisualStyleBackColor = false;
             this.buttonEliminar.Click += new System.EventHandler(this.buttonEliminar_Click);
@@ -226,10 +212,9 @@
             // 
             this.buttonAfegir.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonAfegir.Image = ((System.Drawing.Image)(resources.GetObject("buttonAfegir.Image")));
-            this.buttonAfegir.Location = new System.Drawing.Point(38, 43);
-            this.buttonAfegir.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonAfegir.Location = new System.Drawing.Point(25, 28);
             this.buttonAfegir.Name = "buttonAfegir";
-            this.buttonAfegir.Size = new System.Drawing.Size(216, 162);
+            this.buttonAfegir.Size = new System.Drawing.Size(144, 105);
             this.buttonAfegir.TabIndex = 6;
             this.buttonAfegir.UseVisualStyleBackColor = false;
             this.buttonAfegir.Click += new System.EventHandler(this.buttonAfegir_Click);
@@ -238,10 +223,9 @@
             // 
             this.buttonModificar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonModificar.Image = ((System.Drawing.Image)(resources.GetObject("buttonModificar.Image")));
-            this.buttonModificar.Location = new System.Drawing.Point(38, 214);
-            this.buttonModificar.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.buttonModificar.Location = new System.Drawing.Point(25, 139);
             this.buttonModificar.Name = "buttonModificar";
-            this.buttonModificar.Size = new System.Drawing.Size(104, 122);
+            this.buttonModificar.Size = new System.Drawing.Size(69, 79);
             this.buttonModificar.TabIndex = 7;
             this.buttonModificar.UseVisualStyleBackColor = false;
             this.buttonModificar.Click += new System.EventHandler(this.buttonModificar_Click);
@@ -251,11 +235,9 @@
             this.groupBoxOrdenacio.Controls.Add(this.radioButtonDificultat);
             this.groupBoxOrdenacio.Controls.Add(this.radioButtonCategoria);
             this.groupBoxOrdenacio.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.groupBoxOrdenacio.Location = new System.Drawing.Point(32, 78);
-            this.groupBoxOrdenacio.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBoxOrdenacio.Location = new System.Drawing.Point(21, 51);
             this.groupBoxOrdenacio.Name = "groupBoxOrdenacio";
-            this.groupBoxOrdenacio.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBoxOrdenacio.Size = new System.Drawing.Size(300, 174);
+            this.groupBoxOrdenacio.Size = new System.Drawing.Size(200, 113);
             this.groupBoxOrdenacio.TabIndex = 1;
             this.groupBoxOrdenacio.TabStop = false;
             this.groupBoxOrdenacio.Text = "Ordenar per: ";
@@ -263,8 +245,7 @@
             // radioButtonDificultat
             // 
             this.radioButtonDificultat.AutoSize = true;
-            this.radioButtonDificultat.Location = new System.Drawing.Point(46, 102);
-            this.radioButtonDificultat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonDificultat.Location = new System.Drawing.Point(31, 66);
             this.radioButtonDificultat.Name = "radioButtonDificultat";
             this.radioButtonDificultat.Size = new System.Drawing.Size(86, 24);
             this.radioButtonDificultat.TabIndex = 1;
@@ -276,8 +257,7 @@
             // radioButtonCategoria
             // 
             this.radioButtonCategoria.AutoSize = true;
-            this.radioButtonCategoria.Location = new System.Drawing.Point(46, 48);
-            this.radioButtonCategoria.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.radioButtonCategoria.Location = new System.Drawing.Point(31, 31);
             this.radioButtonCategoria.Name = "radioButtonCategoria";
             this.radioButtonCategoria.Size = new System.Drawing.Size(86, 24);
             this.radioButtonCategoria.TabIndex = 0;
@@ -292,19 +272,17 @@
             this.dataGridViewPelicules.AllowUserToOrderColumns = true;
             this.dataGridViewPelicules.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewPelicules.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewPelicules.Location = new System.Drawing.Point(498, 209);
-            this.dataGridViewPelicules.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.dataGridViewPelicules.Location = new System.Drawing.Point(332, 136);
             this.dataGridViewPelicules.Name = "dataGridViewPelicules";
             this.dataGridViewPelicules.RowHeadersWidth = 62;
-            this.dataGridViewPelicules.Size = new System.Drawing.Size(2208, 1285);
+            this.dataGridViewPelicules.Size = new System.Drawing.Size(1472, 835);
             this.dataGridViewPelicules.TabIndex = 3;
             // 
             // textBoxTitulo
             // 
-            this.textBoxTitulo.Location = new System.Drawing.Point(498, 142);
-            this.textBoxTitulo.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBoxTitulo.Location = new System.Drawing.Point(332, 92);
             this.textBoxTitulo.Name = "textBoxTitulo";
-            this.textBoxTitulo.Size = new System.Drawing.Size(589, 26);
+            this.textBoxTitulo.Size = new System.Drawing.Size(394, 26);
             this.textBoxTitulo.TabIndex = 1;
             this.textBoxTitulo.Enter += new System.EventHandler(this.textBoxTitulo_Enter);
             this.textBoxTitulo.Leave += new System.EventHandler(this.textBoxTitulo_Leave);
@@ -313,8 +291,7 @@
             // 
             this.labelTitul.AutoSize = true;
             this.labelTitul.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.labelTitul.Location = new System.Drawing.Point(400, 146);
-            this.labelTitul.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelTitul.Location = new System.Drawing.Point(267, 95);
             this.labelTitul.Name = "labelTitul";
             this.labelTitul.Size = new System.Drawing.Size(42, 19);
             this.labelTitul.TabIndex = 0;
@@ -322,14 +299,13 @@
             // 
             // FormPreguntas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(1924, 1061);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.groupBoxPreguntes);
             this.Controls.Add(this.toolStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "FormPreguntas";
             this.Text = "FormPreguntas";
             this.Load += new System.EventHandler(this.FormPreguntas_Load);
