@@ -118,6 +118,7 @@
             this.textBoxBuscadorPersonatges.TabIndex = 6;
             this.textBoxBuscadorPersonatges.Text = "  Buscar...";
             this.textBoxBuscadorPersonatges.Enter += new System.EventHandler(this.textBoxBuscadorPersonatges_Enter);
+            this.textBoxBuscadorPersonatges.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxBuscadorPersonatges_KeyDown);
             this.textBoxBuscadorPersonatges.Leave += new System.EventHandler(this.textBoxBuscadorPersonatges_Leave);
             // 
             // toolStripButtonTornarEnrere

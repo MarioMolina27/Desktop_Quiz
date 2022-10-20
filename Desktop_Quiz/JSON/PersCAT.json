@@ -1,12 +1,5 @@
 [
   {
-    "nomPers": "Cap",
-    "descripcioPers": "No has acertat cap pregunta, potser t'hauries de veure alguna pel·lícula abans de fer el quiz.",
-    "genere": "General",
-    "percEncerts": 0,
-    "rutaPers": ""
-  },
-  {
     "nomPers": "Uncharted",
     "descripcioPers": "La categoria on més has acertat és Acció i tot i així no ho has fet bé 7w7",
     "genere": "Acció",
@@ -115,7 +108,14 @@
     "nomPers": "Totes",
     "descripcioPers": "Has contestat bé totes les preguntes de totes les categoríes, felicitats.",
     "genere": "General",
-    "percEncerts": 100,
+    "percEncerts": 100.0,
     "rutaPers": ""
+  },
+  {
+    "nomPers": "Cap",
+    "descripcioPers": "No has acertat cap pregunta, potser t'hauries de veure alguna pel·lícula abans de fer el quiz.",
+    "genere": "General",
+    "percEncerts": 0.0,
+    "rutaPers": "..\\..\\ImatgesPersonatges\\TotesIncorrectesImg.png"
   }
 ]
