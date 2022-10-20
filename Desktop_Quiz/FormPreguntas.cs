@@ -30,7 +30,7 @@ namespace Desktop_Quiz
         public BindingList<Pelicula> ENG_MEDIANO { get; set; }
         public  BindingList<Pelicula> ENG_FACIL { get; set; }
 
-        public bool modificar { get; set; }
+
 
         public Usuari usuari { get; set; }
 
@@ -261,7 +261,6 @@ namespace Desktop_Quiz
 
         private void buttonModificar_Click(object sender, EventArgs e)
         {
-            this.modificar = true;
             int rowIndex = conseguirRowIndex();
             if (rowIndex != -1)
             {
@@ -328,47 +327,47 @@ namespace Desktop_Quiz
                     case "CAT_F":
                         userPosition = retornarIndice(id, this.CAT_FACIL);
                         CAT_FACIL.RemoveAt(userPosition);
-                        if (!this.modificar) { CAT_FACIL = UpdateIDs(txtID + "_", this.CAT_FACIL); }
+                         CAT_FACIL = UpdateIDs(txtID + "_", this.CAT_FACIL); 
                         break;
                     case "CAT_M":
                         userPosition = retornarIndice(id, this.CAT_MEDIANO);
                         CAT_MEDIANO.RemoveAt(userPosition);
-                        if (!this.modificar) { CAT_MEDIANO = UpdateIDs(txtID + "_", this.CAT_MEDIANO); }
+                         CAT_MEDIANO = UpdateIDs(txtID + "_", this.CAT_MEDIANO); 
                         break;
                     case "CAT_D":
                         userPosition = retornarIndice(id, this.CAT_DIFICIL);
                         CAT_DIFICIL.RemoveAt(userPosition);
-                        if (!this.modificar) { CAT_DIFICIL = UpdateIDs(txtID + "_", this.CAT_DIFICIL); }
+                         CAT_DIFICIL = UpdateIDs(txtID + "_", this.CAT_DIFICIL); 
                         break;
                     case "CAS_F":
                         userPosition = retornarIndice(id, this.CAST_FACIL);
                         CAST_FACIL.RemoveAt(userPosition);
-                        if (!this.modificar) { CAST_FACIL = UpdateIDs(txtID + "_", this.CAST_FACIL); }
+                         CAST_FACIL = UpdateIDs(txtID + "_", this.CAST_FACIL); 
                         break;
                     case "CAS_M":
                         userPosition = retornarIndice(id, this.CAST_MEDIANO);
                         CAST_MEDIANO.RemoveAt(userPosition);
-                        if (!this.modificar) { CAST_MEDIANO = UpdateIDs(txtID + "_", this.CAST_MEDIANO); }
+                        CAST_MEDIANO = UpdateIDs(txtID + "_", this.CAST_MEDIANO); 
                         break;
                     case "CAS_D":
                         userPosition = retornarIndice(id, this.CAST_DIFICIL);
                         CAST_DIFICIL.RemoveAt(userPosition);
-                        if (!this.modificar) { CAST_DIFICIL = UpdateIDs(txtID + "_", this.CAST_DIFICIL); }
+                         CAST_DIFICIL = UpdateIDs(txtID + "_", this.CAST_DIFICIL); 
                         break;
                     case "EN_F_":
                         userPosition = retornarIndice(id, this.ENG_FACIL);
                         ENG_FACIL.RemoveAt(userPosition);
-                        if (!this.modificar) { ENG_FACIL = UpdateIDs(txtID, this.ENG_FACIL); }
+                         ENG_FACIL = UpdateIDs(txtID, this.ENG_FACIL); 
                         break;
                     case "EN_M_":
                         userPosition = retornarIndice(id, this.ENG_MEDIANO);
                         ENG_MEDIANO.RemoveAt(userPosition);
-                        if (!this.modificar) { ENG_MEDIANO = UpdateIDs(txtID, this.ENG_MEDIANO); }
+                         ENG_MEDIANO = UpdateIDs(txtID, this.ENG_MEDIANO); 
                         break;
                     case "EN_D_":
                         userPosition = retornarIndice(id, this.ENG_DIFICIL);
                         ENG_DIFICIL.RemoveAt(userPosition);
-                        if (!this.modificar) { ENG_DIFICIL = UpdateIDs(txtID, this.ENG_DIFICIL); }
+                        ENG_DIFICIL = UpdateIDs(txtID, this.ENG_DIFICIL); 
                         break;
 
                 }
