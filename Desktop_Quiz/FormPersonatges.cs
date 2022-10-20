@@ -14,6 +14,8 @@ namespace Desktop_Quiz
     public partial class FormPersonatges : Form
     {
 
+        int idioma = 0;
+
         public FormPersonatges()
         {
             InitializeComponent();
@@ -54,6 +56,8 @@ namespace Desktop_Quiz
             dataGridViewPersonatges.DataSource = null;
             dataGridViewPersonatges.DataSource = PersRepo.personatges;
 
+            guardarJsonPers();
+
         }
 
         
@@ -64,6 +68,7 @@ namespace Desktop_Quiz
             Form pers = new FormEditPersonatges();
             pers.ShowDialog();
 
+            updateDataGridPers();
 
         }
 
@@ -82,7 +87,9 @@ namespace Desktop_Quiz
                 double percEncerts = double.Parse(filaSeleccionada.Cells[3].Value.ToString());
                 String rutaPers = filaSeleccionada.Cells[4].Value.ToString();
 
+
                 FormEditPersonatges formEdit = new FormEditPersonatges(nomPers, descripcioPers, genere, percEncerts, rutaPers);
+                PersRepo.personatges.RemoveAt(rowIndex);
                 formEdit.ShowDialog();
                 
                 updateDataGridPers();
@@ -122,6 +129,8 @@ namespace Desktop_Quiz
             
             dataGridViewPersonatges.DataSource = null;
             dataGridViewPersonatges.DataSource = PersRepo.personatges;
+
+            idioma = 0;
             
         }
 
@@ -133,6 +142,8 @@ namespace Desktop_Quiz
             dataGridViewPersonatges.DataSource = null;
             dataGridViewPersonatges.DataSource = PersRepo.personatges;
 
+            idioma = 1;
+
         }
 
         private void radioButtonAngles_CheckedChanged(object sender, EventArgs e)
@@ -141,6 +152,8 @@ namespace Desktop_Quiz
 
             dataGridViewPersonatges.DataSource = null;
             dataGridViewPersonatges.DataSource = PersRepo.personatges;
+
+            idioma = 2;
 
         }
 
@@ -166,13 +179,61 @@ namespace Desktop_Quiz
             }
             else
             {
-                MessageBox.Show("No has elegit cap pregunta per eliminar-la","Error");
+                MessageBox.Show("No has escollit cap pregunta per eliminar-la","Error");
             }
 
         }
 
-        private void textBoxBuscadorPersonatges_TextChanged(object sender, EventArgs e)
+        private void textBoxBuscadorPersonatges_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.KeyCode == Keys.Enter) {
+
+                String nom = textBoxBuscadorPersonatges.Text;
+
+                if (!nom.Equals("")) {
+                    List<Personatge> persList = PersRepo.personatges.FindAll(x => x.nomPers == nom);
+
+                    if (persList.Count > 0)
+                    {
+                        dataGridViewPersonatges.DataSource = null;
+                        dataGridViewPersonatges.DataSource = persList;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No hi ha cap personatge amb aquest nom", "Error");
+                    }
+                }
+                else
+                {
+                    updateDataGridPers();
+                }
+
+            }
+        }
+
+        private void guardarJsonPers ()
+        {
+
+            switch (idioma)
+            {
+                case 0:
+
+                    PersRepo.SavePersCat();
+
+                    break;
+
+                case 1:
+
+                    PersRepo.SavePersCast();
+
+                    break;
+                case 2:
+
+                    PersRepo.SavePersAng();
+
+                    break;
+
+            }
 
         }
     }

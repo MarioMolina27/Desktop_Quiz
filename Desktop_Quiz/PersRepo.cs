@@ -45,25 +45,25 @@ namespace Desktop_Quiz
             PersRepo.personatges = arrayPersAng.ToObject<List<Personatge>>();
         }
 
-        public static void AddPers(String nomPers)
-        {
-
-            
-
-        }
-
-        public static void DeletePers(String nomPers)
-        {
-
-            
-
-        }
-
-        public static void SavePers(String nomPers, String descripcioPers, String genere, double percEncerts, String rutaPers)
+        public static void SavePersCat()
         {
 
             string json = JsonConvert.SerializeObject(personatges, Formatting.Indented);
             File.WriteAllText(RUTACAT, json);
+
+        }
+        public static void SavePersCast()
+        {
+
+            string json = JsonConvert.SerializeObject(personatges, Formatting.Indented);
+            File.WriteAllText(RUTACAST, json);
+
+        }
+        public static void SavePersAng()
+        {
+
+            string json = JsonConvert.SerializeObject(personatges, Formatting.Indented);
+            File.WriteAllText(RUTAANG, json);
 
         }
 

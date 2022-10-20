@@ -29,11 +29,22 @@ namespace Desktop_Quiz
 
         private void buttonGuardarEdit_Click(object sender, EventArgs e)
         {
-            String nomPers = textBoxNomPers.Text;
-            String descripcioPers = textBoxDescripcioPers.Text;
-            String genere = comboBoxGenere.Text;
-            double percEncerts = double.Parse(textBoxEncerts.Text);
-            String rutaPers = textBoxRutaImg.Text;
+            Personatge p = new Personatge();
+
+            p.nomPers = textBoxNomPers.Text;
+            p.descripcioPers = textBoxDescripcioPers.Text;
+            p.genere = comboBoxGenere.Text;
+            p.percEncerts = double.Parse(textBoxEncerts.Text);
+            p.rutaPers = textBoxRutaImg.Text;
+
+            if (p.rutaPers.Equals(""))
+            {
+
+                p.rutaPers = "Pendent de ruta";
+
+            }
+
+            PersRepo.personatges.Add(p);
 
             this.Close();
 
