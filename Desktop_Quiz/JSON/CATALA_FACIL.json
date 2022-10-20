@@ -8,7 +8,7 @@
     "resposta3": "Ninot",
     "resposta_correcte": 2,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -20,7 +20,7 @@
     "resposta3": "En l'escala",
     "resposta_correcte": 1,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -32,7 +32,7 @@
     "resposta3": "En una casa abandonada",
     "resposta_correcte": 1,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -44,7 +44,7 @@
     "resposta3": "L'orfenat",
     "resposta_correcte": 1,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -56,19 +56,19 @@
     "resposta3": "SLENDER MAN",
     "resposta_correcte": 2,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
     "id": "CAT_F_006",
     "película": "Un lugar tranquilo",
     "pregunta": "En què any va sortir Un lloc tranquil?",
-    "resposta1": 2018,
-    "resposta2": 2020,
-    "resposta3": 2019,
+    "resposta1": "2018",
+    "resposta2": "2020",
+    "resposta3": "2019",
     "resposta_correcte": 3,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -80,7 +80,7 @@
     "resposta3": "Bola de foc",
     "resposta_correcte": 2,
     "categoria": "Animación",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -92,7 +92,7 @@
     "resposta3": "Monkey",
     "resposta_correcte": 2,
     "categoria": "Animación",
-    "img/audio": "..\\..\\ImatgePreguntes\\dora.png",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -104,7 +104,7 @@
     "resposta3": "Anastacia",
     "resposta_correcte": 1,
     "categoria": "Animación",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -116,7 +116,7 @@
     "resposta3": "Diego",
     "resposta_correcte": 2,
     "categoria": "Animación",
-    "img/audio": "..\\..\\ImatgePreguntes\\ice_age.png",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -128,7 +128,7 @@
     "resposta3": "Capità garfi",
     "resposta_correcte": 3,
     "categoria": "Animación",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -140,7 +140,7 @@
     "resposta3": "D'un drac",
     "resposta_correcte": 3,
     "categoria": "Animación",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -152,7 +152,7 @@
     "resposta3": "Quentin Tarantino",
     "resposta_correcte": 1,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -164,7 +164,7 @@
     "resposta3": "Heighliner",
     "resposta_correcte": 1,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -176,7 +176,7 @@
     "resposta3": "Thneed Industry",
     "resposta_correcte": 1,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -188,7 +188,7 @@
     "resposta3": "Buck",
     "resposta_correcte": 1,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -200,19 +200,19 @@
     "resposta3": "Donald",
     "resposta_correcte": 1,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
     "id": "CAT_F_018",
     "película": "REGRESO AL FUTURO",
     "pregunta": "A quin any viatgen en la segona pelicula de Retorn al Futur?",
-    "resposta1": 2015,
-    "resposta2": 2045,
-    "resposta3": 2022,
+    "resposta1": "2015",
+    "resposta2": "2045",
+    "resposta3": "2022",
     "resposta_correcte": 1,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -224,7 +224,7 @@
     "resposta3": "Francesos",
     "resposta_correcte": 2,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -236,7 +236,7 @@
     "resposta3": "Vin Diesel",
     "resposta_correcte": 1,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -248,7 +248,7 @@
     "resposta3": "El sòl",
     "resposta_correcte": 1,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -260,7 +260,7 @@
     "resposta3": "Qui hagi fet un pacte amb Thor",
     "resposta_correcte": 1,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -272,7 +272,7 @@
     "resposta3": "La Perla Negra",
     "resposta_correcte": 3,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -284,7 +284,7 @@
     "resposta3": "Anakin Skywalker",
     "resposta_correcte": 3,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -296,7 +296,7 @@
     "resposta3": "Tom Cruise",
     "resposta_correcte": 2,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -308,7 +308,7 @@
     "resposta3": "En un plató enmig de la muntanya",
     "resposta_correcte": 1,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -320,7 +320,7 @@
     "resposta3": "Jackson",
     "resposta_correcte": 1,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -332,7 +332,7 @@
     "resposta3": "Apple inc",
     "resposta_correcte": 1,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -344,7 +344,7 @@
     "resposta3": "Programa de Murray Franklin",
     "resposta_correcte": 3,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   },
   {
@@ -356,7 +356,7 @@
     "resposta3": "Will Smith",
     "resposta_correcte": 2,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 1
   }
 ]

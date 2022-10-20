@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json.Linq;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -6,6 +7,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Net.NetworkInformation;
 using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
@@ -30,6 +32,15 @@ namespace Desktop_Quiz
         public BindingList<Pelicula> ENG_MEDIANO { get; set; }
         public  BindingList<Pelicula> ENG_FACIL { get; set; }
 
+        private const String RUTAJSON_CAT_F = @"..\..\JSON\CATALA_FACIL.json";
+        private const String RUTAJSON_CAT_M = @"..\..\JSON\CATALA_MEDIANO.json";
+        private const String RUTAJSON_CAT_D = @"..\..\JSON\CATALA_DIFICIL.json";
+        private const String RUTAJSON_CAST_F = @"..\..\JSON\CASTELLANO_FACIL.json";
+        private const String RUTAJSON_CAST_M = @"..\..\JSON\CASTELLANO_MEDIANO.json";
+        private const String RUTAJSON_CAST_D = @"..\..\JSON\CASTELLANO_DIFICIL.json";
+        private const String RUTAJSON_ENG_F = @"..\..\JSON\ENGLISH_FACIL.json";
+        private const String RUTAJSON_ENG_M = @"..\..\JSON\ENGLISH_MEDIANO.json";
+        private const String RUTAJSON_ENG_D = @"..\..\JSON\ENGLISH_DIFICIL.json";
 
 
         public Usuari usuari { get; set; }
@@ -37,31 +48,31 @@ namespace Desktop_Quiz
         public FormPreguntas(Usuari u)
         {
             InitializeComponent();
-            JArray jarrayCastD = JArray.Parse(File.ReadAllText(@"..\..\JSON\CASTELLANO_DIFICIL.json", Encoding.UTF8));
+            JArray jarrayCastD = JArray.Parse(File.ReadAllText(RUTAJSON_CAST_D, Encoding.UTF8));
             this.CAST_DIFICIL = jarrayCastD.ToObject<BindingList<Pelicula>>();
 
-            JArray jarrayCastF = JArray.Parse(File.ReadAllText(@"..\..\JSON\CASTELLANO_FACIL.json", Encoding.UTF8));
+            JArray jarrayCastF = JArray.Parse(File.ReadAllText(RUTAJSON_CAST_F, Encoding.UTF8));
             this.CAST_FACIL = jarrayCastF.ToObject<BindingList<Pelicula>>();
 
-            JArray jarrayCastM = JArray.Parse(File.ReadAllText(@"..\..\JSON\CASTELLANO_MEDIANO.json", Encoding.UTF8));
+            JArray jarrayCastM = JArray.Parse(File.ReadAllText(RUTAJSON_CAST_M, Encoding.UTF8));
             this.CAST_MEDIANO = jarrayCastM.ToObject<BindingList<Pelicula>>();
 
-            JArray jarrayCatD = JArray.Parse(File.ReadAllText(@"..\..\JSON\CATALA_DIFICIL.json", Encoding.UTF8));
+            JArray jarrayCatD = JArray.Parse(File.ReadAllText(RUTAJSON_CAT_D, Encoding.UTF8));
             this.CAT_DIFICIL = jarrayCatD.ToObject<BindingList<Pelicula>>();
 
-            JArray jarrayCatM = JArray.Parse(File.ReadAllText(@"..\..\JSON\CATALA_MEDIANO.json", Encoding.UTF8));
+            JArray jarrayCatM = JArray.Parse(File.ReadAllText(RUTAJSON_CAT_M, Encoding.UTF8));
             this.CAT_MEDIANO = jarrayCatM.ToObject<BindingList<Pelicula>>();
 
-            JArray jarrayCatF = JArray.Parse(File.ReadAllText(@"..\..\JSON\CATALA_FACIL.json", Encoding.UTF8));
+            JArray jarrayCatF = JArray.Parse(File.ReadAllText(RUTAJSON_CAT_F, Encoding.UTF8));
             this.CAT_FACIL = jarrayCatF.ToObject<BindingList<Pelicula>>();
 
-            JArray jarrayEngD = JArray.Parse(File.ReadAllText(@"..\..\JSON\ENGLISH_DIFICIL.json", Encoding.UTF8));
+            JArray jarrayEngD = JArray.Parse(File.ReadAllText(RUTAJSON_ENG_D, Encoding.UTF8));
             this.ENG_DIFICIL = jarrayEngD.ToObject<BindingList<Pelicula>>();
 
-            JArray jarrayEngM = JArray.Parse(File.ReadAllText(@"..\..\JSON\ENGLISH_MEDIANO.json", Encoding.UTF8));
+            JArray jarrayEngM = JArray.Parse(File.ReadAllText(RUTAJSON_ENG_M, Encoding.UTF8));
             this.ENG_MEDIANO = jarrayEngM.ToObject<BindingList<Pelicula>>();
 
-            JArray jarrayEngF = JArray.Parse(File.ReadAllText(@"..\..\JSON\ENGLISH_FACIL.json", Encoding.UTF8));
+            JArray jarrayEngF = JArray.Parse(File.ReadAllText(RUTAJSON_ENG_F, Encoding.UTF8));
             this.ENG_FACIL = jarrayEngF.ToObject<BindingList<Pelicula>>();
 
             this.peliculaList = new BindingList<Pelicula>();
@@ -126,6 +137,7 @@ namespace Desktop_Quiz
                                 ENG_FACIL,this.usuari);
             p.ShowDialog();
             updateListAllLanguages();
+            guardarJSON();
         }
         public void updateListAllLanguages()
         {
@@ -284,13 +296,14 @@ namespace Desktop_Quiz
                                 ENG_FACIL,this.usuari);
                 eliminarElemento(id);
                 p2.ShowDialog();
+                updateDataGrid();
+                updateListAllLanguages();
+                guardarJSON();
             }
             else
             {
                 MessageBox.Show("No has elegit cap pregunta per modificar-la");
             }
-            updateDataGrid();
-            updateListAllLanguages();
         }
         private int conseguirRowIndex()
         {
@@ -310,7 +323,7 @@ namespace Desktop_Quiz
                 {
                     eliminarElemento(id);
                 }
-
+                guardarJSON();
             }
             else
             {
@@ -531,6 +544,45 @@ namespace Desktop_Quiz
             {
                 textBoxTitulo.Text = "";
                 textBoxTitulo.ForeColor = Color.Black;
+            }
+        }
+
+        private void guardarJSON()
+        {
+            String jsonCAT_F = JsonConvert.SerializeObject(this.CAT_FACIL, Formatting.Indented);
+            String jsonCAT_M = JsonConvert.SerializeObject(this.CAT_MEDIANO, Formatting.Indented);
+            String jsonCAT_D = JsonConvert.SerializeObject(this.CAT_DIFICIL, Formatting.Indented);
+
+            File.WriteAllText(RUTAJSON_CAT_F, jsonCAT_F);
+            File.WriteAllText(RUTAJSON_CAT_M, jsonCAT_M);
+            File.WriteAllText(RUTAJSON_CAT_D, jsonCAT_D);
+
+            String jsonCAST_F = JsonConvert.SerializeObject(this.CAST_FACIL, Formatting.Indented);
+            String jsonCAST_M = JsonConvert.SerializeObject(this.CAST_MEDIANO, Formatting.Indented);
+            String jsonCAST_D = JsonConvert.SerializeObject(this.CAST_DIFICIL, Formatting.Indented);
+
+            File.WriteAllText(RUTAJSON_CAST_F, jsonCAST_F);
+            File.WriteAllText(RUTAJSON_CAST_M, jsonCAST_M);
+            File.WriteAllText(RUTAJSON_CAST_D, jsonCAST_D);
+
+            String jsonENG_F = JsonConvert.SerializeObject(this.ENG_FACIL, Formatting.Indented);
+            String jsonENG_M = JsonConvert.SerializeObject(this.ENG_MEDIANO, Formatting.Indented);
+            String jsonENG_D = JsonConvert.SerializeObject(this.ENG_DIFICIL, Formatting.Indented);
+
+            File.WriteAllText(RUTAJSON_ENG_F, jsonENG_F);
+            File.WriteAllText(RUTAJSON_ENG_M, jsonENG_M);
+            File.WriteAllText(RUTAJSON_ENG_D, jsonENG_D);
+        }
+
+        private void toolStripButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            if (usuari.tipus.Equals("A")) {
+                FormAdminOpciones formAdmin = new FormAdminOpciones(this.usuari);   
+            }
+            else if (usuari.tipus.Equals("S"))
+            {
+                FormSAdimOpciones formSAdim = new FormSAdimOpciones(this.usuari);
             }
         }
     }

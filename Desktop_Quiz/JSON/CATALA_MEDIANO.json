@@ -8,7 +8,7 @@
     "resposta3": "Open Sea",
     "resposta_correcte": 2,
     "categoria": "Terror",
-    "img/audio": "..\\..\\ImatgePreguntes\\47metros.png",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -20,7 +20,7 @@
     "resposta3": "Cielo rojo sangre",
     "resposta_correcte": 1,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -32,7 +32,7 @@
     "resposta3": "psychologist",
     "resposta_correcte": 3,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -44,7 +44,7 @@
     "resposta3": "the eighth night",
     "resposta_correcte": 3,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -56,7 +56,7 @@
     "resposta3": "Scream",
     "resposta_correcte": 3,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -68,19 +68,19 @@
     "resposta3": "The orphanage",
     "resposta_correcte": 1,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
     "id": "CAT_M_007",
     "película": "Un lugar tranquilo",
     "pregunta": "What year did the movie \"A quiet place\" come out?",
-    "resposta1": 2018,
-    "resposta2": 2020,
-    "resposta3": 2019,
+    "resposta1": "2018",
+    "resposta2": "2020",
+    "resposta3": "2019",
     "resposta_correcte": 1,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -92,7 +92,7 @@
     "resposta3": "Enriquidor de menjar",
     "resposta_correcte": 1,
     "categoria": "Animación",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -104,7 +104,7 @@
     "resposta3": "Pete",
     "resposta_correcte": 2,
     "categoria": "Animación",
-    "img/audio": "..\\..\\JSON\\ImatgePreguntes\\Russel.png",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -116,7 +116,7 @@
     "resposta3": "Mate",
     "resposta_correcte": 2,
     "categoria": "Animación",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -128,7 +128,7 @@
     "resposta3": "El castell ambulant",
     "resposta_correcte": 1,
     "categoria": "Animación",
-    "img/audio": "..\\..\\ImatgePreguntes\\castillo en el cielo.png",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -140,19 +140,19 @@
     "resposta3": "Tigre",
     "resposta_correcte": 2,
     "categoria": "Animación",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
     "id": "CAT_M_013",
     "película": "LOS INCREIBLES",
     "pregunta": "Quants membres hi ha la família deLS INCREÏBLES",
-    "resposta1": 4,
-    "resposta2": 5,
-    "resposta3": 6,
+    "resposta1": "4",
+    "resposta2": "5",
+    "resposta3": "6",
     "resposta_correcte": 2,
     "categoria": "Animación",
-    "img/audio": "..\\..\\ImatgePreguntes\\increibles.png",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -164,31 +164,31 @@
     "resposta3": "Arribar a l'altre costat del món",
     "resposta_correcte": 1,
     "categoria": "Animación",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
     "id": "CAT_M_015",
     "película": "AVATAR",
     "pregunta": "En quin any va sortir la pel·lícula Avatar?",
-    "resposta1": 2017,
-    "resposta2": 2009,
-    "resposta3": 2012,
+    "resposta1": "2017",
+    "resposta2": "2009",
+    "resposta3": "2012",
     "resposta_correcte": 2,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
     "id": "CAT_M_016",
     "película": "E.T el extraterrestre",
     "pregunta": "En quin any va ser publicada la pelíclua ET l'extraterrestre",
-    "resposta1": 1982,
-    "resposta2": 1990,
-    "resposta3": 1992,
+    "resposta1": "1982",
+    "resposta2": "1990",
+    "resposta3": "1992",
     "resposta_correcte": 1,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -200,7 +200,7 @@
     "resposta3": "Bill Pullman",
     "resposta_correcte": 2,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -212,7 +212,7 @@
     "resposta3": "Vikings",
     "resposta_correcte": 2,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -224,7 +224,7 @@
     "resposta3": "Taronja y Verd",
     "resposta_correcte": 2,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -236,7 +236,7 @@
     "resposta3": "Indiana Jones",
     "resposta_correcte": 2,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -248,7 +248,7 @@
     "resposta3": "C-789",
     "resposta_correcte": 2,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -260,7 +260,7 @@
     "resposta3": "Anglaterra",
     "resposta_correcte": 2,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -272,7 +272,7 @@
     "resposta3": "Llimona",
     "resposta_correcte": 1,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -284,7 +284,7 @@
     "resposta3": "França",
     "resposta_correcte": 1,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -296,7 +296,7 @@
     "resposta3": "Pal·ladi",
     "resposta_correcte": 3,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -308,7 +308,7 @@
     "resposta3": "John McClane",
     "resposta_correcte": 3,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -320,7 +320,7 @@
     "resposta3": "El soldado de invierno",
     "resposta_correcte": 2,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -332,7 +332,7 @@
     "resposta3": "Dues Cares",
     "resposta_correcte": 2,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -344,7 +344,7 @@
     "resposta3": "$12000",
     "resposta_correcte": 3,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -356,7 +356,7 @@
     "resposta3": "Es sordo",
     "resposta_correcte": 1,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -368,7 +368,7 @@
     "resposta3": "Holanda",
     "resposta_correcte": 1,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -380,7 +380,7 @@
     "resposta3": "Speeds",
     "resposta_correcte": 2,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -392,7 +392,7 @@
     "resposta3": "Stella",
     "resposta_correcte": 1,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -404,7 +404,7 @@
     "resposta3": "Robar als ancians",
     "resposta_correcte": 2,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   },
   {
@@ -416,7 +416,7 @@
     "resposta3": "En un bingo",
     "resposta_correcte": 1,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 2
   }
 ]

@@ -8,7 +8,7 @@
     "resposta3": "90º",
     "resposta_correcte": 2,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -20,7 +20,7 @@
     "resposta3": "Elyes Gabel",
     "resposta_correcte": 1,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -32,7 +32,7 @@
     "resposta3": "He was scared when Dalton walked at night",
     "resposta_correcte": 3,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -44,7 +44,7 @@
     "resposta3": "Renai found a mangled teddy bear under Dalton's sheets.",
     "resposta_correcte": 2,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -56,7 +56,7 @@
     "resposta3": "Bill Lancaster",
     "resposta_correcte": 1,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -68,7 +68,7 @@
     "resposta3": "102 minutes",
     "resposta_correcte": 1,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -80,7 +80,7 @@
     "resposta3": "Ethan Hawke",
     "resposta_correcte": 3,
     "categoria": "Terror",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -92,31 +92,31 @@
     "resposta3": "Jenifer Aniston",
     "resposta_correcte": 1,
     "categoria": "Animación",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
     "id": "EN_D_009",
     "película": "Bob Esponja",
     "pregunta": "When was the first Spongebob movie released?",
-    "resposta1": 2007,
-    "resposta2": 2005,
-    "resposta3": 2004,
+    "resposta1": "2007",
+    "resposta2": "2005",
+    "resposta3": "2004",
     "resposta_correcte": 3,
     "categoria": "Animación",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
     "id": "EN_D_010",
     "película": "Buscando a Nemo",
     "pregunta": "How many sharks appear?",
-    "resposta1": 2,
-    "resposta2": 3,
-    "resposta3": 4,
+    "resposta1": "2",
+    "resposta2": "3",
+    "resposta3": "4",
     "resposta_correcte": 2,
     "categoria": "Animación",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -128,7 +128,7 @@
     "resposta3": "Rotating cut",
     "resposta_correcte": 2,
     "categoria": "Animación",
-    "img/audio": "..\\..\\ImatgePreguntes\\inazuma.png",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -140,7 +140,7 @@
     "resposta3": "Peter",
     "resposta_correcte": 1,
     "categoria": "Animación",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -152,7 +152,7 @@
     "resposta3": "Prak",
     "resposta_correcte": 1,
     "categoria": "Animación",
-    "img/audio": "..\\..\\ImatgePreguntes\\pocoyo.png",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -164,19 +164,19 @@
     "resposta3": "Pearl Gesner",
     "resposta_correcte": 1,
     "categoria": "Animación",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
     "id": "EN_D_015",
     "película": "12 monos",
     "pregunta": "What year is the future of the movie \"12 monkeys\" located?",
-    "resposta1": 2035,
-    "resposta2": 2086,
-    "resposta3": 2045,
+    "resposta1": "2035",
+    "resposta2": "2086",
+    "resposta3": "2045",
     "resposta_correcte": 1,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -188,19 +188,19 @@
     "resposta3": "Seungriho",
     "resposta_correcte": 3,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
     "id": "EN_D_017",
     "película": "EL SEÑOR DE LOS ANILLOS",
     "pregunta": "How many power rings exist in the Lord of the Rings' world?",
-    "resposta1": 1,
-    "resposta2": 12,
-    "resposta3": 20,
+    "resposta1": "1",
+    "resposta2": "12",
+    "resposta3": "20",
     "resposta_correcte": 3,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -212,7 +212,7 @@
     "resposta3": "Simon Masrani",
     "resposta_correcte": 3,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -224,19 +224,19 @@
     "resposta3": "Accountant",
     "resposta_correcte": 1,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
     "id": "EN_D_020",
     "película": "Terminator",
     "pregunta": "When got Skynet awareness of himself?",
-    "resposta1": 35646,
-    "resposta2": 35671,
-    "resposta3": 35661,
+    "resposta1": "35646",
+    "resposta2": "35671",
+    "resposta3": "35661",
     "resposta_correcte": 2,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -248,7 +248,7 @@
     "resposta3": "Terra Formars",
     "resposta_correcte": 3,
     "categoria": "Ciencia Ficción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -260,7 +260,7 @@
     "resposta3": "Yoo Sung-Joo",
     "resposta_correcte": 2,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -272,43 +272,43 @@
     "resposta3": "Hawk",
     "resposta_correcte": 1,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
     "id": "EN_D_024",
     "película": "James Bond",
     "pregunta": "How many official James Bond movies have been created?",
-    "resposta1": 25,
-    "resposta2": 23,
-    "resposta3": 27,
+    "resposta1": "25",
+    "resposta2": "23",
+    "resposta3": "27",
     "resposta_correcte": 1,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
     "id": "EN_D_025",
     "película": "Reservoir Dogs",
     "pregunta": "When did the movie Reservoir Dogs come out?",
-    "resposta1": 1992,
-    "resposta2": 1997,
-    "resposta3": 1989,
+    "resposta1": "1992",
+    "resposta2": "1997",
+    "resposta3": "1989",
     "resposta_correcte": 1,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
     "id": "EN_D_026",
     "película": "Speed",
     "pregunta": "In Speed ​​to how many miles per hour do you have to keep the bus not to explode?",
-    "resposta1": 50,
-    "resposta2": 60,
-    "resposta3": 70,
+    "resposta1": "50",
+    "resposta2": "60",
+    "resposta3": "70",
     "resposta_correcte": 1,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -320,7 +320,7 @@
     "resposta3": "115 min",
     "resposta_correcte": 3,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -332,19 +332,19 @@
     "resposta3": "Shi Qingsong",
     "resposta_correcte": 2,
     "categoria": "Acción",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
     "id": "EN_D_029",
-    "película": 1917,
+    "película": "1917",
     "pregunta": "What is the name of the character played by Andrew Scott?",
     "resposta1": "Leslie",
     "resposta2": "Cipayo Jondalar",
     "resposta3": "Tom Blake",
     "resposta_correcte": 1,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -356,7 +356,7 @@
     "resposta3": "Scotland",
     "resposta_correcte": 2,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -368,7 +368,7 @@
     "resposta3": "John Coffey",
     "resposta_correcte": 3,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -380,7 +380,7 @@
     "resposta3": "The Jewish bear",
     "resposta_correcte": 3,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -392,7 +392,7 @@
     "resposta3": "DLH Express",
     "resposta_correcte": 1,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -404,7 +404,7 @@
     "resposta3": "Leonardo Dicaprio",
     "resposta_correcte": 1,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   },
   {
@@ -416,7 +416,7 @@
     "resposta3": "12:05",
     "resposta_correcte": 2,
     "categoria": "Drama",
-    "img/audio": "",
+    "imgaudio": null,
     "dificultad": 3
   }
 ]
