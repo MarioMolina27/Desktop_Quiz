@@ -49,9 +49,10 @@
             // 
             // dataGridViewPersonatges
             // 
+            this.dataGridViewPersonatges.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewPersonatges.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dataGridViewPersonatges.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPersonatges.Location = new System.Drawing.Point(246, 151);
+            this.dataGridViewPersonatges.MultiSelect = false;
             this.dataGridViewPersonatges.Name = "dataGridViewPersonatges";
             this.dataGridViewPersonatges.Size = new System.Drawing.Size(1646, 821);
             this.dataGridViewPersonatges.TabIndex = 0;
@@ -87,6 +88,7 @@
             this.buttonEliminarPersonatge.Size = new System.Drawing.Size(69, 79);
             this.buttonEliminarPersonatge.TabIndex = 3;
             this.buttonEliminarPersonatge.UseVisualStyleBackColor = false;
+            this.buttonEliminarPersonatge.Click += new System.EventHandler(this.buttonEliminarPersonatge_Click_1);
             // 
             // labelBuscadorPersonatge
             // 

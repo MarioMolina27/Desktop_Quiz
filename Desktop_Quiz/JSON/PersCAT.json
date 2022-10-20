@@ -3,119 +3,119 @@
     "nomPers": "Cap",
     "descripcioPers": "No has acertat cap pregunta, potser t'hauries de veure alguna pel·lícula abans de fer el quiz.",
     "genere": "General",
-    "percAcerts": 0,
+    "percEncerts": 0,
     "rutaPers": ""
   },
   {
     "nomPers": "Uncharted",
     "descripcioPers": "La categoria on més has acertat és Acció i tot i així no ho has fet bé 7w7",
     "genere": "Acció",
-    "percAcerts": 33.3,
+    "percEncerts": 33.3,
     "rutaPers": ""
   },
   {
     "nomPers": "James Bond",
     "descripcioPers": "La categoria a destacar és acció, però encara pots millorar",
     "genere": "Acció",
-    "percAcerts": 66.6,
+    "percEncerts": 66.6,
     "rutaPers": ""
   },
   {
     "nomPers": "Fast & Furious",
     "descripcioPers": "Ben fet has acertat moltes preguntes d'Acció, es nota que t'agraden les explosions",
     "genere": "Acció",
-    "percAcerts": 99.9,
+    "percEncerts": 99.9,
     "rutaPers": ""
   },
   {
     "nomPers": "Sid",
     "descripcioPers": "En serio no t'en saps ni tan sols les d'animació?",
     "genere": "Animació",
-    "percAcerts": 33.3,
+    "percEncerts": 33.3,
     "rutaPers": ""
   },
   {
     "nomPers": "Doraemon",
     "descripcioPers": "Veig que has acertat unes quantes preguntes, però encara et queda camí per davant",
     "genere": "Animació",
-    "percAcerts": 66.6,
+    "percEncerts": 66.6,
     "rutaPers": ""
   },
   {
     "nomPers": "Barbie",
     "descripcioPers": "Com és d'esperar has acertat moltes preguntes, per això tens tant en comú amb aquest personatge",
     "genere": "Animació",
-    "percAcerts": 99.9,
+    "percEncerts": 99.9,
     "rutaPers": ""
   },
   {
     "nomPers": "Marty",
     "descripcioPers": "Has de vigilar amb les teves accions, no et passi com a aquest personatge.",
     "genere": "Ciencia ficció",
-    "percAcerts": 33.3,
+    "percEncerts": 33.3,
     "rutaPers": ""
   },
   {
     "nomPers": "Piratas del Caribe",
     "descripcioPers": "T'atreveixes a anar d'aventures amb Jack Sparrow i la seva tripulació?",
     "genere": "Ciencia ficció",
-    "percAcerts": 66.6,
+    "percEncerts": 66.6,
     "rutaPers": ""
   },
   {
     "nomPers": "Rick",
     "descripcioPers": "Has contestat bé moltes preguntes, vols viatjar a una altre dimensió a veure com et va?",
     "genere": "Ciencia ficció",
-    "percAcerts": 99.9,
+    "percEncerts": 99.9,
     "rutaPers": ""
   },
   {
     "nomPers": "Naufrago",
     "descripcioPers": "Tu també portes temps a una illa perduda o es que no vas al cinema?",
     "genere": "Drama",
-    "percAcerts": 33.3,
+    "percEncerts": 33.3,
     "rutaPers": ""
   },
   {
     "nomPers": "Club de la lucha",
     "descripcioPers": "Veig que vas bé amb les preguntes, pero no cal que t'inventis les coses com el protagonista",
     "genere": "Drama",
-    "percAcerts": 66.6,
+    "percEncerts": 66.6,
     "rutaPers": ""
   },
   {
     "nomPers": "Titanic",
     "descripcioPers": "Com saps tant de pelicules també sabràs que i entren tots dos a la fusta",
     "genere": "Drama",
-    "percAcerts": 99.9,
+    "percEncerts": 99.9,
     "rutaPers": ""
   },
   {
     "nomPers": "Get Out",
     "descripcioPers": "Podria entendre que apartesis la mirada en les categories de terror, però amb les demès categories?",
     "genere": "Terror",
-    "percAcerts": 33.3,
+    "percEncerts": 33.3,
     "rutaPers": ""
   },
   {
     "nomPers": "La Purga",
     "descripcioPers": "Veig que tenc confiança, però encara treus la vista de la pantalla de tant en tant eh!",
     "genere": "Terror",
-    "percAcerts": 66.6,
+    "percEncerts": 66.6,
     "rutaPers": ""
   },
   {
     "nomPers": "Guerra Mundial Z",
     "descripcioPers": "Com pot ser que apartis la mirada a les demès categories però les de terror te les sàpigues totes?",
     "genere": "Terror",
-    "percAcerts": 99.9,
+    "percEncerts": 99.9,
     "rutaPers": ""
   },
   {
     "nomPers": "Totes",
     "descripcioPers": "Has contestat bé totes les preguntes de totes les categoríes, felicitats.",
     "genere": "General",
-    "percAcerts": 100,
+    "percEncerts": 100,
     "rutaPers": ""
   }
 ]

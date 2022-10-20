@@ -3,119 +3,119 @@
     "nomPers": "Cap",
     "descripcioPers": "You have answered all the questions wrong,  you may have to watch some movies before answering the quiz",
     "genere": "General",
-    "percAcerts": 0,
+    "percEncerts": 0,
     "rutaPers": ""
   },
   {
     "nomPers": "Uncharted",
     "descripcioPers": "The category where you have hit the most is Action, and still you haven't done well 7w7",
     "genere": "Acció",
-    "percAcerts": 33.3,
+    "percEncerts": 33.3,
     "rutaPers": ""
   },
   {
     "nomPers": "James Bond",
     "descripcioPers": "The category where you stand out is Action, but you have room for improvement",
     "genere": "Acció",
-    "percAcerts": 66.6,
+    "percEncerts": 66.6,
     "rutaPers": ""
   },
   {
     "nomPers": "Fast & Furious",
     "descripcioPers": "Well done, you have answered well some Action questions, it seems that you like films with explosions",
     "genere": "Acció",
-    "percAcerts": 99.9,
+    "percEncerts": 99.9,
     "rutaPers": ""
   },
   {
     "nomPers": "Sid",
     "descripcioPers": "Really, you know nothing about Animation films?",
     "genere": "Animació",
-    "percAcerts": 33.3,
+    "percEncerts": 33.3,
     "rutaPers": ""
   },
   {
     "nomPers": "Doraemon",
     "descripcioPers": "It looks like you have some answers right, but you'll have to do better next time",
     "genere": "Animació",
-    "percAcerts": 66.6,
+    "percEncerts": 66.6,
     "rutaPers": ""
   },
   {
     "nomPers": "Barbie",
     "descripcioPers": "As expected you have answered correctly most of the questions, that's why you have things in common with this person.",
     "genere": "Animació",
-    "percAcerts": 99.9,
+    "percEncerts": 99.9,
     "rutaPers": ""
   },
   {
     "nomPers": "Marty",
     "descripcioPers": "You have to be carefull with your actions, to avoid the same problems this character had.",
     "genere": "Ciencia ficció",
-    "percAcerts": 33.3,
+    "percEncerts": 33.3,
     "rutaPers": ""
   },
   {
     "nomPers": "Piratas del Caribe",
     "descripcioPers": "Do you dare to go on adventures with Jack Sparrow and his crew?",
     "genere": "Ciencia ficció",
-    "percAcerts": 66.6,
+    "percEncerts": 66.6,
     "rutaPers": ""
   },
   {
     "nomPers": "Rick",
     "descripcioPers": "You have answered correctly a lot of questions, do you want to go to another dimension to see how it goes?",
     "genere": "Ciencia ficció",
-    "percAcerts": 99.9,
+    "percEncerts": 99.9,
     "rutaPers": ""
   },
   {
     "nomPers": "Naufrago",
     "descripcioPers": "Have you been alone on a lost island too, or it's only that you don't go to the cinema?",
     "genere": "Drama",
-    "percAcerts": 33.3,
+    "percEncerts": 33.3,
     "rutaPers": ""
   },
   {
     "nomPers": "Club de la lucha",
     "descripcioPers": "It looks like you are doing great with the questions, but try not to make up things like the main character.",
     "genere": "Drama",
-    "percAcerts": 66.6,
+    "percEncerts": 66.6,
     "rutaPers": ""
   },
   {
     "nomPers": "Titanic",
     "descripcioPers": "As you know so much about movies, then you shoud knoe that they both fit in there",
     "genere": "Drama",
-    "percAcerts": 99.9,
+    "percEncerts": 99.9,
     "rutaPers": ""
   },
   {
     "nomPers": "Get Out",
     "descripcioPers": "I could understand that you look away in Horror movies, but what happened with the others?",
     "genere": "Terror",
-    "percAcerts": 33.3,
+    "percEncerts": 33.3,
     "rutaPers": ""
   },
   {
     "nomPers": "La Purga",
     "descripcioPers": "I see that you are confident, but you are taking your eyes out from the screen sometimes",
     "genere": "Terror",
-    "percAcerts": 66.6,
+    "percEncerts": 66.6,
     "rutaPers": ""
   },
   {
     "nomPers": "Guerra Mundial Z",
     "descripcioPers": "How is it possible that you look away in the other categories, but you know everything about the Horror ones?",
     "genere": "Terror",
-    "percAcerts": 99.9,
+    "percEncerts": 99.9,
     "rutaPers": ""
   },
   {
     "nomPers": "Totes",
     "descripcioPers": "You have answered all the questions form all the categories right, congratulations!!!",
     "genere": "General",
-    "percAcerts": 100,
+    "percEncerts": 100,
     "rutaPers": ""
   }
 ]

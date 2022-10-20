@@ -17,9 +17,9 @@ namespace Desktop_Quiz
     public class PersRepo
     {
 
-        public static List<Personatge> personatgesCat { get; set; }
-        public static List<Personatge> personatgesCast { get; set; }
-        public static List<Personatge> personatgesAng { get; set; }
+         
+
+        public static List<Personatge> personatges { get; set; }
 
 
         private const String RUTACAT = @"..\..\JSON\PersCAT.json";
@@ -29,23 +29,23 @@ namespace Desktop_Quiz
         public static void LoadPersListCat()
         {
             JArray arrayPersCat = JArray.Parse(File.ReadAllText(RUTACAT));
-            PersRepo.personatgesCat = arrayPersCat.ToObject<List<Personatge>>();
+            PersRepo.personatges = arrayPersCat.ToObject<List<Personatge>>();
         }
 
         public static void LoadPersListCast()
         {
 
                     JArray arrayPersCast = JArray.Parse(File.ReadAllText(RUTACAST));
-                    PersRepo.personatgesCast = arrayPersCast.ToObject<List<Personatge>>();
+                    PersRepo.personatges = arrayPersCast.ToObject<List<Personatge>>();
         }
 
         public static void LoadPersListAng()
         {
             JArray arrayPersAng = JArray.Parse(File.ReadAllText(RUTAANG));
-            PersRepo.personatgesAng = arrayPersAng.ToObject<List<Personatge>>();
+            PersRepo.personatges = arrayPersAng.ToObject<List<Personatge>>();
         }
 
-        public static void AddPers()
+        public static void AddPers(String nomPers)
         {
 
             
@@ -55,13 +55,14 @@ namespace Desktop_Quiz
         public static void DeletePers(String nomPers)
         {
 
-            personatgesCat.RemoveAll(x => x.nomPers.Equals(nomPers));
+            
+
         }
 
-        public static void SavePers()
+        public static void SavePers(String nomPers, String descripcioPers, String genere, double percEncerts, String rutaPers)
         {
 
-            string json = JsonConvert.SerializeObject(personatgesCat, Formatting.Indented);
+            string json = JsonConvert.SerializeObject(personatges, Formatting.Indented);
             File.WriteAllText(RUTACAT, json);
 
         }
