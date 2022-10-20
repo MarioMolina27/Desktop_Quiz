@@ -285,7 +285,9 @@
             this.textBoxTitulo.Name = "textBoxTitulo";
             this.textBoxTitulo.Size = new System.Drawing.Size(394, 26);
             this.textBoxTitulo.TabIndex = 1;
+            this.textBoxTitulo.TextChanged += new System.EventHandler(this.textBoxTitulo_TextChanged);
             this.textBoxTitulo.Enter += new System.EventHandler(this.textBoxTitulo_Enter);
+            this.textBoxTitulo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxTitulo_KeyDown);
             this.textBoxTitulo.Leave += new System.EventHandler(this.textBoxTitulo_Leave);
             // 
             // labelTitul

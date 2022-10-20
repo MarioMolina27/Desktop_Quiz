@@ -430,17 +430,29 @@ namespace Desktop_Quiz
         }
         private void buttonAceptar_Click(object sender, EventArgs e)
         {
-            BindingList<Pelicula> listaFiltre = new BindingList<Pelicula>();
+            List<Pelicula> llistaFiltre = new List<Pelicula>();
             String titulo = textBoxTitulo.Text;
-            foreach (var pelicula in peliculaList)
+
+            if (!titulo.Equals(""))
             {
-                if (titulo.Equals(pelicula.película))
+                llistaFiltre = peliculaList.ToList().FindAll(x => x.película == titulo);
+                if(llistaFiltre.Count > 0)
                 {
-                    listaFiltre.Add(pelicula);
+                    dataGridViewPelicules.DataSource = null;
+                    dataGridViewPelicules.DataSource = llistaFiltre;
                 }
-                dataGridViewPelicules.DataSource = null;
-                dataGridViewPelicules.DataSource = listaFiltre;
+                else
+                {
+                    MessageBox.Show("No s'han trobat resultats");
+                    updateDataGrid();
+                }
+                
             }
+            else
+            {
+                updateDataGrid();
+            }
+           
         }
 
         private void radioButtonDificultat_CheckedChanged(object sender, EventArgs e)
@@ -584,6 +596,19 @@ namespace Desktop_Quiz
             {
                 FormSAdimOpciones formSAdim = new FormSAdimOpciones(this.usuari);
             }
+        }
+
+        private void textBoxTitulo_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                buttonAceptar_Click(sender, e);
+            }
+        }
+
+        private void textBoxTitulo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
