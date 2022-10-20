@@ -24,7 +24,7 @@ namespace Desktop_Quiz
         public static void LoadUsersList() 
         {
             JArray arrayUsers = JArray.Parse(File.ReadAllText(RUTAJSON));
-            UsuarisRepositori.users = arrayUsers.ToObject<List<Usuari>>();
+            users = arrayUsers.ToObject<List<Usuari>>();
         }
         public static void AddUser (Usuari userAfegir)
         {
@@ -38,10 +38,12 @@ namespace Desktop_Quiz
             users[indexPosition] = usuariEdited;
         }
 
-        public static void DeleteUser (int indexPosition)
+        public static void DeleteUser (String nickname)
         {
+            int UserPosition = users.FindIndex(x => x.nickname == nickname);
+
             //elimina l'usuari que estigui a la mateixa posició
-            users.RemoveAt(indexPosition);
+            users.RemoveAt(UserPosition);
         }
 
         public static void SaveUsers ()

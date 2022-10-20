@@ -14,8 +14,8 @@ namespace Desktop_Quiz
     public partial class FormEditUsuaris : Form
     {
 
-
-        private int IndexPosition = -1;
+        
+        private String nickname = null;
         
 
 
@@ -25,10 +25,10 @@ namespace Desktop_Quiz
         }
 
 
-        public FormEditUsuaris(int IndexPosition)
+        public FormEditUsuaris(String nickname)
         {
            InitializeComponent();
-           this.IndexPosition = IndexPosition;
+           this.nickname = nickname;
         }
 
         private void checkBoxMostrar_CheckedChanged(object sender, EventArgs e)
@@ -91,16 +91,25 @@ namespace Desktop_Quiz
         {
 
         }
+        
+        //funció per saber la posició del user a editar
+        private int userPosition()
+        {
+            int UserPosition = UsuarisRepositori.users.FindIndex(x => x.nickname == nickname);
+            return UserPosition;    
+        }
 
         private void FormEditUsuaris_Load(object sender, EventArgs e)
         {
-            if (IndexPosition != -1)
-            {
-                textBoxNickName.Text = UsuarisRepositori.users[IndexPosition].nickname;
-                textBoxNomEdit.Text = UsuarisRepositori.users[IndexPosition].nom;
-                checkBoxAfegir.Checked = UsuarisRepositori.users[IndexPosition].add;
-                checkBoxEditar.Checked = UsuarisRepositori.users[IndexPosition].modify;
-                checkBoxEliminar.Checked = UsuarisRepositori.users[IndexPosition].delete;
+            if (nickname != null)
+            {   
+               
+
+                textBoxNickName.Text = UsuarisRepositori.users[userPosition()].nickname;
+                textBoxNomEdit.Text = UsuarisRepositori.users[userPosition()].nom;
+                checkBoxAfegir.Checked = UsuarisRepositori.users[userPosition()].add;
+                checkBoxEditar.Checked = UsuarisRepositori.users[userPosition()].modify;
+                checkBoxEliminar.Checked = UsuarisRepositori.users[userPosition()].delete;
 
 
             }
@@ -117,14 +126,18 @@ namespace Desktop_Quiz
             char tipus = 'A';
 
 
-            if (IndexPosition == -1)
+            if (nickname == null)
             {
-                //Afegir nou usuari
-                Usuari usuariAfegir = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
+                if (ValidarUser())
+                {
+                    //Afegir nou usuari
+                    Usuari usuariAfegir = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
 
-                UsuarisRepositori.AddUser(usuariAfegir);
-                UsuarisRepositori.SaveUsers();
-                this.Close();
+                    UsuarisRepositori.AddUser(usuariAfegir);
+                    UsuarisRepositori.SaveUsers();
+                    this.Close();
+                }
+                
             }
             else
             {
@@ -135,7 +148,7 @@ namespace Desktop_Quiz
                     Usuari usuariEdited = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
 
 
-                    UsuarisRepositori.EditUser(usuariEdited, IndexPosition);
+                    UsuarisRepositori.EditUser(usuariEdited, userPosition());
                     UsuarisRepositori.SaveUsers();
                     this.Close();
                 }
