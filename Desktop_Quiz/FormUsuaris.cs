@@ -61,6 +61,7 @@ namespace Desktop_Quiz
             {
                 textBoxNickSearch.ForeColor = Color.Gray;
                 textBoxNickSearch.Text = "  Buscar...";
+                autoRefresh();
             }
             
         }
@@ -68,22 +69,37 @@ namespace Desktop_Quiz
         //button edit
         private void buttonEditUser1_Click(object sender, EventArgs e)
         {
+           
+
             if (conseguirRowIndex() != -1)
+
             {
-                FormEditUsuaris userEdit1 = new FormEditUsuaris(conseguirRowIndex());
+                FormEditUsuaris userEdit1 = new FormEditUsuaris(nicknameSelected());
                 userEdit1.ShowDialog();
+
+                //volvemos a cargar la grid
+                autoRefresh();
             }
 
         }
 
-       
+        //gaurdem el nickname de la fila seleccionada 
+        private String nicknameSelected()
+        {
+            String nickname = dataGridUsuaris1.Rows[conseguirRowIndex()].Cells[0].Value.ToString();
+            return nickname;
+        }
 
-        
+        //button afegir
 
         private void button1_Click(object sender, EventArgs e)
-        {
+        {   
+            
+            
             FormEditUsuaris editUsuaris2 = new FormEditUsuaris();
             editUsuaris2.ShowDialog();
+            //volvemos a cargar la grid
+            autoRefresh();
         }
 
         //funcio per saver quina fila esta seleccionada 
@@ -103,6 +119,40 @@ namespace Desktop_Quiz
         private void toolStripButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void autoRefresh()
+        {
+            dataGridUsuaris1.DataSource = null;
+            dataGridUsuaris1.DataSource = UsuarisRepositori.users;
+        }
+
+        private void buttonDeleteUsers_Click(object sender, EventArgs e)
+        {
+            //eliminar usuario
+
+           
+            UsuarisRepositori.DeleteUser(nicknameSelected());
+            UsuarisRepositori.SaveUsers();
+            autoRefresh();
+
+        }
+
+        //metode per buscar un usuari concret
+        private void textBoxNickSearch_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                String nickname = textBoxNickSearch.Text;
+                List<Usuari> userSelect = UsuarisRepositori.users.FindAll(x => x.nickname == nickname);
+
+                //carreguem la nova llista
+                dataGridUsuaris1.DataSource = null;
+                dataGridUsuaris1.DataSource = userSelect;
+            }
+           
+            
+            
         }
     }
 }

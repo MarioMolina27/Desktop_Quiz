@@ -2,7 +2,7 @@
   {
     "nickname": "SuperAdmin",
     "nom": "Super Admin",
-    "contrasenya": "$2a$11$TLONULQ8bm2kQ.nFZksPz.K/srTCDGUloj9.F5l84O/xWd6VA4n/W",
+    "contrasenya": "$2a$11$ysUGzrsUzNEK/qDBrypALOLZmrERy59ygNdKaio9qxMi4P.nPZrDm",
     "tipus": "S",
     "add": true,
     "modify": true,
@@ -27,9 +27,9 @@
     "delete": true
   },
   {
-    "nickname": "mmolina",
-    "nom": "Mario",
-    "contrasenya": "$2a$11$TLONULQ8bm2kQ.nFZksPz.K/srTCDGUloj9.F5l84O/xWd6VA4n/W",
+    "nickname": "JoelM",
+    "nom": "Joel",
+    "contrasenya": "$2a$11$gy8QRRTz5rZH2PtdJhAKNuseSMdzlYKus5YA03xQMabfRh6DQtSRW",
     "tipus": "A",
     "add": true,
     "modify": true,

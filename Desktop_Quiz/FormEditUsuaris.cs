@@ -14,8 +14,9 @@ namespace Desktop_Quiz
     public partial class FormEditUsuaris : Form
     {
 
-
-        private int IndexPosition = -1;
+        
+        private String nickname = null;
+        
 
 
         public FormEditUsuaris()
@@ -24,10 +25,10 @@ namespace Desktop_Quiz
         }
 
 
-        public FormEditUsuaris(int IndexPosition)
+        public FormEditUsuaris(String nickname)
         {
            InitializeComponent();
-           this.IndexPosition = IndexPosition;
+           this.nickname = nickname;
         }
 
         private void checkBoxMostrar_CheckedChanged(object sender, EventArgs e)
@@ -90,13 +91,27 @@ namespace Desktop_Quiz
         {
 
         }
+        
+        //funció per saber la posició del user a editar
+        private int userPosition()
+        {
+            int UserPosition = UsuarisRepositori.users.FindIndex(x => x.nickname == nickname);
+            return UserPosition;    
+        }
 
         private void FormEditUsuaris_Load(object sender, EventArgs e)
         {
-            if (IndexPosition != -1)
-            {
-                textBoxNickName.Text = UsuarisRepositori.users[IndexPosition].nickname;
-                textBoxNomEdit.Text = UsuarisRepositori.users[IndexPosition].nom;
+            if (nickname != null)
+            {   
+               
+
+                textBoxNickName.Text = UsuarisRepositori.users[userPosition()].nickname;
+                textBoxNomEdit.Text = UsuarisRepositori.users[userPosition()].nom;
+                checkBoxAfegir.Checked = UsuarisRepositori.users[userPosition()].add;
+                checkBoxEditar.Checked = UsuarisRepositori.users[userPosition()].modify;
+                checkBoxEliminar.Checked = UsuarisRepositori.users[userPosition()].delete;
+
+
             }
             
         }
@@ -108,25 +123,36 @@ namespace Desktop_Quiz
 
         private void buttonAceptarEditUsers_Click(object sender, EventArgs e)
         {
-            //EncriptarContrasenyes ec = new EncriptarContrasenyes();
-            if(IndexPosition == -1)
-            {
+            char tipus = 'A';
 
-            }else
+
+            if (nickname == null)
             {
                 if (ValidarUser())
                 {
-                    UsuarisRepositori.users[IndexPosition].nickname = textBoxNickName.Text;
-                    UsuarisRepositori.users[IndexPosition].nom = textBoxNomEdit.Text;
-                    UsuarisRepositori.users[IndexPosition].contrasenya = EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text);
+                    //Afegir nou usuari
+                    Usuari usuariAfegir = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
 
-                    //Cridem a la funció que guarda el Json
+                    UsuarisRepositori.AddUser(usuariAfegir);
                     UsuarisRepositori.SaveUsers();
                     this.Close();
                 }
+                
             }
-            
-            
+            else
+            {
+                if (ValidarUser())
+                {
+                    //Editar usuari existen
+
+                    Usuari usuariEdited = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
+
+
+                    UsuarisRepositori.EditUser(usuariEdited, userPosition());
+                    UsuarisRepositori.SaveUsers();
+                    this.Close();
+                }
+            }   
         }
     }
 }

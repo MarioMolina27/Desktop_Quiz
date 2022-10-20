@@ -13,27 +13,37 @@ using Newtonsoft.Json;
 
 namespace Desktop_Quiz
 {
-    public class UsuarisRepositori
+    public static class UsuarisRepositori
     {
-        public static List<Usuari> users { get; set; }
+        //en c# puede ser public
+        public static List<Usuari> users;
+
 
         private const String RUTAJSON = @"..\..\JSON\USUARIS.json"; 
 
         public static void LoadUsersList() 
         {
             JArray arrayUsers = JArray.Parse(File.ReadAllText(RUTAJSON));
-            UsuarisRepositori.users = arrayUsers.ToObject<List<Usuari>>();
+            users = arrayUsers.ToObject<List<Usuari>>();
         }
-        public static void AddUser (String nickName, String nom, String contrasenya)
+        public static void AddUser (Usuari userAfegir)
         {
-            //users.Add();
+            users.Add(userAfegir);
             
         }
 
-        public static void DeleteUser (String nickname)
+        public static void EditUser(Usuari usuariEdited, int indexPosition)
         {   
-            //elimina els usuaris que tinguin el matiex nickname que el paremetre
-            users.RemoveAll(x => x.nickname.Equals(nickname));
+            //editem el usuari que estigui a la amteixa posició
+            users[indexPosition] = usuariEdited;
+        }
+
+        public static void DeleteUser (String nickname)
+        {
+            int UserPosition = users.FindIndex(x => x.nickname == nickname);
+
+            //elimina l'usuari que estigui a la mateixa posició
+            users.RemoveAt(UserPosition);
         }
 
         public static void SaveUsers ()
