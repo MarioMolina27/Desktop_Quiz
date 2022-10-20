@@ -186,3 +186,4 @@ C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Runti
 C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormEditUsuaris.resources
 C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormUsuaris.resources
 C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormEditPreguntes.resources
+C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormEditPreguntes.resources

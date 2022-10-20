@@ -57,7 +57,7 @@ namespace Desktop_Quiz
 
         private void textBoxNom_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (    e.KeyCode == Keys.Enter)
             {
                 buttonIniciSessio_Click(sender, e);
             }

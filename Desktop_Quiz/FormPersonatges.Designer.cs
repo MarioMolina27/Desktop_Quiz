@@ -42,7 +42,6 @@
             this.radioButtonCastella = new System.Windows.Forms.RadioButton();
             this.radioButtonCatala = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPersonatges)).BeginInit();
-            this.toolStrip1.SuspendLayout();
             this.groupBoxIdioma.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -186,7 +185,6 @@
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.groupBoxIdioma);
-            this.Controls.Add(this.toolStrip1);
             this.Controls.Add(this.textBoxBuscadorPersonatges);
             this.Controls.Add(this.buttonGuardar);
             this.Controls.Add(this.labelBuscadorPersonatge);
@@ -198,8 +196,6 @@
             this.Text = "FormPersonatges";
             this.Load += new System.EventHandler(this.FormPersonatges_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPersonatges)).EndInit();
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.groupBoxIdioma.ResumeLayout(false);
             this.groupBoxIdioma.PerformLayout();
             this.ResumeLayout(false);
