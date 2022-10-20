@@ -61,7 +61,7 @@
             this.buttonPersonatges.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonPersonatges.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPersonatges.ForeColor = System.Drawing.Color.White;
-            this.buttonPersonatges.Location = new System.Drawing.Point(618, 550);
+            this.buttonPersonatges.Location = new System.Drawing.Point(613, 550);
             this.buttonPersonatges.Name = "buttonPersonatges";
             this.buttonPersonatges.Size = new System.Drawing.Size(193, 69);
             this.buttonPersonatges.TabIndex = 14;

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormUsuaris));
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.dataGridUsuaris1 = new System.Windows.Forms.DataGridView();
@@ -56,6 +57,8 @@
             this.dataGridUsuaris1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridUsuaris1.Location = new System.Drawing.Point(241, 134);
             this.dataGridUsuaris1.Name = "dataGridUsuaris1";
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.dataGridUsuaris1.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridUsuaris1.Size = new System.Drawing.Size(1614, 827);
             this.dataGridUsuaris1.TabIndex = 2;
             // 
