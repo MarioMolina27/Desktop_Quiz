@@ -29,8 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPreguntas));
-            this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.groupBoxPreguntes = new System.Windows.Forms.GroupBox();
             this.buttonAceptar = new System.Windows.Forms.Button();
             this.groupBoxOpcionsFilOr = new System.Windows.Forms.GroupBox();
@@ -49,39 +47,20 @@
             this.dataGridViewPelicules = new System.Windows.Forms.DataGridView();
             this.textBoxTitulo = new System.Windows.Forms.TextBox();
             this.labelTitul = new System.Windows.Forms.Label();
-            this.toolStrip1.SuspendLayout();
+            this.toolStripBackOption = new System.Windows.Forms.ToolStrip();
+            this.toolStripButtonBack = new System.Windows.Forms.ToolStripButton();
             this.groupBoxPreguntes.SuspendLayout();
             this.groupBoxOpcionsFilOr.SuspendLayout();
             this.groupBoxIdiomes.SuspendLayout();
             this.groupBoxModificacions.SuspendLayout();
             this.groupBoxOrdenacio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPelicules)).BeginInit();
+            this.toolStripBackOption.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // toolStrip1
-            // 
-            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
-            this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1});
-            this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0, 0, 2, 0);
-            this.toolStrip1.Size = new System.Drawing.Size(1904, 31);
-            this.toolStrip1.TabIndex = 0;
-            this.toolStrip1.Text = "toolStrip1";
-            // 
-            // toolStripButton1
-            // 
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(28, 28);
-            this.toolStripButton1.Text = "toolStripButton1";
-            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
             // groupBoxPreguntes
             // 
+            this.groupBoxPreguntes.BackColor = System.Drawing.Color.CornflowerBlue;
             this.groupBoxPreguntes.Controls.Add(this.buttonAceptar);
             this.groupBoxPreguntes.Controls.Add(this.groupBoxOpcionsFilOr);
             this.groupBoxPreguntes.Controls.Add(this.dataGridViewPelicules);
@@ -90,9 +69,9 @@
             this.groupBoxPreguntes.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBoxPreguntes.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxPreguntes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.groupBoxPreguntes.Location = new System.Drawing.Point(0, 31);
+            this.groupBoxPreguntes.Location = new System.Drawing.Point(0, 0);
             this.groupBoxPreguntes.Name = "groupBoxPreguntes";
-            this.groupBoxPreguntes.Size = new System.Drawing.Size(1904, 1010);
+            this.groupBoxPreguntes.Size = new System.Drawing.Size(1904, 1041);
             this.groupBoxPreguntes.TabIndex = 2;
             this.groupBoxPreguntes.TabStop = false;
             this.groupBoxPreguntes.Text = "Preguntes";
@@ -300,20 +279,38 @@
             this.labelTitul.TabIndex = 0;
             this.labelTitul.Text = "Títul";
             // 
+            // toolStripBackOption
+            // 
+            this.toolStripBackOption.BackColor = System.Drawing.Color.LightBlue;
+            this.toolStripBackOption.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButtonBack});
+            this.toolStripBackOption.Location = new System.Drawing.Point(0, 0);
+            this.toolStripBackOption.Name = "toolStripBackOption";
+            this.toolStripBackOption.Size = new System.Drawing.Size(1904, 25);
+            this.toolStripBackOption.TabIndex = 12;
+            // 
+            // toolStripButtonBack
+            // 
+            this.toolStripButtonBack.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonBack.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonBack.Image")));
+            this.toolStripButtonBack.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonBack.Name = "toolStripButtonBack";
+            this.toolStripButtonBack.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButtonBack.Text = "BACK";
+            this.toolStripButtonBack.Click += new System.EventHandler(this.toolStripButtonBack_Click);
+            // 
             // FormPreguntas
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.toolStripBackOption);
             this.Controls.Add(this.groupBoxPreguntes);
-            this.Controls.Add(this.toolStrip1);
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Name = "FormPreguntas";
             this.Text = "FormPreguntas";
             this.Load += new System.EventHandler(this.FormPreguntas_Load);
-            this.toolStrip1.ResumeLayout(false);
-            this.toolStrip1.PerformLayout();
             this.groupBoxPreguntes.ResumeLayout(false);
             this.groupBoxPreguntes.PerformLayout();
             this.groupBoxOpcionsFilOr.ResumeLayout(false);
@@ -323,14 +320,14 @@
             this.groupBoxOrdenacio.ResumeLayout(false);
             this.groupBoxOrdenacio.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPelicules)).EndInit();
+            this.toolStripBackOption.ResumeLayout(false);
+            this.toolStripBackOption.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.GroupBox groupBoxPreguntes;
         private System.Windows.Forms.DataGridView dataGridViewPelicules;
         private System.Windows.Forms.TextBox textBoxTitulo;
@@ -340,7 +337,6 @@
         private System.Windows.Forms.RadioButton radioButtonDificultat;
         private System.Windows.Forms.RadioButton radioButtonCategoria;
         private System.Windows.Forms.GroupBox groupBoxModificacions;
-        private System.Windows.Forms.ToolStripButton toolStripButton1;
         private System.Windows.Forms.Button buttonEliminar;
         private System.Windows.Forms.Button buttonModificar;
         private System.Windows.Forms.Button buttonAfegir;
@@ -350,5 +346,7 @@
         private System.Windows.Forms.RadioButton radioButtonCastellano;
         private System.Windows.Forms.RadioButton radioButtonCatala;
         private System.Windows.Forms.RadioButton radioButtonIdiomesTots;
+        private System.Windows.Forms.ToolStrip toolStripBackOption;
+        private System.Windows.Forms.ToolStripButton toolStripButtonBack;
     }
 }

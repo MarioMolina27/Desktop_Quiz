@@ -34,15 +34,17 @@
             this.buttonEditarPersonatge = new System.Windows.Forms.Button();
             this.buttonEliminarPersonatge = new System.Windows.Forms.Button();
             this.labelBuscadorPersonatge = new System.Windows.Forms.Label();
-            this.buttonGuardar = new System.Windows.Forms.Button();
             this.textBoxBuscadorPersonatges = new System.Windows.Forms.TextBox();
             this.toolStripButtonTornarEnrere = new System.Windows.Forms.ToolStripButton();
             this.groupBoxIdioma = new System.Windows.Forms.GroupBox();
             this.radioButtonAngles = new System.Windows.Forms.RadioButton();
             this.radioButtonCastella = new System.Windows.Forms.RadioButton();
             this.radioButtonCatala = new System.Windows.Forms.RadioButton();
+            this.toolStripBackOption = new System.Windows.Forms.ToolStrip();
+            this.toolStripButtonBack = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPersonatges)).BeginInit();
             this.groupBoxIdioma.SuspendLayout();
+            this.toolStripBackOption.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewPersonatges
@@ -91,22 +93,12 @@
             // labelBuscadorPersonatge
             // 
             this.labelBuscadorPersonatge.AutoSize = true;
-            this.labelBuscadorPersonatge.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBuscadorPersonatge.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelBuscadorPersonatge.Location = new System.Drawing.Point(243, 115);
             this.labelBuscadorPersonatge.Name = "labelBuscadorPersonatge";
-            this.labelBuscadorPersonatge.Size = new System.Drawing.Size(83, 17);
+            this.labelBuscadorPersonatge.Size = new System.Drawing.Size(90, 18);
             this.labelBuscadorPersonatge.TabIndex = 4;
             this.labelBuscadorPersonatge.Text = "Personatge";
-            // 
-            // buttonGuardar
-            // 
-            this.buttonGuardar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonGuardar.Image = ((System.Drawing.Image)(resources.GetObject("buttonGuardar.Image")));
-            this.buttonGuardar.Location = new System.Drawing.Point(1796, 60);
-            this.buttonGuardar.Name = "buttonGuardar";
-            this.buttonGuardar.Size = new System.Drawing.Size(70, 72);
-            this.buttonGuardar.TabIndex = 5;
-            this.buttonGuardar.UseVisualStyleBackColor = false;
             // 
             // textBoxBuscadorPersonatges
             // 
@@ -179,15 +171,35 @@
             this.radioButtonCatala.UseVisualStyleBackColor = true;
             this.radioButtonCatala.CheckedChanged += new System.EventHandler(this.radioButtonCatala_CheckedChanged);
             // 
+            // toolStripBackOption
+            // 
+            this.toolStripBackOption.BackColor = System.Drawing.Color.LightBlue;
+            this.toolStripBackOption.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripButtonBack});
+            this.toolStripBackOption.Location = new System.Drawing.Point(0, 0);
+            this.toolStripBackOption.Name = "toolStripBackOption";
+            this.toolStripBackOption.Size = new System.Drawing.Size(1904, 25);
+            this.toolStripBackOption.TabIndex = 11;
+            // 
+            // toolStripButtonBack
+            // 
+            this.toolStripButtonBack.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonBack.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonBack.Image")));
+            this.toolStripButtonBack.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonBack.Name = "toolStripButtonBack";
+            this.toolStripButtonBack.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButtonBack.Text = "BACK";
+            this.toolStripButtonBack.Click += new System.EventHandler(this.toolStripButtonBack_Click);
+            // 
             // FormPersonatges
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gold;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.toolStripBackOption);
             this.Controls.Add(this.groupBoxIdioma);
             this.Controls.Add(this.textBoxBuscadorPersonatges);
-            this.Controls.Add(this.buttonGuardar);
             this.Controls.Add(this.labelBuscadorPersonatge);
             this.Controls.Add(this.buttonEliminarPersonatge);
             this.Controls.Add(this.buttonEditarPersonatge);
@@ -199,6 +211,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPersonatges)).EndInit();
             this.groupBoxIdioma.ResumeLayout(false);
             this.groupBoxIdioma.PerformLayout();
+            this.toolStripBackOption.ResumeLayout(false);
+            this.toolStripBackOption.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,12 +225,13 @@
         private System.Windows.Forms.Button buttonEditarPersonatge;
         private System.Windows.Forms.Button buttonEliminarPersonatge;
         private System.Windows.Forms.Label labelBuscadorPersonatge;
-        private System.Windows.Forms.Button buttonGuardar;
         private System.Windows.Forms.TextBox textBoxBuscadorPersonatges;
         private System.Windows.Forms.ToolStripButton toolStripButtonTornarEnrere;
         private System.Windows.Forms.GroupBox groupBoxIdioma;
         private System.Windows.Forms.RadioButton radioButtonAngles;
         private System.Windows.Forms.RadioButton radioButtonCastella;
         private System.Windows.Forms.RadioButton radioButtonCatala;
+        private System.Windows.Forms.ToolStrip toolStripBackOption;
+        private System.Windows.Forms.ToolStripButton toolStripButtonBack;
     }
 }

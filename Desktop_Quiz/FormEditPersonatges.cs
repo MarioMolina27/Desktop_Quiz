@@ -24,7 +24,8 @@ namespace Desktop_Quiz
             textBoxRutaImg.Text = rutaPers;
             comboBoxGenere.Text = genere;
             textBoxEncerts.Text = percEncerts.ToString();
-
+           
+              
         }
 
         private void buttonGuardarEdit_Click(object sender, EventArgs e)
@@ -53,6 +54,11 @@ namespace Desktop_Quiz
         public FormEditPersonatges()
         {
             InitializeComponent();
+        }
+
+        private void groupBoxDadesPersonatge_Enter(object sender, EventArgs e)
+        {
+
         }
 
         public FormEditPersonatges(String nomPers,String descripcioPers,String genere,double percEncerts,String rutaPers)

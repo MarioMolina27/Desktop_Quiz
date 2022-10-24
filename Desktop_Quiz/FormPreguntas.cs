@@ -610,6 +610,11 @@ namespace Desktop_Quiz
         {
 
         }
+
+        private void toolStripButtonBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 

@@ -1,61 +1,5 @@
 [
   {
-    "nomPers": "Cap",
-    "descripcioPers": "No has acertat cap pregunta, potser t'hauries de veure alguna pel·lícula abans de fer el quiz.",
-    "genere": "General",
-    "percEncerts": 0.0,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\TotesIncorrectesImg.png"
-  },
-  {
-    "nomPers": "Uncharted",
-    "descripcioPers": "La categoria on més has acertat és Acció i tot i així no ho has fet bé 7w7",
-    "genere": "Acció",
-    "percEncerts": 33.3,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\UnchartedImg.png"
-  },
-  {
-    "nomPers": "James Bond",
-    "descripcioPers": "La categoria a destacar és acció, però encara pots millorar",
-    "genere": "Acció",
-    "percEncerts": 66.6,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\007Img.png"
-  },
-  {
-    "nomPers": "Fast & Furious",
-    "descripcioPers": "Ben fet has acertat moltes preguntes d'Acció, es nota que t'agraden les explosions",
-    "genere": "Acció",
-    "percEncerts": 99.9,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\Fast_FuriousImg.png"
-  },
-  {
-    "nomPers": "Sid",
-    "descripcioPers": "En serio no t'en saps ni tan sols les d'animació?",
-    "genere": "Animació",
-    "percEncerts": 33.3,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\SidImg.png"
-  },
-  {
-    "nomPers": "Doraemon",
-    "descripcioPers": "Veig que has acertat unes quantes preguntes, però encara et queda camí per davant",
-    "genere": "Animació",
-    "percEncerts": 66.6,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\DoraemonImg.png"
-  },
-  {
-    "nomPers": "Barbie",
-    "descripcioPers": "Com és d'esperar has acertat moltes preguntes, per això tens tant en comú amb aquest personatge",
-    "genere": "Animació",
-    "percEncerts": 99.9,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\BarbieImg.png"
-  },
-  {
-    "nomPers": "Marty",
-    "descripcioPers": "Has de vigilar amb les teves accions, no et passi com a aquest personatge.",
-    "genere": "Ciencia ficció",
-    "percEncerts": 33.3,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\MartyImg.png"
-  },
-  {
     "nomPers": "Piratas del Caribe",
     "descripcioPers": "T'atreveixes a anar d'aventures amb Jack Sparrow i la seva tripulació?",
     "genere": "Ciencia ficció",
@@ -110,12 +54,5 @@
     "genere": "Terror",
     "percEncerts": 99.9,
     "rutaPers": "..\\..\\ImatgesPersonatges\\WorldWarZImg.png"
-  },
-  {
-    "nomPers": "Totes",
-    "descripcioPers": "Has contestat bé totes les preguntes de totes les categoríes, felicitats.",
-    "genere": "General",
-    "percEncerts": 100.0,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\TotesCorrectesImg.png"
   }
 ]
