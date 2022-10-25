@@ -44,13 +44,13 @@
             // 
             // labelBenvinguda
             // 
-            this.labelBenvinguda.AutoSize = true;
-            this.labelBenvinguda.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBenvinguda.Location = new System.Drawing.Point(828, 400);
+            this.labelBenvinguda.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBenvinguda.Location = new System.Drawing.Point(793, 400);
             this.labelBenvinguda.Name = "labelBenvinguda";
-            this.labelBenvinguda.Size = new System.Drawing.Size(127, 24);
+            this.labelBenvinguda.Size = new System.Drawing.Size(290, 24);
             this.labelBenvinguda.TabIndex = 3;
             this.labelBenvinguda.Text = "BENVINGUT";
+            this.labelBenvinguda.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBoxIcon
             // 
@@ -66,7 +66,7 @@
             this.buttonUsuari.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonUsuari.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUsuari.ForeColor = System.Drawing.Color.White;
-            this.buttonUsuari.Location = new System.Drawing.Point(459, 550);
+            this.buttonUsuari.Location = new System.Drawing.Point(407, 550);
             this.buttonUsuari.Name = "buttonUsuari";
             this.buttonUsuari.Size = new System.Drawing.Size(193, 69);
             this.buttonUsuari.TabIndex = 4;
@@ -80,7 +80,7 @@
             this.buttonPersonatges.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonPersonatges.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPersonatges.ForeColor = System.Drawing.Color.White;
-            this.buttonPersonatges.Location = new System.Drawing.Point(861, 550);
+            this.buttonPersonatges.Location = new System.Drawing.Point(838, 550);
             this.buttonPersonatges.Name = "buttonPersonatges";
             this.buttonPersonatges.Size = new System.Drawing.Size(193, 69);
             this.buttonPersonatges.TabIndex = 8;
@@ -94,7 +94,7 @@
             this.buttonPreguntes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonPreguntes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPreguntes.ForeColor = System.Drawing.Color.White;
-            this.buttonPreguntes.Location = new System.Drawing.Point(1233, 550);
+            this.buttonPreguntes.Location = new System.Drawing.Point(1269, 550);
             this.buttonPreguntes.Name = "buttonPreguntes";
             this.buttonPreguntes.Size = new System.Drawing.Size(193, 69);
             this.buttonPreguntes.TabIndex = 9;

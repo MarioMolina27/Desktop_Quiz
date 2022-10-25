@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditPersonatges));
             this.groupBoxDadesPersonatge = new System.Windows.Forms.GroupBox();
             this.comboBoxGenere = new System.Windows.Forms.ComboBox();
             this.textBoxEncerts = new System.Windows.Forms.TextBox();
@@ -115,18 +114,20 @@
             // 
             // buttonGuardarEdit
             // 
-            this.buttonGuardarEdit.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonGuardarEdit.Image = ((System.Drawing.Image)(resources.GetObject("buttonGuardarEdit.Image")));
-            this.buttonGuardarEdit.Location = new System.Drawing.Point(355, 343);
+            this.buttonGuardarEdit.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonGuardarEdit.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGuardarEdit.Location = new System.Drawing.Point(303, 365);
+            this.buttonGuardarEdit.Margin = new System.Windows.Forms.Padding(4);
             this.buttonGuardarEdit.Name = "buttonGuardarEdit";
-            this.buttonGuardarEdit.Size = new System.Drawing.Size(93, 87);
+            this.buttonGuardarEdit.Size = new System.Drawing.Size(130, 50);
             this.buttonGuardarEdit.TabIndex = 9;
+            this.buttonGuardarEdit.Text = "Aceptar";
             this.buttonGuardarEdit.UseVisualStyleBackColor = false;
             this.buttonGuardarEdit.Click += new System.EventHandler(this.buttonGuardarEdit_Click);
             // 
             // pictureBoxPers
             // 
-            this.pictureBoxPers.Location = new System.Drawing.Point(143, 258);
+            this.pictureBoxPers.Location = new System.Drawing.Point(60, 258);
             this.pictureBoxPers.Name = "pictureBoxPers";
             this.pictureBoxPers.Size = new System.Drawing.Size(168, 157);
             this.pictureBoxPers.TabIndex = 8;
@@ -201,6 +202,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(478, 460);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBoxDadesPersonatge);
             this.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);

@@ -428,32 +428,6 @@ namespace Desktop_Quiz
             }
             return lista;
         }
-        private void buttonAceptar_Click(object sender, EventArgs e)
-        {
-            List<Pelicula> llistaFiltre = new List<Pelicula>();
-            String titulo = textBoxTitulo.Text;
-
-            if (!titulo.Equals(""))
-            {
-                llistaFiltre = peliculaList.ToList().FindAll(x => x.película == titulo);
-                if(llistaFiltre.Count > 0)
-                {
-                    dataGridViewPelicules.DataSource = null;
-                    dataGridViewPelicules.DataSource = llistaFiltre;
-                }
-                else
-                {
-                    MessageBox.Show("No s'han trobat resultats");
-                    updateDataGrid();
-                }
-                
-            }
-            else
-            {
-                updateDataGrid();
-            }
-           
-        }
 
         private void radioButtonDificultat_CheckedChanged(object sender, EventArgs e)
         {
@@ -602,7 +576,28 @@ namespace Desktop_Quiz
         {
             if (e.KeyCode == Keys.Enter)
             {
-                buttonAceptar_Click(sender, e);
+                List<Pelicula> llistaFiltre = new List<Pelicula>();
+                String titulo = textBoxTitulo.Text;
+
+                if (!titulo.Equals(""))
+                {
+                    llistaFiltre = peliculaList.ToList().FindAll(x => x.película == titulo);
+                    if (llistaFiltre.Count > 0)
+                    {
+                        dataGridViewPelicules.DataSource = null;
+                        dataGridViewPelicules.DataSource = llistaFiltre;
+                    }
+                    else
+                    {
+                        MessageBox.Show("No s'han trobat resultats");
+                        updateDataGrid();
+                    }
+
+                }
+                else
+                {
+                    updateDataGrid();
+                }
             }
         }
 

@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPreguntas));
             this.groupBoxPreguntes = new System.Windows.Forms.GroupBox();
-            this.buttonAceptar = new System.Windows.Forms.Button();
             this.groupBoxOpcionsFilOr = new System.Windows.Forms.GroupBox();
             this.groupBoxIdiomes = new System.Windows.Forms.GroupBox();
             this.radioButtonIdiomesTots = new System.Windows.Forms.RadioButton();
@@ -61,7 +60,6 @@
             // groupBoxPreguntes
             // 
             this.groupBoxPreguntes.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.groupBoxPreguntes.Controls.Add(this.buttonAceptar);
             this.groupBoxPreguntes.Controls.Add(this.groupBoxOpcionsFilOr);
             this.groupBoxPreguntes.Controls.Add(this.dataGridViewPelicules);
             this.groupBoxPreguntes.Controls.Add(this.textBoxTitulo);
@@ -76,18 +74,6 @@
             this.groupBoxPreguntes.TabStop = false;
             this.groupBoxPreguntes.Text = "Preguntes";
             // 
-            // buttonAceptar
-            // 
-            this.buttonAceptar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonAceptar.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.buttonAceptar.Location = new System.Drawing.Point(744, 88);
-            this.buttonAceptar.Name = "buttonAceptar";
-            this.buttonAceptar.Size = new System.Drawing.Size(111, 32);
-            this.buttonAceptar.TabIndex = 9;
-            this.buttonAceptar.Text = "Aceptar";
-            this.buttonAceptar.UseVisualStyleBackColor = false;
-            this.buttonAceptar.Click += new System.EventHandler(this.buttonAceptar_Click);
-            // 
             // groupBoxOpcionsFilOr
             // 
             this.groupBoxOpcionsFilOr.Controls.Add(this.groupBoxIdiomes);
@@ -96,7 +82,7 @@
             this.groupBoxOpcionsFilOr.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.groupBoxOpcionsFilOr.Location = new System.Drawing.Point(36, 136);
             this.groupBoxOpcionsFilOr.Name = "groupBoxOpcionsFilOr";
-            this.groupBoxOpcionsFilOr.Size = new System.Drawing.Size(241, 835);
+            this.groupBoxOpcionsFilOr.Size = new System.Drawing.Size(241, 615);
             this.groupBoxOpcionsFilOr.TabIndex = 4;
             this.groupBoxOpcionsFilOr.TabStop = false;
             this.groupBoxOpcionsFilOr.Text = "Opcions";
@@ -227,10 +213,10 @@
             this.radioButtonDificultat.AutoSize = true;
             this.radioButtonDificultat.Location = new System.Drawing.Point(31, 66);
             this.radioButtonDificultat.Name = "radioButtonDificultat";
-            this.radioButtonDificultat.Size = new System.Drawing.Size(86, 24);
+            this.radioButtonDificultat.Size = new System.Drawing.Size(82, 24);
             this.radioButtonDificultat.TabIndex = 1;
             this.radioButtonDificultat.TabStop = true;
-            this.radioButtonDificultat.Text = "Dificultad";
+            this.radioButtonDificultat.Text = "Dificultat";
             this.radioButtonDificultat.UseVisualStyleBackColor = true;
             this.radioButtonDificultat.CheckedChanged += new System.EventHandler(this.radioButtonDificultat_CheckedChanged);
             // 
@@ -242,7 +228,7 @@
             this.radioButtonCategoria.Size = new System.Drawing.Size(86, 24);
             this.radioButtonCategoria.TabIndex = 0;
             this.radioButtonCategoria.TabStop = true;
-            this.radioButtonCategoria.Text = "Categoría";
+            this.radioButtonCategoria.Text = "Categoria";
             this.radioButtonCategoria.UseVisualStyleBackColor = true;
             this.radioButtonCategoria.CheckedChanged += new System.EventHandler(this.radioButtonCategoria_CheckedChanged);
             // 
@@ -260,7 +246,7 @@
             // 
             // textBoxTitulo
             // 
-            this.textBoxTitulo.Location = new System.Drawing.Point(332, 92);
+            this.textBoxTitulo.Location = new System.Drawing.Point(408, 91);
             this.textBoxTitulo.Name = "textBoxTitulo";
             this.textBoxTitulo.Size = new System.Drawing.Size(394, 26);
             this.textBoxTitulo.TabIndex = 1;
@@ -273,11 +259,11 @@
             // 
             this.labelTitul.AutoSize = true;
             this.labelTitul.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
-            this.labelTitul.Location = new System.Drawing.Point(267, 95);
+            this.labelTitul.Location = new System.Drawing.Point(328, 95);
             this.labelTitul.Name = "labelTitul";
             this.labelTitul.Size = new System.Drawing.Size(42, 19);
             this.labelTitul.TabIndex = 0;
-            this.labelTitul.Text = "Títul";
+            this.labelTitul.Text = "Títol";
             // 
             // toolStripBackOption
             // 
@@ -305,6 +291,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ControlBox = false;
             this.Controls.Add(this.toolStripBackOption);
             this.Controls.Add(this.groupBoxPreguntes);
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
@@ -340,7 +327,6 @@
         private System.Windows.Forms.Button buttonEliminar;
         private System.Windows.Forms.Button buttonModificar;
         private System.Windows.Forms.Button buttonAfegir;
-        private System.Windows.Forms.Button buttonAceptar;
         private System.Windows.Forms.GroupBox groupBoxIdiomes;
         private System.Windows.Forms.RadioButton radioButtonEnglish;
         private System.Windows.Forms.RadioButton radioButtonCastellano;

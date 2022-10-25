@@ -47,7 +47,7 @@
             this.buttonPreguntes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonPreguntes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPreguntes.ForeColor = System.Drawing.Color.White;
-            this.buttonPreguntes.Location = new System.Drawing.Point(1096, 550);
+            this.buttonPreguntes.Location = new System.Drawing.Point(1082, 550);
             this.buttonPreguntes.Name = "buttonPreguntes";
             this.buttonPreguntes.Size = new System.Drawing.Size(193, 69);
             this.buttonPreguntes.TabIndex = 15;
@@ -61,7 +61,7 @@
             this.buttonPersonatges.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonPersonatges.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPersonatges.ForeColor = System.Drawing.Color.White;
-            this.buttonPersonatges.Location = new System.Drawing.Point(618, 550);
+            this.buttonPersonatges.Location = new System.Drawing.Point(604, 550);
             this.buttonPersonatges.Name = "buttonPersonatges";
             this.buttonPersonatges.Size = new System.Drawing.Size(193, 69);
             this.buttonPersonatges.TabIndex = 14;
@@ -71,13 +71,13 @@
             // 
             // labelBenvinguda
             // 
-            this.labelBenvinguda.AutoSize = true;
-            this.labelBenvinguda.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBenvinguda.Location = new System.Drawing.Point(834, 400);
+            this.labelBenvinguda.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBenvinguda.Location = new System.Drawing.Point(821, 400);
             this.labelBenvinguda.Name = "labelBenvinguda";
-            this.labelBenvinguda.Size = new System.Drawing.Size(127, 24);
+            this.labelBenvinguda.Size = new System.Drawing.Size(239, 24);
             this.labelBenvinguda.TabIndex = 11;
             this.labelBenvinguda.Text = "BENVINGUT";
+            this.labelBenvinguda.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pictureBoxIcon
             // 
@@ -89,6 +89,7 @@
             // 
             // toolStripBackOption
             // 
+            this.toolStripBackOption.BackColor = System.Drawing.Color.LightBlue;
             this.toolStripBackOption.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButtonBack});
             this.toolStripBackOption.Location = new System.Drawing.Point(0, 0);
@@ -121,6 +122,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.pictureBoxIconUser);
             this.Controls.Add(this.toolStripBackOption);

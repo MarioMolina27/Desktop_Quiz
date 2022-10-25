@@ -1,26 +1,5 @@
 [
   {
-    "nomPers": "Piratas del Caribe",
-    "descripcioPers": "T'atreveixes a anar d'aventures amb Jack Sparrow i la seva tripulació?",
-    "genere": "Ciencia ficció",
-    "percEncerts": 66.6,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\PiratasdelCaribeImg.png"
-  },
-  {
-    "nomPers": "Rick",
-    "descripcioPers": "Has contestat bé moltes preguntes, vols viatjar a una altre dimensió a veure com et va?",
-    "genere": "Ciencia ficció",
-    "percEncerts": 99.9,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\RickImg.png"
-  },
-  {
-    "nomPers": "Naufrago",
-    "descripcioPers": "Tu també portes temps a una illa perduda o es que no vas al cinema?",
-    "genere": "Drama",
-    "percEncerts": 33.3,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\NaufragoImg.png"
-  },
-  {
     "nomPers": "Club de la lucha",
     "descripcioPers": "Veig que vas bé amb les preguntes, pero no cal que t'inventis les coses com el protagonista",
     "genere": "Drama",
@@ -49,10 +28,38 @@
     "rutaPers": "..\\..\\ImatgesPersonatges\\LaPurgaImg.png"
   },
   {
-    "nomPers": "Guerra Mundial Z",
-    "descripcioPers": "Com pot ser que apartis la mirada a les demès categories però les de terror te les sàpigues totes?",
-    "genere": "Terror",
+    "nomPers": "Piratas del Caribe",
+    "descripcioPers": "T'atreveixes a anar d'aventures amb Jack Sparrow i la seva tripulació?",
+    "genere": "Ciencia ficció",
+    "percEncerts": 66.6,
+    "rutaPers": "..\\..\\ImatgesPersonatges\\PiratasdelCaribeImg.png"
+  },
+  {
+    "nomPers": "Rick",
+    "descripcioPers": "Has contestat bé moltes preguntes, vols viatjar a una altre dimensió a veure com et va?",
+    "genere": "Ciencia ficció",
     "percEncerts": 99.9,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\WorldWarZImg.png"
+    "rutaPers": "..\\..\\ImatgesPersonatges\\RickImg.png"
+  },
+  {
+    "nomPers": "",
+    "descripcioPers": "",
+    "genere": "",
+    "percEncerts": 0.0,
+    "rutaPers": "Pendent de ruta"
+  },
+  {
+    "nomPers": "Naufrago",
+    "descripcioPers": "Tu també portes temps a una illa perduda o es que no vas al cinema?",
+    "genere": "Drama",
+    "percEncerts": 33.3,
+    "rutaPers": "..\\..\\ImatgesPersonatges\\NaufragoImg.png"
+  },
+  {
+    "nomPers": "",
+    "descripcioPers": "",
+    "genere": "",
+    "percEncerts": 0.0,
+    "rutaPers": "Pendent de ruta"
   }
 ]

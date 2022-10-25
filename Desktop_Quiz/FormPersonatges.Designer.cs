@@ -42,26 +42,30 @@
             this.radioButtonCatala = new System.Windows.Forms.RadioButton();
             this.toolStripBackOption = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonBack = new System.Windows.Forms.ToolStripButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPersonatges)).BeginInit();
             this.groupBoxIdioma.SuspendLayout();
             this.toolStripBackOption.SuspendLayout();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // dataGridViewPersonatges
             // 
             this.dataGridViewPersonatges.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewPersonatges.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.dataGridViewPersonatges.Location = new System.Drawing.Point(246, 151);
+            this.dataGridViewPersonatges.Location = new System.Drawing.Point(341, 151);
             this.dataGridViewPersonatges.MultiSelect = false;
             this.dataGridViewPersonatges.Name = "dataGridViewPersonatges";
-            this.dataGridViewPersonatges.Size = new System.Drawing.Size(1646, 821);
+            this.dataGridViewPersonatges.Size = new System.Drawing.Size(1472, 835);
             this.dataGridViewPersonatges.TabIndex = 0;
             // 
             // buttonNouPersonatge
             // 
             this.buttonNouPersonatge.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonNouPersonatge.Image = ((System.Drawing.Image)(resources.GetObject("buttonNouPersonatge.Image")));
-            this.buttonNouPersonatge.Location = new System.Drawing.Point(34, 282);
+            this.buttonNouPersonatge.Location = new System.Drawing.Point(16, 23);
             this.buttonNouPersonatge.Name = "buttonNouPersonatge";
             this.buttonNouPersonatge.Size = new System.Drawing.Size(144, 105);
             this.buttonNouPersonatge.TabIndex = 1;
@@ -72,7 +76,7 @@
             // 
             this.buttonEditarPersonatge.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonEditarPersonatge.Image = ((System.Drawing.Image)(resources.GetObject("buttonEditarPersonatge.Image")));
-            this.buttonEditarPersonatge.Location = new System.Drawing.Point(34, 393);
+            this.buttonEditarPersonatge.Location = new System.Drawing.Point(16, 134);
             this.buttonEditarPersonatge.Name = "buttonEditarPersonatge";
             this.buttonEditarPersonatge.Size = new System.Drawing.Size(69, 79);
             this.buttonEditarPersonatge.TabIndex = 2;
@@ -83,7 +87,7 @@
             // 
             this.buttonEliminarPersonatge.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonEliminarPersonatge.Image = ((System.Drawing.Image)(resources.GetObject("buttonEliminarPersonatge.Image")));
-            this.buttonEliminarPersonatge.Location = new System.Drawing.Point(109, 393);
+            this.buttonEliminarPersonatge.Location = new System.Drawing.Point(91, 134);
             this.buttonEliminarPersonatge.Name = "buttonEliminarPersonatge";
             this.buttonEliminarPersonatge.Size = new System.Drawing.Size(69, 79);
             this.buttonEliminarPersonatge.TabIndex = 3;
@@ -94,7 +98,7 @@
             // 
             this.labelBuscadorPersonatge.AutoSize = true;
             this.labelBuscadorPersonatge.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBuscadorPersonatge.Location = new System.Drawing.Point(243, 115);
+            this.labelBuscadorPersonatge.Location = new System.Drawing.Point(338, 115);
             this.labelBuscadorPersonatge.Name = "labelBuscadorPersonatge";
             this.labelBuscadorPersonatge.Size = new System.Drawing.Size(90, 18);
             this.labelBuscadorPersonatge.TabIndex = 4;
@@ -104,7 +108,7 @@
             // 
             this.textBoxBuscadorPersonatges.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxBuscadorPersonatges.ForeColor = System.Drawing.Color.Gray;
-            this.textBoxBuscadorPersonatges.Location = new System.Drawing.Point(377, 112);
+            this.textBoxBuscadorPersonatges.Location = new System.Drawing.Point(465, 112);
             this.textBoxBuscadorPersonatges.Name = "textBoxBuscadorPersonatges";
             this.textBoxBuscadorPersonatges.Size = new System.Drawing.Size(463, 25);
             this.textBoxBuscadorPersonatges.TabIndex = 6;
@@ -129,9 +133,10 @@
             this.groupBoxIdioma.Controls.Add(this.radioButtonAngles);
             this.groupBoxIdioma.Controls.Add(this.radioButtonCastella);
             this.groupBoxIdioma.Controls.Add(this.radioButtonCatala);
-            this.groupBoxIdioma.Location = new System.Drawing.Point(34, 531);
+            this.groupBoxIdioma.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxIdioma.Location = new System.Drawing.Point(26, 49);
             this.groupBoxIdioma.Name = "groupBoxIdioma";
-            this.groupBoxIdioma.Size = new System.Drawing.Size(144, 125);
+            this.groupBoxIdioma.Size = new System.Drawing.Size(175, 125);
             this.groupBoxIdioma.TabIndex = 8;
             this.groupBoxIdioma.TabStop = false;
             this.groupBoxIdioma.Text = "Idioma";
@@ -141,7 +146,7 @@
             this.radioButtonAngles.AutoSize = true;
             this.radioButtonAngles.Location = new System.Drawing.Point(38, 83);
             this.radioButtonAngles.Name = "radioButtonAngles";
-            this.radioButtonAngles.Size = new System.Drawing.Size(59, 17);
+            this.radioButtonAngles.Size = new System.Drawing.Size(79, 22);
             this.radioButtonAngles.TabIndex = 2;
             this.radioButtonAngles.Text = "English";
             this.radioButtonAngles.UseVisualStyleBackColor = true;
@@ -152,7 +157,7 @@
             this.radioButtonCastella.AutoSize = true;
             this.radioButtonCastella.Location = new System.Drawing.Point(38, 59);
             this.radioButtonCastella.Name = "radioButtonCastella";
-            this.radioButtonCastella.Size = new System.Drawing.Size(74, 17);
+            this.radioButtonCastella.Size = new System.Drawing.Size(101, 22);
             this.radioButtonCastella.TabIndex = 1;
             this.radioButtonCastella.Text = "Castellano";
             this.radioButtonCastella.UseVisualStyleBackColor = true;
@@ -164,7 +169,7 @@
             this.radioButtonCatala.Checked = true;
             this.radioButtonCatala.Location = new System.Drawing.Point(38, 35);
             this.radioButtonCatala.Name = "radioButtonCatala";
-            this.radioButtonCatala.Size = new System.Drawing.Size(55, 17);
+            this.radioButtonCatala.Size = new System.Drawing.Size(70, 22);
             this.radioButtonCatala.TabIndex = 0;
             this.radioButtonCatala.TabStop = true;
             this.radioButtonCatala.Text = "Català";
@@ -191,19 +196,40 @@
             this.toolStripButtonBack.Text = "BACK";
             this.toolStripButtonBack.Click += new System.EventHandler(this.toolStripButtonBack_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.groupBox2);
+            this.groupBox1.Controls.Add(this.groupBoxIdioma);
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(62, 151);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(229, 463);
+            this.groupBox1.TabIndex = 12;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Opcions";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.buttonNouPersonatge);
+            this.groupBox2.Controls.Add(this.buttonEditarPersonatge);
+            this.groupBox2.Controls.Add(this.buttonEliminarPersonatge);
+            this.groupBox2.Location = new System.Drawing.Point(27, 194);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(175, 226);
+            this.groupBox2.TabIndex = 9;
+            this.groupBox2.TabStop = false;
+            // 
             // FormPersonatges
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ControlBox = false;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStripBackOption);
-            this.Controls.Add(this.groupBoxIdioma);
             this.Controls.Add(this.textBoxBuscadorPersonatges);
             this.Controls.Add(this.labelBuscadorPersonatge);
-            this.Controls.Add(this.buttonEliminarPersonatge);
-            this.Controls.Add(this.buttonEditarPersonatge);
-            this.Controls.Add(this.buttonNouPersonatge);
             this.Controls.Add(this.dataGridViewPersonatges);
             this.Name = "FormPersonatges";
             this.Text = "FormPersonatges";
@@ -213,6 +239,8 @@
             this.groupBoxIdioma.PerformLayout();
             this.toolStripBackOption.ResumeLayout(false);
             this.toolStripBackOption.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -233,5 +261,7 @@
         private System.Windows.Forms.RadioButton radioButtonCatala;
         private System.Windows.Forms.ToolStrip toolStripBackOption;
         private System.Windows.Forms.ToolStripButton toolStripButtonBack;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
     }
 }

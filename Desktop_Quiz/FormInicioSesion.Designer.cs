@@ -67,7 +67,7 @@
             // 
             this.labelNom.AutoSize = true;
             this.labelNom.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNom.Location = new System.Drawing.Point(666, 432);
+            this.labelNom.Location = new System.Drawing.Point(697, 423);
             this.labelNom.Name = "labelNom";
             this.labelNom.Size = new System.Drawing.Size(79, 18);
             this.labelNom.TabIndex = 0;
@@ -78,7 +78,7 @@
             // 
             this.labelContrasenya.AutoSize = true;
             this.labelContrasenya.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelContrasenya.Location = new System.Drawing.Point(666, 504);
+            this.labelContrasenya.Location = new System.Drawing.Point(697, 495);
             this.labelContrasenya.Name = "labelContrasenya";
             this.labelContrasenya.Size = new System.Drawing.Size(97, 18);
             this.labelContrasenya.TabIndex = 1;
@@ -87,7 +87,7 @@
             // 
             // textBoxNom
             // 
-            this.textBoxNom.Location = new System.Drawing.Point(769, 430);
+            this.textBoxNom.Location = new System.Drawing.Point(800, 421);
             this.textBoxNom.Name = "textBoxNom";
             this.textBoxNom.Size = new System.Drawing.Size(333, 20);
             this.textBoxNom.TabIndex = 2;
@@ -96,7 +96,7 @@
             // 
             // textBoxContrasenya
             // 
-            this.textBoxContrasenya.Location = new System.Drawing.Point(769, 502);
+            this.textBoxContrasenya.Location = new System.Drawing.Point(800, 493);
             this.textBoxContrasenya.Name = "textBoxContrasenya";
             this.textBoxContrasenya.Size = new System.Drawing.Size(333, 20);
             this.textBoxContrasenya.TabIndex = 3;
@@ -107,7 +107,7 @@
             // 
             this.checkBoxMostraPass.AutoSize = true;
             this.checkBoxMostraPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxMostraPass.Location = new System.Drawing.Point(1108, 505);
+            this.checkBoxMostraPass.Location = new System.Drawing.Point(1139, 496);
             this.checkBoxMostraPass.Name = "checkBoxMostraPass";
             this.checkBoxMostraPass.Size = new System.Drawing.Size(123, 17);
             this.checkBoxMostraPass.TabIndex = 4;

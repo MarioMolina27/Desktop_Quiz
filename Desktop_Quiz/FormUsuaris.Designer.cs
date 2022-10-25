@@ -39,8 +39,10 @@
             this.buttonDeleteUsers = new System.Windows.Forms.Button();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
             this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuaris1)).BeginInit();
             this.toolStrip1.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // imageList1
@@ -54,16 +56,16 @@
             this.dataGridUsuaris1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridUsuaris1.BackgroundColor = System.Drawing.SystemColors.ControlDarkDark;
             this.dataGridUsuaris1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridUsuaris1.Location = new System.Drawing.Point(241, 134);
+            this.dataGridUsuaris1.Location = new System.Drawing.Point(297, 159);
             this.dataGridUsuaris1.Name = "dataGridUsuaris1";
-            this.dataGridUsuaris1.Size = new System.Drawing.Size(1614, 827);
+            this.dataGridUsuaris1.Size = new System.Drawing.Size(1472, 835);
             this.dataGridUsuaris1.TabIndex = 2;
             // 
             // labelSearchNickname
             // 
             this.labelSearchNickname.AutoSize = true;
             this.labelSearchNickname.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelSearchNickname.Location = new System.Drawing.Point(237, 104);
+            this.labelSearchNickname.Location = new System.Drawing.Point(293, 124);
             this.labelSearchNickname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSearchNickname.Name = "labelSearchNickname";
             this.labelSearchNickname.Size = new System.Drawing.Size(91, 19);
@@ -74,7 +76,7 @@
             // 
             this.textBoxNickSearch.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.textBoxNickSearch.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.textBoxNickSearch.Location = new System.Drawing.Point(333, 102);
+            this.textBoxNickSearch.Location = new System.Drawing.Point(425, 118);
             this.textBoxNickSearch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNickSearch.Name = "textBoxNickSearch";
             this.textBoxNickSearch.Size = new System.Drawing.Size(358, 25);
@@ -88,7 +90,7 @@
             // 
             this.button1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
-            this.button1.Location = new System.Drawing.Point(44, 173);
+            this.button1.Location = new System.Drawing.Point(14, 27);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(144, 105);
             this.button1.TabIndex = 3;
@@ -99,7 +101,7 @@
             // 
             this.buttonEditUser1.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonEditUser1.Image = ((System.Drawing.Image)(resources.GetObject("buttonEditUser1.Image")));
-            this.buttonEditUser1.Location = new System.Drawing.Point(44, 284);
+            this.buttonEditUser1.Location = new System.Drawing.Point(14, 138);
             this.buttonEditUser1.Name = "buttonEditUser1";
             this.buttonEditUser1.Size = new System.Drawing.Size(69, 79);
             this.buttonEditUser1.TabIndex = 4;
@@ -110,7 +112,7 @@
             // 
             this.buttonDeleteUsers.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonDeleteUsers.Image = ((System.Drawing.Image)(resources.GetObject("buttonDeleteUsers.Image")));
-            this.buttonDeleteUsers.Location = new System.Drawing.Point(119, 284);
+            this.buttonDeleteUsers.Location = new System.Drawing.Point(89, 138);
             this.buttonDeleteUsers.Name = "buttonDeleteUsers";
             this.buttonDeleteUsers.Size = new System.Drawing.Size(69, 79);
             this.buttonDeleteUsers.TabIndex = 5;
@@ -138,17 +140,27 @@
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.buttonDeleteUsers);
+            this.groupBox1.Controls.Add(this.buttonEditUser1);
+            this.groupBox1.Controls.Add(this.button1);
+            this.groupBox1.Location = new System.Drawing.Point(57, 159);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(174, 232);
+            this.groupBox1.TabIndex = 8;
+            this.groupBox1.TabStop = false;
+            // 
             // FormUsuaris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.ControlBox = false;
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.toolStrip1);
-            this.Controls.Add(this.buttonDeleteUsers);
-            this.Controls.Add(this.buttonEditUser1);
             this.Controls.Add(this.labelSearchNickname);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxNickSearch);
             this.Controls.Add(this.dataGridUsuaris1);
             this.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -159,6 +171,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuaris1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,5 +188,6 @@
         private System.Windows.Forms.Button buttonDeleteUsers;
         private System.Windows.Forms.ToolStrip toolStrip1;
         private System.Windows.Forms.ToolStripButton toolStripButton1;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }
