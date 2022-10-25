@@ -28,28 +28,7 @@ namespace Desktop_Quiz
               
         }
 
-        private void buttonGuardarEdit_Click(object sender, EventArgs e)
-        {
-            Personatge p = new Personatge();
-
-            p.nomPers = textBoxNomPers.Text;
-            p.descripcioPers = textBoxDescripcioPers.Text;
-            p.genere = comboBoxGenere.Text;
-            p.percEncerts = double.Parse(textBoxEncerts.Text);
-            p.rutaPers = textBoxRutaImg.Text;
-
-            if (p.rutaPers.Equals(""))
-            {
-
-                p.rutaPers = "Pendent de ruta";
-
-            }
-
-            PersRepo.personatges.Add(p);
-
-            this.Close();
-
-        }
+        
 
         public FormEditPersonatges()
         {
@@ -69,8 +48,39 @@ namespace Desktop_Quiz
             this.genere = genere;
             this.percEncerts = percEncerts;
             this.rutaPers = rutaPers;
-
+            
             InitializeComponent();
+
+        }
+        
+        private void buttonGuardarEdit_Click(object sender, EventArgs e)
+        {
+            Personatge p = new Personatge();
+
+            p.nomPers = textBoxNomPers.Text;
+            p.descripcioPers = textBoxDescripcioPers.Text;
+            p.genere = comboBoxGenere.Text;
+            p.percEncerts = double.Parse(textBoxEncerts.Text);
+            p.rutaPers = textBoxRutaImg.Text;
+
+            if (textBoxNomPers.Text.Equals("") | textBoxDescripcioPers.Text.Equals("") | comboBoxGenere.Text.Equals("")) {
+
+                MessageBox.Show("No pot haver-hi cap camp en blanc", "Error");
+
+            } else {
+            
+            if (p.rutaPers.Equals(""))
+            {
+
+                p.rutaPers = "Pendent de ruta";
+
+            }
+
+            PersRepo.personatges.Add(p);
+
+            this.Close();
+            }
+
         }
 
         private void buttonBuscarRutaImg_Click(object sender, EventArgs e)
