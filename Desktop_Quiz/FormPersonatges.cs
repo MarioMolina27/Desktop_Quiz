@@ -179,7 +179,7 @@ namespace Desktop_Quiz
             }
             else
             {
-                MessageBox.Show("No has escollit cap pregunta per eliminar-la","Error");
+                MessageBox.Show("No has escollit cap personatge per eliminar","Error");
             }
 
         }
