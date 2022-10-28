@@ -137,22 +137,30 @@ namespace Desktop_Quiz
                     UsuarisRepositori.SaveUsers();
                     this.Close();
                 }
-                
+
             }
             else
             {
-                if (ValidarUser())
+                if (!nickname.Equals("SuperAdmin"))
                 {
-                    //Editar usuari existen
+                    if (ValidarUser())
+                    {
+                        //Editar usuari existen
 
-                    Usuari usuariEdited = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
+                        Usuari usuariEdited = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
 
 
-                    UsuarisRepositori.EditUser(usuariEdited, userPosition());
-                    UsuarisRepositori.SaveUsers();
-                    this.Close();
+                        UsuarisRepositori.EditUser(usuariEdited, userPosition());
+                        UsuarisRepositori.SaveUsers();
+                        this.Close();
+                    }
                 }
-            }   
+                else
+                {
+                    MessageBox.Show("No puedes crear/modificar un Super Admin", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+
+            }
         }
     }
 }

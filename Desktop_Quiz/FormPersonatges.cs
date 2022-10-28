@@ -16,8 +16,15 @@ namespace Desktop_Quiz
 
         int idioma = 0;
 
+        public Usuari usuari { get; set; }
+
         public FormPersonatges()
         {
+            InitializeComponent();
+        }
+        public FormPersonatges(Usuari usuari)
+        {
+            this.usuari = usuari;
             InitializeComponent();
         }
         private void FormPersonatges_Load(object sender, EventArgs e)
@@ -26,6 +33,32 @@ namespace Desktop_Quiz
 
             dataGridViewPersonatges.DataSource = null;
             dataGridViewPersonatges.DataSource = PersRepo.personatges;
+            if (usuari.add)
+            {
+                buttonNouPersonatge.Visible = true;
+            }
+            else if (!usuari.add)
+            {
+                buttonNouPersonatge.Visible = false;
+            }
+
+            if (usuari.delete)
+            {
+                buttonEliminarPersonatge.Visible = true;
+            }
+            else if (!usuari.delete)
+            {
+                buttonEliminarPersonatge.Visible = false;
+            }
+
+            if (usuari.modify)
+            {
+                buttonEditarPersonatge.Visible = true;
+            }
+            else if (!usuari.modify)
+            {
+                buttonEditarPersonatge.Visible = false;
+            }
         }
 
         private void toolStripButtonTornarEnrere_Click(object sender, EventArgs e)

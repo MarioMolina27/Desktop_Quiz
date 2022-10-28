@@ -1,33 +1,5 @@
 [
   {
-    "nomPers": "Uncharted",
-    "descripcioPers": "La categoria on més has acertat és Acció i tot i així no ho has fet bé 7w7",
-    "genere": "Acció",
-    "percEncerts": 33.3,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\UnchartedImg.png"
-  },
-  {
-    "nomPers": "James Bond",
-    "descripcioPers": "La categoria a destacar és acció, però encara pots millorar",
-    "genere": "Acció",
-    "percEncerts": 66.6,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\007Img.png"
-  },
-  {
-    "nomPers": "Fast & Furious",
-    "descripcioPers": "Ben fet has acertat moltes preguntes d'Acció, es nota que t'agraden les explosions",
-    "genere": "Acció",
-    "percEncerts": 99.9,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\Fast_FuriousImg.png"
-  },
-  {
-    "nomPers": "Sid",
-    "descripcioPers": "En serio no t'en saps ni tan sols les d'animació?",
-    "genere": "Animació",
-    "percEncerts": 33.3,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\SidImg.png"
-  },
-  {
     "nomPers": "Doraemon",
     "descripcioPers": "Veig que has acertat unes quantes preguntes, però encara et queda camí per davant",
     "genere": "Animació",
@@ -117,5 +89,33 @@
     "genere": "General",
     "percEncerts": 0.0,
     "rutaPers": "..\\..\\ImatgesPersonatges\\TotesIncorrectesImg.png"
+  },
+  {
+    "nomPers": "Uncharted",
+    "descripcioPers": "La categoria on més has acertat és Acció i tot i així no ho has fet bé 7w7",
+    "genere": "Acció",
+    "percEncerts": 33.3,
+    "rutaPers": "..\\..\\ImatgesPersonatges\\UnchartedImg.png"
+  },
+  {
+    "nomPers": "James Bond",
+    "descripcioPers": "La categoria a destacar és acció, però encara pots millorar",
+    "genere": "Acció",
+    "percEncerts": 66.6,
+    "rutaPers": "..\\..\\ImatgesPersonatges\\007Img.png"
+  },
+  {
+    "nomPers": "Fast & Furious",
+    "descripcioPers": "Ben fet has acertat moltes preguntes d'Acció, es nota que t'agraden les explosions",
+    "genere": "Acció",
+    "percEncerts": 99.9,
+    "rutaPers": "..\\..\\ImatgesPersonatges\\Fast_FuriousImg.png"
+  },
+  {
+    "nomPers": "Sid",
+    "descripcioPers": "En serio no t'en saps ni tan sols les d'animació?",
+    "genere": "Animació",
+    "percEncerts": 33.3,
+    "rutaPers": "..\\..\\ImatgesPersonatges\\SidImg.png"
   }
 ]
