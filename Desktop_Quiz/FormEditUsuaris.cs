@@ -71,26 +71,6 @@ namespace Desktop_Quiz
             return validReturn;
         }
 
-        private void labelNickname_Click(object sender, EventArgs e)
-        {
-
-            
-        }
-
-        private void labelNom_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonSave1_Click(object sender, EventArgs e)
-        {            
-           
-        }
-
-        private void groupBoxDadesUsuari_Enter(object sender, EventArgs e)
-        {
-
-        }
         
         //funció per saber la posició del user a editar
         private int userPosition()

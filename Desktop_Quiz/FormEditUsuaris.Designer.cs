@@ -70,7 +70,6 @@
             this.groupBoxDadesUsuari.TabIndex = 0;
             this.groupBoxDadesUsuari.TabStop = false;
             this.groupBoxDadesUsuari.Text = "Dades Usuari";
-            this.groupBoxDadesUsuari.Enter += new System.EventHandler(this.groupBoxDadesUsuari_Enter);
             // 
             // buttonAceptarEditUsers
             // 
@@ -230,7 +229,6 @@
             this.labelNickname.Size = new System.Drawing.Size(79, 18);
             this.labelNickname.TabIndex = 1;
             this.labelNickname.Text = "NickName";
-            this.labelNickname.Click += new System.EventHandler(this.labelNickname_Click);
             // 
             // labelNom
             // 
@@ -242,7 +240,6 @@
             this.labelNom.Size = new System.Drawing.Size(40, 18);
             this.labelNom.TabIndex = 0;
             this.labelNom.Text = "Nom";
-            this.labelNom.Click += new System.EventHandler(this.labelNom_Click);
             // 
             // FormEditUsuaris
             // 

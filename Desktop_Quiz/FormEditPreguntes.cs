@@ -240,11 +240,6 @@ namespace Desktop_Quiz
                 this.ENG_DIFICIL.Add(new Pelicula(id, nom, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
            
-            FormPreguntas formPreguntas = new FormPreguntas(peliculaList, CAST_DIFICIL, CAST_MEDIANO,
-                                 CAST_FACIL, CAT_DIFICIL, CAT_MEDIANO,
-                                 CAT_FACIL, ENG_DIFICIL, ENG_MEDIANO,
-                                 ENG_FACIL,this.usuari);
-            formPreguntas.Show();
             this.Close();
         }
 
