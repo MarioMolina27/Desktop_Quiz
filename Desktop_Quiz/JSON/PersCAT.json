@@ -1,12 +1,5 @@
 [
   {
-    "nomPers": "Doraemon",
-    "descripcioPers": "Veig que has acertat unes quantes preguntes, però encara et queda camí per davant",
-    "genere": "Animació",
-    "percEncerts": 66.6,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\DoraemonImg.png"
-  },
-  {
     "nomPers": "Barbie",
     "descripcioPers": "Com és d'esperar has acertat moltes preguntes, per això tens tant en comú amb aquest personatge",
     "genere": "Animació",
@@ -117,5 +110,12 @@
     "genere": "Animació",
     "percEncerts": 33.3,
     "rutaPers": "..\\..\\ImatgesPersonatges\\SidImg.png"
+  },
+  {
+    "nomPers": "Doraemon",
+    "descripcioPers": "Veig que has acertat unes quantes preguntes, però encara et queda camí per davant",
+    "genere": "Animació",
+    "percEncerts": 66.6,
+    "rutaPers": "..\\..\\ImatgesPersonatges\\DoraemonImg.png"
   }
 ]

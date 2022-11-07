@@ -61,18 +61,6 @@
   },
   {
     "id": "CAT_F_006",
-    "película": "Un lugar tranquilo",
-    "pregunta": "En què any va sortir Un lloc tranquil?",
-    "resposta1": "2018",
-    "resposta2": "2020",
-    "resposta3": "2019",
-    "resposta_correcte": 3,
-    "categoria": "Terror",
-    "imgaudio": null,
-    "dificultad": 1
-  },
-  {
-    "id": "CAT_F_007",
     "película": "Como entrenar a tu dragón",
     "pregunta": "Com es diu el drac protagonista?",
     "resposta1": "Fulla",
@@ -84,7 +72,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_008",
+    "id": "CAT_F_007",
     "película": "Dora la Exploradora",
     "pregunta": "Com es diu aquest personatge de Dora l'Exploradora?",
     "resposta1": "Zispas",
@@ -96,7 +84,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_009",
+    "id": "CAT_F_008",
     "película": "Frozen",
     "pregunta": "Quan sona aquesta SoundTrack que pel·lícula ens ve al cap?",
     "resposta1": "Frozen",
@@ -108,7 +96,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_010",
+    "id": "CAT_F_009",
     "película": "Ice Age",
     "pregunta": "Com es diu aquest personatge de Ice Age?",
     "resposta1": "Scrat",
@@ -120,7 +108,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_011",
+    "id": "CAT_F_010",
     "película": "Peter Pan",
     "pregunta": "Com es diu el vilà de la pel·lícula?",
     "resposta1": "Capità pota pal",
@@ -132,7 +120,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_012",
+    "id": "CAT_F_011",
     "película": "Shrek",
     "pregunta": "De qui s'enamora l'Ase?",
     "resposta1": "D'un porc",
@@ -144,7 +132,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_013",
+    "id": "CAT_F_012",
     "película": "2001: Una odisea del espacio",
     "pregunta": "Qui va dirigir 2001: Una odissea de l'espai?",
     "resposta1": "Stanley Kubrick",
@@ -156,7 +144,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_014",
+    "id": "CAT_F_013",
     "película": "Alien, el octavo pasajero",
     "pregunta": "Com es diu la nau on ocorre tota l'acció de la pelicula?",
     "resposta1": "Nostromo",
@@ -168,7 +156,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_015",
+    "id": "CAT_F_014",
     "película": "Blade Runner",
     "pregunta": "Com es diu l'organització antagonista en la pelicula Blade Runner?",
     "resposta1": "Tyrell Corporation",
@@ -180,7 +168,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_016",
+    "id": "CAT_F_015",
     "película": "El planeta de los Simios",
     "pregunta": "Com es diu el simi cap en la saga del Planeta dels simis de 2011?",
     "resposta1": "César",
@@ -192,7 +180,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_017",
+    "id": "CAT_F_016",
     "película": "Interstellar",
     "pregunta": "Com es diu el personatge al qual els personatges desperten a al meitat de la pelicula?",
     "resposta1": "Dr  Mann",
@@ -204,7 +192,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_018",
+    "id": "CAT_F_017",
     "película": "REGRESO AL FUTURO",
     "pregunta": "A quin any viatgen en la segona pelicula de Retorn al Futur?",
     "resposta1": "2015",
@@ -216,7 +204,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_019",
+    "id": "CAT_F_018",
     "película": "En busca del arca perdida",
     "pregunta": "Qui són els enemics d'Indiana Jones A la recerca de l'arca perduda?",
     "resposta1": "Espanyols",
@@ -228,7 +216,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_020",
+    "id": "CAT_F_019",
     "película": "Fast and Furious 9",
     "pregunta": "Qui és l'actor que fa d'antagonista en Fast and Furious 9?",
     "resposta1": "John Cena",
@@ -240,7 +228,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_021",
+    "id": "CAT_F_020",
     "película": "Karate Kid",
     "pregunta": "Que neteja LaRusso quan el senyor Miyagi li diu la famosa frase \"Donar cera, polir cera\"?",
     "resposta1": "Cotxes",
@@ -252,7 +240,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_022",
+    "id": "CAT_F_021",
     "película": "MARVEL COMICS",
     "pregunta": "Qui pot aixecar el martell de Thor?",
     "resposta1": "Qui sigui digne",
@@ -264,7 +252,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_023",
+    "id": "CAT_F_022",
     "película": "Piratas del Caribe",
     "pregunta": "El pirata Davy Jones i la seva tripulació fantasmal van a bord de?",
     "resposta1": "L'Holandès errant",
@@ -276,7 +264,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_024",
+    "id": "CAT_F_023",
     "película": "Star Wars",
     "pregunta": "Quin és el veritable nom de Darth Vader?",
     "resposta1": "Obi-Wan Kenobi",
@@ -288,7 +276,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_025",
+    "id": "CAT_F_024",
     "película": "El sargento de hierro",
     "pregunta": "Quin actor interpreta el paper protagonista",
     "resposta1": "Morgan Freeman",
@@ -300,7 +288,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_026",
+    "id": "CAT_F_025",
     "película": "El show de truman",
     "pregunta": "On viu Truman?",
     "resposta1": "En un plató de la grandària d'un poble",
@@ -312,7 +300,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_027",
+    "id": "CAT_F_026",
     "película": "FORREST GUMP",
     "pregunta": "Quin és el nom del fill de Forrest Gumb?",
     "resposta1": "Forrest",
@@ -324,7 +312,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_028",
+    "id": "CAT_F_027",
     "película": "Forrest Gump",
     "pregunta": "Com es diu l'empresa que crea forrest Gump ?",
     "resposta1": "Gambas Bubba Gump",
@@ -336,7 +324,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_029",
+    "id": "CAT_F_028",
     "película": "Joker (2019)",
     "pregunta": "Com es diu el programa al qual es presenta el Joker?",
     "resposta1": "Programa de Pablo Motos",
@@ -348,7 +336,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_030",
+    "id": "CAT_F_029",
     "película": "TITANIC",
     "pregunta": "Qui interpreta el paper de Jack el protagonista?",
     "resposta1": "Chris Evans",
@@ -357,6 +345,18 @@
     "resposta_correcte": 2,
     "categoria": "Drama",
     "imgaudio": null,
+    "dificultad": 1
+  },
+  {
+    "id": "CAT_F_036",
+    "película": "Un lugar tranquilo",
+    "pregunta": "En què any va sortir Un lloc tranquil?",
+    "resposta1": "2018",
+    "resposta2": "2020",
+    "resposta3": "2019",
+    "resposta_correcte": 3,
+    "categoria": "Terror",
+    "imgaudio": "",
     "dificultad": 1
   }
 ]

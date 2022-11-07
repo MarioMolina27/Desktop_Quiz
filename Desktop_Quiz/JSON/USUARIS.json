@@ -2,19 +2,19 @@
   {
     "nickname": "SuperAdmin",
     "nom": "Super Admin",
-    "contrasenya": "$2a$11$Z1EppVC//OgN9h4q.3FCu.L2bAnD/hKggn8HMSLzF6QFAcWEJ7sXS",
+    "contrasenya": "$2a$11$4zvPc42wAU7X7qLI3RHVC.1o45xaUH6mbpnJ/u0WkdosEi/aRwKLi",
     "tipus": "S",
     "add": true,
-    "modify": true,
-    "delete": true
+    "modify": false,
+    "delete": false
   },
   {
     "nickname": "Crespo",
     "nom": "Pol",
-    "contrasenya": "$2a$11$FpUEL9V0BU4niD3PDPBkUOcceU3kSAge6WmPcvAPzPytgKAO9k0Xu",
+    "contrasenya": "$2a$11$4zvPc42wAU7X7qLI3RHVC.1o45xaUH6mbpnJ/u0WkdosEi/aRwKLi",
     "tipus": "A",
     "add": true,
-    "modify": true,
+    "modify": false,
     "delete": false
   },
   {
@@ -29,7 +29,7 @@
   {
     "nickname": "JoelM",
     "nom": "Joel",
-    "contrasenya": "$2a$11$bl2WIElRPY5q9tkzbZyo7uUIKJMB0NkbLLKIKfBtZGcAQVxbhhKfi",
+    "contrasenya": "$2a$11$42VCpVQT9zN9T9uwWkzwd.j05hN2x32fNRkqs.qWnWy4ZqYG7V/h2",
     "tipus": "A",
     "add": true,
     "modify": true,
@@ -37,8 +37,8 @@
   },
   {
     "nickname": "Invitado",
-    "nom": "invitado",
-    "contrasenya": "$2a$11$Sxl0e5hwfRlj1NY1irtFpOlUsP7w13bROxQmV4nYQyUf4e7tuJU92",
+    "nom": "Initado",
+    "contrasenya": "$2a$11$1GSHPqzgU8tpqLSbP3ZyTeo2bqkMT06do3F9zjU0K4svqszNZsdnG",
     "tipus": "A",
     "add": true,
     "modify": false,

@@ -74,11 +74,18 @@ namespace Desktop_Quiz
             if (conseguirRowIndex() != -1)
 
             {
-                FormEditUsuaris userEdit1 = new FormEditUsuaris(nicknameSelected());
-                userEdit1.ShowDialog();
+                if (nicknameSelected().Equals("SuperAdmin"))
+                {
+                    MessageBox.Show("No puedes crear/modificar un Super Admin", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }else
+                {
+                    FormEditUsuaris userEdit1 = new FormEditUsuaris(nicknameSelected());
+                    userEdit1.ShowDialog();
 
-                //volvemos a cargar la grid
-                autoRefresh();
+                    //volvemos a cargar la grid
+                    autoRefresh();
+                }
+                
             }
 
         }
@@ -131,10 +138,17 @@ namespace Desktop_Quiz
         {
             //eliminar usuario
 
-           
-            UsuarisRepositori.DeleteUser(nicknameSelected());
-            UsuarisRepositori.SaveUsers();
-            autoRefresh();
+            if (nicknameSelected().Equals("SuperAdmin"))
+            {
+                MessageBox.Show("No puedes eliminar un Super Admin", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                UsuarisRepositori.DeleteUser(nicknameSelected());
+                UsuarisRepositori.SaveUsers();
+                autoRefresh();
+
+            }
 
         }
 
