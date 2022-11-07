@@ -130,8 +130,9 @@
             this.Controls.Add(this.buttonPersonatges);
             this.Controls.Add(this.labelBenvinguda);
             this.Controls.Add(this.pictureBoxIcon);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormAdminOpciones";
-            this.Text = "FormAdminOpciones";
+            this.Text = "FilmZ";
             this.Load += new System.EventHandler(this.FormAdminOpciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.toolStripBackOption.ResumeLayout(false);

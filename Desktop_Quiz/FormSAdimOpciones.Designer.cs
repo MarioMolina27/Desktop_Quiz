@@ -147,8 +147,9 @@
             this.Controls.Add(this.labelBenvinguda);
             this.Controls.Add(this.pictureBoxIcon);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSAdimOpciones";
-            this.Text = "SUPER ADMIN OPTIONS";
+            this.Text = "FilmZ";
             this.Load += new System.EventHandler(this.FormSAdimOpciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.toolStripBackOption.ResumeLayout(false);

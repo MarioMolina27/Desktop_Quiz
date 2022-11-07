@@ -5,8 +5,8 @@
     "contrasenya": "$2a$11$4zvPc42wAU7X7qLI3RHVC.1o45xaUH6mbpnJ/u0WkdosEi/aRwKLi",
     "tipus": "S",
     "add": true,
-    "modify": false,
-    "delete": false
+    "modify": true,
+    "delete": true
   },
   {
     "nickname": "Crespo",

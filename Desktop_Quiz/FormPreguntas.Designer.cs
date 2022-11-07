@@ -295,8 +295,9 @@
             this.Controls.Add(this.toolStripBackOption);
             this.Controls.Add(this.groupBoxPreguntes);
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormPreguntas";
-            this.Text = "FormPreguntas";
+            this.Text = "FilmZ";
             this.Load += new System.EventHandler(this.FormPreguntas_Load);
             this.groupBoxPreguntes.ResumeLayout(false);
             this.groupBoxPreguntes.PerformLayout();

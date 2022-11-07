@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormInicioSesion));
             this.buttonIniciSesio = new System.Windows.Forms.Button();
             this.pictureBoxIconUser = new System.Windows.Forms.PictureBox();
             this.labelNom = new System.Windows.Forms.Label();
@@ -130,9 +131,10 @@
             this.Controls.Add(this.buttonIniciSesio);
             this.Controls.Add(this.textBoxNom);
             this.Controls.Add(this.labelNom);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FormInicioSesion";
-            this.Text = "FormInicioSesion";
+            this.Text = "FilmZ";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

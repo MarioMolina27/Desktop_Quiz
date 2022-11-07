@@ -232,7 +232,7 @@
             this.Controls.Add(this.labelBuscadorPersonatge);
             this.Controls.Add(this.dataGridViewPersonatges);
             this.Name = "FormPersonatges";
-            this.Text = "FormPersonatges";
+            this.Text = "FilmZ";
             this.Load += new System.EventHandler(this.FormPersonatges_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewPersonatges)).EndInit();
             this.groupBoxIdioma.ResumeLayout(false);

@@ -166,7 +166,7 @@
             this.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormUsuaris";
-            this.Text = "FormUsuaris";
+            this.Text = "FilmZ";
             this.Load += new System.EventHandler(this.FormUsuaris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuaris1)).EndInit();
             this.toolStrip1.ResumeLayout(false);
