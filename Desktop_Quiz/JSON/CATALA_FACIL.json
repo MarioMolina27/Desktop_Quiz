@@ -1,7 +1,6 @@
 [
   {
     "id": "CAT_F_001",
-    "película": "IT",
     "pregunta": "Que aspecte té Pennywise en IT?",
     "resposta1": "Vampir",
     "resposta2": "Pallasso",
@@ -13,7 +12,28 @@
   },
   {
     "id": "CAT_F_002",
-    "película": "PSICOSIS",
+    "pregunta": "Quantes filles té Mamà?",
+    "resposta1": "2",
+    "resposta2": "3",
+    "resposta3": "5",
+    "resposta_correcte": 1,
+    "categoria": "Terror",
+    "imgaudio": null,
+    "dificultad": 1
+  },
+  {
+    "id": "CAT_F_003",
+    "pregunta": "On s'amaga la força misteriosa en la pelicula de Poltergeist?",
+    "resposta1": "Darrere de la televisió",
+    "resposta2": "Sota el sòl",
+    "resposta3": "Darrere d'una paret",
+    "resposta_correcte": 1,
+    "categoria": "Terror",
+    "imgaudio": null,
+    "dificultad": 1
+  },
+  {
+    "id": "CAT_F_004",
     "pregunta": "On mort Marion Crane en la sinistra pelicula PSICOSI?",
     "resposta1": "En el bany",
     "resposta2": "A l'habitació",
@@ -24,8 +44,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_003",
-    "película": "REC",
+    "id": "CAT_F_005",
     "pregunta": "On transcorre la terrorifica trama de la pelicula REC?",
     "resposta1": "En un palau",
     "resposta2": "En un edifici",
@@ -36,20 +55,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_004",
-    "película": "Sinister",
-    "pregunta": "Quina és la pel·lícula de terror que fa més por segons els especialistes?",
-    "resposta1": "Sinister",
-    "resposta2": "L'àvia",
-    "resposta3": "L'orfenat",
-    "resposta_correcte": 1,
-    "categoria": "Terror",
-    "imgaudio": null,
-    "dificultad": 1
-  },
-  {
     "id": "CAT_F_005",
-    "película": "SLENDERMAN",
     "pregunta": "Personatge que no se li veu el rostre. Molt alt i prim amb uns braços extremadament llargs",
     "resposta1": "Chuky",
     "resposta2": "Freddy Krueger",
@@ -60,9 +66,8 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_006",
-    "película": "Como entrenar a tu dragón",
-    "pregunta": "Com es diu el drac protagonista?",
+    "id": "CAT_F_007",
+    "pregunta": "Com es diu el drac protagonista de Com ensinisrtar un Drac?",
     "resposta1": "Fulla",
     "resposta2": "Desdentat",
     "resposta3": "Bola de foc",
@@ -72,8 +77,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_007",
-    "película": "Dora la Exploradora",
+    "id": "CAT_F_008",
     "pregunta": "Com es diu aquest personatge de Dora l'Exploradora?",
     "resposta1": "Zispas",
     "resposta2": "Botas",
@@ -84,8 +88,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_008",
-    "película": "Frozen",
+    "id": "CAT_F_009",
     "pregunta": "Quan sona aquesta SoundTrack que pel·lícula ens ve al cap?",
     "resposta1": "Frozen",
     "resposta2": "Bella i la Bèstia",
@@ -96,8 +99,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_009",
-    "película": "Ice Age",
+    "id": "CAT_F_010",
     "pregunta": "Com es diu aquest personatge de Ice Age?",
     "resposta1": "Scrat",
     "resposta2": "Sid",
@@ -108,9 +110,8 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_010",
-    "película": "Peter Pan",
-    "pregunta": "Com es diu el vilà de la pel·lícula?",
+    "id": "CAT_F_011",
+    "pregunta": "Com es diu el vilà de la pel·lícula Peter Pan?",
     "resposta1": "Capità pota pal",
     "resposta2": "El rufià",
     "resposta3": "Capità garfi",
@@ -120,9 +121,8 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_011",
-    "película": "Shrek",
-    "pregunta": "De qui s'enamora l'Ase?",
+    "id": "CAT_F_012",
+    "pregunta": "De qui s'enamora l'Ase de la pel·lícula Shrek?",
     "resposta1": "D'un porc",
     "resposta2": "D'un altre ase",
     "resposta3": "D'un drac",
@@ -132,8 +132,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_012",
-    "película": "2001: Una odisea del espacio",
+    "id": "CAT_F_013",
     "pregunta": "Qui va dirigir 2001: Una odissea de l'espai?",
     "resposta1": "Stanley Kubrick",
     "resposta2": "Peter Hyams",
@@ -144,9 +143,8 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_013",
-    "película": "Alien, el octavo pasajero",
-    "pregunta": "Com es diu la nau on ocorre tota l'acció de la pelicula?",
+    "id": "CAT_F_014",
+    "pregunta": "Com es diu la nau on ocorre tota l'acció de la pelicula Alien, el vuitè passatger?",
     "resposta1": "Nostromo",
     "resposta2": "Discovery One",
     "resposta3": "Heighliner",
@@ -156,8 +154,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_014",
-    "película": "Blade Runner",
+    "id": "CAT_F_015",
     "pregunta": "Com es diu l'organització antagonista en la pelicula Blade Runner?",
     "resposta1": "Tyrell Corporation",
     "resposta2": "Cyberdyne Systems",
@@ -168,8 +165,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_015",
-    "película": "El planeta de los Simios",
+    "id": "CAT_F_016",
     "pregunta": "Com es diu el simi cap en la saga del Planeta dels simis de 2011?",
     "resposta1": "César",
     "resposta2": "Koba",
@@ -180,9 +176,8 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_016",
-    "película": "Interstellar",
-    "pregunta": "Com es diu el personatge al qual els personatges desperten a al meitat de la pelicula?",
+    "id": "CAT_F_017",
+    "pregunta": "Com es diu el personatge al qual els personatges desperten a al meitat de la pelicula Interestellar?",
     "resposta1": "Dr  Mann",
     "resposta2": "Professor Brand",
     "resposta3": "Donald",
@@ -192,8 +187,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_017",
-    "película": "REGRESO AL FUTURO",
+    "id": "CAT_F_018",
     "pregunta": "A quin any viatgen en la segona pelicula de Retorn al Futur?",
     "resposta1": "2015",
     "resposta2": "2045",
@@ -204,8 +198,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_018",
-    "película": "En busca del arca perdida",
+    "id": "CAT_F_019",
     "pregunta": "Qui són els enemics d'Indiana Jones A la recerca de l'arca perduda?",
     "resposta1": "Espanyols",
     "resposta2": "Nazis",
@@ -216,8 +209,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_019",
-    "película": "Fast and Furious 9",
+    "id": "CAT_F_020",
     "pregunta": "Qui és l'actor que fa d'antagonista en Fast and Furious 9?",
     "resposta1": "John Cena",
     "resposta2": "Dwyane Johnson",
@@ -228,9 +220,8 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_020",
-    "película": "Karate Kid",
-    "pregunta": "Que neteja LaRusso quan el senyor Miyagi li diu la famosa frase \"Donar cera, polir cera\"?",
+    "id": "CAT_F_021",
+    "pregunta": "Que neteja LaRusso quan el senyor Miyagi li diu la famosa frase \"Donar cera, polir cera\" de Karate Kid?",
     "resposta1": "Cotxes",
     "resposta2": "La tanca",
     "resposta3": "El sòl",
@@ -240,8 +231,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_021",
-    "película": "MARVEL COMICS",
+    "id": "CAT_F_022",
     "pregunta": "Qui pot aixecar el martell de Thor?",
     "resposta1": "Qui sigui digne",
     "resposta2": "Qui tingui la suficient força",
@@ -252,9 +242,8 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_022",
-    "película": "Piratas del Caribe",
-    "pregunta": "El pirata Davy Jones i la seva tripulació fantasmal van a bord de?",
+    "id": "CAT_F_023",
+    "pregunta": "Com es diu el vaixell de Davy Jones als Pirates del Carib?",
     "resposta1": "L'Holandès errant",
     "resposta2": "El vaixell de chanquete",
     "resposta3": "La Perla Negra",
@@ -264,8 +253,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_023",
-    "película": "Star Wars",
+    "id": "CAT_F_024",
     "pregunta": "Quin és el veritable nom de Darth Vader?",
     "resposta1": "Obi-Wan Kenobi",
     "resposta2": "Look Skywalker",
@@ -276,9 +264,8 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_024",
-    "película": "El sargento de hierro",
-    "pregunta": "Quin actor interpreta el paper protagonista",
+    "id": "CAT_F_025",
+    "pregunta": "Quin actor interpreta el paper protagonista a la pel·lícula El Sargent de Ferro?",
     "resposta1": "Morgan Freeman",
     "resposta2": "Clint Eastwood",
     "resposta3": "Tom Cruise",
@@ -288,9 +275,8 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_025",
-    "película": "El show de truman",
-    "pregunta": "On viu Truman?",
+    "id": "CAT_F_026",
+    "pregunta": "On viu el protagonista del Show de Truman?",
     "resposta1": "En un plató de la grandària d'un poble",
     "resposta2": "En un plató de Hollywood",
     "resposta3": "En un plató enmig de la muntanya",
@@ -300,8 +286,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_026",
-    "película": "FORREST GUMP",
+    "id": "CAT_F_027",
     "pregunta": "Quin és el nom del fill de Forrest Gumb?",
     "resposta1": "Forrest",
     "resposta2": "Timmy",
@@ -312,9 +297,8 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_027",
-    "película": "Forrest Gump",
-    "pregunta": "Com es diu l'empresa que crea forrest Gump ?",
+    "id": "CAT_F_028",
+    "pregunta": "Com es diu l'empresa que crea Forrest Gump ?",
     "resposta1": "Gambas Bubba Gump",
     "resposta2": "Forrest Electronics",
     "resposta3": "Apple inc",
@@ -324,8 +308,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_028",
-    "película": "Joker (2019)",
+    "id": "CAT_F_029",
     "pregunta": "Com es diu el programa al qual es presenta el Joker?",
     "resposta1": "Programa de Pablo Motos",
     "resposta2": "Programa de Tim Hervy",
@@ -336,27 +319,14 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_029",
-    "película": "TITANIC",
-    "pregunta": "Qui interpreta el paper de Jack el protagonista?",
+    "id": "CAT_F_030",
+    "pregunta": "Qui interpreta el paper de Jack el protagonista de Titanic?",
     "resposta1": "Chris Evans",
     "resposta2": "Leonardo DiCaprio",
     "resposta3": "Will Smith",
     "resposta_correcte": 2,
     "categoria": "Drama",
     "imgaudio": null,
-    "dificultad": 1
-  },
-  {
-    "id": "CAT_F_036",
-    "película": "Un lugar tranquilo",
-    "pregunta": "En què any va sortir Un lloc tranquil?",
-    "resposta1": "2018",
-    "resposta2": "2020",
-    "resposta3": "2019",
-    "resposta_correcte": 3,
-    "categoria": "Terror",
-    "imgaudio": "",
     "dificultad": 1
   }
 ]

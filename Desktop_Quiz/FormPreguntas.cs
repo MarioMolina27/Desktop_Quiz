@@ -278,18 +278,17 @@ namespace Desktop_Quiz
             {
                 DataGridViewRow filaSeleccionada = dataGridViewPelicules.Rows[rowIndex];
                 String id = filaSeleccionada.Cells[0].Value.ToString();
-                String pelicula = filaSeleccionada.Cells[1].Value.ToString();
-                String pregunta = filaSeleccionada.Cells[2].Value.ToString();
-                String resposta1 = filaSeleccionada.Cells[3].Value.ToString();
-                String resposta2 = filaSeleccionada.Cells[4].Value.ToString();
-                String resposta3 = filaSeleccionada.Cells[5].Value.ToString();
-                int resposta_correcte = Int32.Parse(filaSeleccionada.Cells[6].Value.ToString());
-                String categoria = filaSeleccionada.Cells[7].Value.ToString();
-                String imgaudio = filaSeleccionada.Cells[8].Value?.ToString();
+                String pregunta = filaSeleccionada.Cells[1].Value.ToString();
+                String resposta1 = filaSeleccionada.Cells[2].Value.ToString();
+                String resposta2 = filaSeleccionada.Cells[3].Value.ToString();
+                String resposta3 = filaSeleccionada.Cells[4].Value.ToString();
+                int resposta_correcte = Int32.Parse(filaSeleccionada.Cells[5].Value.ToString());
+                String categoria = filaSeleccionada.Cells[6].Value.ToString();
+                String imgaudio = filaSeleccionada.Cells[7].Value?.ToString();
                 
-                int dificultat = Int32.Parse(filaSeleccionada.Cells[9].Value.ToString());
+                int dificultat = Int32.Parse(filaSeleccionada.Cells[8].Value.ToString());
 
-                FormEditPreguntes p2 = new FormEditPreguntes(id, pelicula, pregunta,resposta1, resposta2,resposta3, resposta_correcte, categoria, imgaudio, dificultat,
+                FormEditPreguntes p2 = new FormEditPreguntes(id, pregunta,resposta1, resposta2,resposta3, resposta_correcte, categoria, imgaudio, dificultat,
                                 peliculaList,CAST_DIFICIL,CAST_MEDIANO,
                                  CAST_FACIL, CAT_DIFICIL, CAT_MEDIANO,
                                  CAT_FACIL, ENG_DIFICIL,  ENG_MEDIANO,
@@ -574,31 +573,31 @@ namespace Desktop_Quiz
 
         private void textBoxTitulo_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
-            {
-                List<Pelicula> llistaFiltre = new List<Pelicula>();
-                String titulo = textBoxTitulo.Text;
+            //if (e.KeyCode == Keys.Enter)
+            //{
+            //    List<Pelicula> llistaFiltre = new List<Pelicula>();
+            //    String titulo = textBoxTitulo.Text;
 
-                if (!titulo.Equals(""))
-                {
-                    llistaFiltre = peliculaList.ToList().FindAll(x => x.película == titulo);
-                    if (llistaFiltre.Count > 0)
-                    {
-                        dataGridViewPelicules.DataSource = null;
-                        dataGridViewPelicules.DataSource = llistaFiltre;
-                    }
-                    else
-                    {
-                        MessageBox.Show("No s'han trobat resultats");
-                        updateDataGrid();
-                    }
+            //    if (!titulo.Equals(""))
+            //    {
+            //        llistaFiltre = peliculaList.ToList().FindAll(x => x.película == titulo);
+            //        if (llistaFiltre.Count > 0)
+            //        {
+            //            dataGridViewPelicules.DataSource = null;
+            //            dataGridViewPelicules.DataSource = llistaFiltre;
+            //        }
+            //        else
+            //        {
+            //            MessageBox.Show("No s'han trobat resultats");
+            //            updateDataGrid();
+            //        }
 
-                }
-                else
-                {
-                    updateDataGrid();
-                }
-            }
+            //    }
+            //    else
+            //    {
+            //        updateDataGrid();
+            //    }
+            //}
         }
 
         private void textBoxTitulo_TextChanged(object sender, EventArgs e)

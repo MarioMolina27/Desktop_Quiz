@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -91,8 +92,8 @@ namespace Desktop_Quiz
 
             if (openFile.ShowDialog().Equals(DialogResult.OK))
             {
-                textBoxRutaImg.Text = openFile.FileName;
-                pictureBoxPers.ImageLocation = textBoxRutaImg.Text;
+                textBoxRutaImg.Text = Path.GetFileName(openFile.FileName); ;
+                pictureBoxPers.ImageLocation = openFile.FileName ;
             }
 
         }
