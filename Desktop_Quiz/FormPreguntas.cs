@@ -573,37 +573,33 @@ namespace Desktop_Quiz
 
         private void textBoxTitulo_KeyDown(object sender, KeyEventArgs e)
         {
-            //if (e.KeyCode == Keys.Enter)
-            //{
-            //    List<Pelicula> llistaFiltre = new List<Pelicula>();
-            //    String titulo = textBoxTitulo.Text;
+            if (e.KeyCode == Keys.Enter)
+            {
+                List<Pelicula> llistaFiltre = new List<Pelicula>();
+                String titulo = textBoxTitulo.Text;
 
-            //    if (!titulo.Equals(""))
-            //    {
-            //        llistaFiltre = peliculaList.ToList().FindAll(x => x.película == titulo);
-            //        if (llistaFiltre.Count > 0)
-            //        {
-            //            dataGridViewPelicules.DataSource = null;
-            //            dataGridViewPelicules.DataSource = llistaFiltre;
-            //        }
-            //        else
-            //        {
-            //            MessageBox.Show("No s'han trobat resultats");
-            //            updateDataGrid();
-            //        }
+                foreach (Pelicula p in peliculaList)
+                {
+                    if (p.pregunta.Contains(titulo))
+                    {
+                        llistaFiltre.Add(p);
+                    }
 
-            //    }
-            //    else
-            //    {
-            //        updateDataGrid();
-            //    }
-            //}
+                }
+                if (llistaFiltre.Count > 0)
+                {
+                    dataGridViewPelicules.DataSource = null;
+                    dataGridViewPelicules.DataSource = llistaFiltre;
+                }
+                else
+                {
+                    MessageBox.Show("No s'han trobat resultats");
+                    updateDataGrid();
+                }
+            }
         }
 
-        private void textBoxTitulo_TextChanged(object sender, EventArgs e)
-        {
 
-        }
 
         private void toolStripButtonBack_Click(object sender, EventArgs e)
         {

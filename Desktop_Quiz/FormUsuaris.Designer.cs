@@ -58,6 +58,7 @@
             this.dataGridUsuaris1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridUsuaris1.Location = new System.Drawing.Point(297, 159);
             this.dataGridUsuaris1.Name = "dataGridUsuaris1";
+            this.dataGridUsuaris1.RowHeadersWidth = 51;
             this.dataGridUsuaris1.Size = new System.Drawing.Size(1472, 835);
             this.dataGridUsuaris1.TabIndex = 2;
             // 
@@ -68,7 +69,7 @@
             this.labelSearchNickname.Location = new System.Drawing.Point(293, 124);
             this.labelSearchNickname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSearchNickname.Name = "labelSearchNickname";
-            this.labelSearchNickname.Size = new System.Drawing.Size(91, 19);
+            this.labelSearchNickname.Size = new System.Drawing.Size(109, 24);
             this.labelSearchNickname.TabIndex = 0;
             this.labelSearchNickname.Text = "Nickname:";
             // 
@@ -79,7 +80,7 @@
             this.textBoxNickSearch.Location = new System.Drawing.Point(425, 118);
             this.textBoxNickSearch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNickSearch.Name = "textBoxNickSearch";
-            this.textBoxNickSearch.Size = new System.Drawing.Size(358, 25);
+            this.textBoxNickSearch.Size = new System.Drawing.Size(358, 29);
             this.textBoxNickSearch.TabIndex = 1;
             this.textBoxNickSearch.Text = "  Buscar...";
             this.textBoxNickSearch.Enter += new System.EventHandler(this.textBoxNickSearch_Enter);
@@ -122,11 +123,12 @@
             // toolStrip1
             // 
             this.toolStrip1.BackColor = System.Drawing.Color.LightBlue;
+            this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(1904, 25);
+            this.toolStrip1.Size = new System.Drawing.Size(1904, 27);
             this.toolStrip1.TabIndex = 7;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -136,7 +138,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -153,7 +155,7 @@
             // 
             // FormUsuaris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1904, 1041);

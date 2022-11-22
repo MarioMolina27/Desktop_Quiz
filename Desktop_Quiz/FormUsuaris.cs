@@ -31,20 +31,6 @@ namespace Desktop_Quiz
             dataGridUsuaris1.DataSource = UsuarisRepositori.users; 
 
         }
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBoxNickSearch_TextChanged(object sender, EventArgs e)
-        {
-
-        }
 
         private void textBoxNickSearch_Enter(object sender, EventArgs e)
         {
@@ -163,10 +149,7 @@ namespace Desktop_Quiz
                 //carreguem la nova llista
                 dataGridUsuaris1.DataSource = null;
                 dataGridUsuaris1.DataSource = userSelect;
-            }
-           
-            
-            
+            } 
         }
     }
 }
