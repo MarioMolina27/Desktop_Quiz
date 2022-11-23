@@ -212,7 +212,7 @@ namespace Desktop_Quiz
             }
             else
             {
-                MessageBox.Show("No has escollit cap personatge per eliminar","Error");
+                MessageBox.Show("No has escollit cap personatge per eliminar","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
 
         }
