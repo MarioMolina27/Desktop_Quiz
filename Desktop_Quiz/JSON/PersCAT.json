@@ -1,121 +1,121 @@
 [
   {
-    "nomPers": "Barbie",
-    "descripcioPers": "Com és d'esperar has acertat moltes preguntes, per això tens tant en comú amb aquest personatge",
-    "genere": "Animació",
-    "percEncerts": 99.9,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\BarbieImg.png"
-  },
-  {
-    "nomPers": "Marty",
-    "descripcioPers": "Has de vigilar amb les teves accions, no et passi com a aquest personatge.",
-    "genere": "Ciencia ficció",
-    "percEncerts": 33.3,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\MartyImg.png"
-  },
-  {
-    "nomPers": "Piratas del Caribe",
-    "descripcioPers": "T'atreveixes a anar d'aventures amb Jack Sparrow i la seva tripulació?",
-    "genere": "Ciencia ficció",
-    "percEncerts": 66.6,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\PiratasdelCaribeImg.png"
-  },
-  {
-    "nomPers": "Rick",
-    "descripcioPers": "Has contestat bé moltes preguntes, vols viatjar a una altre dimensió a veure com et va?",
-    "genere": "Ciencia ficció",
-    "percEncerts": 99.9,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\RickImg.png"
-  },
-  {
-    "nomPers": "Naufrago",
-    "descripcioPers": "Tu també portes temps a una illa perduda o es que no vas al cinema?",
-    "genere": "Drama",
-    "percEncerts": 33.3,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\NaufragoImg.png"
-  },
-  {
-    "nomPers": "Club de la lucha",
-    "descripcioPers": "Veig que vas bé amb les preguntes, pero no cal que t'inventis les coses com el protagonista",
-    "genere": "Drama",
-    "percEncerts": 66.6,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\FightClubImg.png"
-  },
-  {
-    "nomPers": "Titanic",
-    "descripcioPers": "Com saps tant de pelicules també sabràs que i entren tots dos a la fusta",
-    "genere": "Drama",
-    "percEncerts": 99.9,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\TitanicImg.png"
-  },
-  {
-    "nomPers": "Get Out",
-    "descripcioPers": "Podria entendre que apartesis la mirada en les categories de terror, però amb les demès categories?",
-    "genere": "Terror",
-    "percEncerts": 33.3,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\GetOutImg.png"
-  },
-  {
-    "nomPers": "La Purga",
-    "descripcioPers": "Veig que tenc confiança, però encara treus la vista de la pantalla de tant en tant eh!",
-    "genere": "Terror",
-    "percEncerts": 66.6,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\LaPurgaImg.png"
-  },
-  {
-    "nomPers": "Guerra Mundial Z",
-    "descripcioPers": "Com pot ser que apartis la mirada a les demès categories però les de terror te les sàpigues totes?",
-    "genere": "Terror",
-    "percEncerts": 99.9,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\WorldWarZImg.png"
-  },
-  {
-    "nomPers": "Totes",
-    "descripcioPers": "Has contestat bé totes les preguntes de totes les categoríes, felicitats.",
-    "genere": "General",
-    "percEncerts": 100.0,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\TotesCorrectesImg.png"
-  },
-  {
     "nomPers": "Cap",
-    "descripcioPers": "No has acertado ninguna pregunta, puede que te tengas que ver alguna pelicula.",
+    "descripcioPers": "No has acertat cap pregunta, potser t'hauries de veure alguna pel·lícula abans de fer el quiz.",
     "genere": "General",
     "percEncerts": 0.0,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\TotesIncorrectesImg.png"
+    "rutaPers": ""
   },
   {
     "nomPers": "Uncharted",
     "descripcioPers": "La categoria on més has acertat és Acció i tot i així no ho has fet bé 7w7",
     "genere": "Acció",
     "percEncerts": 33.3,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\UnchartedImg.png"
+    "rutaPers": ""
   },
   {
     "nomPers": "James Bond",
     "descripcioPers": "La categoria a destacar és acció, però encara pots millorar",
     "genere": "Acció",
     "percEncerts": 66.6,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\007Img.png"
+    "rutaPers": ""
   },
   {
     "nomPers": "Fast & Furious",
     "descripcioPers": "Ben fet has acertat moltes preguntes d'Acció, es nota que t'agraden les explosions",
     "genere": "Acció",
     "percEncerts": 99.9,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\Fast_FuriousImg.png"
+    "rutaPers": ""
   },
   {
     "nomPers": "Sid",
     "descripcioPers": "En serio no t'en saps ni tan sols les d'animació?",
     "genere": "Animació",
     "percEncerts": 33.3,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\SidImg.png"
+    "rutaPers": ""
   },
   {
     "nomPers": "Doraemon",
     "descripcioPers": "Veig que has acertat unes quantes preguntes, però encara et queda camí per davant",
     "genere": "Animació",
     "percEncerts": 66.6,
-    "rutaPers": "..\\..\\ImatgesPersonatges\\DoraemonImg.png"
+    "rutaPers": ""
+  },
+  {
+    "nomPers": "Marty",
+    "descripcioPers": "Has de vigilar amb les teves accions, no et passi com a aquest personatge.",
+    "genere": "Ciencia ficció",
+    "percEncerts": 33.3,
+    "rutaPers": ""
+  },
+  {
+    "nomPers": "Piratas del Caribe",
+    "descripcioPers": "T'atreveixes a anar d'aventures amb Jack Sparrow i la seva tripulació?",
+    "genere": "Ciencia ficció",
+    "percEncerts": 66.6,
+    "rutaPers": ""
+  },
+  {
+    "nomPers": "Rick",
+    "descripcioPers": "Has contestat bé moltes preguntes, vols viatjar a una altre dimensió a veure com et va?",
+    "genere": "Ciencia ficció",
+    "percEncerts": 99.9,
+    "rutaPers": ""
+  },
+  {
+    "nomPers": "Naufrago",
+    "descripcioPers": "Tu també portes temps a una illa perduda o es que no vas al cinema?",
+    "genere": "Drama",
+    "percEncerts": 33.3,
+    "rutaPers": ""
+  },
+  {
+    "nomPers": "Club de la lucha",
+    "descripcioPers": "Veig que vas bé amb les preguntes, pero no cal que t'inventis les coses com el protagonista",
+    "genere": "Drama",
+    "percEncerts": 66.6,
+    "rutaPers": ""
+  },
+  {
+    "nomPers": "Titanic",
+    "descripcioPers": "Com saps tant de pelicules també sabràs que i entren tots dos a la fusta",
+    "genere": "Drama",
+    "percEncerts": 99.9,
+    "rutaPers": ""
+  },
+  {
+    "nomPers": "Get Out",
+    "descripcioPers": "Podria entendre que apartesis la mirada en les categories de terror, però amb les demès categories?",
+    "genere": "Terror",
+    "percEncerts": 33.3,
+    "rutaPers": ""
+  },
+  {
+    "nomPers": "La Purga",
+    "descripcioPers": "Veig que tenc confiança, però encara treus la vista de la pantalla de tant en tant eh!",
+    "genere": "Terror",
+    "percEncerts": 66.6,
+    "rutaPers": ""
+  },
+  {
+    "nomPers": "Guerra Mundial Z",
+    "descripcioPers": "Com pot ser que apartis la mirada a les demès categories però les de terror te les sàpigues totes?",
+    "genere": "Terror",
+    "percEncerts": 99.9,
+    "rutaPers": ""
+  },
+  {
+    "nomPers": "Totes",
+    "descripcioPers": "Has contestat bé totes les preguntes de totes les categoríes, felicitats.",
+    "genere": "General",
+    "percEncerts": 100.0,
+    "rutaPers": ""
+  },
+  {
+    "nomPers": "Barbie",
+    "descripcioPers": "Com és d'esperar has acertat moltes preguntes, per això tens tant en comú amb aquest personatge",
+    "genere": "Animació",
+    "percEncerts": 99.9,
+    "rutaPers": "BarbieImg.png"
   }
 ]

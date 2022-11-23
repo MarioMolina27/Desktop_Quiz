@@ -1,7 +1,6 @@
 [
   {
     "id": "EN_M_001",
-    "película": "A 47 metros",
     "pregunta": "What movie does this plane belong?",
     "resposta1": "The Shallows",
     "resposta2": "47 meters away",
@@ -13,7 +12,6 @@
   },
   {
     "id": "EN_M_002",
-    "película": "Army of the Death",
     "pregunta": "In which of these horror films is there zombie apocalypse atmosphere?",
     "resposta1": "Army of the Death",
     "resposta2": "The Forever Purge",
@@ -25,7 +23,6 @@
   },
   {
     "id": "EN_M_003",
-    "película": "El sexto sentido",
     "pregunta": "What profession does the protagonist of the movie The Sixth Sense have?",
     "resposta1": "Doctor",
     "resposta2": "Teacher",
@@ -37,7 +34,6 @@
   },
   {
     "id": "EN_M_004",
-    "película": "La 8a Noche",
     "pregunta": "Which of these horror films is available in Netflix?",
     "resposta1": "The grandmother",
     "resposta2": "Host",
@@ -49,7 +45,6 @@
   },
   {
     "id": "EN_M_005",
-    "película": "Scream",
     "pregunta": "What movie does this soundtrack belong to?",
     "resposta1": "The Exorcist",
     "resposta2": "Orphan",
@@ -61,7 +56,6 @@
   },
   {
     "id": "EN_M_006",
-    "película": "Sinister",
     "pregunta": "What is the most frightening movie according to specialists?",
     "resposta1": "Sinister",
     "resposta2": "The grandmother",
@@ -73,7 +67,6 @@
   },
   {
     "id": "EN_M_007",
-    "película": "Un lugar tranquilo",
     "pregunta": "What year did the movie \"A Quiet Place\" come out?",
     "resposta1": "2018",
     "resposta2": "2020",
@@ -85,11 +78,10 @@
   },
   {
     "id": "EN_M_008",
-    "película": "Doraemon",
-    "pregunta": "What is the name of the invention that appears in this photograph?",
+    "pregunta": "What is the name of Doraemon's invention that appears in this photograph?",
     "resposta1": "Translator jelly",
     "resposta2": "Memory bread",
-    "resposta3": "Enriquezidor de food",
+    "resposta3": "Meal enricher",
     "resposta_correcte": 1,
     "categoria": "Animación",
     "imgaudio": null,
@@ -97,8 +89,7 @@
   },
   {
     "id": "EN_M_009",
-    "película": "UP",
-    "pregunta": "What is the name of the child who accompanies the protagonist on his trip?",
+    "pregunta": "What is the name of the child who accompanies the protagonist in UP?",
     "resposta1": "Danny",
     "resposta2": "Rusell",
     "resposta3": "Pete",
@@ -109,8 +100,7 @@
   },
   {
     "id": "EN_M_010",
-    "película": "CARS",
-    "pregunta": "What is the name of the truck that transports Rayo McQueen?",
+    "pregunta": "What is the name of the truck that transports Lightning McQueen?",
     "resposta1": "Mike",
     "resposta2": "Mack",
     "resposta3": "Mate",
@@ -121,7 +111,6 @@
   },
   {
     "id": "EN_M_011",
-    "película": "El castillo en el cielo",
     "pregunta": "What movie does this place belong?",
     "resposta1": "The castle in the sky",
     "resposta2": "My neighbor Totoro",
@@ -133,8 +122,7 @@
   },
   {
     "id": "EN_M_012",
-    "película": "Kun fu Panda",
-    "pregunta": "What animal is the adoptive father of the main character?",
+    "pregunta": "What animal is the adoptive father of the main character in Kun Fu Panda?",
     "resposta1": "A panda",
     "resposta2": "A duck",
     "resposta3": "A tiger",
@@ -145,8 +133,7 @@
   },
   {
     "id": "EN_M_013",
-    "película": "LOS INCREIBLES",
-    "pregunta": "How many members are in the family of the incredibles",
+    "pregunta": "How many members are in the family of the Incredibles?",
     "resposta1": "4",
     "resposta2": "5",
     "resposta3": "6",
@@ -157,8 +144,7 @@
   },
   {
     "id": "EN_M_014",
-    "película": "Ratatouille",
-    "pregunta": "What is Remy's dream (rat)?",
+    "pregunta": "What is Remy's dream in Ratatuille?",
     "resposta1": "Be the best chef",
     "resposta2": "Be the king of the world",
     "resposta3": "Get to the other side of the world",
@@ -169,7 +155,6 @@
   },
   {
     "id": "EN_M_015",
-    "película": "AVATAR",
     "pregunta": "When did the movie Avatar come out?",
     "resposta1": "2017",
     "resposta2": "2009",
@@ -181,7 +166,6 @@
   },
   {
     "id": "EN_M_016",
-    "película": "E.T el extraterrestre",
     "pregunta": "When was E.T released?",
     "resposta1": "1982",
     "resposta2": "1990",
@@ -193,8 +177,7 @@
   },
   {
     "id": "EN_M_017",
-    "película": "Independence Day",
-    "pregunta": "What actor plays the role of David Levinson?",
+    "pregunta": "What actor plays the role of David Levinson in Independence Day?",
     "resposta1": "Will Smith",
     "resposta2": "Jeff Goldblum",
     "resposta3": "Bill Pullman",
@@ -205,7 +188,6 @@
   },
   {
     "id": "EN_M_018",
-    "película": "Juego de tronos",
     "pregunta": "What series/film does this soundtrack belong?",
     "resposta1": "Saving Private Ryan",
     "resposta2": "Game of Thrones",
@@ -217,8 +199,7 @@
   },
   {
     "id": "EN_M_019",
-    "película": "Matrix",
-    "pregunta": "What colors are the pills that Morpheus offers to Neo?",
+    "pregunta": "What colors are the pills that Morpheus offers to Neo in Matrix?",
     "resposta1": "Green and Red",
     "resposta2": "Blue and Red",
     "resposta3": "Orange and Green",
@@ -229,7 +210,6 @@
   },
   {
     "id": "EN_M_020",
-    "película": "PIRATAS DEL CARIBE",
     "pregunta": "Listen to the following soundtrack. What movie is it from?",
     "resposta1": "Jurasic Park",
     "resposta2": "Pirates of the Caribbean",
@@ -241,8 +221,7 @@
   },
   {
     "id": "EN_M_021",
-    "película": "Rick y Morty",
-    "pregunta": "What universe does the protagonist Rick come from?",
+    "pregunta": "What universe does the protagonist Rick come from in Rick and Morty?",
     "resposta1": "C-A34",
     "resposta2": "C-137",
     "resposta3": "C-789",
@@ -253,8 +232,7 @@
   },
   {
     "id": "EN_M_022",
-    "película": "Braveheart",
-    "pregunta": "Where is William Wallace from?",
+    "pregunta": "Where is William Wallace from in the movie Braveheart?",
     "resposta1": "USA",
     "resposta2": "Scotland",
     "resposta3": "England",
@@ -265,8 +243,7 @@
   },
   {
     "id": "EN_M_023",
-    "película": "Bullet Train",
-    "pregunta": "What is the name of the main character?",
+    "pregunta": "What is the name of the main character in Bullet Train?",
     "resposta1": "Ladybug",
     "resposta2": "Diesel",
     "resposta3": "Lemon",
@@ -277,8 +254,7 @@
   },
   {
     "id": "EN_M_024",
-    "película": "El renacido",
-    "pregunta": "Where all the facts narrated in the film of The Revenant occur?",
+    "pregunta": "Where all the facts narrated in the film of The Revenant occurs?",
     "resposta1": "America",
     "resposta2": "Canada",
     "resposta3": "France",
@@ -289,7 +265,6 @@
   },
   {
     "id": "EN_M_025",
-    "película": "Iron man",
     "pregunta": "What element is intoxicating Tony Stark?",
     "resposta1": "Coal",
     "resposta2": "Uranium",
@@ -301,7 +276,6 @@
   },
   {
     "id": "EN_M_026",
-    "película": "Jungla de Cristal",
     "pregunta": "What is the name of the protagonist of Die Hard?",
     "resposta1": "John Rambo",
     "resposta2": "Tyler Durden",
@@ -313,7 +287,6 @@
   },
   {
     "id": "EN_M_027",
-    "película": "MARVEL COMICS",
     "pregunta": "In which film of the MCU do the 3 Spidermans appear together?",
     "resposta1": "Spiderman Homecoming",
     "resposta2": "Spiderman no Way Home",
@@ -325,7 +298,6 @@
   },
   {
     "id": "EN_M_028",
-    "película": "The Batman",
     "pregunta": "Who is the main villain in The Batman of 2022?",
     "resposta1": "Joker",
     "resposta2": "Riddler",
@@ -337,7 +309,6 @@
   },
   {
     "id": "EN_M_029",
-    "película": "DJANGO",
     "pregunta": "How much money does Schultz pay to the Speck Brothers for Django?",
     "resposta1": "$ 800",
     "resposta2": "$ 1200",
@@ -349,8 +320,7 @@
   },
   {
     "id": "EN_M_030",
-    "película": "El discurso del rey",
-    "pregunta": "What problem does the king have?",
+    "pregunta": "What problem does the king have in The King's Speach?",
     "resposta1": "He's stuttering",
     "resposta2": "He has mental paralysis",
     "resposta3": "He's deaf",
@@ -361,8 +331,7 @@
   },
   {
     "id": "EN_M_031",
-    "película": "El lobo de wallstreet",
-    "pregunta": "In which country does Jordan Belfort open an account to store the black money?",
+    "pregunta": "In which country does Jordan Belfort open an account to store the black money in The Wolf of Wall Street?",
     "resposta1": "Sweden",
     "resposta2": "Andorra",
     "resposta3": "Netherlands",
@@ -373,8 +342,7 @@
   },
   {
     "id": "EN_M_032",
-    "película": "El lobo de Wallstret",
-    "pregunta": "What are the pills that protagonists take to get high?",
+    "pregunta": "What are the pills that protagonists take to get high in The Wolf of Wall Street?",
     "resposta1": "LSD",
     "resposta2": "Lemons",
     "resposta3": "Speed",
@@ -385,8 +353,7 @@
   },
   {
     "id": "EN_M_033",
-    "película": "El padrino",
-    "pregunta": "What is the name of Sonny's sister, Fredo and Michael Corleone?",
+    "pregunta": "What is the name of Sonny's sister, Fredo and Michael Corleone in The Godfather?",
     "resposta1": "Connie",
     "resposta2": "Smooth",
     "resposta3": "Stella",
@@ -397,8 +364,7 @@
   },
   {
     "id": "EN_M_034",
-    "película": "Fight Club",
-    "pregunta": "At the beginning of the movie, what helps the main character to sleep?",
+    "pregunta": "At the beginning of the movie, what helps the main character to sleep in Fight Club?",
     "resposta1": "Go to the movies",
     "resposta2": "Go to sick therapies",
     "resposta3": "Rob the elderly",
@@ -409,8 +375,7 @@
   },
   {
     "id": "EN_M_035",
-    "película": "TITANIC",
-    "pregunta": "How does Jack get the ticket for the ship?",
+    "pregunta": "How does Jack get the ticket for the Titanic?",
     "resposta1": "In a poker game",
     "resposta2": "Winning a bet",
     "resposta3": "In a bingo",
