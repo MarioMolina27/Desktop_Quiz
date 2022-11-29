@@ -98,7 +98,8 @@ namespace Desktop_Quiz
         }
         /**
          * Event Load
-         * Mostrarà o no mostrarà les diferents funcions depenent dels permisos de l'usuari actual (editar, modificar , eliminar)
+         * Mostrarà o no mostrarà les diferents funcions depenent dels permisos de l'usuari 
+         * actual (editar, modificar , eliminar)
          */
         private void FormPreguntas_Load(object sender, EventArgs e)
         {
@@ -284,7 +285,9 @@ namespace Desktop_Quiz
             peliculaList = new BindingList<Pelicula>(peliculaList.OrderBy(p => p.id).ToList());
         }
         /**
-         * Event a sobre del botò de modificar que agafa totes les dades de la pregunta seleccionada del dataGrid i les envia a la pantalla de creació i modificació de preguntes
+         * Event a sobre del botò de modificar que agafa totes les dades de la pregunta seleccionada del dataGrid
+         * i les envia a la pantalla de creació i modificació de preguntes.
+         * Eliminarà la pregunta seleccionada i després en el formulari de modificació es guardarà la pregunta modificada
          */
         private void buttonModificar_Click(object sender, EventArgs e)
         {
@@ -435,7 +438,7 @@ namespace Desktop_Quiz
             return userPosition;
         }
         /**
-         * Funció que asigna un nou id a una pregunta segons a la llista a la qual pertanyi
+         * Funció que asigna un nou id a totes les preguntes d'una llista
          */
         private static BindingList<Pelicula> UpdateIDs(String txtID,BindingList<Pelicula> lista)
         {
@@ -595,7 +598,8 @@ namespace Desktop_Quiz
             File.WriteAllText(RUTAJSON_ENG_D, jsonENG_D);
         }
         /**
-         * Event a sobre de la tecla Enter que buscarà un titol d'una pelicula a totes les llistes i mostrarà totes les preguntes que tinguin coincidència
+         * Event a sobre de la tecla Enter que buscarà un titol d'una pelicula a totes les llistes i mostrarà 
+         * totes les preguntes que tinguin coincidència
          */
         private void textBoxTitulo_KeyDown(object sender, KeyEventArgs e)
         {

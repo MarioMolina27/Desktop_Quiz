@@ -85,7 +85,10 @@ namespace Desktop_Quiz
             this.usuari = u;
             InitializeComponent();
         }
-
+        /**
+         * Event sobre el botò de buscar una imatge
+         * Aquest obrirà un open file dialog que guardarà el nom d'una imatge seleccionada per l'usuari
+         */
         private void buttonImatgeAceptar_Click(object sender, EventArgs e)
         {
             OpenFileDialog file = new OpenFileDialog();
@@ -94,10 +97,12 @@ namespace Desktop_Quiz
             if (result.Equals(DialogResult.OK))
             {
                 textBoxImatge.Text = Path.GetFileName(file.FileName); ;
-           
             }
         }
-
+        /**
+         * Event sobre el botò de buscar un audio
+         * Aquest obrirà un open file dialog que guardarà el nom d'un audio seleccionat per l'usuari
+         */
         private void buttonAudioAceptar_Click(object sender, EventArgs e)
         {
             OpenFileDialog file = new OpenFileDialog();
@@ -109,10 +114,10 @@ namespace Desktop_Quiz
 
             }
         }
-
-       
-
-       
+        /**
+         * Event sobre el botò de guardar la pregunta introduida
+         * Aquest agafarà totes les dades introduides per l'usuari i el guardarà com una nova pregunta
+         */
         private void buttonGuardar_Click_1(object sender, EventArgs e)
         {
             String pregunta = textBoxPregunta.Text;
@@ -134,7 +139,7 @@ namespace Desktop_Quiz
             String imgaudio = "";
 
             
-
+            
             if (string.IsNullOrEmpty(imatge) && !string.IsNullOrEmpty(audio))
             {
                 imgaudio = audio;
@@ -151,6 +156,7 @@ namespace Desktop_Quiz
             {
                 MessageBox.Show("ERROR - NO ES POT TENIR UNA IMATGE I AUDIO EN LA PREGUNTA");
             }
+
 
             if (resposta1Correcte)
             {
@@ -178,62 +184,64 @@ namespace Desktop_Quiz
                 dificultad = 3;
             }
 
+            /*
+             * Segons l'idioma i la dificultat seleccionada per l'usuari l'asignarà un id a la pregunta i després 
+             * el guardarà a la llista corresponent
+             */
             String id;
             String txtId = "";
                 if (idioma.Equals("Català") && dificultad == 1)
                 {
-                    txtId = "CAT_F_";
+                txtId = "CAT_F_";
                 id = newID(txtId, peliculaList);
                 this.CAT_FACIL.Add(new Pelicula(id, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Català") && dificultad == 2)
                 {
-                    txtId = "CAT_M_";
-
+                txtId = "CAT_M_";
                 id = newID(txtId, peliculaList);
                 this.CAT_MEDIANO.Add(new Pelicula(id ,pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
 
                 }
                 else if (idioma.Equals("Català") && dificultad == 3)
                 {
-                    txtId = "CAT_D_";
+                txtId = "CAT_D_";
                 id = newID(txtId, peliculaList);
                 this.CAT_DIFICIL.Add(new Pelicula(id, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Castellano") && dificultad == 1)
                 {
-                    txtId = "CAS_F_";
-
+                txtId = "CAS_F_";
                 id = newID(txtId, peliculaList);
                 this.CAST_FACIL.Add(new Pelicula(id, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Castellano") && dificultad == 2)
                 {
-                    txtId = "CAS_M_";
+                txtId = "CAS_M_";
                 id = newID(txtId, peliculaList);
                 this.CAST_MEDIANO.Add(new Pelicula(id, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("Castellano") && dificultad == 3)
                 {
-                    txtId = "CAS_D_";
+                txtId = "CAS_D_";
                 id = newID(txtId, peliculaList);
                 this.CAST_DIFICIL.Add(new Pelicula(id, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("English") && dificultad == 1)
                 {
-                    txtId = "EN_F_";
+                txtId = "EN_F_";
                 id = newID(txtId, peliculaList);
                 this.ENG_FACIL.Add(new Pelicula(id, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("English") && dificultad == 2)
                 {
-                    txtId = "EN_M_";
+                txtId = "EN_M_";
                 id = newID(txtId, peliculaList);
                 this.ENG_MEDIANO.Add(new Pelicula(id, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
                 else if (idioma.Equals("English") && dificultad == 3)
                 {
-                    txtId = "EN_D_";
+                txtId = "EN_D_";
                 id = newID(txtId, peliculaList);
                 this.ENG_DIFICIL.Add(new Pelicula(id, pregunta, resposta1, resposta2, resposta3, resposta_correcte, categoria, imatge, dificultad));
                 }
@@ -241,12 +249,14 @@ namespace Desktop_Quiz
             this.Close();
         }
 
-        
+        /**
+         * Event que es crida quan es crida al formulari
+         * Omplirà totes les caselles en cas de que l'estiguem enviant una pregunta
+         */
         private void FormEditPreguntes_Load(object sender, EventArgs e)
         {
             String txtID = "";
         
-           
             textBoxPregunta.Text = pregunta;
             textBoxResposta1.Text = resposta1;
             textBoxResposta2.Text = resposta2;
@@ -313,6 +323,11 @@ namespace Desktop_Quiz
             }
         }
 
+        /**
+         * Funció que crearà un nou id que correspón a la nova ultima posició d'una pregunta en una llista
+         * Primerament agafarà el numero de pregunta de l'ultima posició (treient l'identificador d'idoma i dificultat) 
+         * li sumarà 1 i li tornarà a agregar l'identificador d'idioma i dificultat
+         */
         public static String newID(String txtID,BindingList<Pelicula>peliculaList)
         {
             int lastObject = peliculaList.Count - 1;
