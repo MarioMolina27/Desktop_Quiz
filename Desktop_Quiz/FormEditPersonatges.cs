@@ -80,6 +80,7 @@ namespace Desktop_Quiz
             if (textBoxNomPers.Text.Equals("") | textBoxDescripcioPers.Text.Equals("") | comboBoxGenere.Text.Equals("")) {
 
                 MessageBox.Show("No pot haver-hi cap camp en blanc", "Error");
+                this.Close();
 
             } else {
             
