@@ -68,7 +68,6 @@
             this.groupBoxDadesPersonatge.TabIndex = 0;
             this.groupBoxDadesPersonatge.TabStop = false;
             this.groupBoxDadesPersonatge.Text = "Dades personatge";
-            this.groupBoxDadesPersonatge.Enter += new System.EventHandler(this.groupBoxDadesPersonatge_Enter);
             // 
             // comboBoxGenere
             // 

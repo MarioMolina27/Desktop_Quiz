@@ -125,17 +125,6 @@
             this.textBoxBuscadorPersonatges.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxBuscadorPersonatges_KeyDown);
             this.textBoxBuscadorPersonatges.Leave += new System.EventHandler(this.textBoxBuscadorPersonatges_Leave);
             // 
-            // toolStripButtonTornarEnrere
-            // 
-            this.toolStripButtonTornarEnrere.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.toolStripButtonTornarEnrere.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonTornarEnrere.Image")));
-            this.toolStripButtonTornarEnrere.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButtonTornarEnrere.Name = "toolStripButtonTornarEnrere";
-            this.toolStripButtonTornarEnrere.Size = new System.Drawing.Size(23, 22);
-            this.toolStripButtonTornarEnrere.Text = "Tornar";
-            this.toolStripButtonTornarEnrere.ToolTipText = "Tornar";
-            this.toolStripButtonTornarEnrere.Click += new System.EventHandler(this.toolStripButtonTornarEnrere_Click);
-            // 
             // groupBoxIdioma
             // 
             this.groupBoxIdioma.Controls.Add(this.radioButtonAngles);

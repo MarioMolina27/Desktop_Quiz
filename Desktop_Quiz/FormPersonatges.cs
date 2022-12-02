@@ -11,12 +11,27 @@ using System.Windows.Forms;
 
 namespace Desktop_Quiz
 {
+
+    /**
+    * public partial class MainWindow : Form
+    */
+
     public partial class FormPersonatges : Form
     {
+
+        /**
+         * public FormPersonatges()
+         * declarem una variable general per saber l'idoma en que estem treballan i poder saber el Json que s'ha de carregar.
+         * A més d'una que ens servirà per poder saber quin usuari ha entrat
+         */
 
         int idioma = 0;
 
         public Usuari usuari { get; set; }
+
+        /**
+         * Obrim el formulari
+         */
 
         public FormPersonatges()
         {
@@ -27,8 +42,15 @@ namespace Desktop_Quiz
             this.usuari = usuari;
             InitializeComponent();
         }
+
+        /**
+         * Un cop s'ha cridat al formulari carreguem la llista a la DataGrid que hem agafat del Json.
+         * I mostrem els botons respectius als privilegis de l'usuari.
+         */
+
         private void FormPersonatges_Load(object sender, EventArgs e)
         {
+
             PersRepo.LoadPersListCat();
 
             dataGridViewPersonatges.DataSource = null;
@@ -61,10 +83,9 @@ namespace Desktop_Quiz
             }
         }
 
-        private void toolStripButtonTornarEnrere_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        /**
+         * Configurem el buscador per tal de que mostri un text personalitzat cada cop que entrem i sortim.
+         */
 
         private void textBoxBuscadorPersonatges_Enter(object sender, EventArgs e)
         {
@@ -84,6 +105,10 @@ namespace Desktop_Quiz
             }
         }
 
+        /**
+         * Aquesta funció serveix per actualitzar el que es mosstra a la dataGrid cada cop que es modifiqui alguna cosa a la llista
+         */
+
         private void updateDataGridPers() {
 
             dataGridViewPersonatges.DataSource = null;
@@ -93,7 +118,9 @@ namespace Desktop_Quiz
 
         }
 
-        
+        /**
+         * Aquesta funció ens obra una nova pestanya per afegir un nou personatge
+         */
 
         private void buttonNouPersonatge_Click(object sender, EventArgs e)
         {
@@ -104,6 +131,10 @@ namespace Desktop_Quiz
             updateDataGridPers();
 
         }
+
+        /**
+         * Aquesta funció ens obra una nova pestanya per editar un personatge existent
+         */
 
         private void buttonEditarPersonatge_Click(object sender, EventArgs e)
         {
@@ -128,16 +159,51 @@ namespace Desktop_Quiz
                 updateDataGridPers();
 
             }
-
-            
             
         }
+
+        /**
+         * Aquesta funció ens obra una nova pestanya per eliminar el personatge seleccionat
+         */
+
+        private void buttonEliminarPersonatge_Click_1(object sender, EventArgs e)
+        {
+
+            int rowIndex = persRowIndex();
+            int delete = 0;
+
+            if (rowIndex != -1)
+            {
+                DataGridViewRow filaSeleccionada = dataGridViewPersonatges.Rows[rowIndex];
+                String nom = filaSeleccionada.Cells[0].Value.ToString();
+
+
+                if (!String.IsNullOrEmpty(nom))
+                {
+                    delete = trobarPers(nom, PersRepo.personatges);
+                    PersRepo.personatges.RemoveAt(delete);
+                    updateDataGridPers();
+                }
+
+            }
+            else
+            {
+                MessageBox.Show("No has escollit cap personatge per eliminar","Error");
+            }
+
+        }
+
+        /**
+         * Les següents funcions ens serveixen per saber amb quin personatge estem tractant 
+         */
 
         private int persRowIndex() {
 
             int rowIndex = dataGridViewPersonatges.CurrentCell.RowIndex;
 
-            return rowIndex; }
+            return rowIndex; 
+        }
+
 
         private int trobarPers(String nom, List<Personatge> list) {
             int pos = 0;
@@ -155,7 +221,11 @@ namespace Desktop_Quiz
             return pos;
         }
 
-        private  void radioButtonCatala_CheckedChanged(object sender, EventArgs e)
+        /**
+         * Les següents funcions serveixen per anar cambiant l'idioma de la llista que es mostra a la DataGrid
+         */
+
+        private void radioButtonCatala_CheckedChanged(object sender, EventArgs e)
         {
             
             PersRepo.LoadPersListCat();
@@ -190,32 +260,9 @@ namespace Desktop_Quiz
 
         }
 
-        private void buttonEliminarPersonatge_Click_1(object sender, EventArgs e)
-        {
-
-            int rowIndex = persRowIndex();
-            int delete = 0;
-
-            if (rowIndex != -1)
-            {
-                DataGridViewRow filaSeleccionada = dataGridViewPersonatges.Rows[rowIndex];
-                String nom = filaSeleccionada.Cells[0].Value.ToString();
-
-
-                if (!String.IsNullOrEmpty(nom))
-                {
-                    delete = trobarPers(nom, PersRepo.personatges);
-                    PersRepo.personatges.RemoveAt(delete);
-                    updateDataGridPers();
-                }
-
-            }
-            else
-            {
-                MessageBox.Show("No has escollit cap personatge per eliminar","Error");
-            }
-
-        }
+        /**
+         * De la següent forma el buscador troba el personatge perl seu nom quan li donem a la tecla Enter 
+         */
 
         private void textBoxBuscadorPersonatges_KeyDown(object sender, KeyEventArgs e)
         {
@@ -244,6 +291,10 @@ namespace Desktop_Quiz
             }
         }
 
+        /**
+         * Fent servir la variable idioma guardem el Json modificat segons l'idioma que s'estigui fent servir en aquell moment
+         */
+
         private void guardarJsonPers ()
         {
 
@@ -269,6 +320,10 @@ namespace Desktop_Quiz
             }
 
         }
+
+        /**
+         * I de la següent forma tanquem el formulari per anar al formulari anterior
+         */
 
         private void toolStripButtonBack_Click(object sender, EventArgs e)
         {
