@@ -68,10 +68,10 @@
             this.groupBoxPreguntes.Font = new System.Drawing.Font("Arial Narrow", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBoxPreguntes.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.groupBoxPreguntes.Location = new System.Drawing.Point(0, 0);
-            this.groupBoxPreguntes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxPreguntes.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxPreguntes.Name = "groupBoxPreguntes";
-            this.groupBoxPreguntes.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.groupBoxPreguntes.Size = new System.Drawing.Size(2404, 1281);
+            this.groupBoxPreguntes.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxPreguntes.Size = new System.Drawing.Size(1924, 1055);
             this.groupBoxPreguntes.TabIndex = 2;
             this.groupBoxPreguntes.TabStop = false;
             this.groupBoxPreguntes.Text = "Preguntes";
@@ -83,9 +83,9 @@
             this.groupBoxOpcionsFilOr.Controls.Add(this.groupBoxOrdenacio);
             this.groupBoxOpcionsFilOr.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold);
             this.groupBoxOpcionsFilOr.Location = new System.Drawing.Point(48, 167);
-            this.groupBoxOpcionsFilOr.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxOpcionsFilOr.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxOpcionsFilOr.Name = "groupBoxOpcionsFilOr";
-            this.groupBoxOpcionsFilOr.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxOpcionsFilOr.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxOpcionsFilOr.Size = new System.Drawing.Size(321, 757);
             this.groupBoxOpcionsFilOr.TabIndex = 4;
             this.groupBoxOpcionsFilOr.TabStop = false;
@@ -99,9 +99,9 @@
             this.groupBoxIdiomes.Controls.Add(this.radioButtonCatala);
             this.groupBoxIdiomes.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.groupBoxIdiomes.Location = new System.Drawing.Point(28, 240);
-            this.groupBoxIdiomes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxIdiomes.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxIdiomes.Name = "groupBoxIdiomes";
-            this.groupBoxIdiomes.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxIdiomes.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxIdiomes.Size = new System.Drawing.Size(267, 190);
             this.groupBoxIdiomes.TabIndex = 3;
             this.groupBoxIdiomes.TabStop = false;
@@ -113,7 +113,7 @@
             this.radioButtonIdiomesTots.Checked = true;
             this.radioButtonIdiomesTots.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.radioButtonIdiomesTots.Location = new System.Drawing.Point(41, 140);
-            this.radioButtonIdiomesTots.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButtonIdiomesTots.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonIdiomesTots.Name = "radioButtonIdiomesTots";
             this.radioButtonIdiomesTots.Size = new System.Drawing.Size(65, 28);
             this.radioButtonIdiomesTots.TabIndex = 3;
@@ -127,7 +127,7 @@
             this.radioButtonEnglish.AutoSize = true;
             this.radioButtonEnglish.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.radioButtonEnglish.Location = new System.Drawing.Point(41, 103);
-            this.radioButtonEnglish.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButtonEnglish.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonEnglish.Name = "radioButtonEnglish";
             this.radioButtonEnglish.Size = new System.Drawing.Size(91, 28);
             this.radioButtonEnglish.TabIndex = 2;
@@ -140,7 +140,7 @@
             // 
             this.radioButtonCastellano.AutoSize = true;
             this.radioButtonCastellano.Location = new System.Drawing.Point(41, 68);
-            this.radioButtonCastellano.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButtonCastellano.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonCastellano.Name = "radioButtonCastellano";
             this.radioButtonCastellano.Size = new System.Drawing.Size(114, 28);
             this.radioButtonCastellano.TabIndex = 1;
@@ -153,7 +153,7 @@
             // 
             this.radioButtonCatala.AutoSize = true;
             this.radioButtonCatala.Location = new System.Drawing.Point(41, 32);
-            this.radioButtonCatala.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButtonCatala.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonCatala.Name = "radioButtonCatala";
             this.radioButtonCatala.Size = new System.Drawing.Size(80, 28);
             this.radioButtonCatala.TabIndex = 0;
@@ -168,9 +168,9 @@
             this.groupBoxModificacions.Controls.Add(this.buttonAfegir);
             this.groupBoxModificacions.Controls.Add(this.buttonModificar);
             this.groupBoxModificacions.Location = new System.Drawing.Point(28, 437);
-            this.groupBoxModificacions.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxModificacions.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxModificacions.Name = "groupBoxModificacions";
-            this.groupBoxModificacions.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxModificacions.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxModificacions.Size = new System.Drawing.Size(267, 299);
             this.groupBoxModificacions.TabIndex = 2;
             this.groupBoxModificacions.TabStop = false;
@@ -180,7 +180,7 @@
             this.buttonEliminar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonEliminar.Image = ((System.Drawing.Image)(resources.GetObject("buttonEliminar.Image")));
             this.buttonEliminar.Location = new System.Drawing.Point(133, 171);
-            this.buttonEliminar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonEliminar.Name = "buttonEliminar";
             this.buttonEliminar.Size = new System.Drawing.Size(92, 97);
             this.buttonEliminar.TabIndex = 8;
@@ -192,7 +192,7 @@
             this.buttonAfegir.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonAfegir.Image = ((System.Drawing.Image)(resources.GetObject("buttonAfegir.Image")));
             this.buttonAfegir.Location = new System.Drawing.Point(33, 34);
-            this.buttonAfegir.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonAfegir.Margin = new System.Windows.Forms.Padding(4);
             this.buttonAfegir.Name = "buttonAfegir";
             this.buttonAfegir.Size = new System.Drawing.Size(192, 129);
             this.buttonAfegir.TabIndex = 6;
@@ -204,7 +204,7 @@
             this.buttonModificar.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.buttonModificar.Image = ((System.Drawing.Image)(resources.GetObject("buttonModificar.Image")));
             this.buttonModificar.Location = new System.Drawing.Point(33, 171);
-            this.buttonModificar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonModificar.Margin = new System.Windows.Forms.Padding(4);
             this.buttonModificar.Name = "buttonModificar";
             this.buttonModificar.Size = new System.Drawing.Size(92, 97);
             this.buttonModificar.TabIndex = 7;
@@ -217,9 +217,9 @@
             this.groupBoxOrdenacio.Controls.Add(this.radioButtonCategoria);
             this.groupBoxOrdenacio.Font = new System.Drawing.Font("Arial Narrow", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
             this.groupBoxOrdenacio.Location = new System.Drawing.Point(28, 63);
-            this.groupBoxOrdenacio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxOrdenacio.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxOrdenacio.Name = "groupBoxOrdenacio";
-            this.groupBoxOrdenacio.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBoxOrdenacio.Padding = new System.Windows.Forms.Padding(4);
             this.groupBoxOrdenacio.Size = new System.Drawing.Size(267, 139);
             this.groupBoxOrdenacio.TabIndex = 1;
             this.groupBoxOrdenacio.TabStop = false;
@@ -229,7 +229,7 @@
             // 
             this.radioButtonDificultat.AutoSize = true;
             this.radioButtonDificultat.Location = new System.Drawing.Point(41, 81);
-            this.radioButtonDificultat.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButtonDificultat.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonDificultat.Name = "radioButtonDificultat";
             this.radioButtonDificultat.Size = new System.Drawing.Size(101, 28);
             this.radioButtonDificultat.TabIndex = 1;
@@ -242,7 +242,7 @@
             // 
             this.radioButtonCategoria.AutoSize = true;
             this.radioButtonCategoria.Location = new System.Drawing.Point(41, 38);
-            this.radioButtonCategoria.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.radioButtonCategoria.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonCategoria.Name = "radioButtonCategoria";
             this.radioButtonCategoria.Size = new System.Drawing.Size(106, 28);
             this.radioButtonCategoria.TabIndex = 0;
@@ -258,7 +258,7 @@
             this.dataGridViewPelicules.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridViewPelicules.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridViewPelicules.Location = new System.Drawing.Point(443, 167);
-            this.dataGridViewPelicules.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dataGridViewPelicules.Margin = new System.Windows.Forms.Padding(4);
             this.dataGridViewPelicules.Name = "dataGridViewPelicules";
             this.dataGridViewPelicules.RowHeadersWidth = 62;
             this.dataGridViewPelicules.Size = new System.Drawing.Size(1963, 1028);
@@ -267,7 +267,7 @@
             // textBoxTitulo
             // 
             this.textBoxTitulo.Location = new System.Drawing.Point(544, 112);
-            this.textBoxTitulo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxTitulo.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxTitulo.Name = "textBoxTitulo";
             this.textBoxTitulo.Size = new System.Drawing.Size(524, 30);
             this.textBoxTitulo.TabIndex = 1;
@@ -282,7 +282,7 @@
             this.labelTitul.Location = new System.Drawing.Point(437, 117);
             this.labelTitul.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelTitul.Name = "labelTitul";
-            this.labelTitul.Size = new System.Drawing.Size(83, 30);
+            this.labelTitul.Size = new System.Drawing.Size(66, 24);
             this.labelTitul.TabIndex = 0;
             this.labelTitul.Text = "Filtrar";
             // 
@@ -294,7 +294,7 @@
             this.toolStripButtonBack});
             this.toolStripBackOption.Location = new System.Drawing.Point(0, 0);
             this.toolStripBackOption.Name = "toolStripBackOption";
-            this.toolStripBackOption.Size = new System.Drawing.Size(2404, 27);
+            this.toolStripBackOption.Size = new System.Drawing.Size(1924, 27);
             this.toolStripBackOption.TabIndex = 12;
             // 
             // toolStripButtonBack
@@ -312,13 +312,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Gold;
-            this.ClientSize = new System.Drawing.Size(2404, 1281);
+            this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.ControlBox = false;
             this.Controls.Add(this.toolStripBackOption);
             this.Controls.Add(this.groupBoxPreguntes);
             this.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormPreguntas";
             this.Text = "FilmZ";
             this.Load += new System.EventHandler(this.FormPreguntas_Load);
