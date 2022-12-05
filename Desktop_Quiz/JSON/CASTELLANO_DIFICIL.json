@@ -1,17 +1,6 @@
 [
   {
     "id": "CAS_D_001",
-    "pregunta": "¿Cuantos angulos podía girar la cabeza la niña del exorcista?",
-    "resposta1": "Girarla 360º",
-    "resposta2": "Girarla 180º",
-    "resposta3": "Girarla 90º",
-    "resposta_correcte": 2,
-    "categoria": "Terror",
-    "imgaudio": null,
-    "dificultad": 3
-  },
-  {
-    "id": "CAS_D_002",
     "pregunta": "¿Como se llama el protagonista de Guerra Mundial Z?",
     "resposta1": "Gerry Lane",
     "resposta2": "Ludy Boeken",
@@ -22,7 +11,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_003",
+    "id": "CAS_D_002",
     "pregunta": "¿Por qué Foster quería cambiar de habitación en Insidious I?",
     "resposta1": "Quería más espacio para jugar con sus juguetes.",
     "resposta2": "Pensó que había alguien en su armario.",
@@ -33,7 +22,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_004",
+    "id": "CAS_D_003",
     "pregunta": "¿Qué descubrió Renai mientras arreglaba las sábanas de Dalton en su cama a Insidious I?",
     "resposta1": "Renai encontró un mensaje escrito con sangre en la hoja de Dalton.",
     "resposta2": "Renai encontró una huella de una mano ensangrentada en la sábana de Dalton.",
@@ -44,7 +33,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_005",
+    "id": "CAS_D_004",
     "pregunta": "¿Por quien fue dirigida la película La Cosa?",
     "resposta1": "John Carpenter",
     "resposta2": "David Foster",
@@ -55,7 +44,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_006",
+    "id": "CAS_D_005",
     "pregunta": "¿Cuanto dura la película de la Purga?",
     "resposta1": "85 minutos",
     "resposta2": "94 minutos",
@@ -66,7 +55,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_007",
+    "id": "CAS_D_006",
     "pregunta": "¿Que actor interpreta al secuestrador en The Black Phone?",
     "resposta1": "Troy Rudeseal",
     "resposta2": "Miguel Cazarez",
@@ -77,7 +66,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_008",
+    "id": "CAS_D_007",
     "pregunta": "¿De quien es la voz que escuchas?",
     "resposta1": "Barbie",
     "resposta2": "Scarlet Johanson",
@@ -88,7 +77,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_009",
+    "id": "CAS_D_008",
     "pregunta": "¿Cuando se estreno la primera película de Bob Esponja?",
     "resposta1": "2007",
     "resposta2": "2005",
@@ -99,7 +88,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_010",
+    "id": "CAS_D_009",
     "pregunta": "¿Cuantos tiburones aparecen en Buscando a Nemo?",
     "resposta1": "2",
     "resposta2": "3",
@@ -110,7 +99,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_011",
+    "id": "CAS_D_010",
     "pregunta": "¿Como se llama la siguiente supertécnica de Inazuma Eleven?",
     "resposta1": "Red de Contención",
     "resposta2": "Defensa Radial",
@@ -121,7 +110,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_012",
+    "id": "CAS_D_011",
     "pregunta": "¿Como se llama el personaje que es un pollo en la pelicula Locos por el surf?",
     "resposta1": "Pepe",
     "resposta2": "Tanque Evans",
@@ -132,7 +121,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_013",
+    "id": "CAS_D_012",
     "pregunta": "¿Contra quien se enfrenta Pocoyo, Nina, Pato y Elly para salvar el mundo?",
     "resposta1": "Virus",
     "resposta2": "Zapo",
@@ -143,7 +132,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_014",
+    "id": "CAS_D_013",
     "pregunta": "¿Como se llama el ladron de vacas de Zafarrancho en el Rancho?",
     "resposta1": "Alameda Slim",
     "resposta2": "Sr. Dixon",
@@ -154,7 +143,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_015",
+    "id": "CAS_D_014",
     "pregunta": "¿En que año esta situado el futuro de la pelicula \"12 monos\"?",
     "resposta1": "2035",
     "resposta2": "2086",
@@ -165,7 +154,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_016",
+    "id": "CAS_D_015",
     "pregunta": "¿Cual es el nombre original de la película Barrenderos Espaciales?",
     "resposta1": "Mi-Suk",
     "resposta2": "Haneul",
@@ -176,7 +165,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_017",
+    "id": "CAS_D_016",
     "pregunta": "¿Quantos anillos existen en El Señor de los Anillos?",
     "resposta1": "1",
     "resposta2": "12",
@@ -187,7 +176,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_018",
+    "id": "CAS_D_017",
     "pregunta": "¿Como se llama el propietario del parque de Jurassic World?",
     "resposta1": "Claire Dearing",
     "resposta2": "Henry Wu",
@@ -198,7 +187,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_019",
+    "id": "CAS_D_018",
     "pregunta": "¿De que trabaja Neo al principio de la pelicula Matrix Resurrection?",
     "resposta1": "Programador",
     "resposta2": "Oficinista",
@@ -209,7 +198,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_020",
+    "id": "CAS_D_019",
     "pregunta": "¿ Cuando Skynet consiguio conciencia de si mismo en Terminator?",
     "resposta1": "35646",
     "resposta2": "35671",
@@ -220,7 +209,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_021",
+    "id": "CAS_D_020",
     "pregunta": "¿En que película aparecen estos seres?",
     "resposta1": "Independence Day",
     "resposta2": "Planeta rojo",
@@ -231,7 +220,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_022",
+    "id": "CAS_D_021",
     "pregunta": "¿Como se llama el actor del protagonista de la serie El Juego del Calamar?",
     "resposta1": "Jung Ho-yeon",
     "resposta2": "Lee Jung-jae",
@@ -242,7 +231,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_023",
+    "id": "CAS_D_022",
     "pregunta": "¿Quien traiciona al protagonista en la pelicula del Renacido?",
     "resposta1": "John Fitzgerald",
     "resposta2": "Hugh Glass",
@@ -253,7 +242,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_024",
+    "id": "CAS_D_023",
     "pregunta": "¿Cuantas peliculas oficales de James Bond se ha creado?",
     "resposta1": "25",
     "resposta2": "23",
@@ -264,7 +253,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_025",
+    "id": "CAS_D_024",
     "pregunta": "¿En que año salio la pelicula Reservoir Dogs?",
     "resposta1": "1992",
     "resposta2": "1997",
@@ -275,7 +264,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_026",
+    "id": "CAS_D_025",
     "pregunta": "¿En Speed a cuantas millas por hora se tiene que mantener el autobús para no explotar?",
     "resposta1": "50",
     "resposta2": "60",
@@ -286,7 +275,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_027",
+    "id": "CAS_D_026",
     "pregunta": "¿Cuanto dura la película de Uncharted?",
     "resposta1": "102 min",
     "resposta2": "110 min",
@@ -297,7 +286,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_028",
+    "id": "CAS_D_027",
     "pregunta": "¿Como se llama la francotiradora de los mercenarios de Dyon Corps de Wolf Warrior 2?",
     "resposta1": "Rachel Prescott Smith",
     "resposta2": "Athena",
@@ -308,7 +297,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_029",
+    "id": "CAS_D_028",
     "pregunta": "¿Como se llama el personaje interprestado por Andrew Scott en la película 1917?",
     "resposta1": "Leslie",
     "resposta2": "Cipayo Jondalar",
@@ -319,7 +308,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_030",
+    "id": "CAS_D_029",
     "pregunta": "¿Donde muere el protagonista al principio de la pelicula Ciudadano Kane?",
     "resposta1": "Turquia",
     "resposta2": "Xanadú",
@@ -330,7 +319,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_031",
+    "id": "CAS_D_030",
     "pregunta": "¿Como se llama el preso que puede realizar milagros en la película La Milla Verde?",
     "resposta1": "Sam Rockwell",
     "resposta2": "David Coffe",
@@ -341,7 +330,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_032",
+    "id": "CAS_D_031",
     "pregunta": "¿Que mote le ponen al judio que mata a los nacis con un bate de beisbol en la película Malditos Bastardos?",
     "resposta1": "El rompecabezas",
     "resposta2": "El mata nacis",
@@ -352,7 +341,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_033",
+    "id": "CAS_D_032",
     "pregunta": "¿En que empresa trabaja el protagonista de la pelicula Náufrago?",
     "resposta1": "FedEx",
     "resposta2": "Amazon",
@@ -363,7 +352,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_034",
+    "id": "CAS_D_033",
     "pregunta": "¿Quien interpreta el papel del protagonista de Salvar al Soldado Ryan?",
     "resposta1": "Tom Hanks",
     "resposta2": "Eladio Carrión",
@@ -374,7 +363,7 @@
     "dificultad": 3
   },
   {
-    "id": "CAS_D_035",
+    "id": "CAS_D_034",
     "pregunta": "¿En la película Un Monstruo Viene a Verme a que hora aparace el mounstro cada día?",
     "resposta1": "0,125",
     "resposta2": "0,5048611111",
@@ -382,6 +371,17 @@
     "resposta_correcte": 2,
     "categoria": "Drama",
     "imgaudio": null,
+    "dificultad": 3
+  },
+  {
+    "id": "CAS_D_036",
+    "pregunta": "¿Cuantos angulos podía girar la cabeza la niña del exorcista?",
+    "resposta1": "Girarla 360º",
+    "resposta2": "Girarla 180º",
+    "resposta3": "Girarla 90º",
+    "resposta_correcte": 2,
+    "categoria": "Terror",
+    "imgaudio": "",
     "dificultad": 3
   }
 ]
