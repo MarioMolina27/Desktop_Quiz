@@ -36,7 +36,9 @@
             this.buttonPreguntes = new System.Windows.Forms.Button();
             this.toolStripBackOption = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonBack = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.pictureBoxIconUser = new System.Windows.Forms.PictureBox();
+            this.labelNom = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.toolStripBackOption.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconUser)).BeginInit();
@@ -106,7 +108,8 @@
             // 
             this.toolStripBackOption.BackColor = System.Drawing.Color.LightBlue;
             this.toolStripBackOption.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButtonBack});
+            this.toolStripButtonBack,
+            this.toolStripButton1});
             this.toolStripBackOption.Location = new System.Drawing.Point(0, 0);
             this.toolStripBackOption.Name = "toolStripBackOption";
             this.toolStripBackOption.Size = new System.Drawing.Size(1904, 25);
@@ -122,6 +125,17 @@
             this.toolStripButtonBack.Text = "BACK";
             this.toolStripButtonBack.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "LOG OUT";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButtonLogOut_Click_1);
+            // 
             // pictureBoxIconUser
             // 
             this.pictureBoxIconUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -133,12 +147,22 @@
             this.pictureBoxIconUser.TabIndex = 12;
             this.pictureBoxIconUser.TabStop = false;
             // 
+            // labelNom
+            // 
+            this.labelNom.AutoSize = true;
+            this.labelNom.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNom.Location = new System.Drawing.Point(878, 407);
+            this.labelNom.Name = "labelNom";
+            this.labelNom.Size = new System.Drawing.Size(0, 19);
+            this.labelNom.TabIndex = 13;
+            // 
             // FormSAdimOpciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.labelNom);
             this.Controls.Add(this.pictureBoxIconUser);
             this.Controls.Add(this.toolStripBackOption);
             this.Controls.Add(this.buttonPreguntes);
@@ -170,5 +194,7 @@
         private System.Windows.Forms.ToolStrip toolStripBackOption;
         private System.Windows.Forms.ToolStripButton toolStripButtonBack;
         private System.Windows.Forms.PictureBox pictureBoxIconUser;
+        private System.Windows.Forms.Label labelNom;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

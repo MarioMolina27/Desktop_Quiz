@@ -188,3 +188,14 @@ C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz
 C:\Users\molin\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormEditPreguntes.resources
 C:\Users\cep.CEPNET0\Documents\GitHub\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormEditPreguntes.resources
 D:\Cole\DAM2\Projecte\Pelicules\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormEditPreguntes.resources
+D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\bin\Debug\BCrypt.Net-Next.dll
+D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Buffers.dll
+D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Memory.dll
+D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Numerics.Vectors.dll
+D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\bin\Debug\BCrypt.Net-Next.xml
+D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Buffers.xml
+D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Memory.xml
+D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Numerics.Vectors.xml
+D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\DAM2\PROJECTE\Desktop_Quiz\Desktop_Quiz\obj\Debug\Desktop_Quiz.FormEditPreguntes.resources

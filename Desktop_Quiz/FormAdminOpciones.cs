@@ -31,6 +31,7 @@ namespace Desktop_Quiz
 
         private void FormAdminOpciones_Load(object sender, EventArgs e)
         {
+            labelNom.Text = nomAdmin;
             labelBenvinguda.Text = "Benvingut " + usuari.nom;
         }
 
@@ -51,6 +52,16 @@ namespace Desktop_Quiz
             this.Close();
             FormInicioSesion formInici = new FormInicioSesion();
             formInici.ShowDialog();
+        }
+
+        private void toolStripButtonLogOut_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Estas seguro que quieres cerrar sesión?", "LOG OUT", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes) {
+                this.Close();
+                FormInicioSesion formInici = new FormInicioSesion();
+                formInici.ShowDialog();
+            }
         }
     }
 }

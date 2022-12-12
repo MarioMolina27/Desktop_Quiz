@@ -35,7 +35,9 @@
             this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
             this.toolStripBackOption = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonBack = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButtonLogOut = new System.Windows.Forms.ToolStripButton();
             this.pictureBoxIconUser = new System.Windows.Forms.PictureBox();
+            this.labelNom = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.toolStripBackOption.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconUser)).BeginInit();
@@ -91,7 +93,8 @@
             // 
             this.toolStripBackOption.BackColor = System.Drawing.Color.LightBlue;
             this.toolStripBackOption.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButtonBack});
+            this.toolStripButtonBack,
+            this.toolStripButtonLogOut});
             this.toolStripBackOption.Location = new System.Drawing.Point(0, 0);
             this.toolStripBackOption.Name = "toolStripBackOption";
             this.toolStripBackOption.Size = new System.Drawing.Size(1904, 25);
@@ -107,6 +110,17 @@
             this.toolStripButtonBack.Text = "BACK";
             this.toolStripButtonBack.Click += new System.EventHandler(this.toolStripButtonBack_Click);
             // 
+            // toolStripButtonLogOut
+            // 
+            this.toolStripButtonLogOut.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButtonLogOut.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButtonLogOut.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonLogOut.Image")));
+            this.toolStripButtonLogOut.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButtonLogOut.Name = "toolStripButtonLogOut";
+            this.toolStripButtonLogOut.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButtonLogOut.Text = "LOG OUT";
+            this.toolStripButtonLogOut.Click += new System.EventHandler(this.toolStripButtonLogOut_Click);
+            // 
             // pictureBoxIconUser
             // 
             this.pictureBoxIconUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
@@ -118,12 +132,24 @@
             this.pictureBoxIconUser.TabIndex = 18;
             this.pictureBoxIconUser.TabStop = false;
             // 
+            // labelNom
+            // 
+            this.labelNom.AutoSize = true;
+            this.labelNom.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNom.Location = new System.Drawing.Point(864, 427);
+            this.labelNom.Name = "labelNom";
+            this.labelNom.Padding = new System.Windows.Forms.Padding(75, 0, 75, 0);
+            this.labelNom.Size = new System.Drawing.Size(150, 19);
+            this.labelNom.TabIndex = 19;
+            this.labelNom.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // FormAdminOpciones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.Controls.Add(this.labelNom);
             this.Controls.Add(this.pictureBoxIconUser);
             this.Controls.Add(this.toolStripBackOption);
             this.Controls.Add(this.buttonPreguntes);
@@ -152,5 +178,7 @@
         private System.Windows.Forms.ToolStrip toolStripBackOption;
         private System.Windows.Forms.ToolStripButton toolStripButtonBack;
         private System.Windows.Forms.PictureBox pictureBoxIconUser;
+        private System.Windows.Forms.Label labelNom;
+        private System.Windows.Forms.ToolStripButton toolStripButtonLogOut;
     }
 }
