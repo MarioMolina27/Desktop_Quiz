@@ -9,13 +9,13 @@ namespace Desktop_Quiz
 {
     public class EncriptarContrasenyes
     {
-        public String encriptarContrasenya (String contrasenya)
+        public static String encriptarContrasenya (String contrasenya)
         {
             String contraEncriptada;
             contraEncriptada = BCrypt.Net.BCrypt.HashPassword(contrasenya);
             return contraEncriptada;
         }
-        public Boolean verificarContra (String contraEncriptada, String contraUser)
+        public static Boolean verificarContra (String contraEncriptada, String contraUser)
         {
             Boolean validPass = BCrypt.Net.BCrypt.Verify(contraEncriptada, contraUser);
             return validPass;

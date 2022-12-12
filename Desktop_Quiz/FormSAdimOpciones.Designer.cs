@@ -45,11 +45,10 @@
             // 
             // labelBenvinguda
             // 
-            this.labelBenvinguda.AutoSize = true;
-            this.labelBenvinguda.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBenvinguda.Location = new System.Drawing.Point(878, 371);
+            this.labelBenvinguda.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelBenvinguda.Location = new System.Drawing.Point(793, 400);
             this.labelBenvinguda.Name = "labelBenvinguda";
-            this.labelBenvinguda.Size = new System.Drawing.Size(127, 24);
+            this.labelBenvinguda.Size = new System.Drawing.Size(290, 24);
             this.labelBenvinguda.TabIndex = 3;
             this.labelBenvinguda.Text = "BENVINGUT";
             this.labelBenvinguda.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -68,7 +67,7 @@
             this.buttonUsuari.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonUsuari.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUsuari.ForeColor = System.Drawing.Color.White;
-            this.buttonUsuari.Location = new System.Drawing.Point(459, 550);
+            this.buttonUsuari.Location = new System.Drawing.Point(407, 550);
             this.buttonUsuari.Name = "buttonUsuari";
             this.buttonUsuari.Size = new System.Drawing.Size(193, 69);
             this.buttonUsuari.TabIndex = 4;
@@ -82,7 +81,7 @@
             this.buttonPersonatges.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonPersonatges.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPersonatges.ForeColor = System.Drawing.Color.White;
-            this.buttonPersonatges.Location = new System.Drawing.Point(861, 550);
+            this.buttonPersonatges.Location = new System.Drawing.Point(838, 550);
             this.buttonPersonatges.Name = "buttonPersonatges";
             this.buttonPersonatges.Size = new System.Drawing.Size(193, 69);
             this.buttonPersonatges.TabIndex = 8;
@@ -96,7 +95,7 @@
             this.buttonPreguntes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonPreguntes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPreguntes.ForeColor = System.Drawing.Color.White;
-            this.buttonPreguntes.Location = new System.Drawing.Point(1233, 550);
+            this.buttonPreguntes.Location = new System.Drawing.Point(1269, 550);
             this.buttonPreguntes.Name = "buttonPreguntes";
             this.buttonPreguntes.Size = new System.Drawing.Size(193, 69);
             this.buttonPreguntes.TabIndex = 9;
@@ -106,6 +105,7 @@
             // 
             // toolStripBackOption
             // 
+            this.toolStripBackOption.BackColor = System.Drawing.Color.LightBlue;
             this.toolStripBackOption.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButtonBack});
             this.toolStripBackOption.Location = new System.Drawing.Point(0, 0);
@@ -147,6 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.labelNom);
             this.Controls.Add(this.pictureBoxIconUser);
@@ -157,8 +158,9 @@
             this.Controls.Add(this.labelBenvinguda);
             this.Controls.Add(this.pictureBoxIcon);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FormSAdimOpciones";
-            this.Text = "SUPER ADMIN OPTIONS";
+            this.Text = "FilmZ";
             this.Load += new System.EventHandler(this.FormSAdimOpciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.toolStripBackOption.ResumeLayout(false);

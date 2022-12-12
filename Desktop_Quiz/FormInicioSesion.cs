@@ -30,19 +30,18 @@ namespace Desktop_Quiz
 
             JArray jarrayUsuaris = JArray.Parse(File.ReadAllText(@"../../JSON/USUARIS.json", Encoding.UTF8));
             usuaris = jarrayUsuaris.ToObject<List<Usuari>>();
-            EncriptarContrasenyes ec = new EncriptarContrasenyes();
 
             foreach (Usuari user in usuaris)
             {
-                if (nom.Equals(user.nickname) && ec.verificarContra(contrasenya, user.contrasenya))
+                if (nom.Equals(user.nickname) && EncriptarContrasenyes.verificarContra(contrasenya, user.contrasenya))
                 {
-                    if (user.tipus.Equals("SA"))
+                    if (user.tipus == 'S')
                     {
-                        FormSAdimOpciones formSuperAdmin = new FormSAdimOpciones(user.nom);
+                        FormSAdimOpciones formSuperAdmin = new FormSAdimOpciones(user);
                         formSuperAdmin.ShowDialog();
                     } else
                     {
-                        FormAdminOpciones formAdmin = new FormAdminOpciones(user.nom);
+                        FormAdminOpciones formAdmin = new FormAdminOpciones(user);
                         formAdmin.ShowDialog();
                     }
                     this.Close();
@@ -58,7 +57,7 @@ namespace Desktop_Quiz
 
         private void textBoxNom_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (    e.KeyCode == Keys.Enter)
             {
                 buttonIniciSessio_Click(sender, e);
             }
@@ -83,6 +82,24 @@ namespace Desktop_Quiz
             }
         }
 
-       
+        private void textBoxNom_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBoxDades_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelNom_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelContrasenya_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

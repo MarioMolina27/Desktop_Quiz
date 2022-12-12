@@ -11,18 +11,23 @@ namespace Desktop_Quiz
         public String nickname { get; set; }
         public String nom { get; set; }
         public String contrasenya { get; set; }
-        public String tipus { get; set; }
-        public String privilegis { get; set; }
+        public char tipus { get; set; }
+        public bool add { get; set; }
+        public bool modify { get; set; }
+        public bool delete { get; set; }
+
 
         public Usuari() { }
 
-        public Usuari(string nickname, string nom, string contrasenya, string tipus, string privilegis)
+        public Usuari(string nickname, string nom, string contrasenya, char tipus, bool add, bool modify, bool delete)
         {
             this.nickname = nickname;
             this.nom = nom;
             this.contrasenya = contrasenya;
             this.tipus = tipus;
-            this.privilegis = privilegis;
+            this.add = add;
+            this.modify = modify;
+            this.delete = delete;
         }
     }
 }

@@ -9,7 +9,6 @@ namespace Desktop_Quiz
     public class Pelicula
     {
         public String id { get; set; }
-        public String película { get; set; }
         public String pregunta { get; set; }
         public String resposta1 { get; set; }
         public String resposta2 { get; set; }
@@ -20,10 +19,10 @@ namespace Desktop_Quiz
         public int dificultad { get; set; }
 
         public Pelicula() { }
-        public Pelicula(string id, string película, string resposta1, string resposta2, string resposta3, int resposta_correcte, string categoria, string imgaudio, int dificultat)
+        public Pelicula(string id,string pregunta, string resposta1, string resposta2, string resposta3, int resposta_correcte, string categoria, string imgaudio, int dificultat)
         {
             this.id = id;
-            this.película = película;
+            this.pregunta = pregunta;
             this.resposta1 = resposta1;
             this.resposta2 = resposta2;
             this.resposta3 = resposta3;

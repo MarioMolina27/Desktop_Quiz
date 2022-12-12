@@ -28,197 +28,232 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditUsuaris));
             this.groupBoxDadesUsuari = new System.Windows.Forms.GroupBox();
-            this.labelNom = new System.Windows.Forms.Label();
-            this.labelNickname = new System.Windows.Forms.Label();
-            this.labelContrasenya = new System.Windows.Forms.Label();
-            this.labelRepeatContrasenya = new System.Windows.Forms.Label();
-            this.groupBoxPriveligis = new System.Windows.Forms.GroupBox();
-            this.textBoxNom = new System.Windows.Forms.TextBox();
-            this.textBoxNickName = new System.Windows.Forms.TextBox();
-            this.textBoxContrasenya = new System.Windows.Forms.TextBox();
-            this.textBoxRepeatContrasenya = new System.Windows.Forms.TextBox();
-            this.checkBoxAfegir = new System.Windows.Forms.CheckBox();
-            this.checkBoxEditar = new System.Windows.Forms.CheckBox();
-            this.checkBoxEliminar = new System.Windows.Forms.CheckBox();
-            this.checkBoxMostrar = new System.Windows.Forms.CheckBox();
+            this.buttonAceptarEditUsers = new System.Windows.Forms.Button();
             this.checkBoxMostrarRepeat = new System.Windows.Forms.CheckBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.checkBoxMostrar = new System.Windows.Forms.CheckBox();
+            this.textBoxRepeatContrasenya = new System.Windows.Forms.TextBox();
+            this.textBoxContrasenya = new System.Windows.Forms.TextBox();
+            this.textBoxNomEdit = new System.Windows.Forms.TextBox();
+            this.textBoxNickName = new System.Windows.Forms.TextBox();
+            this.groupBoxPriveligis = new System.Windows.Forms.GroupBox();
+            this.checkBoxEliminar = new System.Windows.Forms.CheckBox();
+            this.checkBoxEditar = new System.Windows.Forms.CheckBox();
+            this.checkBoxAfegir = new System.Windows.Forms.CheckBox();
+            this.labelRepeatContrasenya = new System.Windows.Forms.Label();
+            this.labelContrasenya = new System.Windows.Forms.Label();
+            this.labelNickname = new System.Windows.Forms.Label();
+            this.labelNom = new System.Windows.Forms.Label();
             this.groupBoxDadesUsuari.SuspendLayout();
             this.groupBoxPriveligis.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxDadesUsuari
             // 
-            this.groupBoxDadesUsuari.Controls.Add(this.button4);
+            this.groupBoxDadesUsuari.Controls.Add(this.buttonAceptarEditUsers);
             this.groupBoxDadesUsuari.Controls.Add(this.checkBoxMostrarRepeat);
             this.groupBoxDadesUsuari.Controls.Add(this.checkBoxMostrar);
             this.groupBoxDadesUsuari.Controls.Add(this.textBoxRepeatContrasenya);
             this.groupBoxDadesUsuari.Controls.Add(this.textBoxContrasenya);
+            this.groupBoxDadesUsuari.Controls.Add(this.textBoxNomEdit);
             this.groupBoxDadesUsuari.Controls.Add(this.textBoxNickName);
-            this.groupBoxDadesUsuari.Controls.Add(this.textBoxNom);
             this.groupBoxDadesUsuari.Controls.Add(this.groupBoxPriveligis);
             this.groupBoxDadesUsuari.Controls.Add(this.labelRepeatContrasenya);
             this.groupBoxDadesUsuari.Controls.Add(this.labelContrasenya);
             this.groupBoxDadesUsuari.Controls.Add(this.labelNickname);
             this.groupBoxDadesUsuari.Controls.Add(this.labelNom);
-            this.groupBoxDadesUsuari.Location = new System.Drawing.Point(13, 13);
+            this.groupBoxDadesUsuari.Location = new System.Drawing.Point(20, 18);
+            this.groupBoxDadesUsuari.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxDadesUsuari.Name = "groupBoxDadesUsuari";
-            this.groupBoxDadesUsuari.Size = new System.Drawing.Size(435, 331);
+            this.groupBoxDadesUsuari.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxDadesUsuari.Size = new System.Drawing.Size(652, 458);
             this.groupBoxDadesUsuari.TabIndex = 0;
             this.groupBoxDadesUsuari.TabStop = false;
             this.groupBoxDadesUsuari.Text = "Dades Usuari";
             // 
-            // labelNom
+            // buttonAceptarEditUsers
             // 
-            this.labelNom.AutoSize = true;
-            this.labelNom.Location = new System.Drawing.Point(27, 32);
-            this.labelNom.Name = "labelNom";
-            this.labelNom.Size = new System.Drawing.Size(29, 13);
-            this.labelNom.TabIndex = 0;
-            this.labelNom.Text = "Nom";
+            this.buttonAceptarEditUsers.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonAceptarEditUsers.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonAceptarEditUsers.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAceptarEditUsers.Location = new System.Drawing.Point(502, 395);
+            this.buttonAceptarEditUsers.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAceptarEditUsers.Name = "buttonAceptarEditUsers";
+            this.buttonAceptarEditUsers.Size = new System.Drawing.Size(130, 50);
+            this.buttonAceptarEditUsers.TabIndex = 11;
+            this.buttonAceptarEditUsers.Text = "Aceptar";
+            this.buttonAceptarEditUsers.UseVisualStyleBackColor = false;
+            this.buttonAceptarEditUsers.Click += new System.EventHandler(this.buttonAceptarEditUsers_Click);
             // 
-            // labelNickname
+            // checkBoxMostrarRepeat
             // 
-            this.labelNickname.AutoSize = true;
-            this.labelNickname.Location = new System.Drawing.Point(27, 75);
-            this.labelNickname.Name = "labelNickname";
-            this.labelNickname.Size = new System.Drawing.Size(57, 13);
-            this.labelNickname.TabIndex = 1;
-            this.labelNickname.Text = "NickName";
+            this.checkBoxMostrarRepeat.AutoSize = true;
+            this.checkBoxMostrarRepeat.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMostrarRepeat.Location = new System.Drawing.Point(543, 235);
+            this.checkBoxMostrarRepeat.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxMostrarRepeat.Name = "checkBoxMostrarRepeat";
+            this.checkBoxMostrarRepeat.Size = new System.Drawing.Size(82, 22);
+            this.checkBoxMostrarRepeat.TabIndex = 10;
+            this.checkBoxMostrarRepeat.Text = "Mostrar";
+            this.checkBoxMostrarRepeat.UseVisualStyleBackColor = true;
+            this.checkBoxMostrarRepeat.CheckedChanged += new System.EventHandler(this.checkBoxMostrarRepeat_CheckedChanged);
             // 
-            // labelContrasenya
+            // checkBoxMostrar
             // 
-            this.labelContrasenya.AutoSize = true;
-            this.labelContrasenya.Location = new System.Drawing.Point(27, 122);
-            this.labelContrasenya.Name = "labelContrasenya";
-            this.labelContrasenya.Size = new System.Drawing.Size(66, 13);
-            this.labelContrasenya.TabIndex = 2;
-            this.labelContrasenya.Text = "Contrasenya";
+            this.checkBoxMostrar.AutoSize = true;
+            this.checkBoxMostrar.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxMostrar.Location = new System.Drawing.Point(544, 169);
+            this.checkBoxMostrar.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxMostrar.Name = "checkBoxMostrar";
+            this.checkBoxMostrar.Size = new System.Drawing.Size(82, 22);
+            this.checkBoxMostrar.TabIndex = 9;
+            this.checkBoxMostrar.Text = "Mostrar";
+            this.checkBoxMostrar.UseVisualStyleBackColor = true;
+            this.checkBoxMostrar.CheckedChanged += new System.EventHandler(this.checkBoxMostrar_CheckedChanged);
             // 
-            // labelRepeatContrasenya
+            // textBoxRepeatContrasenya
             // 
-            this.labelRepeatContrasenya.AutoSize = true;
-            this.labelRepeatContrasenya.Location = new System.Drawing.Point(27, 171);
-            this.labelRepeatContrasenya.Name = "labelRepeatContrasenya";
-            this.labelRepeatContrasenya.Size = new System.Drawing.Size(103, 13);
-            this.labelRepeatContrasenya.TabIndex = 3;
-            this.labelRepeatContrasenya.Text = "Repetir Contrasenya";
+            this.textBoxRepeatContrasenya.Location = new System.Drawing.Point(206, 233);
+            this.textBoxRepeatContrasenya.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxRepeatContrasenya.Name = "textBoxRepeatContrasenya";
+            this.textBoxRepeatContrasenya.Size = new System.Drawing.Size(326, 25);
+            this.textBoxRepeatContrasenya.TabIndex = 8;
+            this.textBoxRepeatContrasenya.UseSystemPasswordChar = true;
+            this.textBoxRepeatContrasenya.TextChanged += new System.EventHandler(this.textBoxRepeatContrasenya_TextChanged);
+            // 
+            // textBoxContrasenya
+            // 
+            this.textBoxContrasenya.Location = new System.Drawing.Point(206, 165);
+            this.textBoxContrasenya.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxContrasenya.Name = "textBoxContrasenya";
+            this.textBoxContrasenya.Size = new System.Drawing.Size(326, 25);
+            this.textBoxContrasenya.TabIndex = 7;
+            this.textBoxContrasenya.UseSystemPasswordChar = true;
+            // 
+            // textBoxNomEdit
+            // 
+            this.textBoxNomEdit.Location = new System.Drawing.Point(206, 100);
+            this.textBoxNomEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxNomEdit.Name = "textBoxNomEdit";
+            this.textBoxNomEdit.Size = new System.Drawing.Size(326, 25);
+            this.textBoxNomEdit.TabIndex = 6;
+            // 
+            // textBoxNickName
+            // 
+            this.textBoxNickName.Location = new System.Drawing.Point(206, 40);
+            this.textBoxNickName.Margin = new System.Windows.Forms.Padding(4);
+            this.textBoxNickName.Name = "textBoxNickName";
+            this.textBoxNickName.Size = new System.Drawing.Size(326, 25);
+            this.textBoxNickName.TabIndex = 5;
             // 
             // groupBoxPriveligis
             // 
             this.groupBoxPriveligis.Controls.Add(this.checkBoxEliminar);
             this.groupBoxPriveligis.Controls.Add(this.checkBoxEditar);
             this.groupBoxPriveligis.Controls.Add(this.checkBoxAfegir);
-            this.groupBoxPriveligis.Location = new System.Drawing.Point(30, 220);
+            this.groupBoxPriveligis.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBoxPriveligis.Location = new System.Drawing.Point(45, 305);
+            this.groupBoxPriveligis.Margin = new System.Windows.Forms.Padding(4);
             this.groupBoxPriveligis.Name = "groupBoxPriveligis";
-            this.groupBoxPriveligis.Size = new System.Drawing.Size(326, 49);
+            this.groupBoxPriveligis.Padding = new System.Windows.Forms.Padding(4);
+            this.groupBoxPriveligis.Size = new System.Drawing.Size(489, 63);
             this.groupBoxPriveligis.TabIndex = 4;
             this.groupBoxPriveligis.TabStop = false;
             this.groupBoxPriveligis.Text = "Privilegis";
             // 
-            // textBoxNom
-            // 
-            this.textBoxNom.Location = new System.Drawing.Point(137, 29);
-            this.textBoxNom.Name = "textBoxNom";
-            this.textBoxNom.Size = new System.Drawing.Size(219, 20);
-            this.textBoxNom.TabIndex = 5;
-            // 
-            // textBoxNickName
-            // 
-            this.textBoxNickName.Location = new System.Drawing.Point(137, 72);
-            this.textBoxNickName.Name = "textBoxNickName";
-            this.textBoxNickName.Size = new System.Drawing.Size(219, 20);
-            this.textBoxNickName.TabIndex = 6;
-            // 
-            // textBoxContrasenya
-            // 
-            this.textBoxContrasenya.Location = new System.Drawing.Point(137, 119);
-            this.textBoxContrasenya.Name = "textBoxContrasenya";
-            this.textBoxContrasenya.Size = new System.Drawing.Size(219, 20);
-            this.textBoxContrasenya.TabIndex = 7;
-            this.textBoxContrasenya.UseSystemPasswordChar = true;
-            // 
-            // textBoxRepeatContrasenya
-            // 
-            this.textBoxRepeatContrasenya.Location = new System.Drawing.Point(137, 168);
-            this.textBoxRepeatContrasenya.Name = "textBoxRepeatContrasenya";
-            this.textBoxRepeatContrasenya.Size = new System.Drawing.Size(219, 20);
-            this.textBoxRepeatContrasenya.TabIndex = 8;
-            this.textBoxRepeatContrasenya.UseSystemPasswordChar = true;
-            // 
-            // checkBoxAfegir
-            // 
-            this.checkBoxAfegir.AutoSize = true;
-            this.checkBoxAfegir.Location = new System.Drawing.Point(6, 19);
-            this.checkBoxAfegir.Name = "checkBoxAfegir";
-            this.checkBoxAfegir.Size = new System.Drawing.Size(53, 17);
-            this.checkBoxAfegir.TabIndex = 0;
-            this.checkBoxAfegir.Text = "Afegir";
-            this.checkBoxAfegir.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxEditar
-            // 
-            this.checkBoxEditar.AutoSize = true;
-            this.checkBoxEditar.Location = new System.Drawing.Point(132, 19);
-            this.checkBoxEditar.Name = "checkBoxEditar";
-            this.checkBoxEditar.Size = new System.Drawing.Size(53, 17);
-            this.checkBoxEditar.TabIndex = 1;
-            this.checkBoxEditar.Text = "Editar";
-            this.checkBoxEditar.UseVisualStyleBackColor = true;
-            // 
             // checkBoxEliminar
             // 
             this.checkBoxEliminar.AutoSize = true;
-            this.checkBoxEliminar.Location = new System.Drawing.Point(258, 19);
+            this.checkBoxEliminar.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxEliminar.Location = new System.Drawing.Point(387, 26);
+            this.checkBoxEliminar.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxEliminar.Name = "checkBoxEliminar";
-            this.checkBoxEliminar.Size = new System.Drawing.Size(62, 17);
+            this.checkBoxEliminar.Size = new System.Drawing.Size(84, 22);
             this.checkBoxEliminar.TabIndex = 2;
             this.checkBoxEliminar.Text = "Eliminar";
             this.checkBoxEliminar.UseVisualStyleBackColor = true;
             // 
-            // checkBoxMostrar
+            // checkBoxEditar
             // 
-            this.checkBoxMostrar.AutoSize = true;
-            this.checkBoxMostrar.Location = new System.Drawing.Point(363, 122);
-            this.checkBoxMostrar.Name = "checkBoxMostrar";
-            this.checkBoxMostrar.Size = new System.Drawing.Size(61, 17);
-            this.checkBoxMostrar.TabIndex = 9;
-            this.checkBoxMostrar.Text = "Mostrar";
-            this.checkBoxMostrar.UseVisualStyleBackColor = true;
-            this.checkBoxMostrar.CheckedChanged += new System.EventHandler(this.checkBoxMostrar_CheckedChanged);
+            this.checkBoxEditar.AutoSize = true;
+            this.checkBoxEditar.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxEditar.Location = new System.Drawing.Point(203, 26);
+            this.checkBoxEditar.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxEditar.Name = "checkBoxEditar";
+            this.checkBoxEditar.Size = new System.Drawing.Size(69, 22);
+            this.checkBoxEditar.TabIndex = 1;
+            this.checkBoxEditar.Text = "Editar";
+            this.checkBoxEditar.UseVisualStyleBackColor = true;
             // 
-            // checkBoxMostrarRepeat
+            // checkBoxAfegir
             // 
-            this.checkBoxMostrarRepeat.AutoSize = true;
-            this.checkBoxMostrarRepeat.Location = new System.Drawing.Point(362, 170);
-            this.checkBoxMostrarRepeat.Name = "checkBoxMostrarRepeat";
-            this.checkBoxMostrarRepeat.Size = new System.Drawing.Size(61, 17);
-            this.checkBoxMostrarRepeat.TabIndex = 10;
-            this.checkBoxMostrarRepeat.Text = "Mostrar";
-            this.checkBoxMostrarRepeat.UseVisualStyleBackColor = true;
-            this.checkBoxMostrarRepeat.CheckedChanged += new System.EventHandler(this.checkBoxMostrarRepeat_CheckedChanged);
+            this.checkBoxAfegir.AutoSize = true;
+            this.checkBoxAfegir.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxAfegir.Location = new System.Drawing.Point(23, 26);
+            this.checkBoxAfegir.Margin = new System.Windows.Forms.Padding(4);
+            this.checkBoxAfegir.Name = "checkBoxAfegir";
+            this.checkBoxAfegir.Size = new System.Drawing.Size(69, 22);
+            this.checkBoxAfegir.TabIndex = 0;
+            this.checkBoxAfegir.Text = "Afegir";
+            this.checkBoxAfegir.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // labelRepeatContrasenya
             // 
-            this.button4.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.button4.ForeColor = System.Drawing.Color.Cyan;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.Location = new System.Drawing.Point(372, 278);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(41, 47);
-            this.button4.TabIndex = 7;
-            this.button4.UseVisualStyleBackColor = false;
+            this.labelRepeatContrasenya.AutoSize = true;
+            this.labelRepeatContrasenya.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRepeatContrasenya.Location = new System.Drawing.Point(40, 237);
+            this.labelRepeatContrasenya.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelRepeatContrasenya.Name = "labelRepeatContrasenya";
+            this.labelRepeatContrasenya.Size = new System.Drawing.Size(154, 18);
+            this.labelRepeatContrasenya.TabIndex = 3;
+            this.labelRepeatContrasenya.Text = "Repetir Contrasenya";
+            // 
+            // labelContrasenya
+            // 
+            this.labelContrasenya.AutoSize = true;
+            this.labelContrasenya.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelContrasenya.Location = new System.Drawing.Point(40, 169);
+            this.labelContrasenya.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelContrasenya.Name = "labelContrasenya";
+            this.labelContrasenya.Size = new System.Drawing.Size(97, 18);
+            this.labelContrasenya.TabIndex = 2;
+            this.labelContrasenya.Text = "Contrasenya";
+            // 
+            // labelNickname
+            // 
+            this.labelNickname.AutoSize = true;
+            this.labelNickname.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNickname.Location = new System.Drawing.Point(40, 44);
+            this.labelNickname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNickname.Name = "labelNickname";
+            this.labelNickname.Size = new System.Drawing.Size(79, 18);
+            this.labelNickname.TabIndex = 1;
+            this.labelNickname.Text = "NickName";
+            // 
+            // labelNom
+            // 
+            this.labelNom.AutoSize = true;
+            this.labelNom.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelNom.Location = new System.Drawing.Point(42, 103);
+            this.labelNom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelNom.Name = "labelNom";
+            this.labelNom.Size = new System.Drawing.Size(40, 18);
+            this.labelNom.TabIndex = 0;
+            this.labelNom.Text = "Nom";
             // 
             // FormEditUsuaris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(464, 361);
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.ClientSize = new System.Drawing.Size(696, 500);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBoxDadesUsuari);
+            this.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormEditUsuaris";
-            this.Text = "FormEditUsuaris";
+            this.Text = "FilmZ";
+            this.Load += new System.EventHandler(this.FormEditUsuaris_Load);
             this.groupBoxDadesUsuari.ResumeLayout(false);
             this.groupBoxDadesUsuari.PerformLayout();
             this.groupBoxPriveligis.ResumeLayout(false);
@@ -232,8 +267,8 @@
         private System.Windows.Forms.GroupBox groupBoxDadesUsuari;
         private System.Windows.Forms.TextBox textBoxRepeatContrasenya;
         private System.Windows.Forms.TextBox textBoxContrasenya;
+        private System.Windows.Forms.TextBox textBoxNomEdit;
         private System.Windows.Forms.TextBox textBoxNickName;
-        private System.Windows.Forms.TextBox textBoxNom;
         private System.Windows.Forms.GroupBox groupBoxPriveligis;
         private System.Windows.Forms.Label labelRepeatContrasenya;
         private System.Windows.Forms.Label labelContrasenya;
@@ -244,6 +279,6 @@
         private System.Windows.Forms.CheckBox checkBoxAfegir;
         private System.Windows.Forms.CheckBox checkBoxMostrarRepeat;
         private System.Windows.Forms.CheckBox checkBoxMostrar;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button buttonAceptarEditUsers;
     }
 }
