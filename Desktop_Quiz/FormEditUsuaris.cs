@@ -74,16 +74,12 @@ namespace Desktop_Quiz
         public bool ValidarUser()
         {
             bool validReturn = true;
-            if (textBoxNickName.Text.Equals("") || textBoxNomEdit.Text.Equals("") || textBoxContrasenya.Text.Equals("") || textBoxRepeatContrasenya.Text.Equals(""))
+            if (textBoxNickName.Text.Equals("") || textBoxNomEdit.Text.Equals(""))
             {
                 MessageBox.Show("No puedes dejar ningún campo en blanco", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 validReturn = false; 
             }
-            if (!textBoxContrasenya.Text.Equals(textBoxRepeatContrasenya.Text))
-            {
-                MessageBox.Show("Las contraseñas no coinciden.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                validReturn = false;
-            }
+            
             return validReturn;
         }
 
@@ -95,6 +91,25 @@ namespace Desktop_Quiz
         {
             int UserPosition = UsuarisRepositori.users.FindIndex(x => x.nickname == nickname);
             return UserPosition;    
+        }
+
+
+        private bool passwordCheck()
+        {
+            bool validReturn = false;
+            if (!textBoxContrasenya.Text.Equals("") && !textBoxRepeatContrasenya.Text.Equals(""))
+            {
+                if (!textBoxContrasenya.Text.Equals(textBoxRepeatContrasenya.Text))
+                {
+                    MessageBox.Show("Las contraseñas no coinciden.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                else
+                {
+                    validReturn = true;
+                }
+
+            }
+            return validReturn;
         }
 
         /**
@@ -128,7 +143,9 @@ namespace Desktop_Quiz
 
             if (nickname == null)
             {
-                if (ValidarUser())
+                checkModifyPassw.Checked.Equals(true);
+
+                if (ValidarUser() && passwordCheck())
                 {
                     //Afegir nou usuari
                     Usuari usuariAfegir = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
@@ -141,17 +158,38 @@ namespace Desktop_Quiz
             }
             else
             {
+                
                     if (ValidarUser())
                     {
-                        //Editar usuari existen
-
+                    if (checkModifyPassw.Checked)
+                    {
                         Usuari usuariEdited = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
+                    }
+                    else
+                    {
+                        Usuari usuariEdited = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
+                    }
+
+                    //Editar usuari 
 
                         UsuarisRepositori.EditUser(usuariEdited, userPosition());
                         UsuarisRepositori.SaveUsers();
                         this.Close();
                     }
             }
+        }
+
+        /**
+        * Función que cierra el formulario
+        */
+        private void buttonCancelarEdit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void checkModifyPassw_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
