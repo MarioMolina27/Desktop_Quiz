@@ -59,6 +59,7 @@
             this.labelResposta2 = new System.Windows.Forms.Label();
             this.labelPregunta = new System.Windows.Forms.Label();
             this.labelResposta1 = new System.Windows.Forms.Label();
+            this.buttonCancelar = new System.Windows.Forms.Button();
             this.groupBoxPelicules.SuspendLayout();
             this.groupBoxDificultat.SuspendLayout();
             this.groupBoxRespostaCorrecte.SuspendLayout();
@@ -66,6 +67,7 @@
             // 
             // groupBoxPelicules
             // 
+            this.groupBoxPelicules.Controls.Add(this.buttonCancelar);
             this.groupBoxPelicules.Controls.Add(this.buttonGuardar);
             this.groupBoxPelicules.Controls.Add(this.buttonAudioAceptar);
             this.groupBoxPelicules.Controls.Add(this.buttonImatgeAceptar);
@@ -87,7 +89,7 @@
             this.groupBoxPelicules.Controls.Add(this.labelResposta2);
             this.groupBoxPelicules.Controls.Add(this.labelPregunta);
             this.groupBoxPelicules.Controls.Add(this.labelResposta1);
-            this.groupBoxPelicules.Location = new System.Drawing.Point(12, 11);
+            this.groupBoxPelicules.Location = new System.Drawing.Point(12, 12);
             this.groupBoxPelicules.Name = "groupBoxPelicules";
             this.groupBoxPelicules.Size = new System.Drawing.Size(1313, 726);
             this.groupBoxPelicules.TabIndex = 1;
@@ -382,6 +384,19 @@
             this.labelResposta1.TabIndex = 4;
             this.labelResposta1.Text = "Resposta 1";
             // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.ImageKey = "(ninguno)";
+            this.buttonCancelar.ImageList = this.imageList1;
+            this.buttonCancelar.Location = new System.Drawing.Point(913, 618);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(175, 70);
+            this.buttonCancelar.TabIndex = 29;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            // 
             // FormEditPreguntes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 22F);
@@ -435,5 +450,6 @@
         private System.Windows.Forms.Label labelResposta2;
         private System.Windows.Forms.Button buttonGuardar;
         private System.Windows.Forms.ImageList imageList1;
+        private System.Windows.Forms.Button buttonCancelar;
     }
 }

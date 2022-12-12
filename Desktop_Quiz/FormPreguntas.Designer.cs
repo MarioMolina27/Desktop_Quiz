@@ -241,6 +241,7 @@
             // radioButtonCategoria
             // 
             this.radioButtonCategoria.AutoSize = true;
+            this.radioButtonCategoria.Checked = true;
             this.radioButtonCategoria.Location = new System.Drawing.Point(41, 38);
             this.radioButtonCategoria.Margin = new System.Windows.Forms.Padding(4);
             this.radioButtonCategoria.Name = "radioButtonCategoria";
@@ -311,7 +312,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gold;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.ControlBox = false;
             this.Controls.Add(this.toolStripBackOption);
@@ -321,6 +322,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormPreguntas";
             this.Text = "FilmZ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormPreguntas_Load);
             this.groupBoxPreguntes.ResumeLayout(false);
             this.groupBoxPreguntes.PerformLayout();

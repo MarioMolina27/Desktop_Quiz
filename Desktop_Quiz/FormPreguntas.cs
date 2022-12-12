@@ -131,7 +131,9 @@ namespace Desktop_Quiz
             {
                 buttonModificar.Visible = false;
             }
+            ordenar();
         }
+       
 
         private void buttonAfegir_Click(object sender, EventArgs e)
         {

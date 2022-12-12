@@ -31,6 +31,12 @@ namespace Desktop_Quiz
         public BindingList<Pelicula> ENG_DIFICIL { get; set; }
         public BindingList<Pelicula> ENG_MEDIANO { get; set; }
         public BindingList<Pelicula> ENG_FACIL { get; set; }
+
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         public FormEditPreguntes()
         {
             InitializeComponent();
