@@ -36,11 +36,6 @@ namespace Desktop_Quiz
             InitializeComponent();
         }
 
-        private void groupBoxDadesPersonatge_Enter(object sender, EventArgs e)
-        {
-
-        }
-
         public FormEditPersonatges(String nomPers,String descripcioPers,String genere,double percEncerts,String rutaPers)
         {
 
@@ -53,7 +48,33 @@ namespace Desktop_Quiz
             InitializeComponent();
 
         }
-        
+
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+
+            Personatge p = new Personatge();
+
+
+
+            if (textBoxNomPers.Text.Equals("") | textBoxDescripcioPers.Text.Equals("") | comboBoxGenere.Text.Equals("") | textBoxRutaImg.Equals(""))
+            {
+                MessageBox.Show("Eres bobo");
+            }
+            else {
+
+                p.nomPers = textBoxNomPers.Text;
+                p.descripcioPers = textBoxDescripcioPers.Text;
+                p.genere = comboBoxGenere.Text;
+                p.percEncerts = double.Parse(textBoxEncerts.Text);
+                p.rutaPers = textBoxRutaImg.Text;
+
+                PersRepo.personatges.Add(p);
+
+            }
+
+            this.Close();
+        }
+
         private void buttonGuardarEdit_Click(object sender, EventArgs e)
         {
             Personatge p = new Personatge();
@@ -70,16 +91,16 @@ namespace Desktop_Quiz
 
             } else {
             
-            if (p.rutaPers.Equals(""))
-            {
+                if (p.rutaPers.Equals(""))
+                {
 
-                p.rutaPers = "Pendent de ruta";
+                    p.rutaPers = "Pendent de ruta";
 
-            }
+                }
 
-            PersRepo.personatges.Add(p);
+                PersRepo.personatges.Add(p);
 
-            this.Close();
+                this.Close();
             }
 
         }

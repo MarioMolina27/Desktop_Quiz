@@ -42,12 +42,14 @@
             this.labelRutaImg = new System.Windows.Forms.Label();
             this.labelDescripcio = new System.Windows.Forms.Label();
             this.labelNom = new System.Windows.Forms.Label();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.groupBoxDadesPersonatge.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPers)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxDadesPersonatge
             // 
+            this.groupBoxDadesPersonatge.Controls.Add(this.buttonCancel);
             this.groupBoxDadesPersonatge.Controls.Add(this.comboBoxGenere);
             this.groupBoxDadesPersonatge.Controls.Add(this.textBoxEncerts);
             this.groupBoxDadesPersonatge.Controls.Add(this.labelEncerts);
@@ -68,7 +70,6 @@
             this.groupBoxDadesPersonatge.TabIndex = 0;
             this.groupBoxDadesPersonatge.TabStop = false;
             this.groupBoxDadesPersonatge.Text = "Dades personatge";
-            this.groupBoxDadesPersonatge.Enter += new System.EventHandler(this.groupBoxDadesPersonatge_Enter);
             // 
             // comboBoxGenere
             // 
@@ -116,7 +117,7 @@
             // 
             this.buttonGuardarEdit.BackColor = System.Drawing.SystemColors.Control;
             this.buttonGuardarEdit.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonGuardarEdit.Location = new System.Drawing.Point(303, 365);
+            this.buttonGuardarEdit.Location = new System.Drawing.Point(303, 311);
             this.buttonGuardarEdit.Margin = new System.Windows.Forms.Padding(4);
             this.buttonGuardarEdit.Name = "buttonGuardarEdit";
             this.buttonGuardarEdit.Size = new System.Drawing.Size(130, 50);
@@ -196,6 +197,19 @@
             this.labelNom.TabIndex = 0;
             this.labelNom.Text = "Nom";
             // 
+            // buttonCancel
+            // 
+            this.buttonCancel.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonCancel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.Location = new System.Drawing.Point(330, 386);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(82, 29);
+            this.buttonCancel.TabIndex = 15;
+            this.buttonCancel.Text = "Cancelar";
+            this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            // 
             // FormEditPersonatges
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -232,5 +246,6 @@
         private System.Windows.Forms.TextBox textBoxEncerts;
         private System.Windows.Forms.Label labelEncerts;
         private System.Windows.Forms.Label labelGenere;
+        private System.Windows.Forms.Button buttonCancel;
     }
 }
