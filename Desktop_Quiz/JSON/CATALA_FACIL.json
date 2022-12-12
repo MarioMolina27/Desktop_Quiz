@@ -1,17 +1,6 @@
 [
   {
     "id": "CAT_F_001",
-    "pregunta": "Que aspecte té Pennywise en IT?",
-    "resposta1": "Vampir",
-    "resposta2": "Pallasso",
-    "resposta3": "Ninot",
-    "resposta_correcte": 2,
-    "categoria": "Terror",
-    "imgaudio": null,
-    "dificultad": 1
-  },
-  {
-    "id": "CAT_F_002",
     "pregunta": "Quantes filles té Mamà?",
     "resposta1": "2",
     "resposta2": "3",
@@ -22,7 +11,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_003",
+    "id": "CAT_F_002",
     "pregunta": "On s'amaga la força misteriosa en la pelicula de Poltergeist?",
     "resposta1": "Darrere de la televisió",
     "resposta2": "Sota el sòl",
@@ -33,7 +22,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_004",
+    "id": "CAT_F_003",
     "pregunta": "On mort Marion Crane en la sinistra pelicula PSICOSI?",
     "resposta1": "En el bany",
     "resposta2": "A l'habitació",
@@ -44,7 +33,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_005",
+    "id": "CAT_F_004",
     "pregunta": "On transcorre la terrorifica trama de la pelicula REC?",
     "resposta1": "En un palau",
     "resposta2": "En un edifici",
@@ -66,7 +55,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_007",
+    "id": "CAT_F_006",
     "pregunta": "Com es diu el drac protagonista de Com ensinisrtar un Drac?",
     "resposta1": "Fulla",
     "resposta2": "Desdentat",
@@ -77,7 +66,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_008",
+    "id": "CAT_F_007",
     "pregunta": "Com es diu aquest personatge de Dora l'Exploradora?",
     "resposta1": "Zispas",
     "resposta2": "Botas",
@@ -88,7 +77,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_009",
+    "id": "CAT_F_008",
     "pregunta": "Quan sona aquesta SoundTrack que pel·lícula ens ve al cap?",
     "resposta1": "Frozen",
     "resposta2": "Bella i la Bèstia",
@@ -99,7 +88,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_010",
+    "id": "CAT_F_009",
     "pregunta": "Com es diu aquest personatge de Ice Age?",
     "resposta1": "Scrat",
     "resposta2": "Sid",
@@ -110,7 +99,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_011",
+    "id": "CAT_F_010",
     "pregunta": "Com es diu el vilà de la pel·lícula Peter Pan?",
     "resposta1": "Capità pota pal",
     "resposta2": "El rufià",
@@ -121,7 +110,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_012",
+    "id": "CAT_F_011",
     "pregunta": "De qui s'enamora l'Ase de la pel·lícula Shrek?",
     "resposta1": "D'un porc",
     "resposta2": "D'un altre ase",
@@ -132,7 +121,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_013",
+    "id": "CAT_F_012",
     "pregunta": "Qui va dirigir 2001: Una odissea de l'espai?",
     "resposta1": "Stanley Kubrick",
     "resposta2": "Peter Hyams",
@@ -143,7 +132,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_014",
+    "id": "CAT_F_013",
     "pregunta": "Com es diu la nau on ocorre tota l'acció de la pelicula Alien, el vuitè passatger?",
     "resposta1": "Nostromo",
     "resposta2": "Discovery One",
@@ -154,7 +143,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_015",
+    "id": "CAT_F_014",
     "pregunta": "Com es diu l'organització antagonista en la pelicula Blade Runner?",
     "resposta1": "Tyrell Corporation",
     "resposta2": "Cyberdyne Systems",
@@ -165,7 +154,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_016",
+    "id": "CAT_F_015",
     "pregunta": "Com es diu el simi cap en la saga del Planeta dels simis de 2011?",
     "resposta1": "César",
     "resposta2": "Koba",
@@ -176,7 +165,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_017",
+    "id": "CAT_F_016",
     "pregunta": "Com es diu el personatge al qual els personatges desperten a al meitat de la pelicula Interestellar?",
     "resposta1": "Dr  Mann",
     "resposta2": "Professor Brand",
@@ -187,7 +176,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_018",
+    "id": "CAT_F_017",
     "pregunta": "A quin any viatgen en la segona pelicula de Retorn al Futur?",
     "resposta1": "2015",
     "resposta2": "2045",
@@ -198,7 +187,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_019",
+    "id": "CAT_F_018",
     "pregunta": "Qui són els enemics d'Indiana Jones A la recerca de l'arca perduda?",
     "resposta1": "Espanyols",
     "resposta2": "Nazis",
@@ -209,7 +198,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_020",
+    "id": "CAT_F_019",
     "pregunta": "Qui és l'actor que fa d'antagonista en Fast and Furious 9?",
     "resposta1": "John Cena",
     "resposta2": "Dwyane Johnson",
@@ -220,7 +209,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_021",
+    "id": "CAT_F_020",
     "pregunta": "Que neteja LaRusso quan el senyor Miyagi li diu la famosa frase \"Donar cera, polir cera\" de Karate Kid?",
     "resposta1": "Cotxes",
     "resposta2": "La tanca",
@@ -231,7 +220,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_022",
+    "id": "CAT_F_021",
     "pregunta": "Qui pot aixecar el martell de Thor?",
     "resposta1": "Qui sigui digne",
     "resposta2": "Qui tingui la suficient força",
@@ -242,7 +231,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_023",
+    "id": "CAT_F_022",
     "pregunta": "Com es diu el vaixell de Davy Jones als Pirates del Carib?",
     "resposta1": "L'Holandès errant",
     "resposta2": "El vaixell de chanquete",
@@ -253,7 +242,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_024",
+    "id": "CAT_F_023",
     "pregunta": "Quin és el veritable nom de Darth Vader?",
     "resposta1": "Obi-Wan Kenobi",
     "resposta2": "Look Skywalker",
@@ -264,7 +253,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_025",
+    "id": "CAT_F_024",
     "pregunta": "Quin actor interpreta el paper protagonista a la pel·lícula El Sargent de Ferro?",
     "resposta1": "Morgan Freeman",
     "resposta2": "Clint Eastwood",
@@ -275,7 +264,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_026",
+    "id": "CAT_F_025",
     "pregunta": "On viu el protagonista del Show de Truman?",
     "resposta1": "En un plató de la grandària d'un poble",
     "resposta2": "En un plató de Hollywood",
@@ -286,7 +275,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_027",
+    "id": "CAT_F_026",
     "pregunta": "Quin és el nom del fill de Forrest Gumb?",
     "resposta1": "Forrest",
     "resposta2": "Timmy",
@@ -297,7 +286,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_028",
+    "id": "CAT_F_027",
     "pregunta": "Com es diu l'empresa que crea Forrest Gump ?",
     "resposta1": "Gambas Bubba Gump",
     "resposta2": "Forrest Electronics",
@@ -308,7 +297,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_029",
+    "id": "CAT_F_028",
     "pregunta": "Com es diu el programa al qual es presenta el Joker?",
     "resposta1": "Programa de Pablo Motos",
     "resposta2": "Programa de Tim Hervy",
@@ -319,7 +308,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAT_F_030",
+    "id": "CAT_F_029",
     "pregunta": "Qui interpreta el paper de Jack el protagonista de Titanic?",
     "resposta1": "Chris Evans",
     "resposta2": "Leonardo DiCaprio",
@@ -327,6 +316,17 @@
     "resposta_correcte": 2,
     "categoria": "Drama",
     "imgaudio": null,
+    "dificultad": 1
+  },
+  {
+    "id": "CAT_F_036",
+    "pregunta": "Que aspecte té Pennywise en IT?",
+    "resposta1": "Vampir",
+    "resposta2": "Pallasso",
+    "resposta3": "Ninot",
+    "resposta_correcte": 2,
+    "categoria": "Terror",
+    "imgaudio": "",
     "dificultad": 1
   }
 ]

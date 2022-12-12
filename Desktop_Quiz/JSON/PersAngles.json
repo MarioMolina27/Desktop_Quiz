@@ -1,12 +1,5 @@
 [
   {
-    "nomPers": "Cap",
-    "descripcioPers": "You have answered all the questions wrong,  you may have to watch some movies before answering the quiz",
-    "genere": "General",
-    "percEncerts": 0,
-    "rutaPers": ""
-  },
-  {
     "nomPers": "Uncharted",
     "descripcioPers": "The category where you have hit the most is Action, and still you haven't done well 7w7",
     "genere": "Acció",
@@ -115,7 +108,14 @@
     "nomPers": "Totes",
     "descripcioPers": "You have answered all the questions form all the categories right, congratulations!!!",
     "genere": "General",
-    "percEncerts": 100,
+    "percEncerts": 100.0,
     "rutaPers": ""
+  },
+  {
+    "nomPers": "Cap",
+    "descripcioPers": "You have answered all the questions wrong,  you may have to watch some movies before answering the quiz",
+    "genere": "General",
+    "percEncerts": 0.0,
+    "rutaPers": "Pendent de ruta"
   }
 ]
