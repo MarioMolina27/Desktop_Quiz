@@ -131,7 +131,9 @@ namespace Desktop_Quiz
             {
                 buttonModificar.Visible = false;
             }
+            ordenar();
         }
+       
 
         private void buttonAfegir_Click(object sender, EventArgs e)
         {
@@ -311,11 +313,12 @@ namespace Desktop_Quiz
                                  CAST_FACIL, CAT_DIFICIL, CAT_MEDIANO,
                                  CAT_FACIL, ENG_DIFICIL,  ENG_MEDIANO,
                                 ENG_FACIL,this.usuari);
-                eliminarElemento(id);
                 p2.ShowDialog();
                 updateDataGrid();
                 updateListAllLanguages();
+                ordenar();
                 guardarJSON();
+                
             }
             else
             {
@@ -346,6 +349,7 @@ namespace Desktop_Quiz
                 {
                     eliminarElemento(id);
                 }
+                ordenar();
                 guardarJSON();
             }
             else
@@ -356,7 +360,7 @@ namespace Desktop_Quiz
         /**
          * Funció que busca a totes les llistes l'id que nosaltres l'indiquem i el borrà on estigui
          */
-        private void eliminarElemento(String id)
+        public  void eliminarElemento(String id)
         {
            
                 String txtID = obtenerTxtID(id);
@@ -364,13 +368,13 @@ namespace Desktop_Quiz
                 switch (txtID)
                 {
                     case "CAT_F":
-                        userPosition = retornarIndice(id, this.CAT_FACIL);
-                        CAT_FACIL.RemoveAt(userPosition);
+                         userPosition = retornarIndice(id, this.CAT_FACIL);
+                         CAT_FACIL.RemoveAt(userPosition);
                          CAT_FACIL = UpdateIDs(txtID + "_", this.CAT_FACIL); 
                         break;
                     case "CAT_M":
                         userPosition = retornarIndice(id, this.CAT_MEDIANO);
-                        CAT_MEDIANO.RemoveAt(userPosition);
+                         CAT_MEDIANO.RemoveAt(userPosition);
                          CAT_MEDIANO = UpdateIDs(txtID + "_", this.CAT_MEDIANO); 
                         break;
                     case "CAT_D":
@@ -440,7 +444,7 @@ namespace Desktop_Quiz
         /**
          * Funció que asigna un nou id a totes les preguntes d'una llista
          */
-        private static BindingList<Pelicula> UpdateIDs(String txtID,BindingList<Pelicula> lista)
+        public static BindingList<Pelicula> UpdateIDs(String txtID,BindingList<Pelicula> lista)
         {
             int num = 1;
             for (int i = 0; i < lista.Count; i++)

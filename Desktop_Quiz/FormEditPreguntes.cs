@@ -31,6 +31,12 @@ namespace Desktop_Quiz
         public BindingList<Pelicula> ENG_DIFICIL { get; set; }
         public BindingList<Pelicula> ENG_MEDIANO { get; set; }
         public BindingList<Pelicula> ENG_FACIL { get; set; }
+        
+        private void buttonCancelar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
         public FormEditPreguntes()
         {
             InitializeComponent();
@@ -39,7 +45,7 @@ namespace Desktop_Quiz
         public FormEditPreguntes(BindingList<Pelicula> peliculaList, BindingList<Pelicula> CAST_DIFICIL, BindingList<Pelicula> CAST_MEDIANO,
                                 BindingList<Pelicula> CAST_FACIL, BindingList<Pelicula> CAT_DIFICIL, BindingList<Pelicula> CAT_MEDIANO,
                                 BindingList<Pelicula> CAT_FACIL, BindingList<Pelicula> ENG_DIFICIL, BindingList<Pelicula> ENG_MEDIANO,
-                                BindingList<Pelicula> ENG_FACIL,    Usuari u)
+                                BindingList<Pelicula> ENG_FACIL,Usuari u)
         {
             this.peliculaList = peliculaList;
             this.CAST_DIFICIL = CAST_DIFICIL;
@@ -120,6 +126,7 @@ namespace Desktop_Quiz
          */
         private void buttonGuardar_Click_1(object sender, EventArgs e)
         {
+            eliminarElemento();
             String pregunta = textBoxPregunta.Text;
             String resposta1 = textBoxResposta1.Text;
             String resposta2 = textBoxResposta2.Text;
@@ -247,6 +254,60 @@ namespace Desktop_Quiz
                 }
            
             this.Close();
+        }
+        public void eliminarElemento()
+        {
+            String txtID = id.Substring(0, 5);
+            int userPosition;
+            switch (txtID)
+            {
+                case "CAT_F":
+                    userPosition = FormPreguntas.retornarIndice(id, this.CAT_FACIL);
+                    CAT_FACIL.RemoveAt(userPosition);
+                    CAT_FACIL = FormPreguntas.UpdateIDs(txtID + "_", this.CAT_FACIL);
+                    break;
+                case "CAT_M":
+                    userPosition = FormPreguntas.retornarIndice(id, this.CAT_MEDIANO);
+                    CAT_MEDIANO.RemoveAt(userPosition);
+                    CAT_MEDIANO = FormPreguntas.UpdateIDs(txtID + "_", this.CAT_MEDIANO);
+                    break;
+                case "CAT_D":
+                    userPosition = FormPreguntas.retornarIndice(id, this.CAT_DIFICIL);
+                    CAT_DIFICIL.RemoveAt(userPosition);
+                    CAT_DIFICIL = FormPreguntas.UpdateIDs(txtID + "_", this.CAT_DIFICIL);
+                    break;
+                case "CAS_F":
+                    userPosition = FormPreguntas.retornarIndice(id, this.CAST_FACIL);
+                    CAST_FACIL.RemoveAt(userPosition);
+                    CAST_FACIL = FormPreguntas.UpdateIDs(txtID + "_", this.CAST_FACIL);
+                    break;
+                case "CAS_M":
+                    userPosition = FormPreguntas.retornarIndice(id, this.CAST_MEDIANO);
+                    CAST_MEDIANO.RemoveAt(userPosition);
+                    CAST_MEDIANO = FormPreguntas.UpdateIDs(txtID + "_", this.CAST_MEDIANO);
+                    break;
+                case "CAS_D":
+                    userPosition = FormPreguntas.retornarIndice(id, this.CAST_DIFICIL);
+                    CAST_DIFICIL.RemoveAt(userPosition);
+                    CAST_DIFICIL = FormPreguntas.UpdateIDs(txtID + "_", this.CAST_DIFICIL);
+                    break;
+                case "EN_F_":
+                    userPosition = FormPreguntas.retornarIndice(id, this.ENG_FACIL);
+                    ENG_FACIL.RemoveAt(userPosition);
+                    ENG_FACIL = FormPreguntas.UpdateIDs(txtID, this.ENG_FACIL);
+                    break;
+                case "EN_M_":
+                    userPosition = FormPreguntas.retornarIndice(id, this.ENG_MEDIANO);
+                    ENG_MEDIANO.RemoveAt(userPosition);
+                    ENG_MEDIANO = FormPreguntas.UpdateIDs(txtID, this.ENG_MEDIANO);
+                    break;
+                case "EN_D_":
+                    userPosition = FormPreguntas.retornarIndice(id, this.ENG_DIFICIL);
+                    ENG_DIFICIL.RemoveAt(userPosition);
+                    ENG_DIFICIL = FormPreguntas.UpdateIDs(txtID, this.ENG_DIFICIL);
+                    break;
+
+            }
         }
 
         /**

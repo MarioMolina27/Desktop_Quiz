@@ -1,28 +1,6 @@
 [
   {
     "id": "CAS_F_001",
-    "pregunta": "¿Que aspecto tiene Pennywise en IT?",
-    "resposta1": "Vampiro",
-    "resposta2": "Payaso",
-    "resposta3": "Muñeco",
-    "resposta_correcte": 2,
-    "categoria": "Terror",
-    "imgaudio": null,
-    "dificultad": 1
-  },
-  {
-    "id": "CAS_F_002",
-    "pregunta": "¿Cuantas hijas tiene mamá?",
-    "resposta1": "2",
-    "resposta2": "3",
-    "resposta3": "5",
-    "resposta_correcte": 1,
-    "categoria": "Terror",
-    "imgaudio": null,
-    "dificultad": 1
-  },
-  {
-    "id": "CAS_F_003",
     "pregunta": "¿Donde se enconde la fuerza misteriosa en la pelicula de Poltergeist?",
     "resposta1": "Detrás de la televisión",
     "resposta2": "Debajo del suelo",
@@ -33,7 +11,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_004",
+    "id": "CAS_F_002",
     "pregunta": "¿Donde muere Marion Crane en la siniestra pelicula PSICOSIS?",
     "resposta1": "En el baño",
     "resposta2": "En la habitación",
@@ -44,7 +22,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_005",
+    "id": "CAS_F_003",
     "pregunta": "¿Donde transcurre la terrorifica trama de la pelicula REC?",
     "resposta1": "En un palacio",
     "resposta2": "En un edificio",
@@ -55,7 +33,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_006",
+    "id": "CAS_F_004",
     "pregunta": "Personaje al cual no se le ve el rostro. Muy alto y delgado con unos brazos extremadamente largos",
     "resposta1": "Chuky",
     "resposta2": "Freddy Krueger",
@@ -66,7 +44,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_007",
+    "id": "CAS_F_005",
     "pregunta": "¿Como se llama el dragón protagonista en Como entrenar a tu Dragón??",
     "resposta1": "Cuchilla",
     "resposta2": "Desdentado",
@@ -77,7 +55,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_008",
+    "id": "CAS_F_006",
     "pregunta": "¿Como se llama este personaje de Dora la Exploradora?",
     "resposta1": "Zispas",
     "resposta2": "Botas",
@@ -88,7 +66,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_009",
+    "id": "CAS_F_007",
     "pregunta": "¿Cuando suena esta SoundTrack que película nos viene en la cabeza?",
     "resposta1": "Frozen",
     "resposta2": "Bella y la Bestia",
@@ -99,7 +77,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_010",
+    "id": "CAS_F_008",
     "pregunta": "¿Como se llama este personaje de Ice Age?",
     "resposta1": "Scrat",
     "resposta2": "Sid",
@@ -110,7 +88,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_011",
+    "id": "CAS_F_009",
     "pregunta": "¿ Como se llama el villano de la película Peter Pan?",
     "resposta1": "Capitán pata palo",
     "resposta2": "El rufian",
@@ -121,7 +99,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_012",
+    "id": "CAS_F_010",
     "pregunta": "¿De quien se enamora Asno en Shrek?",
     "resposta1": "De un cerdo",
     "resposta2": "De otro asno",
@@ -132,7 +110,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_013",
+    "id": "CAS_F_011",
     "pregunta": "¿Quien dirigio 2001: Una odisea del espacio?",
     "resposta1": "Stanley Kubrick",
     "resposta2": "Peter Hyams",
@@ -143,7 +121,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_014",
+    "id": "CAS_F_012",
     "pregunta": "¿En Alien, el octavo pasajero como se llama la nave donde ocurre todo?",
     "resposta1": "Nostromo",
     "resposta2": "Discovery One",
@@ -154,7 +132,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_015",
+    "id": "CAS_F_013",
     "pregunta": "¿Como se llama la organización antagonista en la pelicula Blade Runner?",
     "resposta1": "Tyrell Corporation",
     "resposta2": "Cyberdyne Systems",
@@ -165,7 +143,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_016",
+    "id": "CAS_F_014",
     "pregunta": "¿Como se llama el simo jefe en la saga del Planeta de los simios de 2011?",
     "resposta1": "César",
     "resposta2": "Koba",
@@ -176,7 +154,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_017",
+    "id": "CAS_F_015",
     "pregunta": "¿Como se llama el personaje al que despiertan a la mitad de la pelicula Interestellar?",
     "resposta1": "Dr  Mann",
     "resposta2": "Profesor Brand",
@@ -187,7 +165,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_018",
+    "id": "CAS_F_016",
     "pregunta": "¿A que año viajan en la segunda pelicula de Regreso al Futuro?",
     "resposta1": "2015",
     "resposta2": "2045",
@@ -198,7 +176,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_019",
+    "id": "CAS_F_017",
     "pregunta": "¿Quienes son los enemigos de Indiana Jones En busca del arca perdida?",
     "resposta1": "Españoles",
     "resposta2": "Nazis",
@@ -209,7 +187,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_020",
+    "id": "CAS_F_018",
     "pregunta": "¿Quien es el actor que hace de antagonista en Fast and Furious 9?",
     "resposta1": "John Cena",
     "resposta2": "Dwyane Johnson",
@@ -220,7 +198,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_021",
+    "id": "CAS_F_019",
     "pregunta": "¿Que limpia LaRusso cuando el señor Miyagi le dice la famosa frase \"Dar cera, pulir cera\" en Karate Kid I?",
     "resposta1": "Coches",
     "resposta2": "La valla",
@@ -231,7 +209,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_022",
+    "id": "CAS_F_020",
     "pregunta": "¿Quien puede levantar el martillo de Thor?",
     "resposta1": "Quien sea digno",
     "resposta2": "Quien tenga la suficiente fuerza",
@@ -242,7 +220,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_023",
+    "id": "CAS_F_021",
     "pregunta": "¿Como se llama el barco de Davy Jones en Los Piratas del Caribe?",
     "resposta1": "El Holandés herrante",
     "resposta2": "El barco de chanquete",
@@ -253,7 +231,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_024",
+    "id": "CAS_F_022",
     "pregunta": "¿Cual es el verdadero nombre de Darth Vader?",
     "resposta1": "Obi-Wan Kenobi",
     "resposta2": "Look Skywalker",
@@ -264,7 +242,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_025",
+    "id": "CAS_F_023",
     "pregunta": "¿Que actor interpreta al papel protagonista en el Sargento de Hierro?",
     "resposta1": "Morgan Freeman",
     "resposta2": "Clint Eastwood",
@@ -275,7 +253,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_026",
+    "id": "CAS_F_024",
     "pregunta": "¿Donde vive el protagonista del Show de Truman?",
     "resposta1": "En un plató del tamaño de un pueblo",
     "resposta2": "En un plató de Hollywood",
@@ -286,7 +264,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_027",
+    "id": "CAS_F_025",
     "pregunta": "¿Cual es el nombre del hijo de Forrest Gumb?",
     "resposta1": "Forrest",
     "resposta2": "Timmy",
@@ -297,7 +275,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_028",
+    "id": "CAS_F_026",
     "pregunta": "¿ Como se llama la empresa que crea Forrest Gump ?",
     "resposta1": "Gambas Bubba Gump",
     "resposta2": "Forrest Electronics",
@@ -308,7 +286,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_029",
+    "id": "CAS_F_027",
     "pregunta": "¿ Como se llama el programa al que se presenta el Joker?",
     "resposta1": "Programa de Pablo Motos",
     "resposta2": "Programa de Tim Hervy",
@@ -319,7 +297,7 @@
     "dificultad": 1
   },
   {
-    "id": "CAS_F_030",
+    "id": "CAS_F_028",
     "pregunta": "¿Quien interpreta el papel de Jack el protagonista de Titanic?",
     "resposta1": "Chris Evans",
     "resposta2": "Leonardo DiCaprio",
@@ -327,6 +305,17 @@
     "resposta_correcte": 2,
     "categoria": "Drama",
     "imgaudio": null,
+    "dificultad": 1
+  },
+  {
+    "id": "CAS_F_036",
+    "pregunta": "¿Cuantas hijas tiene mama?",
+    "resposta1": "2",
+    "resposta2": "3",
+    "resposta3": "5",
+    "resposta_correcte": 1,
+    "categoria": "Terror",
+    "imgaudio": "",
     "dificultad": 1
   }
 ]
