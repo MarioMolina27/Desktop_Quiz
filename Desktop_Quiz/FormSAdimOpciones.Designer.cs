@@ -36,6 +36,7 @@
             this.buttonPreguntes = new System.Windows.Forms.Button();
             this.toolStripBackOption = new System.Windows.Forms.ToolStrip();
             this.toolStripButtonBack = new System.Windows.Forms.ToolStripButton();
+            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
             this.pictureBoxIconUser = new System.Windows.Forms.PictureBox();
             this.labelNom = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
@@ -107,7 +108,8 @@
             // 
             this.toolStripBackOption.BackColor = System.Drawing.Color.LightBlue;
             this.toolStripBackOption.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButtonBack});
+            this.toolStripButtonBack,
+            this.toolStripButton1});
             this.toolStripBackOption.Location = new System.Drawing.Point(0, 0);
             this.toolStripBackOption.Name = "toolStripBackOption";
             this.toolStripBackOption.Size = new System.Drawing.Size(1904, 25);
@@ -122,6 +124,17 @@
             this.toolStripButtonBack.Size = new System.Drawing.Size(23, 22);
             this.toolStripButtonBack.Text = "BACK";
             this.toolStripButtonBack.Click += new System.EventHandler(this.toolStripButton1_Click);
+            // 
+            // toolStripButton1
+            // 
+            this.toolStripButton1.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
+            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.toolStripButton1.Name = "toolStripButton1";
+            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Text = "LOG OUT";
+            this.toolStripButton1.Click += new System.EventHandler(this.toolStripButtonLogOut_Click_1);
             // 
             // pictureBoxIconUser
             // 
@@ -182,5 +195,6 @@
         private System.Windows.Forms.ToolStripButton toolStripButtonBack;
         private System.Windows.Forms.PictureBox pictureBoxIconUser;
         private System.Windows.Forms.Label labelNom;
+        private System.Windows.Forms.ToolStripButton toolStripButton1;
     }
 }

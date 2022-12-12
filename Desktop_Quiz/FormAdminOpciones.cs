@@ -53,5 +53,15 @@ namespace Desktop_Quiz
             FormInicioSesion formInici = new FormInicioSesion();
             formInici.ShowDialog();
         }
+
+        private void toolStripButtonLogOut_Click(object sender, EventArgs e)
+        {
+            DialogResult dialogResult = MessageBox.Show("Estas seguro que quieres cerrar sesión?", "LOG OUT", MessageBoxButtons.YesNo);
+            if (dialogResult == DialogResult.Yes) {
+                this.Close();
+                FormInicioSesion formInici = new FormInicioSesion();
+                formInici.ShowDialog();
+            }
+        }
     }
 }
