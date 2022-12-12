@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditPersonatges));
             this.groupBoxDadesPersonatge = new System.Windows.Forms.GroupBox();
             this.comboBoxGenere = new System.Windows.Forms.ComboBox();
             this.textBoxEncerts = new System.Windows.Forms.TextBox();
@@ -62,6 +61,7 @@
             this.groupBoxDadesPersonatge.Controls.Add(this.labelRutaImg);
             this.groupBoxDadesPersonatge.Controls.Add(this.labelDescripcio);
             this.groupBoxDadesPersonatge.Controls.Add(this.labelNom);
+            this.groupBoxDadesPersonatge.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.groupBoxDadesPersonatge.Location = new System.Drawing.Point(12, 12);
             this.groupBoxDadesPersonatge.Name = "groupBoxDadesPersonatge";
             this.groupBoxDadesPersonatge.Size = new System.Drawing.Size(454, 436);
@@ -94,35 +94,39 @@
             // labelEncerts
             // 
             this.labelEncerts.AutoSize = true;
+            this.labelEncerts.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEncerts.Location = new System.Drawing.Point(255, 218);
             this.labelEncerts.Name = "labelEncerts";
-            this.labelEncerts.Size = new System.Drawing.Size(59, 17);
+            this.labelEncerts.Size = new System.Drawing.Size(63, 18);
             this.labelEncerts.TabIndex = 12;
             this.labelEncerts.Text = "Encerts";
             // 
             // labelGenere
             // 
             this.labelGenere.AutoSize = true;
+            this.labelGenere.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGenere.Location = new System.Drawing.Point(6, 218);
             this.labelGenere.Name = "labelGenere";
-            this.labelGenere.Size = new System.Drawing.Size(56, 17);
+            this.labelGenere.Size = new System.Drawing.Size(62, 18);
             this.labelGenere.TabIndex = 10;
             this.labelGenere.Text = "Gènere";
             // 
             // buttonGuardarEdit
             // 
-            this.buttonGuardarEdit.BackColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonGuardarEdit.Image = ((System.Drawing.Image)(resources.GetObject("buttonGuardarEdit.Image")));
-            this.buttonGuardarEdit.Location = new System.Drawing.Point(355, 343);
+            this.buttonGuardarEdit.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonGuardarEdit.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGuardarEdit.Location = new System.Drawing.Point(303, 365);
+            this.buttonGuardarEdit.Margin = new System.Windows.Forms.Padding(4);
             this.buttonGuardarEdit.Name = "buttonGuardarEdit";
-            this.buttonGuardarEdit.Size = new System.Drawing.Size(93, 87);
+            this.buttonGuardarEdit.Size = new System.Drawing.Size(130, 50);
             this.buttonGuardarEdit.TabIndex = 9;
+            this.buttonGuardarEdit.Text = "Aceptar";
             this.buttonGuardarEdit.UseVisualStyleBackColor = false;
             this.buttonGuardarEdit.Click += new System.EventHandler(this.buttonGuardarEdit_Click);
             // 
             // pictureBoxPers
             // 
-            this.pictureBoxPers.Location = new System.Drawing.Point(143, 258);
+            this.pictureBoxPers.Location = new System.Drawing.Point(60, 258);
             this.pictureBoxPers.Name = "pictureBoxPers";
             this.pictureBoxPers.Size = new System.Drawing.Size(168, 157);
             this.pictureBoxPers.TabIndex = 8;
@@ -164,27 +168,30 @@
             // labelRutaImg
             // 
             this.labelRutaImg.AutoSize = true;
+            this.labelRutaImg.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRutaImg.Location = new System.Drawing.Point(6, 178);
             this.labelRutaImg.Name = "labelRutaImg";
-            this.labelRutaImg.Size = new System.Drawing.Size(87, 17);
+            this.labelRutaImg.Size = new System.Drawing.Size(92, 18);
             this.labelRutaImg.TabIndex = 2;
             this.labelRutaImg.Text = "Ruta Imatge";
             // 
             // labelDescripcio
             // 
             this.labelDescripcio.AutoSize = true;
+            this.labelDescripcio.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDescripcio.Location = new System.Drawing.Point(6, 67);
             this.labelDescripcio.Name = "labelDescripcio";
-            this.labelDescripcio.Size = new System.Drawing.Size(78, 17);
+            this.labelDescripcio.Size = new System.Drawing.Size(84, 18);
             this.labelDescripcio.TabIndex = 1;
             this.labelDescripcio.Text = "Descripció";
             // 
             // labelNom
             // 
             this.labelNom.AutoSize = true;
+            this.labelNom.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNom.Location = new System.Drawing.Point(6, 36);
             this.labelNom.Name = "labelNom";
-            this.labelNom.Size = new System.Drawing.Size(39, 17);
+            this.labelNom.Size = new System.Drawing.Size(40, 18);
             this.labelNom.TabIndex = 0;
             this.labelNom.Text = "Nom";
             // 
@@ -192,13 +199,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.Gold;
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
             this.ClientSize = new System.Drawing.Size(478, 460);
+            this.ControlBox = false;
             this.Controls.Add(this.groupBoxDadesPersonatge);
             this.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormEditPersonatges";
-            this.Text = "FormEditPersonatges";
+            this.Text = "FilmZ";
             this.Load += new System.EventHandler(this.FormEditPersonatges_Load);
             this.groupBoxDadesPersonatge.ResumeLayout(false);
             this.groupBoxDadesPersonatge.PerformLayout();

@@ -1,0 +1,68 @@
+[
+    {
+        "nom": "prueba",
+        "contraseña": null,
+        "edat": 19,
+        "estudia": true,
+        "sexe": "h",
+        "puntuacio":1000,
+        "jugadorActual":false,
+        "difficult": 1,
+        "posicioRanking":null
+    },
+    {
+        "nom": "prueba2",
+        "contraseña": null,
+        "edat": 19,
+        "estudia": true,
+        "sexe": "h",
+        "puntuacio":1500,
+        "jugadorActual":false,
+        "difficult": 1,
+        "posicioRanking":null
+    },
+    {
+        "nom": "prueba3",
+        "contraseña": null,
+        "edat": 19,
+        "estudia": true,
+        "sexe": "h",
+        "puntuacio":2000,
+        "jugadorActual":false,
+        "difficult": 1,
+        "posicioRanking":null
+    },
+    {
+        "nom": "prueba4",
+        "contraseña": null,
+        "edat": 19,
+        "estudia": true,
+        "sexe": "h",
+        "puntuacio":3000,
+        "jugadorActual":false,
+        "difficult": 1,
+        "posicioRanking":null
+    },
+    {
+        "nom": "prueba5",
+        "contraseña": null,
+        "edat": 19,
+        "estudia": true,
+        "sexe": "h",
+        "puntuacio":1000,
+        "jugadorActual":false,
+        "difficult": 1,
+        "posicioRanking":null
+    },
+    {
+        "nom": "prueb6a",
+        "contraseña": null,
+        "edat": 19,
+        "estudia": true,
+        "sexe": "h",
+        "puntuacio":4000,
+        "jugadorActual":false,
+        "difficult": 1,
+        "posicioRanking":null
+    }
+]

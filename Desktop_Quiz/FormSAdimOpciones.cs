@@ -42,7 +42,7 @@ namespace Desktop_Quiz
 
         private void buttonPersonatges_Click(object sender, EventArgs e)
         {
-            FormPersonatges formPersonatges= new FormPersonatges();
+            FormPersonatges formPersonatges= new FormPersonatges(this.usuari);
             formPersonatges.ShowDialog();
         }
 

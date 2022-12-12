@@ -1,12 +1,5 @@
 [
   {
-    "nomPers": "Cap",
-    "descripcioPers": "No has acertat cap pregunta, potser t'hauries de veure alguna pel·lícula abans de fer el quiz.",
-    "genere": "General",
-    "percEncerts": 0,
-    "rutaPers": ""
-  },
-  {
     "nomPers": "Uncharted",
     "descripcioPers": "La categoria on més has acertat és Acció i tot i així no ho has fet bé 7w7",
     "genere": "Acció",
@@ -39,13 +32,6 @@
     "descripcioPers": "Veig que has acertat unes quantes preguntes, però encara et queda camí per davant",
     "genere": "Animació",
     "percEncerts": 66.6,
-    "rutaPers": ""
-  },
-  {
-    "nomPers": "Barbie",
-    "descripcioPers": "Com és d'esperar has acertat moltes preguntes, per això tens tant en comú amb aquest personatge",
-    "genere": "Animació",
-    "percEncerts": 99.9,
     "rutaPers": ""
   },
   {
@@ -115,7 +101,21 @@
     "nomPers": "Totes",
     "descripcioPers": "Has contestat bé totes les preguntes de totes les categoríes, felicitats.",
     "genere": "General",
-    "percEncerts": 100,
+    "percEncerts": 100.0,
     "rutaPers": ""
+  },
+  {
+    "nomPers": "Barbie",
+    "descripcioPers": "Com és d'esperar has acertat moltes preguntes, per això tens tant en comú amb aquest personatge",
+    "genere": "Animació",
+    "percEncerts": 99.9,
+    "rutaPers": "BarbieImg.png"
+  },
+  {
+    "nomPers": "Cap",
+    "descripcioPers": "No has acertat cap pregunta, potser t'hauries de veure alguna pel·lícula abans de fer el quiz.",
+    "genere": "General",
+    "percEncerts": 0.0,
+    "rutaPers": "TotesIncorrectesImg.png"
   }
 ]

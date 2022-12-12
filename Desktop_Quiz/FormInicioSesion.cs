@@ -86,5 +86,20 @@ namespace Desktop_Quiz
         {
 
         }
+
+        private void groupBoxDades_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelNom_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void labelContrasenya_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

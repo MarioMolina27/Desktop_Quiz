@@ -14,23 +14,33 @@ namespace Desktop_Quiz
     public partial class FormEditUsuaris : Form
     {
 
-        
+        //variable global donde guardaremos el nickname del usuario que estamos modificando
+        //si estamos crando un usuario este campo estará vacio
         private String nickname = null;
-        
 
 
+        /**
+        * Constructor default del formulario
+        */
         public FormEditUsuaris()
         {
             InitializeComponent();
         }
 
 
+        /**
+        * Constructor modifcado
+        * @nickname id del usuario que queremos modificar
+        */
         public FormEditUsuaris(String nickname)
         {
            InitializeComponent();
            this.nickname = nickname;
         }
 
+        /**
+        * Funcion que muestra la contraseña o la esconde
+        */
         private void checkBoxMostrar_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxMostrar.Checked == true)
@@ -42,7 +52,9 @@ namespace Desktop_Quiz
                 textBoxContrasenya.UseSystemPasswordChar = true;
             }
         }
-
+        /**
+        * Funcion que muestra la contraseña o la esconde
+        */
         private void checkBoxMostrarRepeat_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxMostrarRepeat.Checked == true)
@@ -54,7 +66,11 @@ namespace Desktop_Quiz
                 textBoxRepeatContrasenya.UseSystemPasswordChar = true;
             }
         }
-        
+
+        /**
+        * Valida si todos los campos han sido rellenados antes de guardar el usuario
+        * @return devuelve un booleano si la validacion se cumple o no
+        */
         public bool ValidarUser()
         {
             bool validReturn = true;
@@ -71,47 +87,30 @@ namespace Desktop_Quiz
             return validReturn;
         }
 
-        private void labelNickname_Click(object sender, EventArgs e)
-        {
-
-            
-        }
-
-        private void labelNom_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonSave1_Click(object sender, EventArgs e)
-        {            
-           
-        }
-
-        private void groupBoxDadesUsuari_Enter(object sender, EventArgs e)
-        {
-
-        }
-        
-        //funció per saber la posició del user a editar
+        /**
+        * Funcion para saber la posición del user a editar
+        * @return posición del user que queremos editar.
+        */
         private int userPosition()
         {
             int UserPosition = UsuarisRepositori.users.FindIndex(x => x.nickname == nickname);
             return UserPosition;    
         }
 
+        /**
+        * Carga los textBow y checkBox con los campos del usuario a editar.
+        * Si es un nuevo usuario los campos estarán vacios
+        */
         private void FormEditUsuaris_Load(object sender, EventArgs e)
         {
             if (nickname != null)
-            {   
-               
-
-                textBoxNickName.Text = UsuarisRepositori.users[userPosition()].nickname;
-                textBoxNomEdit.Text = UsuarisRepositori.users[userPosition()].nom;
-                checkBoxAfegir.Checked = UsuarisRepositori.users[userPosition()].add;
-                checkBoxEditar.Checked = UsuarisRepositori.users[userPosition()].modify;
-                checkBoxEliminar.Checked = UsuarisRepositori.users[userPosition()].delete;
-
-
+            {
+                int editPosition = userPosition();
+                textBoxNickName.Text = UsuarisRepositori.users[editPosition].nickname;
+                textBoxNomEdit.Text = UsuarisRepositori.users[editPosition].nom;
+                checkBoxAfegir.Checked = UsuarisRepositori.users[editPosition].add;
+                checkBoxEditar.Checked = UsuarisRepositori.users[editPosition].modify;
+                checkBoxEliminar.Checked = UsuarisRepositori.users[editPosition].delete;
             }
             
         }
@@ -120,11 +119,12 @@ namespace Desktop_Quiz
         {
 
         }
-
+        /**
+        * Funcion que añade o edita y guarda un usuario hacienod previamente la validación
+        */
         private void buttonAceptarEditUsers_Click(object sender, EventArgs e)
         {
             char tipus = 'A';
-
 
             if (nickname == null)
             {
@@ -137,22 +137,21 @@ namespace Desktop_Quiz
                     UsuarisRepositori.SaveUsers();
                     this.Close();
                 }
-                
+
             }
             else
             {
-                if (ValidarUser())
-                {
-                    //Editar usuari existen
+                    if (ValidarUser())
+                    {
+                        //Editar usuari existen
 
-                    Usuari usuariEdited = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
+                        Usuari usuariEdited = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
 
-
-                    UsuarisRepositori.EditUser(usuariEdited, userPosition());
-                    UsuarisRepositori.SaveUsers();
-                    this.Close();
-                }
-            }   
+                        UsuarisRepositori.EditUser(usuariEdited, userPosition());
+                        UsuarisRepositori.SaveUsers();
+                        this.Close();
+                    }
+            }
         }
     }
 }

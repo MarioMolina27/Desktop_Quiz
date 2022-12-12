@@ -1,7 +1,6 @@
 [
   {
     "id": "EN_D_001",
-    "película": "El exorcista",
     "pregunta": "How much can the girl from The Exorcist turn his head?",
     "resposta1": "360º",
     "resposta2": "180º",
@@ -13,7 +12,6 @@
   },
   {
     "id": "EN_D_002",
-    "película": "Guerra Mundial Z",
     "pregunta": "What is the name of the main character from World War Z?",
     "resposta1": "Gerry Lane",
     "resposta2": "Ludy Boeken",
@@ -25,8 +23,7 @@
   },
   {
     "id": "EN_D_003",
-    "película": "Insidious I",
-    "pregunta": "Why did Foster want to change his room?",
+    "pregunta": "Why did Foster want to change his room in Insidious I?",
     "resposta1": "He wanted more space to play with his toys.",
     "resposta2": "He thought someone was in his closet.",
     "resposta3": "He was scared when Dalton walked at night",
@@ -37,8 +34,7 @@
   },
   {
     "id": "EN_D_004",
-    "película": "Insidious I",
-    "pregunta": "What did Renai discover while arranging Dalton's sheets on his bed?",
+    "pregunta": "What did Renai discover while arranging Dalton's sheets on his bed in Insidious I?",
     "resposta1": "Renai found a message written in blood on Dalton's sheet.",
     "resposta2": "Renai found a bloody handprint on Dalton's sheet.",
     "resposta3": "Renai found a mangled teddy bear under Dalton's sheets.",
@@ -49,7 +45,6 @@
   },
   {
     "id": "EN_D_005",
-    "película": "La Cosa",
     "pregunta": "Who directed the movie\"The Thing\"?",
     "resposta1": "John Carpenter",
     "resposta2": "David Foster",
@@ -61,8 +56,7 @@
   },
   {
     "id": "EN_D_006",
-    "película": "La Purga",
-    "pregunta": "How long does the purge movie last?",
+    "pregunta": "How long does The Purge last?",
     "resposta1": "85 minutes",
     "resposta2": "94 minutes",
     "resposta3": "102 minutes",
@@ -73,7 +67,6 @@
   },
   {
     "id": "EN_D_007",
-    "película": "The Black Phone",
     "pregunta": "What actor plays the kidnapper role in The Black Phone?",
     "resposta1": "Troy Rudeseal",
     "resposta2": "Miguel Cazarez",
@@ -85,7 +78,6 @@
   },
   {
     "id": "EN_D_008",
-    "película": "BARBIE",
     "pregunta": "Who is the voice you hear?",
     "resposta1": "Barbie",
     "resposta2": "Scarlet Johanson",
@@ -97,7 +89,6 @@
   },
   {
     "id": "EN_D_009",
-    "película": "Bob Esponja",
     "pregunta": "When was the first Spongebob movie released?",
     "resposta1": "2007",
     "resposta2": "2005",
@@ -109,8 +100,7 @@
   },
   {
     "id": "EN_D_010",
-    "película": "Buscando a Nemo",
-    "pregunta": "How many sharks appear?",
+    "pregunta": "How many sharks appear in Finding Nemo?",
     "resposta1": "2",
     "resposta2": "3",
     "resposta3": "4",
@@ -121,8 +111,7 @@
   },
   {
     "id": "EN_D_011",
-    "película": "Inazuma Eleven",
-    "pregunta": "What is the name of the following super-technic?",
+    "pregunta": "What is the name of the following super-technic from Inazume Eleven?",
     "resposta1": "Containment network",
     "resposta2": "Radial Defense",
     "resposta3": "Rotating cut",
@@ -133,7 +122,6 @@
   },
   {
     "id": "EN_D_012",
-    "película": "Locos por el Surf",
     "pregunta": "What is the name of the chicken character in Surf's Up?",
     "resposta1": "Joe",
     "resposta2": "Evans tank",
@@ -145,7 +133,6 @@
   },
   {
     "id": "EN_D_013",
-    "película": "Pocoyo",
     "pregunta": "Who do Pocoyo, Nina, Pato and Elly face to save the world?",
     "resposta1": "Virus",
     "resposta2": "Zapo",
@@ -157,7 +144,6 @@
   },
   {
     "id": "EN_D_014",
-    "película": "Zafarrancho en el Rancho",
     "pregunta": "What is the name of the cow thief in Home on the Range?",
     "resposta1": "Alameda Slim",
     "resposta2": "Mr. Dixon",
@@ -169,7 +155,6 @@
   },
   {
     "id": "EN_D_015",
-    "película": "12 monos",
     "pregunta": "What year is the future of the movie \"12 monkeys\" located?",
     "resposta1": "2035",
     "resposta2": "2086",
@@ -181,7 +166,6 @@
   },
   {
     "id": "EN_D_016",
-    "película": "Barrenderos Espaciales",
     "pregunta": "What is the original name of the movie Space Sweepers?",
     "resposta1": "Mi-Suk",
     "resposta2": "Haneul",
@@ -193,7 +177,6 @@
   },
   {
     "id": "EN_D_017",
-    "película": "EL SEÑOR DE LOS ANILLOS",
     "pregunta": "How many power rings exist in the Lord of the Rings' world?",
     "resposta1": "1",
     "resposta2": "12",
@@ -205,7 +188,6 @@
   },
   {
     "id": "EN_D_018",
-    "película": "Jurassic World",
     "pregunta": "What is the name of the Jurassic World Park's manager?",
     "resposta1": "Claire Dearing",
     "resposta2": "Henry Wu",
@@ -217,8 +199,7 @@
   },
   {
     "id": "EN_D_019",
-    "película": "Matrix Resurrections",
-    "pregunta": "What does Neo for living at the beginning of the movie?",
+    "pregunta": "What does Neo for living at the beginning of the movie Matrix Resurrection?",
     "resposta1": "Programmer",
     "resposta2": "Office worker",
     "resposta3": "Accountant",
@@ -229,8 +210,7 @@
   },
   {
     "id": "EN_D_020",
-    "película": "Terminator",
-    "pregunta": "When got Skynet awareness of himself?",
+    "pregunta": "When got Skynet awareness of himself in Terminator?",
     "resposta1": "35646",
     "resposta2": "35671",
     "resposta3": "35661",
@@ -241,7 +221,6 @@
   },
   {
     "id": "EN_D_021",
-    "película": "Terra Formars",
     "pregunta": "In what film does this things appear?",
     "resposta1": "Independence Day",
     "resposta2": "Red planet",
@@ -253,7 +232,6 @@
   },
   {
     "id": "EN_D_022",
-    "película": "El juego del calamar",
     "pregunta": "What is the name of the main character of the serie?",
     "resposta1": "Jung Ho-Yeon",
     "resposta2": "Lee Jung-Jae",
@@ -265,7 +243,6 @@
   },
   {
     "id": "EN_D_023",
-    "película": "El renacido",
     "pregunta": "Who betrays the main character in the film of The Revenant?",
     "resposta1": "John Fitzgerald",
     "resposta2": "Hugh Glass",
@@ -277,7 +254,6 @@
   },
   {
     "id": "EN_D_024",
-    "película": "James Bond",
     "pregunta": "How many official James Bond movies have been created?",
     "resposta1": "25",
     "resposta2": "23",
@@ -289,7 +265,6 @@
   },
   {
     "id": "EN_D_025",
-    "película": "Reservoir Dogs",
     "pregunta": "When did the movie Reservoir Dogs come out?",
     "resposta1": "1992",
     "resposta2": "1997",
@@ -301,7 +276,6 @@
   },
   {
     "id": "EN_D_026",
-    "película": "Speed",
     "pregunta": "In Speed ​​to how many miles per hour do you have to keep the bus not to explode?",
     "resposta1": "50",
     "resposta2": "60",
@@ -313,7 +287,6 @@
   },
   {
     "id": "EN_D_027",
-    "película": "Uncharted",
     "pregunta": "How long does the Uncharted movie last?",
     "resposta1": "102 min",
     "resposta2": "110 min",
@@ -325,8 +298,7 @@
   },
   {
     "id": "EN_D_028",
-    "película": "Wolf Warrior 2",
-    "pregunta": "What is the name of the sniper of the mercenaries of Dyon Corps?",
+    "pregunta": "What is the name of the sniper of the mercenaries of Dyon Corps in Wolf Warrior 2?",
     "resposta1": "Rachel Prescott Smith",
     "resposta2": "Athena",
     "resposta3": "Shi Qingsong",
@@ -337,7 +309,6 @@
   },
   {
     "id": "EN_D_029",
-    "película": "1917",
     "pregunta": "What is the name of the character played by Andrew Scott?",
     "resposta1": "Leslie",
     "resposta2": "Cipayo Jondalar",
@@ -349,7 +320,6 @@
   },
   {
     "id": "EN_D_030",
-    "película": "Ciudadano Kane",
     "pregunta": "Where does the main character die at the beginning of Citizen Kane?",
     "resposta1": "Turkey",
     "resposta2": "Xanadú",
@@ -361,8 +331,7 @@
   },
   {
     "id": "EN_D_031",
-    "película": "La Milla Verde",
-    "pregunta": "What is the name of the prisoner that can do miracles?",
+    "pregunta": "What is the name of the prisoner that can do miracles in The Green Mile?",
     "resposta1": "Sam Rockwell",
     "resposta2": "David Coffe",
     "resposta3": "John Coffey",
@@ -373,8 +342,7 @@
   },
   {
     "id": "EN_D_032",
-    "película": "Malditos bastardos",
-    "pregunta": "What nickname put the Jew who kills Nacis with a baseball bat?",
+    "pregunta": "What nickname put the Jew who kills Nacis with a baseball bat in Inglorious Basterds?",
     "resposta1": "The puzzle",
     "resposta2": "The Nazis Killer",
     "resposta3": "The Jewish bear",
@@ -385,8 +353,7 @@
   },
   {
     "id": "EN_D_033",
-    "película": "Náufrago",
-    "pregunta": "What company does the main character of the movie works for?",
+    "pregunta": "What company does the main character of the movie works for in Cast Away?",
     "resposta1": "FedEx",
     "resposta2": "Amazon",
     "resposta3": "DLH Express",
@@ -397,8 +364,7 @@
   },
   {
     "id": "EN_D_034",
-    "película": "Salvar al soldado Ryan",
-    "pregunta": "Who plays the main role?",
+    "pregunta": "Who plays the main role in Saving Private Ryan?",
     "resposta1": "Tom Hanks",
     "resposta2": "Eladio Carrión",
     "resposta3": "Leonardo Dicaprio",
@@ -409,8 +375,7 @@
   },
   {
     "id": "EN_D_035",
-    "película": "Un Monstruo Viene a Verme",
-    "pregunta": "What time does the mounstro appear every day?",
+    "pregunta": "What time does the mounstro appear every day in A Monsters Call?",
     "resposta1": "3:00",
     "resposta2": "12:07",
     "resposta3": "12:05",

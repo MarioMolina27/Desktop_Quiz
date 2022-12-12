@@ -1,11 +1,10 @@
 [
   {
     "id": "CAT_M_001",
-    "película": "A 47 metros",
-    "pregunta": "What movie does this plane belong?",
+    "pregunta": "A quina pel·licula pertany aquesta imatge?",
     "resposta1": "The Shallows",
-    "resposta2": "47 meters away",
-    "resposta3": "Open Sea",
+    "resposta2": "A 47 metres",
+    "resposta3": "Mar Obert",
     "resposta_correcte": 2,
     "categoria": "Terror",
     "imgaudio": null,
@@ -13,11 +12,10 @@
   },
   {
     "id": "CAT_M_002",
-    "película": "Army of the Death",
-    "pregunta": "In which of these horror films is there zombie apocalypse atmosphere?",
+    "pregunta": "En quina d'aquestes pel·lícules hi ha un ambient d'apocalípsis Zombi?",
     "resposta1": "Army of the Death",
     "resposta2": "The Forever Purge",
-    "resposta3": "Cielo rojo sangre",
+    "resposta3": "Cel vermell sang",
     "resposta_correcte": 1,
     "categoria": "Terror",
     "imgaudio": null,
@@ -25,11 +23,10 @@
   },
   {
     "id": "CAT_M_003",
-    "película": "El sexto sentido",
-    "pregunta": "What profession does the protagonist of the movie the sixth meaning have?",
+    "pregunta": "De que treballa el protagonista del Sisé Sentit?",
     "resposta1": "Doctor",
-    "resposta2": "teacher",
-    "resposta3": "psychologist",
+    "resposta2": "Profesor",
+    "resposta3": "Psicòleg",
     "resposta_correcte": 3,
     "categoria": "Terror",
     "imgaudio": null,
@@ -37,11 +34,10 @@
   },
   {
     "id": "CAT_M_004",
-    "película": "La 8a Noche",
-    "pregunta": "Which of these horror films are available in Netflix?",
-    "resposta1": "The grandmother",
+    "pregunta": "Quina d'aquestes pel·lícules està disponible a Netflix?",
+    "resposta1": "L'Ávia",
     "resposta2": "Host",
-    "resposta3": "the eighth night",
+    "resposta3": "La vuitena nit",
     "resposta_correcte": 3,
     "categoria": "Terror",
     "imgaudio": null,
@@ -49,10 +45,9 @@
   },
   {
     "id": "CAT_M_005",
-    "película": "Scream",
-    "pregunta": "What movie does this soundtrack belong to?",
-    "resposta1": "The Exorcist",
-    "resposta2": "Huerphana",
+    "pregunta": "A quina pel·licula pertany aquest SoundTack?",
+    "resposta1": "L'Exorcist",
+    "resposta2": "Horfana",
     "resposta3": "Scream",
     "resposta_correcte": 3,
     "categoria": "Terror",
@@ -61,11 +56,10 @@
   },
   {
     "id": "CAT_M_006",
-    "película": "Sinister",
-    "pregunta": "What is the horror movie that is most afraid according to specialists?",
+    "pregunta": "Quina és la pel·lícula que dona més por segons els especialistes?",
     "resposta1": "Sinister",
-    "resposta2": "The grandmother",
-    "resposta3": "The orphanage",
+    "resposta2": "L'Ávia",
+    "resposta3": "L'Horfanat",
     "resposta_correcte": 1,
     "categoria": "Terror",
     "imgaudio": null,
@@ -73,8 +67,7 @@
   },
   {
     "id": "CAT_M_007",
-    "película": "Un lugar tranquilo",
-    "pregunta": "What year did the movie \"A quiet place\" come out?",
+    "pregunta": "Quan es va estrenar la pel·lícula \"Un lloc Tranquil\"?",
     "resposta1": "2018",
     "resposta2": "2020",
     "resposta3": "2019",
@@ -85,8 +78,7 @@
   },
   {
     "id": "CAT_M_008",
-    "película": "DORAEMON",
-    "pregunta": "Com es diu l'invent que apareix en la fotografia?",
+    "pregunta": "Com es diu l'invent de Doraemon que apareix en la fotografia?",
     "resposta1": "Gelatina Traductora",
     "resposta2": "Pa de la Memòria",
     "resposta3": "Enriquidor de menjar",
@@ -97,8 +89,7 @@
   },
   {
     "id": "CAT_M_009",
-    "película": "UP",
-    "pregunta": "Com es diu el nen que acompanya al protagonista en el seu viatge?",
+    "pregunta": "Com es diu el nen que acompanya al protagonista d'UP?",
     "resposta1": "Danny",
     "resposta2": "Rusell",
     "resposta3": "Pete",
@@ -109,8 +100,7 @@
   },
   {
     "id": "CAT_M_010",
-    "película": "CARS",
-    "pregunta": "Com es diu el camió que transporta a mcqueen ?",
+    "pregunta": "Com es diu el camió que transporta a Llamp McQueen ?",
     "resposta1": "Mike",
     "resposta2": "Mac",
     "resposta3": "Mate",
@@ -121,7 +111,6 @@
   },
   {
     "id": "CAT_M_011",
-    "película": "El castillo en el cielo",
     "pregunta": "Al quina pelicula pertany aquest pla?",
     "resposta1": "El castell en el cel",
     "resposta2": "El meu veí Totoro",
@@ -133,8 +122,7 @@
   },
   {
     "id": "CAT_M_012",
-    "película": "Kun fu Panda",
-    "pregunta": "Quin animal és el pare de po el protagonista?",
+    "pregunta": "Quin animal és el pare de Po el protagonista de Kun Fu Panda?",
     "resposta1": "Un panda",
     "resposta2": "Anèc",
     "resposta3": "Tigre",
@@ -145,8 +133,7 @@
   },
   {
     "id": "CAT_M_013",
-    "película": "LOS INCREIBLES",
-    "pregunta": "Quants membres hi ha la família deLS INCREÏBLES",
+    "pregunta": "Quants membres hi ha la família dels Increïbles",
     "resposta1": "4",
     "resposta2": "5",
     "resposta3": "6",
@@ -157,8 +144,7 @@
   },
   {
     "id": "CAT_M_014",
-    "película": "Ratatouille",
-    "pregunta": "Quin és el somni de Remy (rata)?",
+    "pregunta": "Quin és el somni de Remy a Ratatuille?",
     "resposta1": "Ser el millor Xef",
     "resposta2": "Ser el rei del món",
     "resposta3": "Arribar a l'altre costat del món",
@@ -169,7 +155,6 @@
   },
   {
     "id": "CAT_M_015",
-    "película": "AVATAR",
     "pregunta": "En quin any va sortir la pel·lícula Avatar?",
     "resposta1": "2017",
     "resposta2": "2009",
@@ -181,7 +166,6 @@
   },
   {
     "id": "CAT_M_016",
-    "película": "E.T el extraterrestre",
     "pregunta": "En quin any va ser publicada la pelíclua ET l'extraterrestre",
     "resposta1": "1982",
     "resposta2": "1990",
@@ -193,8 +177,7 @@
   },
   {
     "id": "CAT_M_017",
-    "película": "Independence Day",
-    "pregunta": "Quin actor interpreta a David Levinson?",
+    "pregunta": "Quin actor interpreta a David Levinson a Independence Day?",
     "resposta1": "Will Smith",
     "resposta2": "Jeff Goldblum",
     "resposta3": "Bill Pullman",
@@ -205,7 +188,6 @@
   },
   {
     "id": "CAT_M_018",
-    "película": "Juego de tronos",
     "pregunta": "A què sèrie/pel·lícula pertany aquesta banda sonora?",
     "resposta1": "Salvar al soldat Ryan",
     "resposta2": "Joc de Trons",
@@ -217,8 +199,7 @@
   },
   {
     "id": "CAT_M_019",
-    "película": "Matrix",
-    "pregunta": "De quins colors són les pastilles que li ofereix Morfeo a Neo?",
+    "pregunta": "A Matrix de quins colors són les pastilles que li ofereix Morfeo a Neo?",
     "resposta1": "Verd i vermella",
     "resposta2": "Blau i vermella",
     "resposta3": "Taronja y Verd",
@@ -229,7 +210,6 @@
   },
   {
     "id": "CAT_M_020",
-    "película": "PIRATAS DEL CARIBE",
     "pregunta": "Escolta el següent Soundtrack. De quina pel·líclua es tracta?",
     "resposta1": "Jurasic Park",
     "resposta2": "Pirates del Carib",
@@ -241,8 +221,7 @@
   },
   {
     "id": "CAT_M_021",
-    "película": "Rick y Morty",
-    "pregunta": "A quin univers pertany el Rick protagonista?",
+    "pregunta": "A quin univers pertany el Rick protagonista de Rick i Morty?",
     "resposta1": "C-A34",
     "resposta2": "C-137",
     "resposta3": "C-789",
@@ -253,8 +232,7 @@
   },
   {
     "id": "CAT_M_022",
-    "película": "Braveheart",
-    "pregunta": "D'on és William Wallace (Braveheart)?",
+    "pregunta": "D'on és William Wallace el protagonista de Braveheart?",
     "resposta1": "Estats Units",
     "resposta2": "Escòcia",
     "resposta3": "Anglaterra",
@@ -265,8 +243,7 @@
   },
   {
     "id": "CAT_M_023",
-    "película": "Bullet Train",
-    "pregunta": "Quin és el nom en clau del protagonista?",
+    "pregunta": "Quin és el nom en clau del protagonista de Bullet Train?",
     "resposta1": "Marieta",
     "resposta2": "Dièsel",
     "resposta3": "Llimona",
@@ -277,7 +254,6 @@
   },
   {
     "id": "CAT_M_024",
-    "película": "El renacido",
     "pregunta": "On ocorren tots els fets narrats en la pelicula del Renascut?",
     "resposta1": "Amèrica",
     "resposta2": "Canadà",
@@ -289,7 +265,6 @@
   },
   {
     "id": "CAT_M_025",
-    "película": "Iron man",
     "pregunta": "Quin element està intoxicant a Tony Stark?",
     "resposta1": "Carbó",
     "resposta2": "Urani",
@@ -301,7 +276,6 @@
   },
   {
     "id": "CAT_M_026",
-    "película": "Jungla de Cristal",
     "pregunta": "Com es diu el protagonista de la Jungla de Cristall?",
     "resposta1": "John Rambo",
     "resposta2": "Tyler Durden",
@@ -313,7 +287,6 @@
   },
   {
     "id": "CAT_M_027",
-    "película": "MARVEL COMICS",
     "pregunta": "En quina pelicula apareixen junts els 3 Spidermans del multivers Marvel?",
     "resposta1": "Spiderman Homecoming",
     "resposta2": "Spiderman No Way Home",
@@ -325,7 +298,6 @@
   },
   {
     "id": "CAT_M_028",
-    "película": "The Batman",
     "pregunta": "Qui és el vilà principal en The Batman de 2022?",
     "resposta1": "Joker",
     "resposta2": "Enigma",
@@ -337,7 +309,6 @@
   },
   {
     "id": "CAT_M_029",
-    "película": "DJANGO",
     "pregunta": "Quant paga Schultz als Speck Brothers per Django?",
     "resposta1": "$800",
     "resposta2": "$1200",
@@ -349,8 +320,7 @@
   },
   {
     "id": "CAT_M_030",
-    "película": "El discurso del rey",
-    "pregunta": "Quin problema té el rei ?",
+    "pregunta": "A la pel·lícula El Discurs del Rei quin problema té el rei?",
     "resposta1": "Es tartamudo",
     "resposta2": "Tiene paralisis mental",
     "resposta3": "Es sordo",
@@ -361,8 +331,7 @@
   },
   {
     "id": "CAT_M_031",
-    "película": "El lobo de wallstreet",
-    "pregunta": "En quin país obre un compte Jordan Belfort per a guardar el diner negre?",
+    "pregunta": "En quin país obre un compte Jordan Belfort per a guardar el diner negre al LLop de Wall Street?",
     "resposta1": "Suècia",
     "resposta2": "Andorra",
     "resposta3": "Holanda",
@@ -373,8 +342,7 @@
   },
   {
     "id": "CAT_M_032",
-    "película": "El lobo de Wallstret",
-    "pregunta": "Com es diuen les pastilles amb les quals es col·loquen els protagonistes?",
+    "pregunta": "Com es diuen les pastilles amb les quals es col·loquen els protagonistes del LLop de Wall Street?",
     "resposta1": "Juanolas",
     "resposta2": "Lemons",
     "resposta3": "Speeds",
@@ -385,8 +353,7 @@
   },
   {
     "id": "CAT_M_033",
-    "película": "El padrino",
-    "pregunta": "Com es diu la germana de Sonny, Fredo i Michael Corleone?",
+    "pregunta": "Com es diu la germana de Sonny, Fredo i Michael Corleone al Padrí?",
     "resposta1": "Connie",
     "resposta2": "Lisa",
     "resposta3": "Stella",
@@ -397,8 +364,7 @@
   },
   {
     "id": "CAT_M_034",
-    "película": "Fight Club",
-    "pregunta": "Al principi de la peli, que ajuda a dormir al protagonista?",
+    "pregunta": "Al principi de la peli, que ajuda a dormir al protagonista del Club de la Lluïta?",
     "resposta1": "Anar al cinema",
     "resposta2": "Anar a teràpies de malalts",
     "resposta3": "Robar als ancians",
@@ -409,8 +375,7 @@
   },
   {
     "id": "CAT_M_035",
-    "película": "TITANIC",
-    "pregunta": "Com aconsegueix Jack el bitllet pel vaixell ?",
+    "pregunta": "Com aconsegueix Jack el bitllet pel Titanic?",
     "resposta1": "En una partida de pòquer",
     "resposta2": "Guanyant una aposta",
     "resposta3": "En un bingo",
