@@ -16,7 +16,7 @@ namespace Desktop_Quiz
         public String nomPers { get; set; }
         public String descripcioPers { get; set; }
         public String genere { get; set; }
-        public double percEncerts { get; set; }
+        public int percEncerts { get; set; }
         public String rutaPers { get; set; }
 
         /**
@@ -29,7 +29,7 @@ namespace Desktop_Quiz
         /**
          * A continuació creem un constructor amb els atributs creats amb antelació
          */
-        public Personatge (String nomPers, String descripcioPers,  String genere, double percEncerts,  String rutaPers) 
+        public Personatge (String nomPers, String descripcioPers,  String genere, int percEncerts,  String rutaPers) 
         {
 
             this.nomPers = nomPers;

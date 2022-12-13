@@ -15,7 +15,7 @@ namespace Desktop_Quiz
     {
 
         String nomPers, descripcioPers, genere, rutaPers;
-        double percEncerts;
+        int percEncerts;
 
         private void FormEditPersonatges_Load(object sender, EventArgs e)
         {
@@ -36,7 +36,7 @@ namespace Desktop_Quiz
             InitializeComponent();
         }
 
-        public FormEditPersonatges(String nomPers,String descripcioPers,String genere,double percEncerts,String rutaPers)
+        public FormEditPersonatges(String nomPers,String descripcioPers,String genere,int percEncerts,String rutaPers)
         {
 
             this.nomPers = nomPers;
@@ -65,7 +65,7 @@ namespace Desktop_Quiz
                 p.nomPers = textBoxNomPers.Text;
                 p.descripcioPers = textBoxDescripcioPers.Text;
                 p.genere = comboBoxGenere.Text;
-                p.percEncerts = double.Parse(textBoxEncerts.Text);
+                p.percEncerts = int.Parse(textBoxEncerts.Text);
                 p.rutaPers = textBoxRutaImg.Text;
 
                 PersRepo.personatges.Add(p);
@@ -82,7 +82,7 @@ namespace Desktop_Quiz
             p.nomPers = textBoxNomPers.Text;
             p.descripcioPers = textBoxDescripcioPers.Text;
             p.genere = comboBoxGenere.Text;
-            p.percEncerts = double.Parse(textBoxEncerts.Text);
+            p.percEncerts = int.Parse(textBoxEncerts.Text);
             p.rutaPers = textBoxRutaImg.Text;
 
             if (textBoxNomPers.Text.Equals("") | textBoxDescripcioPers.Text.Equals("") | comboBoxGenere.Text.Equals("")) {
