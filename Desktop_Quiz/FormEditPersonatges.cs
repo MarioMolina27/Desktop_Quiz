@@ -13,18 +13,9 @@ namespace Desktop_Quiz
 {
     public partial class FormEditPersonatges : Form
     {
-        /**
-         * public FormEditPersonatges()
-         * Creem variables per carregar cada un dels atributs de la clase Personatge
-         */
 
         String nomPers, descripcioPers, genere, rutaPers;
-        double percEncerts;
-
-        /**
-         * Carreguem el formulari amb les dades del personatge en cas que el vulguem editar,
-         * i en cas de que en creem un de nou aquests camps estaràn vuits
-         */
+        int percEncerts;
 
         private void FormEditPersonatges_Load(object sender, EventArgs e)
         {
@@ -34,23 +25,18 @@ namespace Desktop_Quiz
             textBoxRutaImg.Text = rutaPers;
             comboBoxGenere.Text = genere;
             textBoxEncerts.Text = percEncerts.ToString();
+           
               
         }
 
-        /**
-         * D'aquesta forma carreguem el formulari vuit
-         */
+        
 
         public FormEditPersonatges()
         {
             InitializeComponent();
         }
 
-        /**
-         * D'aquesta forma rebem les dades del personatge i carreguem el formulari ple
-         */
-
-        public FormEditPersonatges(String nomPers,String descripcioPers,String genere,double percEncerts,String rutaPers)
+        public FormEditPersonatges(String nomPers,String descripcioPers,String genere,int percEncerts,String rutaPers)
         {
 
             this.nomPers = nomPers;
@@ -63,9 +49,31 @@ namespace Desktop_Quiz
 
         }
 
-        /**
-         * El botó que permet guardar els canvis o el nou personatge, sempre que no hi hagi cap camp vuit.
-         */
+        private void buttonCancel_Click(object sender, EventArgs e)
+        {
+
+            Personatge p = new Personatge();
+
+
+
+            if (textBoxNomPers.Text.Equals("") | textBoxDescripcioPers.Text.Equals("") | comboBoxGenere.Text.Equals("") | textBoxRutaImg.Equals(""))
+            {
+                MessageBox.Show("No s'ha afegit cap personatge");
+            }
+            else {
+
+                p.nomPers = textBoxNomPers.Text;
+                p.descripcioPers = textBoxDescripcioPers.Text;
+                p.genere = comboBoxGenere.Text;
+                p.percEncerts = int.Parse(textBoxEncerts.Text);
+                p.rutaPers = textBoxRutaImg.Text;
+
+                PersRepo.personatges.Add(p);
+
+            }
+
+            this.Close();
+        }
 
         private void buttonGuardarEdit_Click(object sender, EventArgs e)
         {
@@ -74,33 +82,28 @@ namespace Desktop_Quiz
             p.nomPers = textBoxNomPers.Text;
             p.descripcioPers = textBoxDescripcioPers.Text;
             p.genere = comboBoxGenere.Text;
-            p.percEncerts = double.Parse(textBoxEncerts.Text);
+            p.percEncerts = int.Parse(textBoxEncerts.Text);
             p.rutaPers = textBoxRutaImg.Text;
 
             if (textBoxNomPers.Text.Equals("") | textBoxDescripcioPers.Text.Equals("") | comboBoxGenere.Text.Equals("")) {
 
                 MessageBox.Show("No pot haver-hi cap camp en blanc", "Error");
-                this.Close();
 
             } else {
             
-            if (p.rutaPers.Equals(""))
-            {
+                if (p.rutaPers.Equals(""))
+                {
 
-                p.rutaPers = "Pendent de ruta";
+                    p.rutaPers = "Pendent de ruta";
 
-            }
+                }
 
-            PersRepo.personatges.Add(p);
+                PersRepo.personatges.Add(p);
 
-            this.Close();
+                this.Close();
             }
 
         }
-
-        /**
-         * Amb la següent funció permetem que l'usuari esculli la imatge del personatge que en questió.
-         */
 
         private void buttonBuscarRutaImg_Click(object sender, EventArgs e)
         {
@@ -115,10 +118,6 @@ namespace Desktop_Quiz
             }
 
         }
-
-        /**
-         * Amb la següent funció mostrem el la ruta de la imatge seleccionada
-         */
 
         private void textBoxRutaImg_TextChanged(object sender, EventArgs e) {
 

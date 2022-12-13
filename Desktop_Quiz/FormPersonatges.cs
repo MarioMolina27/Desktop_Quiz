@@ -148,7 +148,7 @@ namespace Desktop_Quiz
                 String nomPers = filaSeleccionada.Cells[0].Value.ToString();
                 String descripcioPers = filaSeleccionada.Cells[1].Value.ToString();
                 String genere = filaSeleccionada.Cells[2].Value.ToString();
-                double percEncerts = double.Parse(filaSeleccionada.Cells[3].Value.ToString());
+                int percEncerts = int.Parse(filaSeleccionada.Cells[3].Value.ToString());
                 String rutaPers = filaSeleccionada.Cells[4].Value.ToString();
 
 
