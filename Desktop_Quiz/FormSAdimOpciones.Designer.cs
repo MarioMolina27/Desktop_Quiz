@@ -47,9 +47,10 @@
             // labelBenvinguda
             // 
             this.labelBenvinguda.Font = new System.Drawing.Font("Arial", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelBenvinguda.Location = new System.Drawing.Point(793, 400);
+            this.labelBenvinguda.Location = new System.Drawing.Point(1057, 492);
+            this.labelBenvinguda.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelBenvinguda.Name = "labelBenvinguda";
-            this.labelBenvinguda.Size = new System.Drawing.Size(290, 24);
+            this.labelBenvinguda.Size = new System.Drawing.Size(387, 30);
             this.labelBenvinguda.TabIndex = 3;
             this.labelBenvinguda.Text = "BENVINGUT";
             this.labelBenvinguda.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -57,8 +58,9 @@
             // pictureBoxIcon
             // 
             this.pictureBoxIcon.Location = new System.Drawing.Point(0, 0);
+            this.pictureBoxIcon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxIcon.Name = "pictureBoxIcon";
-            this.pictureBoxIcon.Size = new System.Drawing.Size(100, 50);
+            this.pictureBoxIcon.Size = new System.Drawing.Size(133, 62);
             this.pictureBoxIcon.TabIndex = 11;
             this.pictureBoxIcon.TabStop = false;
             // 
@@ -68,9 +70,10 @@
             this.buttonUsuari.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonUsuari.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonUsuari.ForeColor = System.Drawing.Color.White;
-            this.buttonUsuari.Location = new System.Drawing.Point(407, 550);
+            this.buttonUsuari.Location = new System.Drawing.Point(543, 677);
+            this.buttonUsuari.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonUsuari.Name = "buttonUsuari";
-            this.buttonUsuari.Size = new System.Drawing.Size(193, 69);
+            this.buttonUsuari.Size = new System.Drawing.Size(257, 85);
             this.buttonUsuari.TabIndex = 4;
             this.buttonUsuari.Text = "Usuaris";
             this.buttonUsuari.UseVisualStyleBackColor = false;
@@ -82,9 +85,10 @@
             this.buttonPersonatges.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonPersonatges.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPersonatges.ForeColor = System.Drawing.Color.White;
-            this.buttonPersonatges.Location = new System.Drawing.Point(838, 550);
+            this.buttonPersonatges.Location = new System.Drawing.Point(1117, 677);
+            this.buttonPersonatges.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonPersonatges.Name = "buttonPersonatges";
-            this.buttonPersonatges.Size = new System.Drawing.Size(193, 69);
+            this.buttonPersonatges.Size = new System.Drawing.Size(257, 85);
             this.buttonPersonatges.TabIndex = 8;
             this.buttonPersonatges.Text = "Personatges";
             this.buttonPersonatges.UseVisualStyleBackColor = false;
@@ -96,9 +100,10 @@
             this.buttonPreguntes.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.buttonPreguntes.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonPreguntes.ForeColor = System.Drawing.Color.White;
-            this.buttonPreguntes.Location = new System.Drawing.Point(1269, 550);
+            this.buttonPreguntes.Location = new System.Drawing.Point(1692, 677);
+            this.buttonPreguntes.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.buttonPreguntes.Name = "buttonPreguntes";
-            this.buttonPreguntes.Size = new System.Drawing.Size(193, 69);
+            this.buttonPreguntes.Size = new System.Drawing.Size(257, 85);
             this.buttonPreguntes.TabIndex = 9;
             this.buttonPreguntes.Text = "Preguntes";
             this.buttonPreguntes.UseVisualStyleBackColor = false;
@@ -106,13 +111,14 @@
             // 
             // toolStripBackOption
             // 
-            this.toolStripBackOption.BackColor = System.Drawing.Color.LightBlue;
+            this.toolStripBackOption.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.toolStripBackOption.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStripBackOption.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButtonBack,
             this.toolStripButton1});
             this.toolStripBackOption.Location = new System.Drawing.Point(0, 0);
             this.toolStripBackOption.Name = "toolStripBackOption";
-            this.toolStripBackOption.Size = new System.Drawing.Size(1904, 25);
+            this.toolStripBackOption.Size = new System.Drawing.Size(2404, 27);
             this.toolStripBackOption.TabIndex = 10;
             // 
             // toolStripButtonBack
@@ -121,7 +127,7 @@
             this.toolStripButtonBack.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonBack.Image")));
             this.toolStripButtonBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonBack.Name = "toolStripButtonBack";
-            this.toolStripButtonBack.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButtonBack.Size = new System.Drawing.Size(29, 24);
             this.toolStripButtonBack.Text = "BACK";
             this.toolStripButtonBack.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -132,7 +138,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(23, 22);
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
             this.toolStripButton1.Text = "LOG OUT";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButtonLogOut_Click_1);
             // 
@@ -140,9 +146,10 @@
             // 
             this.pictureBoxIconUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBoxIconUser.Image = global::Desktop_Quiz.Properties.Resources.loginImage;
-            this.pictureBoxIconUser.Location = new System.Drawing.Point(821, 150);
+            this.pictureBoxIconUser.Location = new System.Drawing.Point(1095, 185);
+            this.pictureBoxIconUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBoxIconUser.Name = "pictureBoxIconUser";
-            this.pictureBoxIconUser.Size = new System.Drawing.Size(239, 191);
+            this.pictureBoxIconUser.Size = new System.Drawing.Size(319, 235);
             this.pictureBoxIconUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBoxIconUser.TabIndex = 12;
             this.pictureBoxIconUser.TabStop = false;
@@ -151,17 +158,18 @@
             // 
             this.labelNom.AutoSize = true;
             this.labelNom.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelNom.Location = new System.Drawing.Point(878, 407);
+            this.labelNom.Location = new System.Drawing.Point(1171, 501);
+            this.labelNom.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelNom.Name = "labelNom";
-            this.labelNom.Size = new System.Drawing.Size(0, 19);
+            this.labelNom.Size = new System.Drawing.Size(0, 24);
             this.labelNom.TabIndex = 13;
             // 
             // FormSAdimOpciones
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.ClientSize = new System.Drawing.Size(1904, 1041);
+            this.BackColor = System.Drawing.Color.LightBlue;
+            this.ClientSize = new System.Drawing.Size(2404, 1281);
             this.Controls.Add(this.labelNom);
             this.Controls.Add(this.pictureBoxIconUser);
             this.Controls.Add(this.toolStripBackOption);
@@ -172,8 +180,10 @@
             this.Controls.Add(this.pictureBoxIcon);
             this.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FormSAdimOpciones";
             this.Text = "FilmZ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormSAdimOpciones_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.toolStripBackOption.ResumeLayout(false);

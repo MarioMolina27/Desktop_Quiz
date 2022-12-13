@@ -67,7 +67,7 @@
             // 
             // groupBoxPelicules
             // 
-            this.groupBoxPelicules.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.groupBoxPelicules.BackColor = System.Drawing.Color.LightBlue;
             this.groupBoxPelicules.Controls.Add(this.buttonCancelar);
             this.groupBoxPelicules.Controls.Add(this.buttonGuardar);
             this.groupBoxPelicules.Controls.Add(this.buttonAudioAceptar);
@@ -402,7 +402,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(1339, 751);
             this.ControlBox = false;
             this.Controls.Add(this.groupBoxPelicules);

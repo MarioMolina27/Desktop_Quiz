@@ -70,7 +70,7 @@
             this.labelSearchNickname.Location = new System.Drawing.Point(293, 124);
             this.labelSearchNickname.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.labelSearchNickname.Name = "labelSearchNickname";
-            this.labelSearchNickname.Size = new System.Drawing.Size(91, 19);
+            this.labelSearchNickname.Size = new System.Drawing.Size(109, 24);
             this.labelSearchNickname.TabIndex = 0;
             this.labelSearchNickname.Text = "Nickname:";
             // 
@@ -81,7 +81,7 @@
             this.textBoxNickSearch.Location = new System.Drawing.Point(425, 118);
             this.textBoxNickSearch.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNickSearch.Name = "textBoxNickSearch";
-            this.textBoxNickSearch.Size = new System.Drawing.Size(358, 25);
+            this.textBoxNickSearch.Size = new System.Drawing.Size(358, 29);
             this.textBoxNickSearch.TabIndex = 1;
             this.textBoxNickSearch.Text = "  Buscar...";
             this.textBoxNickSearch.Enter += new System.EventHandler(this.textBoxNickSearch_Enter);
@@ -123,7 +123,7 @@
             // 
             // toolStrip1
             // 
-            this.toolStrip1.BackColor = System.Drawing.Color.LightBlue;
+            this.toolStrip1.BackColor = System.Drawing.Color.LightSkyBlue;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButton1,
@@ -140,7 +140,7 @@
             this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
             this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButton1.Size = new System.Drawing.Size(29, 24);
             this.toolStripButton1.Text = "toolStripButton1";
             this.toolStripButton1.Click += new System.EventHandler(this.toolStripButton1_Click);
             // 
@@ -151,7 +151,7 @@
             this.toolStripButtonLogOut.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonLogOut.Image")));
             this.toolStripButtonLogOut.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonLogOut.Name = "toolStripButtonLogOut";
-            this.toolStripButtonLogOut.Size = new System.Drawing.Size(24, 24);
+            this.toolStripButtonLogOut.Size = new System.Drawing.Size(29, 24);
             this.toolStripButtonLogOut.Text = "LOG OUT";
             this.toolStripButtonLogOut.Click += new System.EventHandler(this.toolStripButtonLogOut_Click);
             // 
@@ -168,9 +168,9 @@
             // 
             // FormUsuaris
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.ControlBox = false;
             this.Controls.Add(this.groupBox1);
@@ -182,6 +182,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormUsuaris";
             this.Text = "FilmZ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FormUsuaris_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridUsuaris1)).EndInit();
             this.toolStrip1.ResumeLayout(false);

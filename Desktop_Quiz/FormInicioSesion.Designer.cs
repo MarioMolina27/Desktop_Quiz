@@ -46,7 +46,7 @@
             this.buttonIniciSesio.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonIniciSesio.ForeColor = System.Drawing.Color.White;
             this.buttonIniciSesio.Location = new System.Drawing.Point(1145, 849);
-            this.buttonIniciSesio.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.buttonIniciSesio.Margin = new System.Windows.Forms.Padding(4);
             this.buttonIniciSesio.Name = "buttonIniciSesio";
             this.buttonIniciSesio.Size = new System.Drawing.Size(257, 85);
             this.buttonIniciSesio.TabIndex = 5;
@@ -59,7 +59,7 @@
             this.pictureBoxIconUser.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBoxIconUser.Image = global::Desktop_Quiz.Properties.Resources.loginImage;
             this.pictureBoxIconUser.Location = new System.Drawing.Point(1067, 140);
-            this.pictureBoxIconUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBoxIconUser.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBoxIconUser.Name = "pictureBoxIconUser";
             this.pictureBoxIconUser.Size = new System.Drawing.Size(379, 287);
             this.pictureBoxIconUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -94,7 +94,7 @@
             // 
             this.textBoxNom.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxNom.Location = new System.Drawing.Point(1067, 555);
-            this.textBoxNom.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxNom.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxNom.Name = "textBoxNom";
             this.textBoxNom.Size = new System.Drawing.Size(443, 32);
             this.textBoxNom.TabIndex = 2;
@@ -105,7 +105,7 @@
             // 
             this.textBoxContrasenya.Font = new System.Drawing.Font("Arial", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBoxContrasenya.Location = new System.Drawing.Point(1067, 644);
-            this.textBoxContrasenya.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBoxContrasenya.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxContrasenya.Name = "textBoxContrasenya";
             this.textBoxContrasenya.Size = new System.Drawing.Size(443, 32);
             this.textBoxContrasenya.TabIndex = 3;
@@ -117,7 +117,7 @@
             this.checkBoxMostraPass.AutoSize = true;
             this.checkBoxMostraPass.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBoxMostraPass.Location = new System.Drawing.Point(1519, 649);
-            this.checkBoxMostraPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.checkBoxMostraPass.Margin = new System.Windows.Forms.Padding(4);
             this.checkBoxMostraPass.Name = "checkBoxMostraPass";
             this.checkBoxMostraPass.Size = new System.Drawing.Size(184, 23);
             this.checkBoxMostraPass.TabIndex = 4;
@@ -142,6 +142,7 @@
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FormInicioSesion";
             this.Text = "FilmZ";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIconUser)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

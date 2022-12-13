@@ -116,7 +116,7 @@ namespace Desktop_Quiz
 
             if (result.Equals(DialogResult.OK))
             {
-                textBoxImatge.Text = Path.GetFileName(file.FileName); ;
+                textBoxAudio.Text = Path.GetFileName(file.FileName); ;
 
             }
         }

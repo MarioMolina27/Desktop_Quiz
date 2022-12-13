@@ -59,7 +59,7 @@
             // 
             // groupBoxPreguntes
             // 
-            this.groupBoxPreguntes.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.groupBoxPreguntes.BackColor = System.Drawing.Color.LightBlue;
             this.groupBoxPreguntes.Controls.Add(this.groupBoxOpcionsFilOr);
             this.groupBoxPreguntes.Controls.Add(this.dataGridViewPelicules);
             this.groupBoxPreguntes.Controls.Add(this.textBoxTitulo);
@@ -289,13 +289,13 @@
             // 
             // toolStripBackOption
             // 
-            this.toolStripBackOption.BackColor = System.Drawing.Color.LightBlue;
+            this.toolStripBackOption.BackColor = System.Drawing.Color.LightSkyBlue;
             this.toolStripBackOption.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStripBackOption.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripButtonBack});
             this.toolStripBackOption.Location = new System.Drawing.Point(0, 0);
             this.toolStripBackOption.Name = "toolStripBackOption";
-            this.toolStripBackOption.Size = new System.Drawing.Size(2405, 39);
+            this.toolStripBackOption.Size = new System.Drawing.Size(1924, 27);
             this.toolStripBackOption.TabIndex = 12;
             // 
             // toolStripButtonBack
@@ -304,7 +304,7 @@
             this.toolStripButtonBack.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButtonBack.Image")));
             this.toolStripButtonBack.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.toolStripButtonBack.Name = "toolStripButtonBack";
-            this.toolStripButtonBack.Size = new System.Drawing.Size(29, 36);
+            this.toolStripButtonBack.Size = new System.Drawing.Size(29, 24);
             this.toolStripButtonBack.Text = "BACK";
             this.toolStripButtonBack.Click += new System.EventHandler(this.toolStripButtonBack_Click);
             // 
@@ -312,7 +312,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(1924, 1055);
             this.ControlBox = false;
             this.Controls.Add(this.toolStripBackOption);

@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBoxDadesPersonatge = new System.Windows.Forms.GroupBox();
+            this.buttonCancel = new System.Windows.Forms.Button();
             this.comboBoxGenere = new System.Windows.Forms.ComboBox();
             this.textBoxEncerts = new System.Windows.Forms.TextBox();
             this.labelEncerts = new System.Windows.Forms.Label();
@@ -42,7 +43,6 @@
             this.labelRutaImg = new System.Windows.Forms.Label();
             this.labelDescripcio = new System.Windows.Forms.Label();
             this.labelNom = new System.Windows.Forms.Label();
-            this.buttonCancel = new System.Windows.Forms.Button();
             this.groupBoxDadesPersonatge.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPers)).BeginInit();
             this.SuspendLayout();
@@ -71,6 +71,19 @@
             this.groupBoxDadesPersonatge.TabStop = false;
             this.groupBoxDadesPersonatge.Text = "Dades personatge";
             // 
+            // buttonCancel
+            // 
+            this.buttonCancel.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonCancel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancel.Location = new System.Drawing.Point(330, 386);
+            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCancel.Name = "buttonCancel";
+            this.buttonCancel.Size = new System.Drawing.Size(82, 29);
+            this.buttonCancel.TabIndex = 15;
+            this.buttonCancel.Text = "Cancelar";
+            this.buttonCancel.UseVisualStyleBackColor = false;
+            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
+            // 
             // comboBoxGenere
             // 
             this.comboBoxGenere.FormattingEnabled = true;
@@ -83,14 +96,14 @@
             "General"});
             this.comboBoxGenere.Location = new System.Drawing.Point(99, 215);
             this.comboBoxGenere.Name = "comboBoxGenere";
-            this.comboBoxGenere.Size = new System.Drawing.Size(129, 25);
+            this.comboBoxGenere.Size = new System.Drawing.Size(129, 30);
             this.comboBoxGenere.TabIndex = 14;
             // 
             // textBoxEncerts
             // 
             this.textBoxEncerts.Location = new System.Drawing.Point(321, 215);
             this.textBoxEncerts.Name = "textBoxEncerts";
-            this.textBoxEncerts.Size = new System.Drawing.Size(112, 25);
+            this.textBoxEncerts.Size = new System.Drawing.Size(112, 29);
             this.textBoxEncerts.TabIndex = 13;
             // 
             // labelEncerts
@@ -99,7 +112,7 @@
             this.labelEncerts.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelEncerts.Location = new System.Drawing.Point(255, 218);
             this.labelEncerts.Name = "labelEncerts";
-            this.labelEncerts.Size = new System.Drawing.Size(63, 18);
+            this.labelEncerts.Size = new System.Drawing.Size(82, 22);
             this.labelEncerts.TabIndex = 12;
             this.labelEncerts.Text = "Encerts";
             // 
@@ -109,7 +122,7 @@
             this.labelGenere.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelGenere.Location = new System.Drawing.Point(6, 218);
             this.labelGenere.Name = "labelGenere";
-            this.labelGenere.Size = new System.Drawing.Size(62, 18);
+            this.labelGenere.Size = new System.Drawing.Size(78, 22);
             this.labelGenere.TabIndex = 10;
             this.labelGenere.Text = "Gènere";
             // 
@@ -138,7 +151,7 @@
             // 
             this.textBoxNomPers.Location = new System.Drawing.Point(99, 33);
             this.textBoxNomPers.Name = "textBoxNomPers";
-            this.textBoxNomPers.Size = new System.Drawing.Size(257, 25);
+            this.textBoxNomPers.Size = new System.Drawing.Size(257, 29);
             this.textBoxNomPers.TabIndex = 7;
             // 
             // textBoxDescripcioPers
@@ -163,7 +176,7 @@
             // 
             this.textBoxRutaImg.Location = new System.Drawing.Point(99, 175);
             this.textBoxRutaImg.Name = "textBoxRutaImg";
-            this.textBoxRutaImg.Size = new System.Drawing.Size(257, 25);
+            this.textBoxRutaImg.Size = new System.Drawing.Size(257, 29);
             this.textBoxRutaImg.TabIndex = 3;
             this.textBoxRutaImg.TextChanged += new System.EventHandler(this.textBoxRutaImg_TextChanged);
             // 
@@ -173,7 +186,7 @@
             this.labelRutaImg.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelRutaImg.Location = new System.Drawing.Point(6, 178);
             this.labelRutaImg.Name = "labelRutaImg";
-            this.labelRutaImg.Size = new System.Drawing.Size(92, 18);
+            this.labelRutaImg.Size = new System.Drawing.Size(119, 22);
             this.labelRutaImg.TabIndex = 2;
             this.labelRutaImg.Text = "Ruta Imatge";
             // 
@@ -183,7 +196,7 @@
             this.labelDescripcio.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelDescripcio.Location = new System.Drawing.Point(6, 67);
             this.labelDescripcio.Name = "labelDescripcio";
-            this.labelDescripcio.Size = new System.Drawing.Size(84, 18);
+            this.labelDescripcio.Size = new System.Drawing.Size(110, 22);
             this.labelDescripcio.TabIndex = 1;
             this.labelDescripcio.Text = "Descripció";
             // 
@@ -193,28 +206,15 @@
             this.labelNom.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNom.Location = new System.Drawing.Point(6, 36);
             this.labelNom.Name = "labelNom";
-            this.labelNom.Size = new System.Drawing.Size(40, 18);
+            this.labelNom.Size = new System.Drawing.Size(52, 22);
             this.labelNom.TabIndex = 0;
             this.labelNom.Text = "Nom";
             // 
-            // buttonCancel
-            // 
-            this.buttonCancel.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonCancel.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancel.Location = new System.Drawing.Point(330, 386);
-            this.buttonCancel.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonCancel.Name = "buttonCancel";
-            this.buttonCancel.Size = new System.Drawing.Size(82, 29);
-            this.buttonCancel.TabIndex = 15;
-            this.buttonCancel.Text = "Cancelar";
-            this.buttonCancel.UseVisualStyleBackColor = false;
-            this.buttonCancel.Click += new System.EventHandler(this.buttonCancel_Click);
-            // 
             // FormEditPersonatges
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BackColor = System.Drawing.Color.LightBlue;
             this.ClientSize = new System.Drawing.Size(478, 460);
             this.ControlBox = false;
             this.Controls.Add(this.groupBoxDadesPersonatge);
