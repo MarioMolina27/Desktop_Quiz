@@ -76,7 +76,6 @@
             this.labelNom.Size = new System.Drawing.Size(127, 29);
             this.labelNom.TabIndex = 0;
             this.labelNom.Text = "NickName";
-            this.labelNom.Click += new System.EventHandler(this.labelNom_Click);
             // 
             // labelContrasenya
             // 
@@ -88,7 +87,6 @@
             this.labelContrasenya.Size = new System.Drawing.Size(157, 29);
             this.labelContrasenya.TabIndex = 1;
             this.labelContrasenya.Text = "Contrasenya";
-            this.labelContrasenya.Click += new System.EventHandler(this.labelContrasenya_Click);
             // 
             // textBoxNom
             // 
@@ -98,7 +96,6 @@
             this.textBoxNom.Name = "textBoxNom";
             this.textBoxNom.Size = new System.Drawing.Size(443, 32);
             this.textBoxNom.TabIndex = 2;
-            this.textBoxNom.TextChanged += new System.EventHandler(this.textBoxNom_TextChanged);
             this.textBoxNom.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBoxNom_KeyDown);
             // 
             // textBoxContrasenya

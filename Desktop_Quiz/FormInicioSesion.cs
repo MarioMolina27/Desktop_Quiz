@@ -1,27 +1,38 @@
 ﻿using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Button;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Desktop_Quiz
 {
+    /**
+     * public partial class MainWindow : Form
+     */
+
     public partial class FormInicioSesion : Form
     {
+        //Declarem una variable global on hi posarem la llista d'usuaris que haurem carregat gràcies al JSON USUARIS
         List<Usuari> usuaris;
+
+        /**
+         * Obrim el formulari
+         */
+
         public FormInicioSesion()
         {
             InitializeComponent();
         }
 
+        /**
+         * Acció --> Botó Inici Sessió.
+         * Un cop es faci aquesta acció, es llegirà el JSON d'usuaris i es guardarà tot a la llista <usuaris>.
+         * Es recorrerà la llista buscant que el camp NOM i camp CONTRASENYA coincideixin amb algun nom_usuari i contrasenya_usuari de la lista Usuaris
+         * CAS CORRECTE --> S'obrirà FORM (Admin o SuperAdmin), depenent del tipus d'Usuari que sigui.
+         * CAS INCORRECTE --> Missatge ERROR
+         */
         private void buttonIniciSessio_Click(object sender, EventArgs e)
         {
             String nom = textBoxNom.Text;
@@ -30,39 +41,47 @@ namespace Desktop_Quiz
 
             JArray jarrayUsuaris = JArray.Parse(File.ReadAllText(@"../../JSON/USUARIS.json", Encoding.UTF8));
             usuaris = jarrayUsuaris.ToObject<List<Usuari>>();
-
-            foreach (Usuari user in usuaris)
+            int usuari = 0;
+            do
             {
-                if (nom.Equals(user.nickname) && EncriptarContrasenyes.verificarContra(contrasenya, user.contrasenya))
+                if (nom.Equals(usuaris[usuari].nickname.ToString()) && EncriptarContrasenyes.verificarContra(contrasenya, usuaris[usuari].contrasenya.ToString()))
                 {
-                    if (user.tipus == 'S')
+                    if (usuaris[usuari].tipus == 'S')
                     {
-                        FormSAdimOpciones formSuperAdmin = new FormSAdimOpciones(user);
+                        FormSAdimOpciones formSuperAdmin = new FormSAdimOpciones(usuaris[usuari]);
                         formSuperAdmin.ShowDialog();
                     } else
                     {
-                        FormAdminOpciones formAdmin = new FormAdminOpciones(user);
+                        FormAdminOpciones formAdmin = new FormAdminOpciones(usuaris[usuari]);
                         formAdmin.ShowDialog();
                     }
                     this.Close();
                     logInCorrect = true;
                 }
-                
+                usuari++;
             }
+            while (logInCorrect == false && usuari < usuaris.Count());
+
             if (logInCorrect == false)
             {
                 MessageBox.Show("Usuari/Contrasenya incorrecte.");
             }
         }
 
+        /**
+         * Permet fer ús de la tecla Enter des del camp Nom, al utilitzar-la cridarem la funció Inici Sessió
+         */
         private void textBoxNom_KeyDown(object sender, KeyEventArgs e)
         {
-            if (    e.KeyCode == Keys.Enter)
+            if ( e.KeyCode == Keys.Enter)
             {
                 buttonIniciSessio_Click(sender, e);
             }
         }
 
+        /**
+         * Permet fer ús de la tecla Enter des del camp Contrasenya, al utilitzar-la cridarem la funció Inici Sessió
+         */
         private void textBoxContrasenya_KeyDown(object sender, KeyEventArgs e)
         {
             if(e.KeyCode == Keys.Enter)
@@ -71,6 +90,9 @@ namespace Desktop_Quiz
             }
         }
 
+        /**
+         * Al fer click sobre la CheckBox d'ensenyar contrasenya, te la farà visible o invisible
+         */
         private void checkBoxMostraPass_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBoxMostraPass.Checked == true)
@@ -80,26 +102,6 @@ namespace Desktop_Quiz
             {
                 textBoxContrasenya.UseSystemPasswordChar = true;
             }
-        }
-
-        private void textBoxNom_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBoxDades_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelNom_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void labelContrasenya_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
