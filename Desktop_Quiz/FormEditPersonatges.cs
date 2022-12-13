@@ -58,7 +58,7 @@ namespace Desktop_Quiz
 
             if (textBoxNomPers.Text.Equals("") | textBoxDescripcioPers.Text.Equals("") | comboBoxGenere.Text.Equals("") | textBoxRutaImg.Equals(""))
             {
-                MessageBox.Show("Eres bobo");
+                MessageBox.Show("No s'ha afegit cap personatge");
             }
             else {
 
