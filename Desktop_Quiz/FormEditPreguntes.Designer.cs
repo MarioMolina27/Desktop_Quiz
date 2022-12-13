@@ -31,8 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormEditPreguntes));
             this.groupBoxPelicules = new System.Windows.Forms.GroupBox();
-            this.buttonGuardar = new System.Windows.Forms.Button();
+            this.buttonCancelar = new System.Windows.Forms.Button();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.buttonGuardar = new System.Windows.Forms.Button();
             this.buttonAudioAceptar = new System.Windows.Forms.Button();
             this.buttonImatgeAceptar = new System.Windows.Forms.Button();
             this.groupBoxDificultat = new System.Windows.Forms.GroupBox();
@@ -59,7 +60,6 @@
             this.labelResposta2 = new System.Windows.Forms.Label();
             this.labelPregunta = new System.Windows.Forms.Label();
             this.labelResposta1 = new System.Windows.Forms.Label();
-            this.buttonCancelar = new System.Windows.Forms.Button();
             this.groupBoxPelicules.SuspendLayout();
             this.groupBoxDificultat.SuspendLayout();
             this.groupBoxRespostaCorrecte.SuspendLayout();
@@ -67,6 +67,7 @@
             // 
             // groupBoxPelicules
             // 
+            this.groupBoxPelicules.BackColor = System.Drawing.Color.LightSkyBlue;
             this.groupBoxPelicules.Controls.Add(this.buttonCancelar);
             this.groupBoxPelicules.Controls.Add(this.buttonGuardar);
             this.groupBoxPelicules.Controls.Add(this.buttonAudioAceptar);
@@ -96,6 +97,25 @@
             this.groupBoxPelicules.TabStop = false;
             this.groupBoxPelicules.Text = "Dades Pel·lícules";
             // 
+            // buttonCancelar
+            // 
+            this.buttonCancelar.ImageKey = "(ninguno)";
+            this.buttonCancelar.ImageList = this.imageList1;
+            this.buttonCancelar.Location = new System.Drawing.Point(913, 618);
+            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCancelar.Name = "buttonCancelar";
+            this.buttonCancelar.Size = new System.Drawing.Size(175, 70);
+            this.buttonCancelar.TabIndex = 29;
+            this.buttonCancelar.Text = "Cancelar";
+            this.buttonCancelar.UseVisualStyleBackColor = true;
+            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "save.png");
+            // 
             // buttonGuardar
             // 
             this.buttonGuardar.ImageKey = "(ninguno)";
@@ -108,12 +128,6 @@
             this.buttonGuardar.Text = "Aceptar";
             this.buttonGuardar.UseVisualStyleBackColor = true;
             this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click_1);
-            // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "save.png");
             // 
             // buttonAudioAceptar
             // 
@@ -384,24 +398,11 @@
             this.labelResposta1.TabIndex = 4;
             this.labelResposta1.Text = "Resposta 1";
             // 
-            // buttonCancelar
-            // 
-            this.buttonCancelar.ImageKey = "(ninguno)";
-            this.buttonCancelar.ImageList = this.imageList1;
-            this.buttonCancelar.Location = new System.Drawing.Point(913, 618);
-            this.buttonCancelar.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonCancelar.Name = "buttonCancelar";
-            this.buttonCancelar.Size = new System.Drawing.Size(175, 70);
-            this.buttonCancelar.TabIndex = 29;
-            this.buttonCancelar.Text = "Cancelar";
-            this.buttonCancelar.UseVisualStyleBackColor = true;
-            this.buttonCancelar.Click += new System.EventHandler(this.buttonCancelar_Click);
-            // 
             // FormEditPreguntes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 22F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.BackColor = System.Drawing.Color.LightSkyBlue;
             this.ClientSize = new System.Drawing.Size(1339, 751);
             this.ControlBox = false;
             this.Controls.Add(this.groupBoxPelicules);
