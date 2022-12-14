@@ -96,19 +96,13 @@ namespace Desktop_Quiz
 
         private bool passwordCheck()
         {
-            bool validReturn = false;
-            if (!textBoxContrasenya.Text.Equals("") && !textBoxRepeatContrasenya.Text.Equals(""))
-            {
+            bool validReturn = true;
+            
                 if (!textBoxContrasenya.Text.Equals(textBoxRepeatContrasenya.Text))
                 {
                     MessageBox.Show("Las contraseñas no coinciden.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    validReturn = false;
                 }
-                else
-                {
-                    validReturn = true;
-                }
-
-            }
             return validReturn;
         }
 

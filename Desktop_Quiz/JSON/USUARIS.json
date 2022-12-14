@@ -47,10 +47,10 @@
   {
     "nickname": "mmolina",
     "nom": "Mario",
-    "contrasenya": "$2a$11$JM0nlw6fsRXDpASfewBFDenSn/CY3P9p3JEUjR78uhOKP/.2FeC3S",
+    "contrasenya": "$2a$11$dQ8YU01UrnrzAFfZUuERieXHT6lL8rxjjGErMs7GQXXpguok4TOTC",
     "tipus": "A",
     "add": true,
     "modify": true,
-    "delete": true
+    "delete": false
   }
 ]
