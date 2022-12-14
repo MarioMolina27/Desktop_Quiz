@@ -48,10 +48,17 @@ namespace Desktop_Quiz
         * @usuariEdited usuario de la clase Usuari que vamos a substituir
         * @usuariEdited posición del usuario que vamso a modificar
         */
-        public static void EditUser(Usuari usuariEdited, int indexPosition)
-        {   
-            //editem el usuari que estigui a la amteixa posició
-            users[indexPosition] = usuariEdited;
+        public static void EditUser(Usuari usuariEdited, int indexPosition, bool modifyPassword)
+        {
+            if (modifyPassword)
+            {
+                users[indexPosition] = usuariEdited;
+            }
+            else
+            {
+                users[indexPosition] = new Usuari(usuariEdited.nickname, usuariEdited.nom, users[indexPosition].contrasenya, usuariEdited.tipus, usuariEdited.add, usuariEdited.modify, usuariEdited.delete);
+            }
+            
         }
         /**
         * Función que borra el usuario que tenga el mismo nickname(id)

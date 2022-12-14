@@ -19,4 +19,4 @@ namespace Desktop_Quiz
             Application.Run(new FormInicioSesion());
         }
     }
-}
+}//FormUsuaris

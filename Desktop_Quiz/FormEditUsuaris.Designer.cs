@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.groupBoxDadesUsuari = new System.Windows.Forms.GroupBox();
-            this.buttonAceptarEditUsers = new System.Windows.Forms.Button();
+            this.groupBoxPassw = new System.Windows.Forms.GroupBox();
+            this.checkModifyPassw = new System.Windows.Forms.CheckBox();
             this.checkBoxMostrarRepeat = new System.Windows.Forms.CheckBox();
             this.checkBoxMostrar = new System.Windows.Forms.CheckBox();
             this.textBoxRepeatContrasenya = new System.Windows.Forms.TextBox();
             this.textBoxContrasenya = new System.Windows.Forms.TextBox();
+            this.labelRepeatContrasenya = new System.Windows.Forms.Label();
+            this.labelContrasenya = new System.Windows.Forms.Label();
+            this.buttonCancelarEdit = new System.Windows.Forms.Button();
+            this.buttonAceptarEditUsers = new System.Windows.Forms.Button();
             this.textBoxNomEdit = new System.Windows.Forms.TextBox();
             this.textBoxNickName = new System.Windows.Forms.TextBox();
             this.groupBoxPriveligis = new System.Windows.Forms.GroupBox();
             this.checkBoxEliminar = new System.Windows.Forms.CheckBox();
             this.checkBoxEditar = new System.Windows.Forms.CheckBox();
             this.checkBoxAfegir = new System.Windows.Forms.CheckBox();
-            this.labelRepeatContrasenya = new System.Windows.Forms.Label();
-            this.labelContrasenya = new System.Windows.Forms.Label();
             this.labelNickname = new System.Windows.Forms.Label();
             this.labelNom = new System.Windows.Forms.Label();
-            this.buttonCancelarEdit = new System.Windows.Forms.Button();
-            this.groupBoxPassw = new System.Windows.Forms.GroupBox();
-            this.checkModifyPassw = new System.Windows.Forms.CheckBox();
             this.groupBoxDadesUsuari.SuspendLayout();
-            this.groupBoxPriveligis.SuspendLayout();
             this.groupBoxPassw.SuspendLayout();
+            this.groupBoxPriveligis.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBoxDadesUsuari
@@ -71,19 +71,34 @@
             this.groupBoxDadesUsuari.TabStop = false;
             this.groupBoxDadesUsuari.Text = "Dades Usuari";
             // 
-            // buttonAceptarEditUsers
+            // groupBoxPassw
             // 
-            this.buttonAceptarEditUsers.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonAceptarEditUsers.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonAceptarEditUsers.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonAceptarEditUsers.Location = new System.Drawing.Point(512, 432);
-            this.buttonAceptarEditUsers.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonAceptarEditUsers.Name = "buttonAceptarEditUsers";
-            this.buttonAceptarEditUsers.Size = new System.Drawing.Size(130, 50);
-            this.buttonAceptarEditUsers.TabIndex = 11;
-            this.buttonAceptarEditUsers.Text = "Aceptar";
-            this.buttonAceptarEditUsers.UseVisualStyleBackColor = false;
-            this.buttonAceptarEditUsers.Click += new System.EventHandler(this.buttonAceptarEditUsers_Click);
+            this.groupBoxPassw.Controls.Add(this.checkModifyPassw);
+            this.groupBoxPassw.Controls.Add(this.checkBoxMostrarRepeat);
+            this.groupBoxPassw.Controls.Add(this.checkBoxMostrar);
+            this.groupBoxPassw.Controls.Add(this.textBoxRepeatContrasenya);
+            this.groupBoxPassw.Controls.Add(this.textBoxContrasenya);
+            this.groupBoxPassw.Controls.Add(this.labelRepeatContrasenya);
+            this.groupBoxPassw.Controls.Add(this.labelContrasenya);
+            this.groupBoxPassw.Location = new System.Drawing.Point(29, 138);
+            this.groupBoxPassw.Name = "groupBoxPassw";
+            this.groupBoxPassw.Size = new System.Drawing.Size(614, 176);
+            this.groupBoxPassw.TabIndex = 13;
+            this.groupBoxPassw.TabStop = false;
+            this.groupBoxPassw.Text = "Modificar Contrasenyes";
+            // 
+            // checkModifyPassw
+            // 
+            this.checkModifyPassw.AutoSize = true;
+            this.checkModifyPassw.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkModifyPassw.Location = new System.Drawing.Point(14, 128);
+            this.checkModifyPassw.Margin = new System.Windows.Forms.Padding(4);
+            this.checkModifyPassw.Name = "checkModifyPassw";
+            this.checkModifyPassw.Size = new System.Drawing.Size(192, 22);
+            this.checkModifyPassw.TabIndex = 11;
+            this.checkModifyPassw.Text = "Modificar contrasenyes";
+            this.checkModifyPassw.UseVisualStyleBackColor = true;
+            this.checkModifyPassw.CheckedChanged += new System.EventHandler(this.checkModifyPassw_CheckedChanged);
             // 
             // checkBoxMostrarRepeat
             // 
@@ -113,6 +128,7 @@
             // 
             // textBoxRepeatContrasenya
             // 
+            this.textBoxRepeatContrasenya.Enabled = false;
             this.textBoxRepeatContrasenya.Location = new System.Drawing.Point(177, 75);
             this.textBoxRepeatContrasenya.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxRepeatContrasenya.Name = "textBoxRepeatContrasenya";
@@ -123,12 +139,63 @@
             // 
             // textBoxContrasenya
             // 
+            this.textBoxContrasenya.Enabled = false;
             this.textBoxContrasenya.Location = new System.Drawing.Point(177, 20);
             this.textBoxContrasenya.Margin = new System.Windows.Forms.Padding(4);
             this.textBoxContrasenya.Name = "textBoxContrasenya";
             this.textBoxContrasenya.Size = new System.Drawing.Size(326, 25);
             this.textBoxContrasenya.TabIndex = 7;
             this.textBoxContrasenya.UseSystemPasswordChar = true;
+            // 
+            // labelRepeatContrasenya
+            // 
+            this.labelRepeatContrasenya.AutoSize = true;
+            this.labelRepeatContrasenya.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelRepeatContrasenya.Location = new System.Drawing.Point(11, 79);
+            this.labelRepeatContrasenya.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelRepeatContrasenya.Name = "labelRepeatContrasenya";
+            this.labelRepeatContrasenya.Size = new System.Drawing.Size(154, 18);
+            this.labelRepeatContrasenya.TabIndex = 3;
+            this.labelRepeatContrasenya.Text = "Repetir Contrasenya";
+            // 
+            // labelContrasenya
+            // 
+            this.labelContrasenya.AutoSize = true;
+            this.labelContrasenya.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelContrasenya.Location = new System.Drawing.Point(11, 24);
+            this.labelContrasenya.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.labelContrasenya.Name = "labelContrasenya";
+            this.labelContrasenya.Size = new System.Drawing.Size(97, 18);
+            this.labelContrasenya.TabIndex = 2;
+            this.labelContrasenya.Text = "Contrasenya";
+            // 
+            // buttonCancelarEdit
+            // 
+            this.buttonCancelarEdit.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonCancelarEdit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonCancelarEdit.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCancelarEdit.Location = new System.Drawing.Point(374, 432);
+            this.buttonCancelarEdit.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonCancelarEdit.Name = "buttonCancelarEdit";
+            this.buttonCancelarEdit.Size = new System.Drawing.Size(130, 50);
+            this.buttonCancelarEdit.TabIndex = 12;
+            this.buttonCancelarEdit.Text = "Cancelar";
+            this.buttonCancelarEdit.UseVisualStyleBackColor = false;
+            this.buttonCancelarEdit.Click += new System.EventHandler(this.buttonCancelarEdit_Click);
+            // 
+            // buttonAceptarEditUsers
+            // 
+            this.buttonAceptarEditUsers.BackColor = System.Drawing.SystemColors.Control;
+            this.buttonAceptarEditUsers.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+            this.buttonAceptarEditUsers.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonAceptarEditUsers.Location = new System.Drawing.Point(512, 432);
+            this.buttonAceptarEditUsers.Margin = new System.Windows.Forms.Padding(4);
+            this.buttonAceptarEditUsers.Name = "buttonAceptarEditUsers";
+            this.buttonAceptarEditUsers.Size = new System.Drawing.Size(130, 50);
+            this.buttonAceptarEditUsers.TabIndex = 11;
+            this.buttonAceptarEditUsers.Text = "Aceptar";
+            this.buttonAceptarEditUsers.UseVisualStyleBackColor = false;
+            this.buttonAceptarEditUsers.Click += new System.EventHandler(this.buttonAceptarEditUsers_Click);
             // 
             // textBoxNomEdit
             // 
@@ -197,28 +264,6 @@
             this.checkBoxAfegir.Text = "Afegir";
             this.checkBoxAfegir.UseVisualStyleBackColor = true;
             // 
-            // labelRepeatContrasenya
-            // 
-            this.labelRepeatContrasenya.AutoSize = true;
-            this.labelRepeatContrasenya.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelRepeatContrasenya.Location = new System.Drawing.Point(11, 79);
-            this.labelRepeatContrasenya.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelRepeatContrasenya.Name = "labelRepeatContrasenya";
-            this.labelRepeatContrasenya.Size = new System.Drawing.Size(154, 18);
-            this.labelRepeatContrasenya.TabIndex = 3;
-            this.labelRepeatContrasenya.Text = "Repetir Contrasenya";
-            // 
-            // labelContrasenya
-            // 
-            this.labelContrasenya.AutoSize = true;
-            this.labelContrasenya.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelContrasenya.Location = new System.Drawing.Point(11, 24);
-            this.labelContrasenya.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.labelContrasenya.Name = "labelContrasenya";
-            this.labelContrasenya.Size = new System.Drawing.Size(97, 18);
-            this.labelContrasenya.TabIndex = 2;
-            this.labelContrasenya.Text = "Contrasenya";
-            // 
             // labelNickname
             // 
             this.labelNickname.AutoSize = true;
@@ -241,49 +286,6 @@
             this.labelNom.TabIndex = 0;
             this.labelNom.Text = "Nom";
             // 
-            // buttonCancelarEdit
-            // 
-            this.buttonCancelarEdit.BackColor = System.Drawing.SystemColors.Control;
-            this.buttonCancelarEdit.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.buttonCancelarEdit.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonCancelarEdit.Location = new System.Drawing.Point(374, 432);
-            this.buttonCancelarEdit.Margin = new System.Windows.Forms.Padding(4);
-            this.buttonCancelarEdit.Name = "buttonCancelarEdit";
-            this.buttonCancelarEdit.Size = new System.Drawing.Size(130, 50);
-            this.buttonCancelarEdit.TabIndex = 12;
-            this.buttonCancelarEdit.Text = "Cancelar";
-            this.buttonCancelarEdit.UseVisualStyleBackColor = false;
-            this.buttonCancelarEdit.Click += new System.EventHandler(this.buttonCancelarEdit_Click);
-            // 
-            // groupBoxPassw
-            // 
-            this.groupBoxPassw.Controls.Add(this.checkModifyPassw);
-            this.groupBoxPassw.Controls.Add(this.checkBoxMostrarRepeat);
-            this.groupBoxPassw.Controls.Add(this.checkBoxMostrar);
-            this.groupBoxPassw.Controls.Add(this.textBoxRepeatContrasenya);
-            this.groupBoxPassw.Controls.Add(this.textBoxContrasenya);
-            this.groupBoxPassw.Controls.Add(this.labelRepeatContrasenya);
-            this.groupBoxPassw.Controls.Add(this.labelContrasenya);
-            this.groupBoxPassw.Location = new System.Drawing.Point(29, 138);
-            this.groupBoxPassw.Name = "groupBoxPassw";
-            this.groupBoxPassw.Size = new System.Drawing.Size(614, 176);
-            this.groupBoxPassw.TabIndex = 13;
-            this.groupBoxPassw.TabStop = false;
-            this.groupBoxPassw.Text = "Modificar Contrasenyes";
-            // 
-            // checkModifyPassw
-            // 
-            this.checkModifyPassw.AutoSize = true;
-            this.checkModifyPassw.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkModifyPassw.Location = new System.Drawing.Point(14, 128);
-            this.checkModifyPassw.Margin = new System.Windows.Forms.Padding(4);
-            this.checkModifyPassw.Name = "checkModifyPassw";
-            this.checkModifyPassw.Size = new System.Drawing.Size(192, 22);
-            this.checkModifyPassw.TabIndex = 11;
-            this.checkModifyPassw.Text = "Modificar contrasenyes";
-            this.checkModifyPassw.UseVisualStyleBackColor = true;
-            this.checkModifyPassw.CheckedChanged += new System.EventHandler(this.checkModifyPassw_CheckedChanged);
-            // 
             // FormEditUsuaris
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 18F);
@@ -299,10 +301,10 @@
             this.Load += new System.EventHandler(this.FormEditUsuaris_Load);
             this.groupBoxDadesUsuari.ResumeLayout(false);
             this.groupBoxDadesUsuari.PerformLayout();
-            this.groupBoxPriveligis.ResumeLayout(false);
-            this.groupBoxPriveligis.PerformLayout();
             this.groupBoxPassw.ResumeLayout(false);
             this.groupBoxPassw.PerformLayout();
+            this.groupBoxPriveligis.ResumeLayout(false);
+            this.groupBoxPriveligis.PerformLayout();
             this.ResumeLayout(false);
 
         }

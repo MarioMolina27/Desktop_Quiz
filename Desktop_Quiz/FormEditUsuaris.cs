@@ -127,6 +127,11 @@ namespace Desktop_Quiz
                 checkBoxEditar.Checked = UsuarisRepositori.users[editPosition].modify;
                 checkBoxEliminar.Checked = UsuarisRepositori.users[editPosition].delete;
             }
+            else 
+            {
+                checkModifyPassw.Checked = true;
+                checkModifyPassw.Enabled = false;
+            }
             
         }
 
@@ -135,7 +140,7 @@ namespace Desktop_Quiz
 
         }
         /**
-        * Funcion que añade o edita y guarda un usuario hacienod previamente la validación
+        * Funcion que añade o edita y guarda un usuario haciendo previamente la validación
         */
         private void buttonAceptarEditUsers_Click(object sender, EventArgs e)
         {
@@ -158,24 +163,20 @@ namespace Desktop_Quiz
             }
             else
             {
-                
-                    if (ValidarUser())
-                    {
+                if (ValidarUser() && passwordCheck())
+                {
+                    bool modifyPassword = false;
+
                     if (checkModifyPassw.Checked)
                     {
-                        Usuari usuariEdited = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
-                    }
-                    else
-                    {
-                        Usuari usuariEdited = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
+                       modifyPassword = true;
                     }
 
-                    //Editar usuari 
-
-                        UsuarisRepositori.EditUser(usuariEdited, userPosition());
-                        UsuarisRepositori.SaveUsers();
-                        this.Close();
-                    }
+                    Usuari usuariEdited = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
+                    UsuarisRepositori.EditUser(usuariEdited, userPosition(), modifyPassword);
+                    UsuarisRepositori.SaveUsers();
+                    this.Close();
+                }
             }
         }
 
@@ -187,9 +188,24 @@ namespace Desktop_Quiz
             this.Close();
         }
 
+        /**
+        * Función que permite escribir para editar la contraseña
+        */
         private void checkModifyPassw_CheckedChanged(object sender, EventArgs e)
         {
-
+            if (checkModifyPassw.Checked)
+            {
+                textBoxContrasenya.Enabled = true;
+                textBoxRepeatContrasenya.Enabled = true;
+            }
+            else
+            {
+                textBoxContrasenya.Enabled = false;
+                textBoxRepeatContrasenya.Enabled = false;
+                textBoxContrasenya.Text = "";
+                textBoxRepeatContrasenya.Text = "";
+            }
+            
         }
     }
 }
