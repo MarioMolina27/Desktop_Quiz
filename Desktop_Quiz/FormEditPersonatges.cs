@@ -11,8 +11,16 @@ using System.Windows.Forms;
 
 namespace Desktop_Quiz
 {
+    /**
+    * public partial class MainWindow : Form
+    */
     public partial class FormEditPersonatges : Form
     {
+
+        /**
+         * public FormPersonatges()
+         * declarem unes variables generals per tal de llegir i escrirure les dades dels documents Json.
+         */
 
         String nomPers, descripcioPers, genere, rutaPers;
         int percEncerts;
@@ -29,12 +37,18 @@ namespace Desktop_Quiz
               
         }
 
-        
+        /**
+         * Obrim el formulari vuit
+         */
 
         public FormEditPersonatges()
         {
             InitializeComponent();
         }
+
+        /**
+         * Obrim el formulari amb les dades del personatge
+         */
 
         public FormEditPersonatges(String nomPers,String descripcioPers,String genere,int percEncerts,String rutaPers)
         {
@@ -48,6 +62,10 @@ namespace Desktop_Quiz
             InitializeComponent();
 
         }
+
+        /**
+         * Botó per tancar el formulari sense introduïr dades
+         */
 
         private void buttonCancel_Click(object sender, EventArgs e)
         {
@@ -74,6 +92,10 @@ namespace Desktop_Quiz
 
             this.Close();
         }
+
+        /**
+         * Botó per tancar el formulari i guardar les dades introduïdes
+         */
 
         private void buttonGuardarEdit_Click(object sender, EventArgs e)
         {
@@ -105,6 +127,13 @@ namespace Desktop_Quiz
 
         }
 
+        /**
+         * Botó per trobar l'imatge del personatge
+         */
+
+        /**
+         */
+
         private void buttonBuscarRutaImg_Click(object sender, EventArgs e)
         {
 
@@ -118,6 +147,10 @@ namespace Desktop_Quiz
             }
 
         }
+
+        /**
+         * Edit text per mostrar el nom de la imatge
+         */
 
         private void textBoxRutaImg_TextChanged(object sender, EventArgs e) {
 
