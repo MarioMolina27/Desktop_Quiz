@@ -74,16 +74,12 @@ namespace Desktop_Quiz
         public bool ValidarUser()
         {
             bool validReturn = true;
-            if (textBoxNickName.Text.Equals("") || textBoxNomEdit.Text.Equals("") || textBoxContrasenya.Text.Equals("") || textBoxRepeatContrasenya.Text.Equals(""))
+            if (textBoxNickName.Text.Equals("") || textBoxNomEdit.Text.Equals(""))
             {
                 MessageBox.Show("No puedes dejar ningún campo en blanco", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 validReturn = false; 
             }
-            if (!textBoxContrasenya.Text.Equals(textBoxRepeatContrasenya.Text))
-            {
-                MessageBox.Show("Las contraseñas no coinciden.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                validReturn = false;
-            }
+            
             return validReturn;
         }
 
@@ -95,6 +91,19 @@ namespace Desktop_Quiz
         {
             int UserPosition = UsuarisRepositori.users.FindIndex(x => x.nickname == nickname);
             return UserPosition;    
+        }
+
+
+        private bool passwordCheck()
+        {
+            bool validReturn = true;
+            
+                if (!textBoxContrasenya.Text.Equals(textBoxRepeatContrasenya.Text))
+                {
+                    MessageBox.Show("Las contraseñas no coinciden.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    validReturn = false;
+                }
+            return validReturn;
         }
 
         /**
@@ -112,6 +121,11 @@ namespace Desktop_Quiz
                 checkBoxEditar.Checked = UsuarisRepositori.users[editPosition].modify;
                 checkBoxEliminar.Checked = UsuarisRepositori.users[editPosition].delete;
             }
+            else 
+            {
+                checkModifyPassw.Checked = true;
+                checkModifyPassw.Enabled = false;
+            }
             
         }
 
@@ -120,7 +134,7 @@ namespace Desktop_Quiz
 
         }
         /**
-        * Funcion que añade o edita y guarda un usuario hacienod previamente la validación
+        * Funcion que añade o edita y guarda un usuario haciendo previamente la validación
         */
         private void buttonAceptarEditUsers_Click(object sender, EventArgs e)
         {
@@ -128,7 +142,9 @@ namespace Desktop_Quiz
 
             if (nickname == null)
             {
-                if (ValidarUser())
+                checkModifyPassw.Checked.Equals(true);
+
+                if (ValidarUser() && passwordCheck())
                 {
                     //Afegir nou usuari
                     Usuari usuariAfegir = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
@@ -141,17 +157,49 @@ namespace Desktop_Quiz
             }
             else
             {
-                    if (ValidarUser())
+                if (ValidarUser() && passwordCheck())
+                {
+                    bool modifyPassword = false;
+
+                    if (checkModifyPassw.Checked)
                     {
-                        //Editar usuari existen
-
-                        Usuari usuariEdited = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
-
-                        UsuarisRepositori.EditUser(usuariEdited, userPosition());
-                        UsuarisRepositori.SaveUsers();
-                        this.Close();
+                       modifyPassword = true;
                     }
+
+                    Usuari usuariEdited = new Usuari(textBoxNickName.Text, textBoxNomEdit.Text, EncriptarContrasenyes.encriptarContrasenya(textBoxContrasenya.Text), tipus, checkBoxAfegir.Checked, checkBoxEditar.Checked, checkBoxEliminar.Checked);
+                    UsuarisRepositori.EditUser(usuariEdited, userPosition(), modifyPassword);
+                    UsuarisRepositori.SaveUsers();
+                    this.Close();
+                }
             }
+        }
+
+        /**
+        * Función que cierra el formulario
+        */
+        private void buttonCancelarEdit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        /**
+        * Función que permite escribir para editar la contraseña
+        */
+        private void checkModifyPassw_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkModifyPassw.Checked)
+            {
+                textBoxContrasenya.Enabled = true;
+                textBoxRepeatContrasenya.Enabled = true;
+            }
+            else
+            {
+                textBoxContrasenya.Enabled = false;
+                textBoxRepeatContrasenya.Enabled = false;
+                textBoxContrasenya.Text = "";
+                textBoxRepeatContrasenya.Text = "";
+            }
+            
         }
     }
 }

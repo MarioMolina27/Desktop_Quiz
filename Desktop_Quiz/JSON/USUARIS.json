@@ -29,7 +29,7 @@
   {
     "nickname": "JoelM",
     "nom": "Joel",
-    "contrasenya": "$2a$11$tRmoKCnl54O/fIEjqDqtSOj9YIIRnJuJfGXdVSIlD9B4NBMmQ/qu.",
+    "contrasenya": "$2a$11$RkCbkC8K9yPYvxCsmIOkEuAi25wMS.VZBXaPDOp/PHkmas97ydE1e",
     "tipus": "A",
     "add": true,
     "modify": true,
@@ -47,10 +47,10 @@
   {
     "nickname": "mmolina",
     "nom": "Mario",
-    "contrasenya": "$2a$11$xHrf9WdoJ3NqQspa/4ipL.0yzGsrjL0pC8KPLhJ1ZXAnpLT0ZiXlq",
+    "contrasenya": "$2a$11$dQ8YU01UrnrzAFfZUuERieXHT6lL8rxjjGErMs7GQXXpguok4TOTC",
     "tipus": "A",
     "add": true,
     "modify": true,
-    "delete": true
+    "delete": false
   }
 ]

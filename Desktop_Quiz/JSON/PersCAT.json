@@ -1,40 +1,5 @@
 [
   {
-    "nomPers": "Uncharted",
-    "descripcioPers": "La categoria on més has acertat és Acció i tot i així no ho has fet bé 7w7",
-    "genere": "Acció",
-    "percEncerts": 33,
-    "rutaPers": "UnchartedImg.png"
-  },
-  {
-    "nomPers": "Guerra Mundial Z",
-    "descripcioPers": "Com pot ser que apartis la mirada a les demès categories però les de terror te les sàpigues totes?",
-    "genere": "Terror",
-    "percEncerts": 100,
-    "rutaPers": "WorldWarZImg.png"
-  },
-  {
-    "nomPers": "Totes",
-    "descripcioPers": "Has contestat bé totes les preguntes de totes les categoríes, felicitats.",
-    "genere": "General",
-    "percEncerts": 100,
-    "rutaPers": "TotesCorrectesImg.png"
-  },
-  {
-    "nomPers": "James Bond",
-    "descripcioPers": "La categoria a destacar és acció, però encara pots millorar",
-    "genere": "Acció",
-    "percEncerts": 66,
-    "rutaPers": "007Img.png"
-  },
-  {
-    "nomPers": "Fast & Furious",
-    "descripcioPers": "Ben fet has acertat moltes preguntes d'Acció, es nota que t'agraden les explosions",
-    "genere": "Acció",
-    "percEncerts": 100,
-    "rutaPers": "Fast_FuriousImg.png"
-  },
-  {
     "nomPers": "Sid",
     "descripcioPers": "En serio no t'en saps ni tan sols les d'animació?",
     "genere": "Animació",
@@ -115,7 +80,42 @@
     "nomPers": "Cap",
     "descripcioPers": "No has acertat cap pregunta, potser t'hauries de veure alguna pel·lícula abans de fer el quiz.",
     "genere": "General",
-    "percEncerts": 0.0,
+    "percEncerts": 0,
     "rutaPers": "TotesIncorrectesImg.png"
+  },
+  {
+    "nomPers": "Uncharted",
+    "descripcioPers": "La categoria on més has acertat és Acció i tot i així no ho has fet bé 7w7",
+    "genere": "Acció",
+    "percEncerts": 33,
+    "rutaPers": "UnchartedImg.png"
+  },
+  {
+    "nomPers": "Guerra Mundial Z",
+    "descripcioPers": "Com pot ser que apartis la mirada a les demès categories però les de terror te les sàpigues totes?",
+    "genere": "Terror",
+    "percEncerts": 100,
+    "rutaPers": "WorldWarZImg.png"
+  },
+  {
+    "nomPers": "Totes",
+    "descripcioPers": "Has contestat bé totes les preguntes de totes les categoríes, felicitats.",
+    "genere": "General",
+    "percEncerts": 100,
+    "rutaPers": "TotesCorrectesImg.png"
+  },
+  {
+    "nomPers": "James Bond",
+    "descripcioPers": "La categoria a destacar és acció, però encara pots millorar",
+    "genere": "Acció",
+    "percEncerts": 66,
+    "rutaPers": "007Img.png"
+  },
+  {
+    "nomPers": "Fast & Furious",
+    "descripcioPers": "Ben fet has acertat moltes preguntes d'Acció, es nota que t'agraden les explosions",
+    "genere": "Acció",
+    "percEncerts": 100,
+    "rutaPers": "Fast_FuriousImg.png"
   }
 ]
